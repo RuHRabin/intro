@@ -9,9 +9,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-	title: "Open Source Education Path",
+	title: "ওপেন সোর্স শিক্ষা পথ",
 	tagline:
-		"Empowering Your Open Source Journey: From First Contribution to Project Leadership",
+		"আপনার ওপেন সোর্স যাত্রাকে শক্তিশালী করুন: প্রথম অবদান থেকে প্রজেক্টের নেতৃত্ব পর্যন্ত",
 	favicon: "img/favicon.png",
 
 	// Set the production url of your site here
@@ -37,8 +37,15 @@ const config = {
 	// useful metadata like html lang. For example, if your site is Chinese, you
 	// may want to replace "en" with "zh-Hans".
 	i18n: {
-		defaultLocale: "en",
-		locales: ["en"],
+		defaultLocale: "bn",
+		locales: ["bn"],
+		localeConfigs: {
+			bn: {
+				label: "বাংলা (বাংলাদেশ)",
+				direction: "ltr",
+				htmlLang: "bn-BD",
+			},
+		},
 	},
 
 	presets: [
@@ -72,9 +79,9 @@ const config = {
 				},
 			],
 			navbar: {
-				title: "Open Source Education Path",
+				title: "ওপেন সোর্স শিক্ষা পথ",
 				logo: {
-					alt: "Open Source Communities Logo",
+					alt: "ওপেন সোর্স কমিউনিটিজ লোগো",
 					src: "img/favicon.png",
 				},
 				items: [
@@ -82,17 +89,17 @@ const config = {
 						type: "docSidebar",
 						sidebarId: "introToOSS",
 						position: "left",
-						label: "Intro to Open Source",
+						label: "ওপেন সোর্স পরিচিতি",
 					},
 					{
 						type: "docSidebar",
 						sidebarId: "becomingAMaintainer",
 						position: "left",
-						label: "Becoming a Maintainer",
+						label: "মেইনটেইনার হওয়ার পথে",
 					},
 					{
 						to: "/progress",
-						label: "My Progress",
+						label: "আমার অগ্রগতি",
 						position: "right",
 					},
 					{
@@ -104,7 +111,7 @@ const config = {
 			},
 			footer: {
 				logo: {
-					alt: "Open Source Communities logo",
+					alt: "ওপেন সোর্স কমিউনিটিজ লোগো",
 					src: "img/favicon.png",
 					href: "https://osscommunities.com/",
 					height: 100,
@@ -112,20 +119,20 @@ const config = {
 				style: "light",
 				links: [
 					{
-						title: "Learn",
+						title: "শিখুন",
 						items: [
 							{
-								label: "Contributing guide",
+								label: "অবদান রাখার নির্দেশিকা",
 								to: "https://github.com/OpenSource-Communities/intro/blob/main/contributing/CONTRIBUTING.md",
 							},
 							{
-								label: "Open Source Courses",
+								label: "ওপেন সোর্স কোর্সসমূহ",
 								to: "https://intro.opensauced.pizza/#/",
 							},
 						],
 					},
 					{
-						title: "Community",
+						title: "কমিউনিটি",
 						items: [
 							{
 								label: "GitHub",
@@ -134,7 +141,7 @@ const config = {
 						],
 					},
 				],
-				copyright: `Copyright © ${new Date().getFullYear()} Open Source Communities. Built with Docusaurus.`,
+				copyright: `কপিরাইট © ${new Date().getFullYear()} ওপেন সোর্স কমিউনিটিজ। Docusaurus দিয়ে তৈরি।`,
 			},
 			prism: {
 				theme: prismThemes.github,

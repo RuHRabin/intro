@@ -1,9 +1,15 @@
 ---
 id: building-community
-title: "Building and Nurturing a Welcoming and Supportive Community"
-sidebar_label: "Building and Nurturing Community"
+title: "স্বাগত জানানো ও সহায়ক কমিউনিটি গড়ে তোলা এবং লালন করা"
+sidebar_label: "কমিউনিটি গড়ে তোলা ও লালন করা"
 keywords: ["building community", "building open source community", "nurturing community", "nurturing open source community", "welcoming and supportive community", "positive community culture", "how to build and nurture community", "best practices in building and nurturing community", "fostering community", "fostering open source community", "open source maintainer", "Open Source", "Open Source Community"]
 ---
+
+:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+
+এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+
+:::
 
 Open source is more than just maintaining and improving a project. It's a dynamic environment where maintainers, contributors, and users come together to collaborate, contribute, and grow. That said, the people involved in the project are the core and heart of open source.
 

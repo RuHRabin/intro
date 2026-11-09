@@ -9,8 +9,9 @@ function enableWordWrapOnMobile() {
     // Wait for the DOM to be fully loaded and code blocks to render
     setTimeout(() => {
       // Find all word wrap buttons
-      // The button has class 'clean-btn' and when enabled also has 'wordWrapButtonEnabled_*'
-      const wordWrapButtons = document.querySelectorAll('.clean-btn[aria-label*="word wrap"], .clean-btn[aria-label*="Word wrap"], .clean-btn[title*="word wrap"], .clean-btn[title*="Word wrap"]');
+      // The button has class 'clean-btn' and when enabled also has 'wordWrapButtonEnabled_*'.
+      // The class-based selector keeps this working when the UI is translated (e.g. Bengali labels).
+      const wordWrapButtons = document.querySelectorAll('.clean-btn[aria-label*="word wrap"], .clean-btn[aria-label*="Word wrap"], .clean-btn[title*="word wrap"], .clean-btn[title*="Word wrap"], .clean-btn[class*="wordWrapButton"]');
       
       wordWrapButtons.forEach(button => {
         // Check if the button is NOT already enabled

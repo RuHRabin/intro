@@ -1,9 +1,15 @@
 ---
 id: how-to-setup-your-project
-title: "How to Setup Your Open Source Project"
-sidebar_label: "How to Set Up Your Project"
+title: "আপনার ওপেন সোর্স প্রজেক্ট কীভাবে সেটআপ করবেন"
+sidebar_label: "প্রজেক্ট সেটআপ করা"
 keywords: ["how to start an open source project", "how to setup open source project", "open source project setup", "start open source project", "create open source project", "write README for open source project", "project installation guide for open source", "open source license explained", "choosing open source license", "how to add code of conduct open source", "code of conduct open source project", "contributing guidelines open source", "issue templates", "create issue templates open source", "pull request template", "create pull request template open source", "Projects on GitHub", "GitHub project boards", "GitHub", "open source project best practices", "Open Source", "Open Source Community"]
 ---
+
+:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+
+এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+
+:::
 
 There are many things to consider when starting an open source project. In this portion of the course, we will walk through the key components every project needs to succeed.
 

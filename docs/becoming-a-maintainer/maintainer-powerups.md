@@ -1,9 +1,15 @@
 ---
 id: maintainer-powerups
-title: "Maintainer Power Ups"
-sidebar_label: "Maintainer Powerups"
+title: "মেইনটেইনার পাওয়ার-আপ"
+sidebar_label: "মেইনটেইনার পাওয়ার-আপ"
 keywords: ["maintainer powerups", "GitHub tools for open source maintainers", "open source maintainers productivity", "GitHub Actions", "GitHub Actions for open source projects", "types of GitHub Actions for open source projects", "automating open source maintainers tasks", "GitHub", "GitHub tools", "open source maintainers", "Open Source", "Open Source Community"]
 ---
+
+:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+
+এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+
+:::
 
 Maintainers have a variety of daily tasks. You often juggle triaging new issues, reviewing pull requests, testing changes, and managing and moderating the community, such as welcoming new contributors and thanking contributors for their contributions. Most of the time, you are expected to respond to these tasks promptly. Sometimes, these never-ending tasks take too much time and are overwhelming. It would help if you were efficient in what you do.
 

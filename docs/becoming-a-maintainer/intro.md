@@ -1,98 +1,98 @@
 ---
 id: intro
-title: "Understanding the Role of an Open Source Maintainer"
-sidebar_label: "Understanding Maintainership"
-keywords: ["how to start an open source project", "What is an Open Source Maintainer", "open source maintainer role", "open source maintainer responsibilities", "benefits of being an open source maintainer", "challenges of open source maintainers", "day in the life of an open source maintainer", "open source maintainers", "open source community and maintainers", "Open Source", "Open Source Community"]
+title: "ওপেন সোর্স মেইনটেইনারের ভূমিকা বোঝা"
+sidebar_label: "মেইনটেইনারশিপ বোঝা"
+keywords: ["কীভাবে ওপেন সোর্স প্রজেক্ট শুরু করবেন", "ওপেন সোর্স মেইনটেইনার কী", "ওপেন সোর্স মেইনটেইনারের ভূমিকা", "ওপেন সোর্স মেইনটেইনারের দায়িত্ব", "ওপেন সোর্স মেইনটেইনার হওয়ার সুবিধা", "ওপেন সোর্স মেইনটেইনারদের চ্যালেঞ্জ", "ওপেন সোর্স মেইনটেইনারের একটি দিন", "ওপেন সোর্স কমিউনিটি ও মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-Being an open source maintainer can be a very gratifying and rewarding experience. But a lot of work goes into maintaining an open source project. You will have many responsibilities as a maintainer, including being a contributor, leader, mentor, and community manager.
+ওপেন সোর্স মেইনটেইনার হওয়া অত্যন্ত তৃপ্তিদায়ক ও পুরস্কৃত একটি অভিজ্ঞতা হতে পারে। তবে একটি ওপেন সোর্স প্রজেক্ট রক্ষণাবেক্ষণে অনেক কাজ করতে হয়। মেইনটেইনার হিসেবে আপনার অনেক দায়িত্ব থাকবে। আপনি একই সাথে কন্ট্রিবিউটর, নেতা, মেন্টর এবং কমিউনিটি ম্যানেজার।
 
-This course will provide you with a comprehensive overview of how to start an open source project, including information on the maintainer's role, insights into daily tasks, long-term responsibilities, and the overall impact of a maintainer in an open source project.
+এই কোর্স আপনাকে ওপেন সোর্স প্রজেক্ট কীভাবে শুরু করতে হয়, তার একটি পূর্ণাঙ্গ ধারণা দেবে। এতে থাকবে মেইনটেইনারের ভূমিকা, প্রতিদিনের কাজ সম্পর্কে অন্তর্দৃষ্টি, দীর্ঘমেয়াদি দায়িত্ব এবং একটি ওপেন সোর্স প্রজেক্টে মেইনটেইনারের সার্বিক প্রভাব।
 
-## What is an Open Source Maintainer?
+## ওপেন সোর্স মেইনটেইনার কে?
 
-An open source maintainer is responsible for maintaining the health and success of a project. Maintainers help define the project's goals, work with other contributors, help build a community around the project, and uphold the project's quality standards.
+একজন ওপেন সোর্স মেইনটেইনার প্রজেক্টের সুস্থতা ও সাফল্য বজায় রাখার দায়িত্বে থাকেন। মেইনটেইনাররা প্রজেক্টের লক্ষ্য নির্ধারণে সাহায্য করেন, অন্য কন্ট্রিবিউটরদের সাথে কাজ করেন, প্রজেক্টকে ঘিরে কমিউনিটি গড়ে তুলতে সাহায্য করেন এবং প্রজেক্টের মানদণ্ড বজায় রাখেন।
 
-### A Guide and Feedback Provider
+### পথপ্রদর্শক ও মতামতদাতা
 
-Being able to work with contributors from all backgrounds is an important skill to develop as a maintainer. Some contributors will be seasoned developers who are interested in getting started with your project, while others will be new to open source and development in general. So, it would be best to communicate well with your contributors.
+সব পটভূমির কন্ট্রিবিউটরদের সাথে কাজ করতে পারা মেইনটেইনার হিসেবে গড়ে তোলার মতো একটি গুরুত্বপূর্ণ দক্ষতা। কিছু কন্ট্রিবিউটর হবেন অভিজ্ঞ ডেভেলপার, যাঁরা আপনার প্রজেক্টে কাজ শুরু করতে আগ্রহী। আবার কেউ কেউ ওপেন সোর্স এবং ডেভেলপমেন্টে একেবারেই নতুন। তাই কন্ট্রিবিউটরদের সাথে ভালোভাবে যোগাযোগ করাই সবচেয়ে ভালো।
 
-Working with contributors will include assisting them with any blockers they might have and providing constructive feedback so they can grow and strengthen their contributions to your project.
+কন্ট্রিবিউটরদের সাথে কাজ করার মধ্যে আছে তাঁদের যেকোনো বাধা কাটাতে সাহায্য করা এবং গঠনমূলক মতামত দেওয়া, যাতে তাঁরা আপনার প্রজেক্টে নিজেদের অবদান আরও বিকশিত ও শক্তিশালী করতে পারেন।
 
-### A Welcoming Community Nurturer
+### স্বাগতপূর্ণ কমিউনিটির লালনকারী
 
-Not all open source communities are welcoming and inclusive, which can deter people from wanting to participate in open source at all. So, you must consistently lead your community with kindness, patience, and understanding.
+সব ওপেন সোর্স কমিউনিটি স্বাগতপূর্ণ ও অন্তর্ভুক্তিমূলক নয়, আর এ কারণে অনেকে ওপেন সোর্সে অংশ নিতেই নিরুৎসাহিত হয়ে পড়েন। তাই আপনাকে সবসময় দয়া, ধৈর্য ও সহমর্মিতা নিয়ে আপনার কমিউনিটিকে নেতৃত্ব দিতে হবে।
 
-People are volunteering their time to contribute to your project with the intention of helping it grow. Setting a standard that your community is inclusive and helpful to everyone will trickle down to all community members and create a community that contributors will want to be a part of.
+মানুষ নিজেদের সময় স্বেচ্ছায় দিয়ে আপনার প্রজেক্টে অবদান রাখছেন, প্রজেক্টকে বড় করার উদ্দেশ্যেই। আপনার কমিউনিটি সবার প্রতি অন্তর্ভুক্তিমূলক ও সহায়ক হবে, এই মানদণ্ড ঠিক করে দিলে তা কমিউনিটির সব সদস্যের মধ্যে ছড়িয়ে পড়বে এবং এমন একটি কমিউনিটি গড়ে উঠবে, যার অংশ হতে কন্ট্রিবিউটররা আগ্রহী হবেন।
 
-### A Project Quality Assurance
+### প্রজেক্টের মান নিশ্চিতকারী
 
-One of the maintainer's responsibilities is to review and maintain the project to the existing quality standards. When you receive a pull request, you are responsible for ensuring that all of the tests are passing and the feature or fix is working as expected. It is also important to check and make sure that the new changes do not accidentally break something else in the project. Having a good testing suite and process will help with that.
+মেইনটেইনারের অন্যতম দায়িত্ব হলো প্রজেক্ট রিভিউ করা এবং বিদ্যমান মানদণ্ড অনুযায়ী তা রক্ষণাবেক্ষণ করা। আপনি যখন কোনো পুল রিকোয়েস্ট পাবেন, তখন সব টেস্ট পাস করছে কি না এবং ফিচার বা ফিক্সটি প্রত্যাশামতো কাজ করছে কি না, তা নিশ্চিত করার দায়িত্ব আপনার। নতুন পরিবর্তন যেন অসাবধানতাবশত প্রজেক্টের অন্য কিছু ভেঙে না ফেলে, সেটিও যাচাই করে দেখা জরুরি। ভালো একটি টেস্টিং স্যুট ও প্রক্রিয়া থাকলে এ কাজে সুবিধা হয়।
 
-## Maintainer Benefits
+## মেইনটেইনারের সুবিধা
 
-Being an open source maintainer has many benefits, including career, leadership, and personal growth.
+ওপেন সোর্স মেইনটেইনার হওয়ার অনেক সুবিধা আছে, যার মধ্যে রয়েছে ক্যারিয়ার, নেতৃত্ব এবং ব্যক্তিগত বিকাশ।
 
-### Personal and Professional Growth
+### ব্যক্তিগত ও পেশাগত বিকাশ
 
-As a maintainer, you are in a leadership position helping to guide contributors to success in contributing to your project. Leadership and mentorship skills are essential to develop and will help you grow professionally.
+মেইনটেইনার হিসেবে আপনি নেতৃত্বের অবস্থানে থাকেন, যেখানে আপনি কন্ট্রিবিউটরদের আপনার প্রজেক্টে সফলভাবে অবদান রাখতে পথ দেখান। নেতৃত্ব ও মেন্টরশিপের দক্ষতা গড়ে তোলা অত্যাবশ্যক এবং এটি আপনাকে পেশাগতভাবে বেড়ে উঠতে সাহায্য করবে।
 
-Being a maintainer also helps you grow your technical skills. You will be responsible for contributing, reviewing pull requests, writing technical articles about your project, and possibly giving technical talks at conferences.
+মেইনটেইনার হওয়া আপনার কারিগরি দক্ষতা বাড়াতেও সাহায্য করে। আপনাকে অবদান রাখতে হবে, পুল রিকোয়েস্ট রিভিউ করতে হবে, নিজের প্রজেক্ট নিয়ে কারিগরি প্রবন্ধ লিখতে হবে এবং সম্ভবত সম্মেলনে কারিগরি বক্তৃতাও দিতে হবে।
 
-### Networking Opportunities
+### নেটওয়ার্কিংয়ের সুযোগ
 
-Building relationships in the tech industry is a great way to connect with talented technologists worldwide and advance your career. By working with other contributors, you will get to learn from them, and they will get to see your leadership and technical abilities.
+প্রযুক্তি শিল্পে সম্পর্ক গড়ে তোলা বিশ্বজুড়ে প্রতিভাবান প্রযুক্তিবিদদের সাথে যুক্ত হওয়ার এবং ক্যারিয়ারে এগিয়ে যাওয়ার দারুণ একটি উপায়। অন্য কন্ট্রিবিউটরদের সাথে কাজ করে আপনি তাঁদের কাছ থেকে শিখতে পারবেন, আর তাঁরাও আপনার নেতৃত্ব ও কারিগরি সক্ষমতা দেখার সুযোগ পাবেন।
 
-There have been many instances where long-term open source relationships have become possible business ventures or future job opportunities. And if your project ends up being used by many people, you will be able to connect with a larger group of technologists.
+এমন অনেক উদাহরণ আছে, যেখানে ওপেন সোর্সের দীর্ঘমেয়াদি সম্পর্ক ব্যবসায়িক উদ্যোগ বা ভবিষ্যৎ চাকরির সুযোগে পরিণত হয়েছে। আর আপনার প্রজেক্ট অনেক মানুষ ব্যবহার করলে আপনি প্রযুক্তিবিদদের আরও বড় একটি গোষ্ঠীর সাথে যুক্ত হতে পারবেন।
 
-## Maintainer Challenges
+## মেইনটেইনারের চ্যালেঞ্জ
 
-While there are many benefits to being an open source maintainer, it can also be challenging. Here are a few challenges that maintainers face:
+ওপেন সোর্স মেইনটেইনার হওয়ার অনেক সুবিধা থাকলেও এটি চ্যালেঞ্জিংও হতে পারে। মেইনটেইনারদের সামনে আসে এমন কয়েকটি চ্যালেঞ্জ এখানে তুলে ধরা হলো:
 
-### Burnout
+### বার্নআউট
 
-Many open source maintainers have felt burned out by the sheer volume of work and responsibility it takes to maintain the project. Some have even gone as far as to walk away from the project when the work became too much to handle.
+অনেক ওপেন সোর্স মেইনটেইনার প্রজেক্ট রক্ষণাবেক্ষণের বিপুল কাজ ও দায়িত্বের চাপে বার্নআউট বা অবসন্নতা অনুভব করেছেন। কেউ কেউ তো কাজ সামলানো কঠিন হয়ে পড়লে প্রজেক্ট ছেড়েই দিয়েছেন।
 
-If you feel overwhelmed by the workload and getting close to burnout, it is time to get the right support for your project. Identify regular contributors in the community and reach out to them to see if they are interested in becoming a maintainer. Onboarding new team members will help offload some of your responsibilities and decrease your stress around the project.
+কাজের চাপে আপনি যদি হাঁপিয়ে ওঠেন এবং বার্নআউটের কাছাকাছি পৌঁছে যান, তাহলে আপনার প্রজেক্টের জন্য সঠিক সহায়তা জোগাড় করার সময় এসেছে। কমিউনিটির নিয়মিত কন্ট্রিবিউটরদের চিহ্নিত করুন এবং তাঁরা মেইনটেইনার হতে আগ্রহী কি না, তা জানতে যোগাযোগ করুন। নতুন দলের সদস্যদের অনবোর্ড করলে আপনার কিছু দায়িত্ব হালকা হবে এবং প্রজেক্ট নিয়ে আপনার মানসিক চাপ কমবে।
 
-When identifying possible new maintainers, look for contributors who have been invested in the project for some time and go above and beyond. Most contributors will be casual contributors to your project, which is fine. But there will be those who will regularly contribute and start to integrate more into the community. You will want to reach out to those individuals to recruit them to be a maintainer.
+সম্ভাব্য নতুন মেইনটেইনার খোঁজার সময় এমন কন্ট্রিবিউটরদের দিকে নজর দিন, যাঁরা অনেক দিন ধরে প্রজেক্টে নিবেদিত এবং যাঁরা প্রত্যাশার চেয়েও বেশি কিছু করেন। বেশিরভাগ কন্ট্রিবিউটরই হবেন মাঝেমধ্যে অবদান রাখা কন্ট্রিবিউটর এবং তাতে কোনো সমস্যা নেই। তবে কিছু মানুষ নিয়মিত অবদান রাখবেন এবং ধীরে ধীরে কমিউনিটির সাথে আরও বেশি মিশে যাবেন। মেইনটেইনার হিসেবে নিয়োগ দিতে এঁদের সাথেই আপনি যোগাযোগ করতে চাইবেন।
 
-### Dealing with Loneliness
+### একাকীত্ব মোকাবিলা
 
-Maintaining an open source project can be challenging and overwhelming, and it sometimes feels lonely and isolated. Most contributors will come and go, and you are still left to maintain the project alone or with a small group of people. However, it's essential for you not to go through this journey alone.
+একটি ওপেন সোর্স প্রজেক্ট রক্ষণাবেক্ষণ চ্যালেঞ্জিং ও ক্লান্তিকর হতে পারে, আর মাঝে মাঝে নিঃসঙ্গ ও বিচ্ছিন্নও লাগতে পারে। বেশিরভাগ কন্ট্রিবিউটর আসেন আর চলে যান, আর আপনি একা বা অল্প কয়েকজনের একটি দল নিয়ে প্রজেক্ট রক্ষণাবেক্ষণ করতে থাকেন। তবে এই যাত্রায় আপনি যেন একা না হয়ে পড়েন, সেটি জরুরি।
 
-Connecting with other maintainers from various open source projects is highly recommended so you can share your challenges, feelings, and experiences. Fellow maintainers can relate to the difficulties you are facing and offer suggestions on how to make your project and community better. By reaching out to others in similar situations, you can grow, learn from, and support each other.
+আপনার চ্যালেঞ্জ, অনুভূতি ও অভিজ্ঞতা ভাগ করে নিতে বিভিন্ন ওপেন সোর্স প্রজেক্টের অন্য মেইনটেইনারদের সাথে যোগাযোগ রাখা অত্যন্ত বাঞ্ছনীয়। সহ-মেইনটেইনাররা আপনার মুখোমুখি হওয়া কঠিন পরিস্থিতি ভালোভাবে বোঝেন এবং কীভাবে আপনার প্রজেক্ট ও কমিউনিটিকে আরও ভালো করা যায়, সে বিষয়ে পরামর্শ দিতে পারেন। একই ধরনের পরিস্থিতিতে থাকা মানুষদের কাছে পৌঁছে আপনারা একে অপরের কাছ থেকে শিখতে, একসাথে বেড়ে উঠতে এবং পরস্পরকে সহায়তা করতে পারেন।
 
-## Key Responsibilities and Expectations
+## মূল দায়িত্ব ও প্রত্যাশা
 
-The role of the maintainer is a multifaceted one. This section will discuss a few key responsibilities of an open source maintainer.
+মেইনটেইনারের ভূমিকা বহুমুখী। এই অংশে একজন ওপেন সোর্স মেইনটেইনারের কয়েকটি মূল দায়িত্ব নিয়ে আলোচনা করা হবে।
 
-### Triaging Issues
+### ইস্যু ট্রায়াজ
 
-Learning to triage issues is essential for any open source maintainer. This involves going through the existing list of open issues and prioritizing them in order of importance. Some open issues will be critical bug fixes, while others might be nice to have feature requests. Sometimes, you might have issues opened for things that are not a right fit for the project.
+যেকোনো ওপেন সোর্স মেইনটেইনারের জন্য ইস্যু ট্রায়াজ করা শেখা অপরিহার্য। এর মধ্যে আছে বিদ্যমান ওপেন ইস্যুর তালিকা দেখে গুরুত্ব অনুযায়ী সেগুলোকে অগ্রাধিকার দেওয়া। কিছু ওপেন ইস্যু হবে জরুরি বাগ ফিক্স, আবার কিছু হয়তো থাকলে ভালো এমন ফিচারের অনুরোধ। কখনো কখনো এমন বিষয়েও ইস্যু খোলা হতে পারে, যা প্রজেক্টের সাথে মানানসই নয়।
 
-### Reviewing Pull Requests
+### পুল রিকোয়েস্ট রিভিউ
 
-Reviewing pull requests is an important part of a maintainer's job. It is the maintainer's responsibility to ensure that the suggested code or documentation update meets the standards of the project and doesn't introduce any new issues for the project. You will also need to work with the contributor to unblock them on issues they have or help them resolve failing tests.
+পুল রিকোয়েস্ট রিভিউ করা মেইনটেইনারের কাজের একটি গুরুত্বপূর্ণ অংশ। প্রস্তাবিত কোড বা ডকুমেন্টেশন হালনাগাদ প্রজেক্টের মানদণ্ড পূরণ করছে কি না এবং প্রজেক্টে নতুন কোনো সমস্যা তৈরি করছে না, তা নিশ্চিত করা মেইনটেইনারের দায়িত্ব। কন্ট্রিবিউটরের কোনো সমস্যা থাকলে সেখান থেকে বেরিয়ে আসতে কিংবা ব্যর্থ টেস্ট ঠিক করতে সাহায্য করার জন্যও আপনাকে তাঁর সাথে কাজ করতে হবে।
 
-### Testing and Stability
+### টেস্টিং ও স্থিতিশীলতা
 
-A maintainer is responsible for making sure the application is working as expected. This will involve a combination of manual and automated testing.
+অ্যাপ্লিকেশনটি প্রত্যাশামতো কাজ করছে কি না, তা নিশ্চিত করার দায়িত্ব মেইনটেইনারের। এতে ম্যানুয়াল ও স্বয়ংক্রিয় টেস্টিংয়ের সমন্বয় থাকবে।
 
-For manual testing, you will want to set time aside once in a while to run through new or existing features like a regular user would. If there are any bugs or poor user experiences, you must document them and create an issue.
+ম্যানুয়াল টেস্টিংয়ের জন্য মাঝে মাঝে আলাদা সময় রাখবেন, যখন একজন সাধারণ ব্যবহারকারীর মতো নতুন ও বিদ্যমান ফিচারগুলো চালিয়ে দেখবেন। কোনো বাগ বা খারাপ ব্যবহারকারী অভিজ্ঞতা পেলে তা নথিবদ্ধ করে একটি ইস্যু তৈরি করতে হবে।
 
-For automated testing, you can set up an automated test suite that runs on every pull request and merges into the main branch. If the test suite fails, you can reach out to the contributor and help them debug the error. Good automated test suites can help catch bugs from going into production and breaking the application.
+স্বয়ংক্রিয় টেস্টিংয়ের জন্য আপনি এমন একটি অটোমেটেড টেস্ট স্যুট সেট করতে পারেন, যা প্রতিটি পুল রিকোয়েস্টে এবং প্রধান ব্রাঞ্চে মার্জ হওয়ার সময় চলবে। টেস্ট স্যুট ব্যর্থ হলে আপনি কন্ট্রিবিউটরের সাথে যোগাযোগ করে ত্রুটিটি ডিবাগ করতে তাঁকে সাহায্য করতে পারেন। ভালো অটোমেটেড টেস্ট স্যুট বাগকে প্রোডাকশনে পৌঁছে অ্যাপ্লিকেশন ভেঙে ফেলা থেকে আটকাতে সাহায্য করে।
 
-### Documentation
+### ডকুমেন্টেশন
 
-A good open source project will have a comprehensive set of documentation so all users will know how to run and maintain the project. In your project's README, you will want to have a basic overview of the project, along with how to set it up and how to contribute. As your project grows over time, you should keep your documentation up to date.
+একটি ভালো ওপেন সোর্স প্রজেক্টে পূর্ণাঙ্গ ডকুমেন্টেশন থাকে, যাতে সব ব্যবহারকারী জানতে পারেন প্রজেক্টটি কীভাবে চালাতে ও রক্ষণাবেক্ষণ করতে হয়। আপনার প্রজেক্টের README-তে প্রজেক্টের একটি মৌলিক পরিচিতি, সেটআপের নিয়ম এবং অবদান রাখার পদ্ধতি থাকা উচিত। সময়ের সাথে প্রজেক্ট বড় হলে আপনার ডকুমেন্টেশন হালনাগাদ রাখা উচিত।
 
-If you are maintaining a larger project, consider using documentation builders like [Docusaurus](https://docusaurus.io/), [Starlight](https://starlight.astro.build/), or [docsify](https://docsify.js.org/#/) to host your documentation. Documentation also includes writing tutorials, building diagrams, or creating in-depth guides for the project.
+আপনি যদি বড় কোনো প্রজেক্ট রক্ষণাবেক্ষণ করেন, তাহলে ডকুমেন্টেশন হোস্ট করতে [Docusaurus](https://docusaurus.io/), [Starlight](https://starlight.astro.build/) বা [docsify](https://docsify.js.org/#/)-এর মতো ডকুমেন্টেশন বিল্ডার ব্যবহার করার কথা ভাবতে পারেন। ডকুমেন্টেশনের মধ্যে টিউটোরিয়াল লেখা, ডায়াগ্রাম তৈরি করা কিংবা প্রজেক্টের জন্য গভীর গাইড বানানোও পড়ে।
 
-### Community Management
+### কমিউনিটি ম্যানেজমেন্ট
 
-A vital component of any open source project is its community. Building a strong community can help accelerate the growth of your open source project. As new contributors discover and start to contribute to your project, you will want to create spaces for communication and collaboration.
+যেকোনো ওপেন সোর্স প্রজেক্টের একটি অত্যাবশ্যক উপাদান হলো তার কমিউনিটি। শক্তিশালী কমিউনিটি গড়ে তুললে আপনার ওপেন সোর্স প্রজেক্টের বিকাশ দ্রুততর হতে পারে। নতুন কন্ট্রিবিউটররা আপনার প্রজেক্টের সন্ধান পেয়ে অবদান রাখা শুরু করলে আপনি যোগাযোগ ও সহযোগিতার জন্য জায়গা তৈরি করতে চাইবেন।
 
-If your project is on GitHub, you can use [GitHub Discussions](https://docs.github.com/en/discussions) as a way for contributors to post questions and facilitate conversations. Consider creating communities on Discord or Slack and holding office hours or other events like X Spaces to encourage engagement. At one point, as you grow your community, you will want to recruit moderators to help maintain the healthy environment you set up.
+আপনার প্রজেক্ট GitHub-এ থাকলে কন্ট্রিবিউটরদের প্রশ্ন করা এবং আলাপ-আলোচনা চালানোর জন্য [GitHub Discussions](https://docs.github.com/en/discussions) ব্যবহার করতে পারেন। Discord বা Slack-এ কমিউনিটি গড়ার কথা ভাবুন এবং অংশগ্রহণ বাড়াতে অফিস আওয়ার বা X Spaces-এর মতো অন্যান্য আয়োজন করুন। কমিউনিটি বড় হওয়ার একটি পর্যায়ে আপনি যে সুস্থ পরিবেশ গড়ে তুলেছেন তা বজায় রাখতে মডারেটর নিয়োগ দেওয়ার কথাও ভাবতে চাইবেন।
 
-The [next chapter](how-to-setup-your-project.md) will teach you how to set up an open source project.
+[পরবর্তী অধ্যায়ে](how-to-setup-your-project.md) আপনি শিখবেন একটি ওপেন সোর্স প্রজেক্ট কীভাবে সেটআপ করতে হয়।

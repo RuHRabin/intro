@@ -1,129 +1,129 @@
 ---
 id: glossary
-title: "Glossary"
-sidebar_label: "Glossary"
-keywords: ["glossary", "open source glossary", "glossary for open source maintainers", "open source maintainers", "Open Source", "Open Source Community"]
+title: "শব্দকোষ"
+sidebar_label: "শব্দকোষ"
+keywords: ["শব্দকোষ", "ওপেন সোর্স শব্দকোষ", "ওপেন সোর্স মেইনটেইনারদের জন্য শব্দকোষ", "ওপেন সোর্স মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-## API Documentation
+## এপিআই ডকুমেন্টেশন (API Documentation)
 
-API documentation is a technical document that explains how to use and work with an API. This manual contains all the information required to work with the API, including details on how to make requests, what data formats are supported, and what response codes are returned.
+এপিআই ডকুমেন্টেশন হলো একটি কারিগরি ডকুমেন্ট, যা একটি এপিআই কীভাবে ব্যবহার করতে হয় এবং তা নিয়ে কীভাবে কাজ করতে হয়, তা ব্যাখ্যা করে। এই ম্যানুয়ালে এপিআই নিয়ে কাজ করার জন্য প্রয়োজনীয় সব তথ্য থাকে, যার মধ্যে আছে কীভাবে রিকোয়েস্ট করতে হয়, কোন কোন ডেটা ফরম্যাট সমর্থিত এবং কোন রেসপন্স কোড ফেরত আসে, তার বিবরণ।
 
-Examples of API documentation include Swagger, RAML, and API Blueprint.
+এপিআই ডকুমেন্টেশনের উদাহরণ হলো Swagger, RAML এবং API Blueprint।
 
-## Backlog
+## ব্যাকলগ (Backlog)
 
-A backlog is a list of tasks that need to be completed within a project. Typically, these are tasks that are not yet assigned to a developer and are waiting to be worked on. Sometimes, these could be tasks that were opened weeks or months ago and are still waiting to be worked on.
+ব্যাকলগ হলো একটি প্রজেক্টের মধ্যে সম্পন্ন করতে হবে এমন কাজের তালিকা। সাধারণত এগুলো এমন কাজ, যা এখনো কোনো ডেভেলপারকে বরাদ্দ করা হয়নি এবং কাজ শুরুর অপেক্ষায় আছে। কখনো কখনো এগুলো হয়তো সপ্তাহ বা মাস আগে খোলা কাজ, যা এখনো শুরু হয়নি।
 
-## Code Freeze
+## কোড ফ্রিজ (Code Freeze)
 
-A code freeze is a period of time where no new code is added to a project. It is often used to prepare for a release and ensure that the code is stable and ready for production.
+কোড ফ্রিজ হলো এমন একটি সময়কাল, যখন প্রজেক্টে কোনো নতুন কোড যোগ করা হয় না। রিলিজের প্রস্তুতি নিতে এবং কোড স্থিতিশীল ও প্রোডাকশনের জন্য প্রস্তুত কি না তা নিশ্চিত করতে এটি প্রায়ই ব্যবহৃত হয়।
 
-## Code Review
+## কোড রিভিউ (Code Review)
 
-A code review is when a maintainer or contributor reviews the work of another contributor. This is a great way to ensure that the code is high quality and meets the standards of the project.
+কোড রিভিউ হলো যখন কোনো মেইনটেইনার বা কন্ট্রিবিউটর অন্য কন্ট্রিবিউটরের কাজ খতিয়ে দেখেন। কোডের মান উচ্চ এবং প্রজেক্টের মানদণ্ড পূরণ করছে কি না তা নিশ্চিত করার এটি একটি চমৎকার উপায়।
 
-## Containerization
+## কনটেইনারাইজেশন (Containerization)
 
-Containerization is a way of packaging and running applications. Instead of installing an app directly on your computer, you put it in a container that includes everything it needs to work. This container can then run on your computer alongside other containers. It's a way to organize and run multiple applications on the same machine, making it easier for developers to manage and scale their applications.
+কনটেইনারাইজেশন হলো অ্যাপ্লিকেশন প্যাকেজ করা ও চালানোর একটি পদ্ধতি। কোনো অ্যাপ সরাসরি আপনার কম্পিউটারে ইনস্টল করার বদলে সেটিকে একটি কনটেইনারে রাখা হয়, যেখানে অ্যাপটি চলার জন্য প্রয়োজনীয় সবকিছু থাকে। এরপর এই কনটেইনার আপনার কম্পিউটারে অন্য কনটেইনারের পাশাপাশি চলতে পারে। একই মেশিনে একাধিক অ্যাপ্লিকেশন সাজিয়ে চালানোর এটি একটি উপায়, যা ডেভেলপারদের জন্য নিজেদের অ্যাপ্লিকেশন পরিচালনা ও স্কেল করা সহজ করে।
 
-Examples of containerization tools include Docker and Kubernetes.
+কনটেইনারাইজেশন টুলের উদাহরণ হলো Docker এবং Kubernetes।
 
-## Continuous Integration (CI)
+## কন্টিনিউয়াস ইন্টিগ্রেশন (Continuous Integration, CI)
 
-Continuous integration (CI) is a development approach in which developers regularly merge code into a shared repository. For each change, an automated build and test process is run to detect errors as quickly as possible.
+কন্টিনিউয়াস ইন্টিগ্রেশন (CI) হলো এমন একটি ডেভেলপমেন্ট পদ্ধতি, যেখানে ডেভেলপাররা নিয়মিত কোড একটি শেয়ার্ড রিপোজিটরিতে মার্জ করেন। প্রতিটি পরিবর্তনের জন্য একটি স্বয়ংক্রিয় বিল্ড ও টেস্ট প্রক্রিয়া চালানো হয়, যাতে ত্রুটি যত দ্রুত সম্ভব শনাক্ত করা যায়।
 
-Examples of CI tools include Jenkins, CircleCI, and TravisCI.
+CI টুলের উদাহরণ হলো Jenkins, CircleCI এবং TravisCI।
 
-## Continuous Deployment (CD)
+## কন্টিনিউয়াস ডিপ্লয়মেন্ট (Continuous Deployment, CD)
 
-Continuous deployment (CD) is often associated with continuous integration (CI) and refers to keeping your application deployable at any point or even automatically releasing to production. CD means that every change which passes the automated tests is deployed to production automatically.
+কন্টিনিউয়াস ডিপ্লয়মেন্ট (CD) প্রায়ই কন্টিনিউয়াস ইন্টিগ্রেশন (CI)-এর সাথে যুক্ত। এর অর্থ হলো আপনার অ্যাপ্লিকেশনকে যেকোনো মুহূর্তে ডিপ্লয়যোগ্য রাখা, এমনকি স্বয়ংক্রিয়ভাবে প্রোডাকশনে রিলিজ করা। CD বলতে বোঝায়, স্বয়ংক্রিয় টেস্টে উত্তীর্ণ প্রতিটি পরিবর্তন স্বয়ংক্রিয়ভাবে প্রোডাকশনে ডিপ্লয় হয়ে যাবে।
 
-## Contributor
+## কন্ট্রিবিউটর (Contributor)
 
-A contributor is someone who contributes to a project by adding code, documentation, tests, or other resources.
+কন্ট্রিবিউটর হলেন এমন কেউ, যিনি কোড, ডকুমেন্টেশন, টেস্ট বা অন্যান্য রিসোর্স যোগ করে কোনো প্রজেক্টে অবদান রাখেন।
 
-## DevOps
+## ডেভঅপস (DevOps)
 
-DevOps is a combination of software development and IT operations. Examples of DevOps work include automating the deployment of software, monitoring the performance of deployed software, and managing the infrastructure that the software runs on.
+ডেভঅপস হলো সফটওয়্যার ডেভেলপমেন্ট ও আইটি অপারেশনসের সমন্বয়। ডেভঅপসের কাজের উদাহরণের মধ্যে আছে সফটওয়্যার ডিপ্লয়মেন্ট স্বয়ংক্রিয় করা, ডিপ্লয় করা সফটওয়্যারের পারফরম্যান্স পর্যবেক্ষণ করা এবং যে অবকাঠামোর ওপর সফটওয়্যার চলে তা পরিচালনা করা।
 
 ## Discord
 
-Discord is a voice, video, and text communication service. It is a great way to communicate with your team and keep everyone up to date on what is happening in your project.
+Discord হলো ভয়েস, ভিডিও ও টেক্সট যোগাযোগের একটি সেবা। আপনার দলের সাথে যোগাযোগ করতে এবং প্রজেক্টে কী ঘটছে সে বিষয়ে সবাইকে হালনাগাদ রাখতে এটি একটি দারুণ উপায়।
 
-You can also create a Discord community to connect with your contributors and have multiple channels for different topics related to the project.
+আপনি কন্ট্রিবিউটরদের সাথে যুক্ত হতে একটি Discord কমিউনিটিও তৈরি করতে পারেন এবং প্রজেক্ট-সংক্রান্ত ভিন্ন ভিন্ন বিষয়ের জন্য একাধিক চ্যানেল রাখতে পারেন।
 
 ## Docker
 
-Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package.
+Docker হলো এমন একটি টুল, যা কনটেইনার ব্যবহার করে অ্যাপ্লিকেশন তৈরি, ডিপ্লয় ও চালানো সহজ করার জন্য তৈরি। কনটেইনার ডেভেলপারকে একটি অ্যাপ্লিকেশনকে তার প্রয়োজনীয় সব অংশ, যেমন লাইব্রেরি ও অন্যান্য ডিপেন্ডেন্সিসহ একটি প্যাকেজ আকারে বেঁধে পাঠানোর সুযোগ দেয়।
 
-## Git Hooks
+## গিট হুকস (Git Hooks)
 
-Git hooks are scripts that run automatically every time a particular event occurs in a Git repository.
+গিট হুকস হলো এমন স্ক্রিপ্ট, যা Git রিপোজিটরিতে কোনো নির্দিষ্ট ঘটনা ঘটলেই স্বয়ংক্রিয়ভাবে চলে।
 
-Here are some common Git hooks:
+কিছু প্রচলিত গিট হুক:
 
-- `pre-commit` - Run before a commit is created
-- `pre-push` - Run before a push is executed
-- `post-commit` - Run after a commit is created
-- `post-merge` - Run after a merge is executed
+- `pre-commit` - কমিট তৈরি হওয়ার আগে চলে
+- `pre-push` - পুশ করার আগে চলে
+- `post-commit` - কমিট তৈরি হওয়ার পরে চলে
+- `post-merge` - মার্জ সম্পন্ন হওয়ার পরে চলে
 
 ## GitHub Actions
 
-GitHub Actions are a way to automate tasks within your software development life cycle. GitHub Actions are event-driven, meaning that you can run a series of commands after a specified event has occurred.
+GitHub Actions হলো আপনার সফটওয়্যার ডেভেলপমেন্ট লাইফ সাইকেলের মধ্যে বিভিন্ন কাজ স্বয়ংক্রিয় করার একটি উপায়। GitHub Actions ইভেন্ট-চালিত, অর্থাৎ কোনো নির্দিষ্ট ইভেন্ট ঘটার পর আপনি একগুচ্ছ কমান্ড চালাতে পারেন।
 
-Examples of GitHub Actions include running tests, deploying to production, and sending notifications.
+GitHub Actions-এর উদাহরণের মধ্যে আছে টেস্ট চালানো, প্রোডাকশনে ডিপ্লয় করা এবং নোটিফিকেশন পাঠানো।
 
 ## GitHub Discussions
 
-GitHub Discussions are a way to have conversations about your project directly on GitHub. They are a great way to discuss ideas, ask questions, and share knowledge with your community.
+GitHub Discussions হলো সরাসরি GitHub-এ আপনার প্রজেক্ট নিয়ে আলোচনা করার একটি উপায়। ভাবনা নিয়ে আলোচনা করতে, প্রশ্ন করতে এবং কমিউনিটির সাথে জ্ঞান ভাগ করে নিতে এটি চমৎকার।
 
-## Issue Template
+## ইস্যু টেমপ্লেট (Issue Template)
 
-An issue template is a file that contains a description of the issue you are creating. It is a great way to provide context to your issues and help developers understand what issues you are creating and why.
+ইস্যু টেমপ্লেট হলো এমন একটি ফাইল, যাতে আপনি যে ইস্যুটি তৈরি করছেন তার বর্ণনার কাঠামো দেওয়া থাকে। আপনার ইস্যুগুলোকে প্রেক্ষাপট দিতে এবং আপনি কোন ইস্যু কেন তৈরি করছেন, তা ডেভেলপারদের বুঝতে সাহায্য করার এটি একটি দারুণ উপায়।
 
-Examples of issue templates include bug reports, feature requests, and documentation updates.
+ইস্যু টেমপ্লেটের উদাহরণের মধ্যে আছে বাগ রিপোর্ট, ফিচারের অনুরোধ এবং ডকুমেন্টেশন হালনাগাদ।
 
-## Issue Tracker
+## ইস্যু ট্র্যাকার (Issue Tracker)
 
-An issue tracker is a software application used to track issues and bugs within a project. It is often used in conjunction with a version control system and is a great way to keep track of bugs, enhancements, and tasks for your projects.
+ইস্যু ট্র্যাকার হলো এমন একটি সফটওয়্যার অ্যাপ্লিকেশন, যা একটি প্রজেক্টের ইস্যু ও বাগ ট্র্যাক করতে ব্যবহৃত হয়। এটি প্রায়ই ভার্সন কন্ট্রোল সিস্টেমের সাথে একত্রে ব্যবহৃত হয় এবং আপনার প্রজেক্টের বাগ, উন্নয়ন ও কাজের হিসাব রাখার চমৎকার একটি উপায়।
 
-GitHub has a built-in issue tracker, but you can also use other tools such as Jira, Trello, and Asana.
+GitHub-এ অন্তর্নির্মিত একটি ইস্যু ট্র্যাকার আছে, তবে আপনি Jira, Trello ও Asana-র মতো অন্যান্য টুলও ব্যবহার করতে পারেন।
 
-## Linting
+## লিন্টিং (Linting)
 
-Linting is the process of running a program that analyzes code for potential errors. A popular linting tool is ESLint. You can set up an action to run ESLint against each pull request that comes in to check for potential errors before it makes it into production.
+লিন্টিং হলো এমন একটি প্রোগ্রাম চালানোর প্রক্রিয়া, যা সম্ভাব্য ত্রুটির জন্য কোড বিশ্লেষণ করে। একটি জনপ্রিয় লিন্টিং টুল হলো ESLint। আপনি এমন একটি অ্যাকশন সেট করতে পারেন, যা আসা প্রতিটি পুল রিকোয়েস্টের বিপরীতে ESLint চালিয়ে প্রোডাকশনে যাওয়ার আগেই সম্ভাব্য ত্রুটি যাচাই করবে।
 
-## Milestones
+## মাইলস্টোন (Milestones)
 
-Milestones are groups of issues that correspond to a project, feature, or time period. You can use milestones to track the progress of groups of issues that are tied to a larger goal.
+মাইলস্টোন হলো ইস্যুর এমন গুচ্ছ, যা কোনো প্রজেক্ট, ফিচার বা সময়কালের সাথে সম্পর্কিত। কোনো বড় লক্ষ্যের সাথে জড়িত ইস্যুগুলোর গুচ্ছের অগ্রগতি ট্র্যাক করতে আপনি মাইলস্টোন ব্যবহার করতে পারেন।
 
-## Prettier Code Formatting
+## Prettier কোড ফরম্যাটিং (Prettier Code Formatting)
 
-Prettier is an opinionated code formatter that enforces a consistent style for your codebase. You can customize your Prettier configuration to fit your project's needs and choose how you prefer semicolons, single quotes, trailing commas, and more to be formatted.
+Prettier হলো একটি নিজস্ব মতামতযুক্ত কোড ফরম্যাটার, যা আপনার কোডবেসে একই ধরনের স্টাইল বজায় রাখতে বাধ্য করে। আপনি আপনার প্রজেক্টের প্রয়োজন অনুযায়ী Prettier কনফিগারেশন কাস্টমাইজ করতে পারেন এবং সেমিকোলন, সিঙ্গেল কোট, ট্রেইলিং কমা ও আরও অনেক কিছু কীভাবে ফরম্যাট হবে, তা ঠিক করে দিতে পারেন।
 
-## Pull Request (PR) Template
+## পুল রিকোয়েস্ট (PR) টেমপ্লেট (Pull Request (PR) Template)
 
-A pull request template is a file that contains a description of the changes you are making to a project. It is a great way to provide context to your pull requests and help reviewers understand what changes you are making and why.
+পুল রিকোয়েস্ট টেমপ্লেট হলো এমন একটি ফাইল, যাতে আপনি প্রজেক্টে যে পরিবর্তনগুলো করছেন তার বর্ণনার কাঠামো দেওয়া থাকে। আপনার পুল রিকোয়েস্টগুলোকে প্রেক্ষাপট দিতে এবং আপনি কী পরিবর্তন কেন করছেন, তা রিভিউয়ারদের বুঝতে সাহায্য করার এটি একটি দারুণ উপায়।
 
-You can also create an action to respond to pull requests that don't follow your pull request template and urge the contributor to update their pull request.
+আপনি এমন একটি অ্যাকশনও তৈরি করতে পারেন, যা আপনার পুল রিকোয়েস্ট টেমপ্লেট অনুসরণ করে না এমন পুল রিকোয়েস্টে সাড়া দেবে এবং কন্ট্রিবিউটরকে তাঁর পুল রিকোয়েস্ট হালনাগাদ করতে তাগিদ দেবে।
 
-## Release Candidate
+## রিলিজ ক্যান্ডিডেট (Release Candidate)
 
-A release candidate is a beta version of software with the potential to be a final product. It is typically the last version before the final release.
+রিলিজ ক্যান্ডিডেট হলো সফটওয়্যারের একটি বিটা সংস্করণ, যেটি চূড়ান্ত পণ্য হওয়ার সম্ভাবনা রাখে। সাধারণত এটি চূড়ান্ত রিলিজের আগের শেষ সংস্করণ।
 
 ## Slack
 
-Slack is a cloud-based set of team collaboration tools and services. It is a great way to communicate with your team and keep everyone up to date on what is happening in your project.
+Slack হলো ক্লাউডভিত্তিক একগুচ্ছ দলগত সহযোগিতার টুল ও সেবা। আপনার দলের সাথে যোগাযোগ করতে এবং প্রজেক্টে কী ঘটছে সে বিষয়ে সবাইকে হালনাগাদ রাখতে এটি একটি দারুণ উপায়।
 
-## Scrum
+## স্ক্রাম (Scrum)
 
-Scrum is an agile framework for brainstorming, developing, and delivering products.
+স্ক্রাম হলো পণ্য নিয়ে ভাবনাচিন্তা, তৈরি ও সরবরাহ করার একটি অ্যাজাইল কাঠামো।
 
-## Technical Debt
+## টেকনিক্যাল ডেবট (Technical Debt)
 
-Technical debt is when a codebase has increased maintenance costs because of earlier decisions made during development.
+টেকনিক্যাল ডেবট বলতে বোঝায়, ডেভেলপমেন্টের সময় আগে নেওয়া কিছু সিদ্ধান্তের কারণে কোনো কোডবেসের রক্ষণাবেক্ষণ খরচ বেড়ে যাওয়া।
 
-## Versioning
+## ভার্সনিং (Versioning)
 
-Versioning is the process of assigning either unique version names or numbers to new releases of your project. Some versions are released as "major" versions, while others are released as "minor" versions.
+ভার্সনিং হলো আপনার প্রজেক্টের নতুন রিলিজগুলোতে অনন্য ভার্সনের নাম বা নম্বর বরাদ্দ করার প্রক্রিয়া। কিছু ভার্সন "মেজর" ভার্সন হিসেবে রিলিজ হয়, আর কিছু রিলিজ হয় "মাইনর" ভার্সন হিসেবে।

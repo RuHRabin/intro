@@ -1,25 +1,27 @@
-# Open Source Education Path
+# ওপেন সোর্স শিক্ষা পথ
 
-**Welcome to the intro repository!**
+**ইন্ট্রো রিপোজিটরিতে স্বাগতম!**
 
-This repository hosts comprehensive educational content for people who want to learn to contribute to open source projects and for those who want to become project maintainers.
+যাঁরা ওপেন সোর্স প্রজেক্টে অবদান রাখা শিখতে চান এবং যাঁরা প্রজেক্ট মেইনটেইনার হতে চান, তাঁদের জন্য এই রিপোজিটরিতে রয়েছে সুবিন্যস্ত শিক্ষামূলক কনটেন্ট।
 
-Head over to the **[Intro to Open Source Course](./docs/intro-to-oss/README.md)** or **[Becoming A Maintainer Course](./docs/becoming-a-maintainer/README.md)** on GitHub to start learning! Alternatively, visit our [Open Source Education Path website](https://opensauced.pizza/learn/#/).
+শেখা শুরু করতে GitHub-এ **[ওপেন সোর্স পরিচিতি কোর্স](./docs/intro-to-oss/README.md)** অথবা **[মেইনটেইনার হওয়ার পথে কোর্স](./docs/becoming-a-maintainer/README.md)**-এ যান। চাইলে আমাদের [ওপেন সোর্স শিক্ষা পথ ওয়েবসাইট](https://opensauced.pizza/learn/#/)-ও দেখতে পারেন।
 
-Check out the [Community Translations](./contributing/community-translations.md) for translations maintained by our community!
+কমিউনিটির রক্ষণাবেক্ষণ করা অন্যান্য অনুবাদ দেখতে [কমিউনিটি অনুবাদ](./contributing/community-translations.md) পাতাটি দেখুন!
 
-## **🤝 Contributing**
+## **🤝 অবদান রাখুন**
 
-We welcome contributions from everyone! All contributors are required to abide by our Code of Conduct.
+আমরা সবার অবদানকে স্বাগত জানাই! সব অবদানকারীকে আমাদের আচরণবিধি মেনে চলতে হবে।
 
-- For information on how to contribute to this repository, check out the [Contributing Guidelines](./contributing/CONTRIBUTING.md).
+- এই রিপোজিটরিতে কীভাবে অবদান রাখবেন, তা জানতে [অবদান রাখার নির্দেশিকা](./contributing/CONTRIBUTING.md) দেখুন।
 
-- To help with translating the courses, check out our [🌐 i18n Guidelines](./contributing/i18n-guidelines.md).
+- কোর্সগুলো অনুবাদে সাহায্য করতে আমাদের [🌐 i18n নির্দেশিকা](./contributing/i18n-guidelines.md) দেখুন।
 
-## **💬 Community**
+- এই অনুবাদ রিপোজিটরিতে কীভাবে অবদান রাখবেন, তা জানতে আমাদের [অনুবাদ অবদান নির্দেশিকা](./contributing/contributing-bn.md) দেখুন।
 
-Do you have questions or need help? Join our [Community](https://github.com/orgs/OpenSource-Communities/discussions/4).
+## **💬 কমিউনিটি**
 
-## **⚖️ LICENSE**
+কোনো প্রশ্ন আছে বা সাহায্য দরকার? আমাদের [কমিউনিটিতে](https://github.com/orgs/OpenSource-Communities/discussions/4) যোগ দিন।
+
+## **⚖️ লাইসেন্স**
 
 [![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)

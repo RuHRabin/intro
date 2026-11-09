@@ -64,36 +64,36 @@ const Sun = (props) => (
 const courses = [
   {
     id: "intro-to-oss",
-    title: "Intro to Open Source",
+    title: "ওপেন সোর্স পরিচিতি",
     url: "/docs/intro-to-oss",
     chapters: [
-      { id: "ch1", title: "What is Open Source?" },
-      { id: "ch2", title: "Understanding Open Source Licenses" },
-      { id: "ch3", title: "The Open Source Ecosystem" },
-      { id: "ch4", title: "Finding the Right Project" },
-      { id: "ch5", title: "Reading and Understanding Documentation" },
-      { id: "ch6", title: "Setting Up Your Development Environment" },
-      { id: "ch7", title: "Understanding Git and GitHub" },
-      { id: "ch8", title: "Making Your First Contribution" },
-      { id: "ch9", title: "Code Review Best Practices" },
-      { id: "ch10", title: "Building Your Open Source Portfolio" }
+      { id: "ch1", title: "ওপেন সোর্স কী?" },
+      { id: "ch2", title: "ওপেন সোর্স লাইসেন্স বোঝা" },
+      { id: "ch3", title: "ওপেন সোর্স ইকোসিস্টেম" },
+      { id: "ch4", title: "সঠিক প্রজেক্ট খুঁজে নেওয়া" },
+      { id: "ch5", title: "ডকুমেন্টেশন পড়া ও বোঝা" },
+      { id: "ch6", title: "আপনার ডেভেলপমেন্ট এনভায়রনমেন্ট সেটআপ করা" },
+      { id: "ch7", title: "Git ও GitHub বোঝা" },
+      { id: "ch8", title: "আপনার প্রথম অবদান রাখা" },
+      { id: "ch9", title: "কোড রিভিউয়ের সেরা চর্চা" },
+      { id: "ch10", title: "আপনার ওপেন সোর্স পোর্টফোলিও গড়ে তোলা" }
     ]
   },
   {
     id: "becoming-a-maintainer",
-    title: "Becoming a Maintainer",
+    title: "মেইনটেইনার হওয়ার পথে",
     url: "/docs/becoming-a-maintainer",
     chapters: [
-      { id: "ch1", title: "The Role and Responsibilities of a Maintainer" },
-      { id: "ch2", title: "Project Governance Models" },
-      { id: "ch3", title: "Managing Pull Requests and Issues" },
-      { id: "ch4", title: "Code Review as a Maintainer" },
-      { id: "ch5", title: "Building and Nurturing Community" },
-      { id: "ch6", title: "Handling Difficult Situations and Conflicts" },
-      { id: "ch7", title: "Release Management and Versioning" },
-      { id: "ch8", title: "Documentation and Communication" },
-      { id: "ch9", title: "Sustainability and Avoiding Burnout" },
-      { id: "ch10", title: "Growing and Onboarding New Maintainers" }
+      { id: "ch1", title: "মেইনটেইনারের ভূমিকা ও দায়িত্ব" },
+      { id: "ch2", title: "প্রজেক্ট গভর্নেন্স মডেল" },
+      { id: "ch3", title: "পুল রিকোয়েস্ট ও ইস্যু পরিচালনা" },
+      { id: "ch4", title: "মেইনটেইনার হিসেবে কোড রিভিউ" },
+      { id: "ch5", title: "কমিউনিটি গড়ে তোলা ও লালন করা" },
+      { id: "ch6", title: "কঠিন পরিস্থিতি ও দ্বন্দ্ব সামলানো" },
+      { id: "ch7", title: "রিলিজ ম্যানেজমেন্ট ও ভার্সনিং" },
+      { id: "ch8", title: "ডকুমেন্টেশন ও যোগাযোগ" },
+      { id: "ch9", title: "টেকসই কাজের ধারা ও বার্নআউট এড়ানো" },
+      { id: "ch10", title: "নতুন মেইনটেইনার তৈরি ও অনবোর্ডিং" }
     ]
   }
 ];
@@ -178,11 +178,11 @@ export default function CourseProgress() {
     <div className={clsx(styles.courseTracker, 'container')}>
       <div className={styles.sidebar}>
         <div className={styles.sidebarHeader}>
-          <h3>Course Progress</h3>
+          <h3>কোর্সের অগ্রগতি</h3>
           <button
             onClick={() => setDarkMode(!darkMode)}
             className={styles.themeToggle}
-            aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            aria-label={darkMode ? 'লাইট মোডে যান' : 'ডার্ক মোডে যান'}
           >
             {darkMode ? (
               <Sun className={styles.icon} />
@@ -241,7 +241,7 @@ export default function CourseProgress() {
 
         <div className={styles.progressSummary}>
           <div className={styles.progressText}>
-            {completedChapters.size} of {selectedCourse.chapters.length} completed
+            {selectedCourse.chapters.length}টির মধ্যে {completedChapters.size}টি সম্পন্ন
           </div>
           <div className={styles.progressBarContainer}>
             <div 
@@ -255,16 +255,16 @@ export default function CourseProgress() {
       <div className={styles.content}>
         <h1>{selectedCourse.title}</h1>
         <p className={styles.subtitle}>
-          Click on chapters in the sidebar to mark them as complete. 
-          Your progress is automatically saved in your browser.
+          সম্পন্ন চিহ্নিত করতে সাইডবারে অধ্যায়ের ওপর ক্লিক করুন।
+          আপনার অগ্রগতি স্বয়ংক্রিয়ভাবে আপনার ব্রাউজারে সংরক্ষিত হয়।
         </p>
 
         <div className={styles.progressCard}>
           <div className={styles.progressHeader}>
             <div>
-              <h3>Course Progress</h3>
+              <h3>কোর্সের অগ্রগতি</h3>
               <p>
-                {completedChapters.size} of {selectedCourse.chapters.length} chapters completed
+                {selectedCourse.chapters.length}টি অধ্যায়ের মধ্যে {completedChapters.size}টি সম্পন্ন
               </p>
             </div>
             <div className={styles.progressPercentage}>
@@ -280,30 +280,29 @@ export default function CourseProgress() {
         </div>
 
         <div className={styles.overview}>
-          <h2>Course Overview</h2>
+          <h2>কোর্সের সারসংক্ষেপ</h2>
           <p>
-            This is a progress tracker for the{' '}
+            এটি{' '}
             <a
               href={selectedCourse.url}
               className={styles.courseLink}
             >
               {selectedCourse.title}
             </a>{' '}
-            course. Use the sidebar to track your learning progress through each chapter.
+            কোর্সের অগ্রগতি ট্র্যাকার। প্রতিটি অধ্যায়ে আপনার শেখার অগ্রগতি দেখতে সাইডবার ব্যবহার করুন।
           </p>
 
-          <h3>How to Use</h3>
+          <h3>কীভাবে ব্যবহার করবেন</h3>
           <ul className={styles.featureList}>
-            <li>Click on any chapter in the sidebar to mark it as complete</li>
-            <li>A green checkmark will appear next to completed chapters</li>
-            <li>Your progress is saved automatically in your browser</li>
-            <li>Switch between courses using the buttons in the sidebar</li>
+            <li>সম্পন্ন চিহ্নিত করতে সাইডবারের যেকোনো অধ্যায়ে ক্লিক করুন</li>
+            <li>সম্পন্ন অধ্যায়ের পাশে সবুজ টিক চিহ্ন দেখা যাবে</li>
+            <li>আপনার অগ্রগতি স্বয়ংক্রিয়ভাবে ব্রাউজারে সংরক্ষিত হয়</li>
+            <li>সাইডবারের বোতাম দিয়ে এক কোর্স থেকে অন্য কোর্সে যান</li>
           </ul>
 
-          <h3>Chapters</h3>
+          <h3>অধ্যায়সমূহ</h3>
           <p>
-            This course contains {selectedCourse.chapters.length} chapters covering
-            essential topics. Work through them at your own pace and track your progress.
+            এই কোর্সে প্রয়োজনীয় বিষয়গুলো নিয়ে {selectedCourse.chapters.length}টি অধ্যায় রয়েছে। নিজের গতিতে অধ্যায়গুলো শেষ করুন এবং অগ্রগতির হিসাব রাখুন।
           </p>
         </div>
       </div>

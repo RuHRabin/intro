@@ -1,9 +1,15 @@
 ---
 id: issues-and-pull-requests
-title: "How to Handle Open Issues and Pull Requests"
-sidebar_label: "Managing Issues and Pull Requests"
+title: "ওপেন ইস্যু ও পুল রিকোয়েস্ট কীভাবে সামলাবেন"
+sidebar_label: "ইস্যু ও পুল রিকোয়েস্ট পরিচালনা"
 keywords: ["issues and pull requests", "how to handle issues and pull requests", "issues management in open source", "best practices for issue triage", "managing pull requests open source", "pull requests reviews", "showcasing contributor contributions", "handling security vulnerabilities in open source", "open source maintainers", "Open Source", "Open Source Community"]
 ---
+
+:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+
+এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+
+:::
 
 One of the core responsibilities of an open source maintainer is triaging open issues and reviewing pull requests. In this chapter, we will talk about how to best handle open issues, pull requests, and security vulnerabilities.
 

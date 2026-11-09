@@ -1,9 +1,15 @@
 ---
 id: communication-and-collaboration
-title: "How to Communicate and Collaborate Effectively"
-sidebar_label: "Effective Communication and Collaboration"
+title: "কার্যকরভাবে যোগাযোগ ও সহযোগিতা কীভাবে করবেন"
+sidebar_label: "কার্যকর যোগাযোগ ও সহযোগিতা"
 keywords: ["communication and collaboration", "effective communication and collaboration in open source", "open source community communication strategies", "managing communication in open source", "fostering collaboration in open source", "best practices for communication in open source communities", "using Discord/Slack/Github Discussions for open source communication", "how to handle conflicts in open source community", "open source maintainers", "Open Source", "Open Source Community"]
 ---
+
+:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+
+এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+
+:::
 
 Effective communication and collaboration with contributors are the keys to a thriving open source community. As maintainers, you want to smoothly onboard new contributors to your projects and build a welcoming community with open lines of communication between contributors and maintainers.
 

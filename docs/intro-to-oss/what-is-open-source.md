@@ -1,74 +1,74 @@
 ---
 id: what-is-open-source
-title: "What is Open Source?"
-sidebar_label: "What is Open Source"
-keywords: ["what is open source", "open source definition", "open source licenses explained", "open source history", "open source evolution", "Open Source", "Open Source Community", "open source software", "history of open source"]
+title: "ওপেন সোর্স কী?"
+sidebar_label: "ওপেন সোর্স কী"
+keywords: ["ওপেন সোর্স কী", "ওপেন সোর্সের সংজ্ঞা", "ওপেন সোর্স লাইসেন্স", "ওপেন সোর্সের ইতিহাস", "ওপেন সোর্সের বিবর্তন", "what is open source", "Open Source", "Open Source Community", "ওপেন সোর্স সফটওয়্যার"]
 ---
 
-In this chapter, we'll explore the history of open source and what it means. Before contributing to a project, you should understand what open source is and the principles behind it to help you appreciate the context in which you'll be collaborating and contributing.
+এই অধ্যায়ে আমরা ওপেন সোর্সের ইতিহাস এবং এর অর্থ নিয়ে আলোচনা করব। কোনো প্রজেক্টে অবদান রাখার আগে ওপেন সোর্স কী এবং এর পেছনের মূলনীতিগুলো কী, তা বুঝে নেওয়া জরুরি। এতে আপনি যে প্রেক্ষাপটে কাজ ও অবদান রাখতে যাচ্ছেন, সেটি ভালোভাবে উপলব্ধি করতে পারবেন।
 
-## Definition
+## সংজ্ঞা
 
-Open source refers to software whose source code is made available to the public, allowing anyone to view, use, modify, and distribute the code. This is in contrast to proprietary software, where the source code is kept secret and only the compiled program is distributed. The core principle behind open source is the idea of collaboration and the belief that sharing knowledge and resources leads to better, more reliable, and more innovative software.
+ওপেন সোর্স বলতে এমন সফটওয়্যারকে বোঝায়, যার সোর্স কোড সবার জন্য উন্মুক্ত। অর্থাৎ যে কেউ সেই কোড দেখতে, ব্যবহার করতে, পরিবর্তন করতে এবং বিতরণ করতে পারে। এর বিপরীত হলো প্রোপ্রাইটারি (মালিকানাধীন) সফটওয়্যার, যেখানে সোর্স কোড গোপন রাখা হয় এবং শুধু কম্পাইল করা প্রোগ্রামটি বিতরণ করা হয়। ওপেন সোর্সের মূল নীতি হলো সহযোগিতা এবং এই বিশ্বাস যে জ্ঞান ও সম্পদ ভাগ করে নিলে আরও ভালো, আরও নির্ভরযোগ্য ও আরও উদ্ভাবনী সফটওয়্যার তৈরি হয়।
 
-Open source software is built on the premise that when many people work together, they can create something greater than the sum of its parts. Contributors to open source projects come from diverse backgrounds and bring a wide range of skills, experiences, and perspectives to the table. This diversity of thought and expertise leads to more robust, innovative, and reliable software.
+ওপেন সোর্স সফটওয়্যার এই ধারণার ওপর দাঁড়িয়ে আছে যে অনেক মানুষ একসাথে কাজ করলে তারা এমন কিছু গড়ে তুলতে পারে, যা প্রত্যেকের একক অবদানের যোগফলের চেয়েও বড়। ওপেন সোর্স প্রজেক্টের কন্ট্রিবিউটররা আসেন নানা পটভূমি থেকে এবং সঙ্গে নিয়ে আসেন বিচিত্র দক্ষতা, অভিজ্ঞতা ও দৃষ্টিভঙ্গি। চিন্তা ও দক্ষতার এই বৈচিত্র্যই আরও মজবুত, উদ্ভাবনী ও নির্ভরযোগ্য সফটওয়্যার তৈরি করে।
 
-### Open Source Licenses
+### ওপেন সোর্স লাইসেন্স
 
-For software to be considered open source, it must be released under a license that grants users the right to access, modify, and distribute the source code. There are numerous open source license types, each with its own set of terms and conditions. Some popular open source licenses include the MIT License, the GNU General Public License (GPL), and the Apache License.
+কোনো সফটওয়্যারকে ওপেন সোর্স বলা হতে হলে সেটি এমন একটি লাইসেন্সের অধীনে প্রকাশিত হতে হয়, যা ব্যবহারকারীকে সোর্স কোড দেখা, পরিবর্তন করা ও বিতরণ করার অধিকার দেয়। ওপেন সোর্স লাইসেন্সের অনেক ধরন আছে এবং প্রতিটির শর্ত ও নিয়ম আলাদা। জনপ্রিয় কিছু ওপেন সোর্স লাইসেন্স হলো MIT লাইসেন্স, GNU জেনারেল পাবলিক লাইসেন্স (GPL) এবং Apache লাইসেন্স।
 
-These open source licenses are crucial because they ensure that the software remains open and accessible to everyone. By granting users the right to view, modify, and distribute the code, open source licenses promote a culture of collaboration, innovation, and shared knowledge.
+এই লাইসেন্সগুলো গুরুত্বপূর্ণ, কারণ এগুলো নিশ্চিত করে যে সফটওয়্যারটি সবার জন্য উন্মুক্ত ও সহজলভ্য থাকবে। কোড দেখা, পরিবর্তন করা ও বিতরণ করার অধিকার দিয়ে ওপেন সোর্স লাইসেন্স সহযোগিতা, উদ্ভাবন ও জ্ঞান ভাগ করে নেওয়ার সংস্কৃতিকে উৎসাহিত করে।
 
-## Brief History of Open Source
+## ওপেন সোর্সের সংক্ষিপ্ত ইতিহাস
 
-The history of open source dates back to the early days of computing, when software was freely shared among researchers and developers.
+ওপেন সোর্সের ইতিহাস কম্পিউটিংয়ের একেবারে শুরুর দিনগুলো পর্যন্ত বিস্তৃত, যখন গবেষক ও ডেভেলপারদের মধ্যে সফটওয়্যার অবাধে আদান-প্রদান হতো।
 
-### Early Beginnings
+### একেবারে শুরুর দিকে
 
-In the 1950s and 1960s, computer software was often bundled with hardware, and source code was freely shared among researchers and developers. During this time, it was common for programmers to collaborate, share ideas, and modify each other's code to improve and innovate.
+১৯৫০ ও ১৯৬০-এর দশকে কম্পিউটার সফটওয়্যার প্রায়ই হার্ডওয়্যারের সাথে একত্রে দেওয়া হতো এবং গবেষক ও ডেভেলপারদের মধ্যে সোর্স কোড অবাধে ভাগ করে নেওয়া হতো। তখন প্রোগ্রামারদের একসাথে কাজ করা, ভাবনার আদান-প্রদান করা এবং একে অপরের কোড বদলে উন্নত ও নতুন কিছু করা ছিল খুবই স্বাভাবিক।
 
-However, in the 1970s and 1980s, as the software industry began to grow and commercialize, companies started to view software as a valuable asset and began to restrict access to source code. This shift marked the beginning of the divide between proprietary software and the emerging open source movement.
+তবে ১৯৭০ ও ১৯৮০-এর দশকে সফটওয়্যার শিল্প যখন বড় হতে এবং বাণিজ্যিক রূপ নিতে শুরু করল, তখন কোম্পানিগুলো সফটওয়্যারকে মূল্যবান সম্পদ হিসেবে দেখতে শুরু করে এবং সোর্স কোডে প্রবেশাধিকার সীমিত করতে থাকে। এই পরিবর্তনই প্রোপ্রাইটারি সফটওয়্যার এবং উদীয়মান ওপেন সোর্স আন্দোলনের মধ্যে বিভাজনের সূচনা করে।
 
-### The Birth of Free Software
+### ফ্রি সফটওয়্যারের জন্ম
 
-In response to the growing restrictions on software access and distribution, computer scientist Richard Stallman founded the Free Software Foundation (FSF) in 1985. The FSF's goal was to promote the development and use of free software, which they defined as software that grants users the freedom to run, study, share, and modify the code. This concept is similar to open source but places a greater emphasis on the ethical and political aspects of software freedom.
+সফটওয়্যারের ব্যবহার ও বিতরণে ক্রমবর্ধমান বিধিনিষেধের প্রতিক্রিয়ায় কম্পিউটার বিজ্ঞানী রিচার্ড স্টলম্যান ১৯৮৫ সালে ফ্রি সফটওয়্যার ফাউন্ডেশন (FSF) প্রতিষ্ঠা করেন। FSF-এর লক্ষ্য ছিল ফ্রি সফটওয়্যারের উন্নয়ন ও ব্যবহারকে উৎসাহিত করা। তাদের সংজ্ঞায় ফ্রি সফটওয়্যার হলো এমন সফটওয়্যার, যা ব্যবহারকারীকে কোড চালানো, অধ্যয়ন করা, ভাগ করা ও পরিবর্তন করার স্বাধীনতা দেয়। ধারণাটি ওপেন সোর্সের মতোই, তবে এতে সফটওয়্যার-স্বাধীনতার নৈতিক ও রাজনৈতিক দিকটির ওপর বেশি জোর দেওয়া হয়।
 
-Stallman and the FSF went on to develop the GNU Project (which stands for "GNU's Not Unix"), an ambitious effort to create a completely free and open operating system. While the GNU Project provided many essential components, it was missing a critical piece: a free and open kernel, the core component of an operating system.
+স্টলম্যান ও FSF এরপর GNU প্রজেক্ট (যার পূর্ণরূপ "GNU's Not Unix") গড়ে তোলেন। এটি ছিল সম্পূর্ণ ফ্রি ও উন্মুক্ত একটি অপারেটিং সিস্টেম তৈরির উচ্চাকাঙ্ক্ষী প্রচেষ্টা। GNU প্রজেক্ট অনেক গুরুত্বপূর্ণ উপাদান তৈরি করলেও একটি অপরিহার্য অংশ তখনও অনুপস্থিত ছিল: একটি ফ্রি ও উন্মুক্ত কার্নেল, যা অপারেটিং সিস্টেমের মূল উপাদান।
 
-### The Arrival of Linux
+### লিনাক্সের আগমন
 
-In 1991, a Finnish computer science student named Linus Torvalds developed a free and open source kernel called Linux. When combined with the GNU system, Linux formed a complete, free, and open source operating system that is still widely used today. The success of Linux helped to popularize the concept of open source and sparked a wave of new projects, tools, and technologies.
+১৯৯১ সালে ফিনল্যান্ডের কম্পিউটার বিজ্ঞানের শিক্ষার্থী লিনাস টরভাল্ডস লিনাক্স নামে একটি ফ্রি ও ওপেন সোর্স কার্নেল তৈরি করেন। GNU সিস্টেমের সাথে যুক্ত হয়ে লিনাক্স একটি সম্পূর্ণ, ফ্রি ও ওপেন সোর্স অপারেটিং সিস্টেম গড়ে তোলে, যা আজও ব্যাপকভাবে ব্যবহৃত হয়। লিনাক্সের সাফল্য ওপেন সোর্সের ধারণাকে জনপ্রিয় করে তোলে এবং নতুন নতুন প্রজেক্ট, টুল ও প্রযুক্তির জোয়ার সৃষ্টি করে।
 
-### The Open Source Initiative
+### ওপেন সোর্স ইনিশিয়েটিভ
 
-In 1998, Christine Peterson, an Executive Director at Foresight, coined the term "open source software" as a [deliberate effort to make this field...more understandable to newcomers and to business[es]](https://opensource.com/article/18/2/coining-term-open-source-software). She, alongside Eric S. Raymond, Bruce Perens, and other developers and advocates, then created The Open Source Initiative (OSI) to spread more awareness about this concept. From there, the OSI developed the definition of open source, a set of criteria that software must meet to be considered open source. These criteria include free distribution, source code availability, derived works, and license integrity.
+১৯৯৮ সালে ফোরসাইটের নির্বাহী পরিচালক ক্রিস্টিন পিটারসন "ওপেন সোর্স সফটওয়্যার" শব্দবন্ধটি চালু করেন, [এই ক্ষেত্রটিকে নতুনদের কাছে এবং ব্যবসায়ী মহলের কাছে আরও বোধগম্য করে তোলার একটি সচেতন প্রচেষ্টা](https://opensource.com/article/18/2/coining-term-open-source-software) হিসেবে। এরপর তিনি এরিক এস. রেমন্ড, ব্রুস পেরেন্স এবং আরও কয়েকজন ডেভেলপার ও প্রচারকের সাথে মিলে এই ধারণা সম্পর্কে সচেতনতা ছড়াতে ওপেন সোর্স ইনিশিয়েটিভ (OSI) গঠন করেন। এরপর OSI ওপেন সোর্সের সংজ্ঞা তৈরি করে, যা কয়েকটি মানদণ্ড নির্ধারণ করে। কোনো সফটওয়্যারকে ওপেন সোর্স হতে হলে এই মানদণ্ডগুলো পূরণ করতে হয়। এগুলোর মধ্যে রয়েছে অবাধ বিতরণ, সোর্স কোডের প্রাপ্যতা, ডেরিভেটিভ কাজের অনুমতি এবং লাইসেন্সের অখণ্ডতা।
 
-The OSI's efforts to promote open source led to a surge of interest and adoption by both individuals and organizations. Today, open source software is widely used across various industries, and many well-known technology companies, such as Google, IBM, and Microsoft, actively support and contribute to open source projects.
+ওপেন সোর্সকে জনপ্রিয় করতে OSI-এর প্রচেষ্টার ফলে ব্যক্তি ও প্রতিষ্ঠান, উভয়ের মধ্যেই আগ্রহ ও গ্রহণযোগ্যতা বহুগুণ বেড়ে যায়। বর্তমানে নানা শিল্পে ওপেন সোর্স সফটওয়্যারের ব্যাপক ব্যবহার হয় এবং Google, IBM ও Microsoft-এর মতো অনেক নামী প্রযুক্তি প্রতিষ্ঠান সক্রিয়ভাবে ওপেন সোর্স প্রজেক্টে সহায়তা ও অবদান রাখে।
 
-### The Growth of Open Source Communities
+### ওপেন সোর্স কমিউনিটির বিকাশ
 
-As the open source movement gained momentum, numerous communities and platforms emerged to facilitate collaboration and knowledge sharing. Some notable examples include:
+ওপেন সোর্স আন্দোলন গতি পাওয়ার সাথে সাথে সহযোগিতা ও জ্ঞান ভাগাভাগিকে সহজ করতে অনেক কমিউনিটি ও প্ল্যাটফর্ম গড়ে ওঠে। উল্লেখযোগ্য কয়েকটি উদাহরণ:
 
-- **SourceForge**: Launched in 1999, SourceForge was one of the first web-based platforms to provide tools and resources for developers to collaborate on open source projects. At its peak, SourceForge hosted thousands of projects and attracted millions of users.
-- **GitHub**: Founded in 2008, GitHub quickly became the go-to platform for hosting and collaborating on Git repositories. Today, GitHub is home to millions of open source projects and boasts a vibrant community of contributors from around the world.
-- **GitLab**: Launched in 2011 as an open source alternative to GitHub, GitLab offers a suite of tools and features for managing Git repositories, tracking issues, and facilitating collaboration.
+- **SourceForge**: ১৯৯৯ সালে চালু হওয়া SourceForge ছিল প্রথম দিককার ওয়েবভিত্তিক প্ল্যাটফর্মগুলোর একটি, যা ডেভেলপারদের ওপেন সোর্স প্রজেক্টে একসাথে কাজ করার টুল ও সম্পদ জোগাত। সবচেয়ে জনপ্রিয় সময়ে SourceForge-এ হাজার হাজার প্রজেক্ট হোস্ট হতো এবং লাখ লাখ ব্যবহারকারী যুক্ত ছিলেন।
+- **GitHub**: ২০০৮ সালে প্রতিষ্ঠিত GitHub খুব দ্রুত Git রিপোজিটরি হোস্ট করা ও সেখানে সহযোগিতা করার প্রধান প্ল্যাটফর্ম হয়ে ওঠে। আজ GitHub লাখ লাখ ওপেন সোর্স প্রজেক্টের ঠিকানা এবং বিশ্বজুড়ে ছড়িয়ে থাকা কন্ট্রিবিউটরদের একটি প্রাণবন্ত কমিউনিটির আবাসস্থল।
+- **GitLab**: ২০১১ সালে GitHub-এর ওপেন সোর্স বিকল্প হিসেবে চালু হওয়া GitLab Git রিপোজিটরি পরিচালনা, ইস্যু ট্র্যাকিং এবং সহযোগিতা সহজ করার জন্য একগুচ্ছ টুল ও ফিচার দেয়।
 
-These platforms have played a crucial role in fostering the growth of open source communities and making it easier for developers to contribute to and collaborate on projects.
+এই প্ল্যাটফর্মগুলো ওপেন সোর্স কমিউনিটির বিকাশে এবং ডেভেলপারদের জন্য প্রজেক্টে অবদান রাখা ও একসাথে কাজ করা সহজ করে তুলতে গুরুত্বপূর্ণ ভূমিকা রেখেছে।
 
-### The Rise of Corporate Involvement
+### কর্পোরেট অংশগ্রহণের উত্থান
 
-In recent years, there has been a significant increase in corporate involvement in open source projects. Many companies now recognize the value of open source and actively contribute to and support various projects. Some companies have even gone so far as to open source their own internal tools and technologies, such as [Google's TensorFlow](https://opensource.google/projects/tensorflow) and [Facebook's React](https://opensource.fb.com/projects/react/).
+সাম্প্রতিক বছরগুলোয় ওপেন সোর্স প্রজেক্টে কর্পোরেট অংশগ্রহণ উল্লেখযোগ্যভাবে বেড়েছে। এখন অনেক কোম্পানি ওপেন সোর্সের মূল্য বোঝে এবং বিভিন্ন প্রজেক্টে সক্রিয়ভাবে অবদান রাখে ও সহায়তা করে। কিছু কোম্পানি তো নিজেদের অভ্যন্তরীণ টুল ও প্রযুক্তিও ওপেন সোর্স করে দিয়েছে, যেমন [Google-এর TensorFlow](https://opensource.google/projects/tensorflow) এবং [Facebook-এর React](https://opensource.fb.com/projects/react/)।
 
-This increased corporate involvement has not only led to more resources and support for open source projects but has also helped to legitimize the open source movement and encourage wider adoption.
+কর্পোরেট অংশগ্রহণ বাড়ায় ওপেন সোর্স প্রজেক্টগুলো যেমন আরও সম্পদ ও সহায়তা পেয়েছে, তেমনি এটি ওপেন সোর্স আন্দোলনকে বৈধতা দিতে এবং এর ব্যাপক গ্রহণযোগ্যতা বাড়াতেও সাহায্য করেছে।
 
-## The Evolution of Open Source
+## ওপেন সোর্সের বিবর্তন
 
-The open source movement has come a long way since its early beginnings. Today, open source software is everywhere, powering everything from websites and mobile apps to artificial intelligence and machine learning algorithms.
+ওপেন সোর্স আন্দোলন শুরুর দিনগুলো থেকে অনেক দূর এগিয়ে এসেছে। আজ ওয়েবসাইট ও মোবাইল অ্যাপ থেকে শুরু করে আর্টিফিশিয়াল ইন্টেলিজেন্স ও মেশিন লার্নিং অ্যালগরিদম পর্যন্ত সবকিছুর পেছনে রয়েছে ওপেন সোর্স সফটওয়্যার।
 
-As open source continues to evolve, new projects, tools, and technologies are constantly emerging, pushing the boundaries of what's possible and driving innovation across a wide range of industries.
+ওপেন সোর্স যত বিকশিত হচ্ছে, ততই নতুন নতুন প্রজেক্ট, টুল ও প্রযুক্তি সামনে আসছে। এগুলো সম্ভাবনার সীমা ঠেলে দিচ্ছে এবং নানা শিল্পে উদ্ভাবনের গতি বাড়াচ্ছে।
 
-The growing popularity of open source has also led to a thriving ecosystem of conferences, meetups, and online communities where developers can come together to learn, collaborate, and share their knowledge. By participating in these events and engaging with the open source community, you'll have the opportunity to expand your skills, build your network, and stay up-to-date with the latest developments in the field.
+ওপেন সোর্সের ক্রমবর্ধমান জনপ্রিয়তা সম্মেলন, মিটআপ ও অনলাইন কমিউনিটির একটি সমৃদ্ধ ইকোসিস্টেমও গড়ে তুলেছে, যেখানে ডেভেলপাররা একসাথে শিখতে, সহযোগিতা করতে এবং নিজেদের জ্ঞান ভাগ করে নিতে পারেন। এসব আয়োজনে অংশ নিয়ে এবং ওপেন সোর্স কমিউনিটির সাথে যুক্ত হয়ে আপনি নিজের দক্ষতা বাড়াতে, নেটওয়ার্ক গড়তে এবং এই ক্ষেত্রের সর্বশেষ অগ্রগতি সম্পর্কে হালনাগাদ থাকতে পারবেন।
 
-The history of open source software shows us how collective efforts can produce reliable, innovative, and widely adopted technologies.
+ওপেন সোর্স সফটওয়্যারের ইতিহাস দেখায়, সম্মিলিত প্রচেষ্টায় কীভাবে নির্ভরযোগ্য, উদ্ভাবনী ও ব্যাপকভাবে গৃহীত প্রযুক্তি তৈরি হতে পারে।
 
-In the [next chapter](why-open-source.md), we'll explore the many benefits of contributing to open source projects and discuss how open source collaboration can help you access knowledge, connect with a community, and develop valuable skills.
+[পরবর্তী অধ্যায়ে](why-open-source.md) আমরা ওপেন সোর্স প্রজেক্টে অবদান রাখার নানা সুবিধা নিয়ে আলোচনা করব এবং দেখব, ওপেন সোর্সের সহযোগিতা কীভাবে আপনাকে জ্ঞানের নাগাল পেতে, কমিউনিটির সাথে যুক্ত হতে এবং মূল্যবান দক্ষতা গড়ে তুলতে সাহায্য করতে পারে।

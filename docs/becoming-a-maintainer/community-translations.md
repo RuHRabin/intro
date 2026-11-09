@@ -1,20 +1,20 @@
 ---
 id: community-translations
-title: "Community Course Translations"
-sidebar_label: "Community Translations"
-keywords: ["community translations", "Open Source", "Open Source Community"]
+title: "কমিউনিটি কোর্স অনুবাদ"
+sidebar_label: "কমিউনিটি অনুবাদ"
+keywords: ["কমিউনিটি অনুবাদ", "Open Source", "Open Source Community"]
 ---
 
-We are grateful for the contributions of the community in translating our courses. Although the OpenSauced team does not currently maintain these projects, we want to share the forked copy of the repositories with those taking the course. Below, you will find the latest community translations.
+আমাদের কোর্সগুলো অনুবাদে কমিউনিটির অবদানের জন্য আমরা কৃতজ্ঞ। OpenSauced টিম বর্তমানে এই প্রজেক্টগুলো রক্ষণাবেক্ষণ করে না, তবে কোর্স করছেন এমন সবার সাথে আমরা রিপোজিটরিগুলোর ফর্ক করা কপি ভাগ করে নিতে চাই। নিচে আপনি কমিউনিটির সর্বশেষ অনুবাদগুলো পাবেন।
 
-## Intro to Open Source Course
+## ওপেন সোর্স পরিচিতি কোর্স
 
 <!-- Use the format below to list your repository -->
 <!--
 - [Language](link to your forked repository) - maintained by [GitHub username](link to your GitHub profile)
 -->
 
-## Becoming a Maintainer Course
+## মেইনটেইনার হওয়ার পথে কোর্স
 
 <!-- Use the format below to list your repository -->
 <!--

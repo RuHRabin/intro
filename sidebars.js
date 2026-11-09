@@ -7,7 +7,7 @@ const sidebars = {
     introToOSS: [
       {
         type: 'category',
-        label: 'Intro to Open Source',
+        label: 'ওপেন সোর্স পরিচিতি',
         items: [
           'intro-to-oss/Contributor-README',
           'intro-to-oss/what-is-open-source',
@@ -26,7 +26,7 @@ const sidebars = {
     becomingAMaintainer: [
       {
         type: 'category',
-        label: 'Becoming a Maintainer',
+        label: 'মেইনটেইনার হওয়ার পথে',
         items: [
           'becoming-a-maintainer/Maintainer-README',
           'becoming-a-maintainer/intro',

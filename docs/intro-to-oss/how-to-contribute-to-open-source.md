@@ -1,7 +1,7 @@
 ---
 id: how-to-contribute-to-open-source
-title: "How to Contribute to Open Source"
-sidebar_label: "How to Contribute to Open Source"
+title: "ওপেন সোর্সে কীভাবে অবদান রাখবেন"
+sidebar_label: "ওপেন সোর্সে কীভাবে অবদান রাখবেন"
 keywords:
   [
     "how to contribute to open source",
@@ -24,6 +24,12 @@ keywords:
     "Open Source Community",
   ]
 ---
+
+:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+
+এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+
+:::
 
 In this chapter, we'll guide you through the process of how to contribute to open source.
 

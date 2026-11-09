@@ -1,9 +1,15 @@
 ---
 id: maintaining-code-quality
-title: "How to Maintain Code Quality and Documentation"
-sidebar_label: "Maintaining Code Quality and Documentation"
+title: "কোডের মান ও ডকুমেন্টেশন কীভাবে বজায় রাখবেন"
+sidebar_label: "কোডের মান ও ডকুমেন্টেশন বজায় রাখা"
 keywords: ["maintaining code quality", "maintaining code quality of open source projects", "maintaining documentation", "maintaining open source project documentation", "code reviews best practices", "ensuring high-quality contributions in open source", "open source maintainers", "Open Source", "Open Source Community"]
 ---
+
+:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+
+এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+
+:::
 
 Maintaining a project with high code quality and up-to-date documentation is important. This helps contributors understand the project and makes it easier for them to contribute.
 

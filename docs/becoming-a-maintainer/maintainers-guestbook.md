@@ -1,13 +1,13 @@
 ---
 id: maintainers-guestbook
-title: "Maintainers Guestbook"
-sidebar_label: "Maintainers Guestbook"
-keywords: ["maintainers guestbook", "list of new open source projects", "Becoming A Maintainer Course", "open source maintainers", "Open Source", "Open Source Community"]
+title: "মেইনটেইনারদের অতিথি-খাতা"
+sidebar_label: "মেইনটেইনারদের অতিথি-খাতা"
+keywords: ["মেইনটেইনারদের অতিথি-খাতা", "নতুন ওপেন সোর্স প্রজেক্টের তালিকা", "মেইনটেইনার হওয়ার পথে কোর্স", "ওপেন সোর্স মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-Congratulations on finishing the Becoming a Maintainer Course with OpenSauced. Welcome to our Maintainers Guestbook, where you can share your first project with us!
+OpenSauced-এর সাথে মেইনটেইনার হওয়ার পথে কোর্স শেষ করার জন্য অভিনন্দন। আমাদের মেইনটেইনারদের অতিথি-খাতায় আপনাকে স্বাগতম, যেখানে আপনি আপনার প্রথম প্রজেক্ট আমাদের সাথে ভাগ করে নিতে পারেন!
 
-## Projects List
+## প্রজেক্টের তালিকা
 
 <!-- Use below format to list your repository -->
 <!--

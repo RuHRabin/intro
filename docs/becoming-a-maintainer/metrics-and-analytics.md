@@ -1,9 +1,15 @@
 ---
 id: metrics-and-analytics
-title: "The Power of Open Source Metrics and Analytics for New Maintainers"
-sidebar_label: "The Power of Metrics and Analytics"
+title: "নতুন মেইনটেইনারদের জন্য ওপেন সোর্স মেট্রিক্স ও অ্যানালিটিক্সের শক্তি"
+sidebar_label: "মেট্রিক্স ও অ্যানালিটিক্সের শক্তি"
 keywords: ["metrics and analytics for open source maintainers", "understanding types of metrics in open source", "setting open source project goals", "understanding and interpreting open source project data", "making open source project data-driven decisions with OpenSauced", "Workspace OpenSauced", "Repository Insights Page OpenSauced", "Contributor Insight Page OpenSauced", "open source maintainers", "Open Source", "Open Source metrics"]
 ---
+
+:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+
+এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+
+:::
 
 Understanding what's happening with your project and contributors as it grows can be challenging for new maintainers. Think of open source metrics and analytics as a compass and map in your maintainer journey. Understanding metrics for open source projects and your own project can help you set goals, identify project needs, and understand your community. This chapter will guide you through understanding, leveraging, and making decisions based on these insights to create a thriving open source project.
 

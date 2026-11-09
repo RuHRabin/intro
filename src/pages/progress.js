@@ -6,14 +6,14 @@ import styles from './progress.module.css';
 export default function ProgressPage() {
   return (
     <Layout
-      title="My Learning Progress"
-      description="Track your progress through the Open Source courses"
+      title="আমার শেখার অগ্রগতি"
+      description="ওপেন সোর্স কোর্সগুলোতে আপনার অগ্রগতির হিসাব রাখুন"
     >
       <main className={styles.progressPage}>
         <div className="container">
-          <h1>My Learning Progress</h1>
+          <h1>আমার শেখার অগ্রগতি</h1>
           <p className={styles.subtitle}>
-            Track your progress through our Open Source courses. Your progress is saved in your browser.
+            আমাদের ওপেন সোর্স কোর্সগুলোতে আপনার অগ্রগতির হিসাব রাখুন। আপনার অগ্রগতি আপনার ব্রাউজারে সংরক্ষিত থাকে।
           </p>
           <CourseProgress />
         </div>

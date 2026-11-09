@@ -1,9 +1,15 @@
 ---
 id: the-secret-sauce
-title: "The Secret Sauce"
-sidebar_label: "The Secret Sauce"
+title: "সিক্রেট সস"
+sidebar_label: "সিক্রেট সস"
 keywords: ["open source secret sauce", "how to make a lasting impact in open source", "open source resume builder", "building open source resume", "finding issues in open source", "addressing issues in open source", "gaining recognition in open source", "building a strong open source profile", "becoming a valuable contributor to open source projects", "tips for building a strong reputation in open source", "effectively highlight open source contributions", "open source contribution", "open source contribution for beginners", "Open Source", "Open Source Community"]
 ---
+
+:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+
+এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+
+:::
 
 In this chapter, we'll share some lesser-known strategies and tips for making a lasting impact in the open source community. We'll discuss how to focus on open issues, gain traction in your contributions, and develop your open source resume.
 

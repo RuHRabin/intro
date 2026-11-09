@@ -1,87 +1,87 @@
 ---
 id: Contributor-README
-title: "Intro to Open Source with OpenSauced"
-sidebar_label: "Intro to Open Source"
-keywords: ["README", "Intro to Open Source with OpenSauced", "open source course", "open source course for beginners", "contributing to open source course", "contributing to open source course for beginners", "open source contributors", "Open Source", "Open Source Community"]
+title: "OpenSauced-এর সাথে ওপেন সোর্স পরিচিতি"
+sidebar_label: "ওপেন সোর্স পরিচিতি"
+keywords: ["README", "OpenSauced-এর সাথে ওপেন সোর্স পরিচিতি", "ওপেন সোর্স কোর্স", "নতুনদের জন্য ওপেন সোর্স কোর্স", "ওপেন সোর্সে অবদান রাখার কোর্স", "নতুনদের জন্য ওপেন সোর্সে অবদান রাখার কোর্স", "ওপেন সোর্স কন্ট্রিবিউটর", "Open Source", "Open Source Community"]
 ---
 
-Welcome to the Intro to Open Source Course with OpenSauced! This course is designed to provide you with an introduction to open source and guide you through the process of contributing to open source projects.
+OpenSauced-এর সাথে ওপেন সোর্স পরিচিতি কোর্সে আপনাকে স্বাগতম! এই কোর্সের লক্ষ্য আপনাকে ওপেন সোর্সের সাথে পরিচয় করিয়ে দেওয়া এবং ওপেন সোর্স প্রজেক্টে অবদান রাখার পুরো প্রক্রিয়ায় আপনাকে পথ দেখানো।
 
-## Prerequisites
+## পূর্বশর্ত
 
-Before diving into the world of open source, it's essential to have a basic understanding of programming concepts and some experience working with code. While the course will provide examples and demos, you'll get the most out of the material if you have some prior knowledge.
+ওপেন সোর্সের জগতে ঢোকার আগে প্রোগ্রামিংয়ের মৌলিক ধারণা এবং কোড নিয়ে কিছুটা কাজের অভিজ্ঞতা থাকা জরুরি। কোর্সে উদাহরণ ও ডেমো থাকলেও আপনার আগে থেকে কিছু জানা থাকলে আপনি কোর্স থেকে সবচেয়ে বেশি উপকার পাবেন।
 
-Additionally, this course assumes that you are familiar with Git and GitHub. Git is a widely-used version control system, and GitHub is a popular platform for hosting and collaborating on Git repositories. If you're not already familiar with Git and GitHub, we recommend taking some time to learn the basics before starting this course.
+এছাড়া এই কোর্স ধরে নেয় যে আপনি Git ও GitHub সম্পর্কে পরিচিত। Git হলো বহুল ব্যবহৃত একটি ভার্সন কন্ট্রোল সিস্টেম, আর GitHub হলো Git রিপোজিটরি হোস্ট করা ও সেখানে একসাথে কাজ করার জন্য একটি জনপ্রিয় প্ল্যাটফর্ম। আপনি যদি Git ও GitHub-এর সাথে এখনো পরিচিত না হন, তাহলে এই কোর্স শুরুর আগে এর মূল বিষয়গুলো শিখে নেওয়ার জন্য কিছুটা সময় দিন।
 
-## Course Overview
+## কোর্সের সারসংক্ষেপ
 
-The course is divided into chapters, each covering a different aspect of open source:
+কোর্সটি কয়েকটি অধ্যায়ে বিভক্ত, যার প্রতিটি ওপেন সোর্সের ভিন্ন ভিন্ন দিক নিয়ে আলোচনা করে:
 
-### [What is Open Source?](what-is-open-source.md)
+### [ওপেন সোর্স কী?](what-is-open-source.md)
 
-This chapter provides an introduction to open source, its history, and its importance in today's software development landscape.
+এই অধ্যায়ে ওপেন সোর্সের পরিচিতি, এর ইতিহাস এবং আজকের সফটওয়্যার ডেভেলপমেন্ট জগতে এর গুরুত্ব তুলে ধরা হয়েছে।
 
-### [Why Open Source?](why-open-source.md)
+### [কেন ওপেন সোর্স?](why-open-source.md)
 
-In this chapter, you'll learn about the benefits of open source software, such as increased collaboration, faster development, and improved quality.
+এই অধ্যায়ে আপনি ওপেন সোর্স সফটওয়্যারের সুবিধা সম্পর্কে জানবেন, যেমন বাড়তি সহযোগিতা, দ্রুততর ডেভেলপমেন্ট এবং উন্নত মান।
 
-### [Tools to be Successful](tools-to-be-successful.md)
+### [সফল হওয়ার টুলসমূহ](tools-to-be-successful.md)
 
-Discover the key tools and platforms necessary for a successful journey in open source development. From Git and GitHub for version control and collaboration to CodeSee for code visualization and VS Code as your code editor, this chapter provides an overview of how to leverage these essential tools.
+ওপেন সোর্স ডেভেলপমেন্টে সফল যাত্রার জন্য প্রয়োজনীয় মূল টুল ও প্ল্যাটফর্মগুলো সম্পর্কে জানুন। ভার্সন কন্ট্রোল ও সহযোগিতার জন্য Git ও GitHub থেকে শুরু করে কোড ভিজ্যুয়ালাইজেশনের জন্য CodeSee এবং কোড এডিটর হিসেবে VS Code পর্যন্ত, এই অপরিহার্য টুলগুলো কীভাবে কাজে লাগাবেন, তার একটি সার্বিক ধারণা এই অধ্যায়ে পাবেন।
 
-### [How to Contribute to Open Source](how-to-contribute-to-open-source.md)
+### [ওপেন সোর্সে কীভাবে অবদান রাখবেন](how-to-contribute-to-open-source.md)
 
-This chapter covers finding projects to work on, submitting contributions, onboarding contributors to new projects, and the outcomes after submitting contributions. Tips for finding projects include browsing GitHub and GitLab, following personal interests, joining open source communities, and utilizing platforms like OpenSauced.
+এই অধ্যায়ে আলোচনা করা হয়েছে কাজ করার মতো প্রজেক্ট খুঁজে নেওয়া, অবদান জমা দেওয়া, নতুন প্রজেক্টে কন্ট্রিবিউটরদের অনবোর্ডিং এবং অবদান জমা দেওয়ার পর কী ঘটে, সেসব বিষয়ে। প্রজেক্ট খোঁজার টিপসের মধ্যে আছে GitHub ও GitLab ঘেঁটে দেখা, ব্যক্তিগত আগ্রহ অনুসরণ করা, ওপেন সোর্স কমিউনিটিতে যোগ দেওয়া এবং OpenSauced-এর মতো প্ল্যাটফর্ম ব্যবহার করা।
 
-### [The Secret Sauce](the-secret-sauce.md)
+### [সিক্রেট সস](the-secret-sauce.md)
 
-This chapter focuses on providing lesser-known strategies and tips for making a lasting impact in the open source community. This chapter provides strategies for finding issues, gaining traction in your open source journey, and leveraging OpenSauced to build your open source resume.
+এই অধ্যায়ে ওপেন সোর্স কমিউনিটিতে স্থায়ী প্রভাব রাখতে তুলনামূলক কম পরিচিত কিছু কৌশল ও টিপস দেওয়া হয়েছে। ইস্যু খুঁজে পাওয়া, ওপেন সোর্স যাত্রায় গতি আনা এবং OpenSauced ব্যবহার করে নিজের ওপেন সোর্স রিজিউমি গড়ে তোলার কৌশলগুলো এখানে পাবেন।
 
-### [Types of Open Source Contributions](types-of-contributions.md)
+### [ওপেন সোর্স অবদানের ধরন](types-of-contributions.md)
 
-This chapter explains the non-coding and coding types of contributions involved with open source projects.
+এই অধ্যায়ে ওপেন সোর্স প্রজেক্টের সাথে জড়িত নন-কোডিং ও কোডিং অবদানের ধরনগুলো ব্যাখ্যা করা হয়েছে।
 
-### Additional Information
+### অতিরিক্ত তথ্য
 
-As this is the beginning of your open source journey, we've also provided additional information in these chapters:
+যেহেতু এটি আপনার ওপেন সোর্স যাত্রার শুরু, তাই আমরা নিচের অধ্যায়গুলোতে কিছু অতিরিক্ত তথ্যও দিয়েছি:
 
-- [Glossary](glossary.md): A glossary of common terms and definitions used in open source.
-- [Additional Resources](additional-resources.md): A list of resources for further learning about open source, including blog posts, tutorials, and guides.
+- [শব্দকোষ](glossary.md): ওপেন সোর্সে ব্যবহৃত প্রচলিত শব্দ ও তাদের সংজ্ঞার একটি তালিকা।
+- [অতিরিক্ত রিসোর্স](additional-resources.md): ওপেন সোর্স সম্পর্কে আরও শেখার জন্য ব্লগ পোস্ট, টিউটোরিয়াল ও গাইডসহ রিসোর্সের একটি তালিকা।
 
-## Let's Get Started 🚀
+## চলুন শুরু করি 🚀
 
-Now that we've set the stage, it's time to embark on your open source journey! In the [next chapter](what-is-open-source.md), we'll dive into the definition of open source and explore its history, laying the groundwork for a deeper understanding of open source collaboration. Let's get started!
+ভূমিকা তো হলো, এবার আপনার ওপেন সোর্স যাত্রা শুরুর পালা! [পরবর্তী অধ্যায়ে](what-is-open-source.md) আমরা ওপেন সোর্সের সংজ্ঞা নিয়ে আলোচনা করব এবং এর ইতিহাস ঘুরে দেখব। এতে ওপেন সোর্স সহযোগিতা আরও গভীরভাবে বোঝার ভিত্তি তৈরি হবে। চলুন শুরু করা যাক!
 
 :::tip
 
-Each chapter builds on the previous one, so we recommend reading them in order.
+প্রতিটি অধ্যায় আগের অধ্যায়ের ওপর ভিত্তি করে সাজানো, তাই অধ্যায়গুলো ক্রমানুসারে পড়ার পরামর্শ রইল।
 
 :::
 
-As you work through the course, we encourage you to experiment with the tools and concepts covered in each chapter. The best way to learn is by doing, so try contributing to an open source project or building your project from scratch!
+কোর্স এগিয়ে নেওয়ার সময় প্রতিটি অধ্যায়ে আলোচিত টুল ও ধারণা নিয়ে নিজে হাতে-কলমে পরীক্ষা করে দেখার জন্য আমরা আপনাকে উৎসাহিত করি। করে শেখাই সবচেয়ে ভালো শেখা, তাই কোনো ওপেন সোর্স প্রজেক্টে অবদান রেখে দেখুন, কিংবা নিজের একটি প্রজেক্ট গোড়া থেকে বানিয়ে ফেলুন!
 
-## Building Your Open Source Resume
+## আপনার ওপেন সোর্স রিজিউমি তৈরি
 
-One of the unique features of this course is that it guides you to build your open source resume. You'll learn how to showcase your contributions using tools like Contributor.info, GitHub profile READMEs, blog posts, and social media—making it easier to get noticed by potential employers and collaborators.
+এই কোর্সের অন্যতম বিশেষ বৈশিষ্ট্য হলো, এটি আপনাকে নিজের ওপেন সোর্স রিজিউমি তৈরি করতে সাহায্য করে। Contributor.info, GitHub প্রোফাইল README, ব্লগ পোস্ট ও সোশ্যাল মিডিয়ার মতো টুল ব্যবহার করে কীভাবে নিজের অবদান তুলে ধরবেন, তা আপনি শিখবেন। এতে সম্ভাব্য নিয়োগকর্তা ও সহযোগীদের নজরে পড়া সহজ হবে।
 
-To learn more about building your open source resume, check out the "[Building Your Open Source Resume](the-secret-sauce.md#building-your-open-source-resume)" section in "The Secret Sauce" chapter.
+ওপেন সোর্স রিজিউমি তৈরি সম্পর্কে আরও জানতে "সিক্রেট সস" অধ্যায়ের "[আপনার ওপেন সোর্স রিজিউমি তৈরি](the-secret-sauce.md#building-your-open-source-resume)" অংশটি দেখুন।
 
-## Expectations
+## প্রত্যাশা
 
-This course is designed to provide you with a solid foundation in open source collaboration. While we'll cover a range of topics and provide examples, demos, and opportunities for hands-on practice, it's essential to have realistic expectations about what you can achieve during the course.
+এই কোর্সের উদ্দেশ্য ওপেন সোর্স সহযোগিতার ক্ষেত্রে আপনাকে একটি শক্ত ভিত্তি দেওয়া। আমরা নানা বিষয় আলোচনা করব এবং উদাহরণ, ডেমো ও হাতে-কলমে অনুশীলনের সুযোগ দেব। তবে কোর্স চলাকালে আপনি কতটা অর্জন করতে পারবেন, সে বিষয়ে বাস্তবসম্মত প্রত্যাশা রাখা জরুরি।
 
-1. **Practice is crucial**: Learning about open source is just the beginning; to truly develop your skills and become a proficient contributor, you'll need to practice consistently. Keep in mind that the more you contribute to open source projects, the more you'll learn and grow as a developer.
+1. **অনুশীলনই মূল চাবিকাঠি**: ওপেন সোর্স সম্পর্কে জানা কেবল শুরু। সত্যিকারের দক্ষতা অর্জন করে দক্ষ কন্ট্রিবিউটর হয়ে উঠতে হলে নিয়মিত অনুশীলন করতে হবে। মনে রাখবেন, ওপেন সোর্স প্রজেক্টে যত বেশি অবদান রাখবেন, ডেভেলপার হিসেবে তত বেশি শিখবেন ও বেড়ে উঠবেন।
 
-2. **Patience is key**: Becoming proficient in open source collaboration takes time and effort. Don't be discouraged if you encounter challenges along the way; remember that every contribution, no matter how small, is valuable and helps improve the project.
+2. **ধৈর্যই সফলতার সোপান**: ওপেন সোর্স সহযোগিতায় দক্ষ হয়ে উঠতে সময় ও পরিশ্রম লাগে। পথে চ্যালেঞ্জের মুখে পড়লে হতাশ হবেন না। মনে রাখবেন, প্রতিটি অবদান, তা যত ছোটই হোক, মূল্যবান এবং প্রজেক্টকে উন্নত করতে সাহায্য করে।
 
-3. **Engagement with the community**: Open source is more than just code; it's about the people who collaborate and contribute to projects. Engage with the community by asking questions, sharing your knowledge, and supporting others. Building relationships with other contributors will enhance your open source experience and help you grow as a developer.
+3. **কমিউনিটির সাথে সম্পৃক্ততা**: ওপেন সোর্স শুধু কোডের বিষয় নয়, এটি সেই মানুষদের বিষয়ও, যাঁরা প্রজেক্টে একসাথে কাজ করেন ও অবদান রাখেন। প্রশ্ন করে, নিজের জ্ঞান ভাগ করে এবং অন্যদের সহায়তা করে কমিউনিটির সাথে যুক্ত হোন। অন্য কন্ট্রিবিউটরদের সাথে সম্পর্ক গড়ে তুললে আপনার ওপেন সোর্স অভিজ্ঞতা সমৃদ্ধ হবে এবং ডেভেলপার হিসেবে বেড়ে উঠতে সাহায্য করবে।
 
-4. **Continuous learning**: Open source is a rapidly evolving field, with new projects, tools, and technologies emerging all the time. Stay curious and open to learning, and take advantage of resources like documentation, tutorials, and community forums to expand your knowledge and stay up-to-date with the latest developments.
+4. **নিরন্তর শেখা**: ওপেন সোর্স দ্রুত বিকাশমান একটি ক্ষেত্র, যেখানে সবসময়ই নতুন নতুন প্রজেক্ট, টুল ও প্রযুক্তি আসছে। কৌতূহলী থাকুন, নতুন কিছু শেখার জন্য মনকে খোলা রাখুন এবং জ্ঞান বাড়াতে ও সর্বশেষ অগ্রগতির সাথে তাল মেলাতে ডকুমেন্টেশন, টিউটোরিয়াল ও কমিউনিটি ফোরামের মতো রিসোর্স কাজে লাগান।
 
-5. **Developing a growth mindset**: Embrace the challenges and opportunities that come with open source collaboration. Adopt a growth mindset, which focuses on learning, improvement, and resilience. By viewing obstacles as opportunities for growth, you'll be better equipped to navigate the complex world of open source and achieve success in your contributions.
+5. **গ্রোথ মাইন্ডসেট গড়ে তোলা**: ওপেন সোর্স সহযোগিতার সাথে আসা চ্যালেঞ্জ ও সুযোগগুলোকে আলিঙ্গন করুন। শেখা, উন্নতি ও স্থিতিস্থাপকতার ওপর জোর দেয় এমন গ্রোথ মাইন্ডসেট গড়ে তুলুন। বাধাকে বেড়ে ওঠার সুযোগ হিসেবে দেখলে আপনি ওপেন সোর্সের জটিল জগতে আরও সহজে পথ চলতে এবং অবদানে সফল হতে পারবেন।
 
 ---
 
-We hope you find this course informative and useful! If you have any questions or feedback, please don't hesitate to open an issue or reach out to us in the [Community](https://github.com/orgs/open-sauced/discussions).
+আমরা আশা করি, এই কোর্সটি আপনার কাছে তথ্যসমৃদ্ধ ও উপকারী মনে হবে! কোনো প্রশ্ন বা মতামত থাকলে অনুগ্রহ করে নির্দ্বিধায় একটি ইস্যু খুলুন, অথবা [কমিউনিটিতে](https://github.com/orgs/open-sauced/discussions) আমাদের সাথে যোগাযোগ করুন।
 
-Happy learning and contributing!
+শুভ শেখা ও অবদান রাখা!

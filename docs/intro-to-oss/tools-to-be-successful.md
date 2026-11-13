@@ -2,137 +2,131 @@
 id: tools-to-be-successful
 title: "সফল হওয়ার টুলসমূহ"
 sidebar_label: "সফল হওয়ার টুলসমূহ"
-keywords: ["tools to be successful", "tools to contribute to open source projects", "Github & Git", "GitHub", "Git", "Getting Started with Git and GitHub", "Git tutorial", "VS Code", "VS Code and Git tutorial", "VS Code benefits", "contributing to open source with VS Code", "Discord", "Discord benefits when contributing to open source projects", "contributing to open source", "Open Source", "Open Source Community"]
+keywords: ["সফল হওয়ার টুলসমূহ", "ওপেন সোর্স প্রজেক্টে অবদান রাখার টুল", "GitHub ও Git", "GitHub", "Git", "Git ও GitHub দিয়ে শুরু করা", "Git টিউটোরিয়াল", "VS Code", "VS Code ও Git টিউটোরিয়াল", "VS Code-এর সুবিধা", "VS Code দিয়ে ওপেন সোর্সে অবদান", "Discord", "ওপেন সোর্স প্রজেক্টে অবদানের সময় Discord-এর সুবিধা", "ওপেন সোর্সে অবদান", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+ওপেন সোর্স যাত্রায় সফল হতে হলে কমিউনিটিতে সচরাচর ব্যবহৃত টুল ও প্ল্যাটফর্মগুলোর সাথে পরিচিত হওয়া জরুরি। এই টুলগুলো আপনাকে কার্যকরভাবে সহযোগিতা করতে, প্রজেক্ট পরিচালনা করতে এবং ওপেন সোর্স প্রজেক্টে অবদান রাখতে সাহায্য করবে। এই অধ্যায়ে আমরা ওপেন সোর্স সহযোগিতার জন্য নিচের অপরিহার্য টুলগুলো নিয়ে আলোচনা করব:
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
-
-:::
-
-To be successful in your open source journey, it's essential to familiarize yourself with the tools and platforms commonly used by the community. These tools will help you collaborate effectively, manage your projects, and contribute to open source projects. In this chapter, we'll discuss the following essential tools for open source collaboration:
-
-- GitHub & Git
+- GitHub ও Git
 - Visual Studio Code (VS Code)
 - Discord
 
-## Prerequisites
+## পূর্বশর্ত
 
-Before completing the following walkthrough, complete the following:
+নিচের ধাপে ধাপে নির্দেশনা অনুসরণ করার আগে এগুলো সম্পন্ন করে নিন:
 
-- Create a [GitHub account](https://github.com/)
-- Download [VS Code](https://code.visualstudio.com/)
+- একটি [GitHub অ্যাকাউন্ট](https://github.com/) খুলুন
+- [VS Code](https://code.visualstudio.com/) ডাউনলোড করুন
 
-## GitHub & Git
+## GitHub ও Git
 
-### Introduction to Git
+### Git-এর পরিচিতি
 
-Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It was created by Linus Torvalds, the creator of the Linux kernel, to manage the development of the Linux kernel itself.
+Git হলো একটি ডিস্ট্রিবিউটেড ভার্সন কন্ট্রোল সিস্টেম, যা ছোট থেকে শুরু করে অনেক বড় প্রজেক্ট পর্যন্ত সবকিছু দ্রুত ও দক্ষভাবে সামলানোর জন্য তৈরি। লিনাক্স কার্নেলের স্রষ্টা লিনাস টরভাল্ডস লিনাক্স কার্নেলের ডেভেলপমেন্ট পরিচালনার জন্যই এটি তৈরি করেছিলেন।
 
-Git allows developers to track changes in their code, collaborate with other developers, and manage multiple versions of their projects. Some of the key features of Git include:
+Git ডেভেলপারদের নিজেদের কোডের পরিবর্তন ট্র্যাক করতে, অন্য ডেভেলপারদের সাথে সহযোগিতা করতে এবং প্রজেক্টের একাধিক সংস্করণ পরিচালনা করতে দেয়। Git-এর কয়েকটি মূল বৈশিষ্ট্য:
 
-- **Branching**: Git allows developers to create branches, which are separate copies of their codebase. This enables them to work on new features or bug fixes without affecting the main codebase. Once the changes are complete, they can merge the branch back into the main codebase.
-- **Staging Area**: Git provides a staging area where developers can prepare their changes before committing them to the repository. This allows them to review and organize their changes before making them permanent.
-- **Distributed Version Control**: Unlike centralized version control systems, Git is a distributed version control system. This means that every developer has a complete copy of the repository on their local machine, allowing them to work offline and independently of a central server.
+- **ব্রাঞ্চিং**: Git ডেভেলপারদের ব্রাঞ্চ তৈরি করতে দেয়, যা তাঁদের কোডবেসের আলাদা আলাদা কপি। এতে মূল কোডবেসকে প্রভাবিত না করেই নতুন ফিচার বা বাগ ফিক্স নিয়ে কাজ করা যায়। পরিবর্তন সম্পূর্ণ হলে তাঁরা ব্রাঞ্চটি আবার মূল কোডবেসে মার্জ করে দিতে পারেন।
+- **স্টেজিং এরিয়া**: Git একটি স্টেজিং এরিয়া দেয়, যেখানে ডেভেলপাররা রিপোজিটরিতে কমিট করার আগে নিজেদের পরিবর্তন প্রস্তুত করতে পারেন। এতে পরিবর্তনগুলো স্থায়ী করার আগে তা খতিয়ে দেখা ও সাজিয়ে নেওয়া যায়।
+- **ডিস্ট্রিবিউটেড ভার্সন কন্ট্রোল**: কেন্দ্রীভূত ভার্সন কন্ট্রোল সিস্টেমের বিপরীতে Git একটি ডিস্ট্রিবিউটেড ভার্সন কন্ট্রোল সিস্টেম। অর্থাৎ প্রতিটি ডেভেলপারের নিজের লোকাল মেশিনে রিপোজিটরির একটি পূর্ণাঙ্গ কপি থাকে। ফলে তাঁরা অফলাইনে এবং কেন্দ্রীয় সার্ভার ছাড়াই স্বাধীনভাবে কাজ করতে পারেন।
 
-### Introduction to GitHub
+### GitHub-এর পরিচিতি
 
-GitHub is a web-based platform for version control and collaboration that uses Git as its underlying technology. It provides a simple and user-friendly interface for managing Git repositories, as well as a host of features and tools for collaborating with other developers.
+GitHub হলো ভার্সন কন্ট্রোল ও সহযোগিতার জন্য একটি ওয়েবভিত্তিক প্ল্যাটফর্ম, যা মূল প্রযুক্তি হিসেবে Git ব্যবহার করে। এটি Git রিপোজিটরি পরিচালনার জন্য একটি সহজ ও ব্যবহারবান্ধব ইন্টারফেস দেয় এবং অন্য ডেভেলপারদের সাথে সহযোগিতার জন্য বহু ফিচার ও টুলও দেয়।
 
-Some of the key features of GitHub include:
+GitHub-এর কয়েকটি মূল বৈশিষ্ট্য:
 
-- **Issue Tracking**: GitHub provides an integrated issue tracking system that allows developers to create, assign, and manage issues related to their projects. Issues can be categorized using labels, milestones, and assignees, making it easy to keep track of project progress and prioritize tasks.
-- **Pull Requests**: GitHub introduces the concept of pull requests, which allow developers to propose changes to a project's codebase. Pull requests enable code review, discussion, and collaboration before changes are merged into the main codebase.
-- **Forking**: GitHub allows users to create a copy of a repository, known as a fork. This enables them to make changes to the codebase without affecting the original project. Once the changes are complete, they can submit a pull request to have their changes reviewed and potentially merged into the main codebase.
-- **GitHub Actions**: GitHub Actions is a powerful automation tool that allows you to create custom workflows to automate tasks like building, testing, and deploying your code.
+- **ইস্যু ট্র্যাকিং**: GitHub একটি সমন্বিত ইস্যু ট্র্যাকিং সিস্টেম দেয়, যার মাধ্যমে ডেভেলপাররা নিজেদের প্রজেক্ট-সংক্রান্ত ইস্যু তৈরি, বরাদ্দ ও পরিচালনা করতে পারেন। লেবেল, মাইলস্টোন ও অ্যাসাইনি দিয়ে ইস্যুগুলোকে শ্রেণিবদ্ধ করা যায়, ফলে প্রজেক্টের অগ্রগতির হিসাব রাখা এবং কাজের অগ্রাধিকার ঠিক করা সহজ হয়।
+- **পুল রিকোয়েস্ট**: GitHub পুল রিকোয়েস্টের ধারণা চালু করেছে, যার মাধ্যমে ডেভেলপাররা কোনো প্রজেক্টের কোডবেসে পরিবর্তনের প্রস্তাব দিতে পারেন। পরিবর্তন মূল কোডবেসে মার্জ হওয়ার আগে পুল রিকোয়েস্টের মাধ্যমে কোড রিভিউ, আলোচনা ও সহযোগিতা করা যায়।
+- **ফর্কিং**: GitHub ব্যবহারকারীদের কোনো রিপোজিটরির একটি কপি তৈরি করতে দেয়, যাকে ফর্ক বলা হয়। এতে মূল প্রজেক্টকে প্রভাবিত না করেই কোডবেসে পরিবর্তন করা যায়। পরিবর্তন সম্পূর্ণ হলে তাঁরা একটি পুল রিকোয়েস্ট জমা দিতে পারেন, যাতে তাঁদের পরিবর্তন রিভিউ হয় এবং সম্ভবত মূল কোডবেসে মার্জ করা হয়।
+- **GitHub Actions**: GitHub Actions একটি শক্তিশালী অটোমেশন টুল, যার সাহায্যে আপনি কোড বিল্ড, টেস্ট ও ডিপ্লয়ের মতো কাজ স্বয়ংক্রিয় করতে নিজস্ব ওয়ার্কফ্লো তৈরি করতে পারেন।
 
-### Getting Started with Git and GitHub
+### Git ও GitHub দিয়ে শুরু করা
 
-To get started with Git and GitHub, follow these steps:
+Git ও GitHub দিয়ে শুরু করতে নিচের ধাপগুলো অনুসরণ করুন:
 
-1. **Install Git**: Download and install Git on your computer by visiting the [official Git website](https://git-scm.com/) and following the installation instructions for your operating system.
+1. **Git ইনস্টল করুন**: [Git-এর অফিসিয়াল ওয়েবসাইটে](https://git-scm.com/) গিয়ে আপনার কম্পিউটারে Git ডাউনলোড ও ইনস্টল করুন এবং আপনার অপারেটিং সিস্টেমের ইনস্টলেশন নির্দেশনা অনুসরণ করুন।
 
-2. **Configure Git**: After installing Git, open a terminal or command prompt and configure your Git user information by running the following commands:
+2. **Git কনফিগার করুন**: Git ইনস্টল করার পর টার্মিনাল বা কমান্ড প্রম্পট খুলে নিচের কমান্ডগুলো চালিয়ে আপনার Git ব্যবহারকারীর তথ্য কনফিগার করুন:
 
    ```bash
    git config --global user.name "Your Name"
    git config --global user.email "your.email@example.com"
    ```
 
-   Replace `Your Name` with your full name and `your.email@example.com` with the email address you used to sign up for GitHub.
+   `Your Name`-এর জায়গায় আপনার পুরো নাম এবং `your.email@example.com`-এর জায়গায় GitHub-এ সাইন আপ করতে যে ইমেইল ব্যবহার করেছেন, সেটি লিখুন।
 
-#### Practicing Contributing with VS Code
+#### VS Code দিয়ে অবদান রাখার অনুশীলন
 
-To practice using GitHub, we're going to walk through creating a repository, cloning the repository, making changes, and pushing those changes.
+GitHub ব্যবহারের অনুশীলন করতে আমরা ধাপে ধাপে একটি রিপোজিটরি তৈরি করব, সেটি ক্লোন করব, পরিবর্তন করব এবং সেই পরিবর্তন পুশ করব।
 
-1. **Create a new repository**: Log in to your GitHub account and click the green "New" button on the sidebar. Alternatively, click the "+" icon in the upper right corner and select "New repository" from the dropdown menu.
+1. **নতুন রিপোজিটরি তৈরি করুন**: আপনার GitHub অ্যাকাউন্টে লগ ইন করে সাইডবারের সবুজ "New" বোতামে ক্লিক করুন। অথবা ওপরের ডান কোণের "+" আইকনে ক্লিক করে ড্রপডাউন মেনু থেকে "New repository" নির্বাচন করুন।
 
-   Choose yourself as the owner of the repository, and enter a name for your repository. For this example, we'll use `practice-repository`.
+   রিপোজিটরির মালিক হিসেবে নিজেকে বেছে নিন এবং রিপোজিটরির একটি নাম দিন। এই উদাহরণে আমরা `practice-repository` নামটি ব্যবহার করব।
 
-   ![Create new repository on GitHub](../_assets/images/new-repo.png)
+   ![GitHub-এ নতুন রিপোজিটরি তৈরি](../_assets/images/new-repo.png)
 
-   Choose whether you want it to be public or private. You can also choose to initialize the repository with a README file, a `.gitignore` file, and/or a license.
+   রিপোজিটরিটি পাবলিক হবে নাকি প্রাইভেট, তা ঠিক করুন। চাইলে README ফাইল, `.gitignore` ফাইল এবং/অথবা একটি লাইসেন্স দিয়ে রিপোজিটরিটি শুরুও করতে পারেন।
 
-   For this example, initialize the repository with a README file.
+   এই উদাহরণে একটি README ফাইল দিয়ে রিপোজিটরিটি শুরু করুন।
 
-2. **Clone the repository**: Once you have created a new repository, you can clone it to your local machine by running the following command in your terminal or command prompt:
+2. **রিপোজিটরি ক্লোন করুন**: নতুন রিপোজিটরি তৈরি হয়ে গেলে টার্মিনাল বা কমান্ড প্রম্পটে নিচের কমান্ড চালিয়ে সেটি আপনার লোকাল মেশিনে ক্লোন করতে পারেন:
 
    ```bash
    git clone https://github.com/YOUR-USERNAME/REPOSITORY-NAME.git
    ```
 
-   Replace "YOUR-USERNAME" with your GitHub username and "REPOSITORY-NAME" with `practice-repository`.
+   "YOUR-USERNAME"-এর জায়গায় আপনার GitHub ইউজারনেম এবং "REPOSITORY-NAME"-এর জায়গায় `practice-repository` লিখুন।
 
-3. **Access your repository in your code editor**: For this example, we're using VS Code. Open VS Code, navigate to the file tab, and then open your `practice-repository`.
+3. **কোড এডিটরে আপনার রিপোজিটরি খুলুন**: এই উদাহরণে আমরা VS Code ব্যবহার করছি। VS Code খুলে ফাইল ট্যাবে গিয়ে আপনার `practice-repository` ফোল্ডারটি খুলুন।
 
-4. **Make changes and commit**: There should be one file in your repository: `README.md`. Inside that file, below `# practice-repository`, type 'hello world!' Once you have made changes, you can stage and commit them.
+4. **পরিবর্তন করুন ও কমিট করুন**: আপনার রিপোজিটরিতে একটি ফাইল থাকার কথা: `README.md`। সেই ফাইলের ভেতরে `# practice-repository`-এর নিচে 'hello world!' লিখুন। পরিবর্তন করার পর আপনি সেগুলো স্টেজ ও কমিট করতে পারেন।
 
-   Open your terminal and make sure you are in the right directory. For example, my coding projects are inside of my `Projects` folder. Using my terminal, I would access this repository by running this command:
+   আপনার টার্মিনাল খুলে নিশ্চিত হয়ে নিন আপনি সঠিক ডিরেক্টরিতে আছেন। যেমন, আমার কোডিং প্রজেক্টগুলো আমার `Projects` ফোল্ডারের ভেতরে থাকে। তাই টার্মিনালে এই কমান্ড চালিয়ে আমি রিপোজিটরিটিতে যাব:
 
    ```bash
    cd projects/practice-repository
    ```
 
-   Once in the correct repository, use the following commands to add the changes you made and write a commit message with a description of the changes:
+   সঠিক রিপোজিটরিতে পৌঁছানোর পর নিচের কমান্ডগুলো দিয়ে আপনার করা পরিবর্তনগুলো যোগ করুন এবং পরিবর্তনের বর্ণনাসহ একটি কমিট মেসেজ লিখুন:
 
    ```bash
    git add .
    git commit -m "Your commit message"
    ```
 
-   Replace "Your commit message" with a brief description of the changes you made.
+   "Your commit message"-এর জায়গায় আপনার করা পরিবর্তনের একটি সংক্ষিপ্ত বর্ণনা লিখুন।
 
-5. **Push your changes**: After committing your changes, you can push them to your remote GitHub repository by running the following command:
+5. **পরিবর্তন পুশ করুন**: পরিবর্তন কমিট করার পর নিচের কমান্ড চালিয়ে আপনি সেগুলো আপনার রিমোট GitHub রিপোজিটরিতে পুশ করতে পারেন:
 
    ```bash
    git push origin main
    ```
 
-   This will push your changes to the `main` branch of your remote repository. If you want to check your work, navigate to your GitHub repository. You should now see 'hello world!' in your README.md file.
+   এতে আপনার পরিবর্তনগুলো রিমোট রিপোজিটরির `main` ব্রাঞ্চে পুশ হবে। কাজ যাচাই করতে চাইলে আপনার GitHub রিপোজিটরিতে যান। এখন README.md ফাইলে 'hello world!' দেখতে পাওয়ার কথা।
 
-You have now successfully set up Git and GitHub on your local machine and are ready to collaborate on open source projects!
+অভিনন্দন! আপনি আপনার লোকাল মেশিনে সফলভাবে Git ও GitHub সেটআপ করেছেন এবং ওপেন সোর্স প্রজেক্টে সহযোগিতা করার জন্য প্রস্তুত!
 
 ## VS Code
 
-Visual Studio Code (VS Code) is a popular, free, and open source code editor developed by Microsoft. It supports a wide range of programming languages and offers many features that make it a great choice for open source development, including:
+Visual Studio Code (VS Code) হলো Microsoft-এর তৈরি একটি জনপ্রিয়, বিনামূল্যের ও ওপেন সোর্স কোড এডিটর। এটি বহু প্রোগ্রামিং ভাষা সমর্থন করে এবং এতে এমন অনেক ফিচার আছে, যা এটিকে ওপেন সোর্স ডেভেলপমেন্টের জন্য দারুণ পছন্দ করে তোলে। যেমন:
 
-- **Built-in Git support**: VS Code provides built-in support for Git, allowing you to manage your Git repositories, stage and commit changes, and resolve merge conflicts directly from the editor.
-- **Extensibility**: VS Code offers a rich ecosystem of extensions that can enhance your development experience and add support for additional languages, tools, and frameworks.
-- **Integrated terminal**: VS Code includes an integrated terminal that allows you to run commands, scripts, and build tasks directly from the editor.
-- **Customizable**: VS Code is highly customizable, allowing you to tailor the editor to your preferences and workflow. You can customize the theme, keybindings, and settings to create a personalized development environment.
+- **অন্তর্নির্মিত Git সমর্থন**: VS Code-এ Git-এর জন্য অন্তর্নির্মিত সমর্থন আছে। এতে আপনি এডিটর থেকেই সরাসরি আপনার Git রিপোজিটরি পরিচালনা করতে, পরিবর্তন স্টেজ ও কমিট করতে এবং মার্জ কনফ্লিক্ট সমাধান করতে পারেন।
+- **এক্সটেনসিবিলিটি**: VS Code-এর একটি সমৃদ্ধ এক্সটেনশন ইকোসিস্টেম আছে, যা আপনার ডেভেলপমেন্টের অভিজ্ঞতা আরও ভালো করতে পারে এবং অতিরিক্ত ভাষা, টুল ও ফ্রেমওয়ার্কের সমর্থন যোগ করতে পারে।
+- **ইন্টিগ্রেটেড টার্মিনাল**: VS Code-এ একটি ইন্টিগ্রেটেড টার্মিনাল আছে, যার মাধ্যমে আপনি এডিটর থেকেই সরাসরি কমান্ড, স্ক্রিপ্ট ও বিল্ড টাস্ক চালাতে পারেন।
+- **কাস্টমাইজযোগ্য**: VS Code খুবই কাস্টমাইজযোগ্য, ফলে আপনি নিজের পছন্দ ও কাজের ধরন অনুযায়ী এডিটরটি সাজিয়ে নিতে পারেন। থিম, কীবাইন্ডিং ও সেটিংস কাস্টমাইজ করে আপনি নিজের মতো করে একটি ডেভেলপমেন্ট পরিবেশ তৈরি করতে পারেন।
 
-To download and install VS Code, visit the [official website](https://code.visualstudio.com/) and follow the instructions for your operating system.
+VS Code ডাউনলোড ও ইনস্টল করতে [অফিসিয়াল ওয়েবসাইটে](https://code.visualstudio.com/) গিয়ে আপনার অপারেটিং সিস্টেমের নির্দেশনা অনুসরণ করুন।
 
 ## Discord
 
-Discord is a popular messaging and voice chat platform that is widely used by open source communities for communication and collaboration. By joining Discord servers related to your interests and projects, you can:
+Discord হলো একটি জনপ্রিয় মেসেজিং ও ভয়েস চ্যাট প্ল্যাটফর্ম, যা ওপেন সোর্স কমিউনিটিতে যোগাযোগ ও সহযোগিতার জন্য ব্যাপকভাবে ব্যবহৃত হয়। আপনার আগ্রহ ও প্রজেক্টের সাথে সম্পর্কিত Discord সার্ভারে যোগ দিয়ে আপনি যা করতে পারবেন:
 
-- **Connect with other developers**: Discord allows you to chat with other developers, ask questions, and share your knowledge with the community.
-- **Stay up-to-date**: Many open source projects use Discord to share updates, announcements, and other important information. By joining their servers, you can stay informed about the latest developments and contribute more effectively.
-- **Participate in discussions**: Discord servers often host discussions on various topics related to open source development. By participating in these discussions, you can learn from others, share your insights, and contribute to the collective knowledge of the community.
-- **Find collaboration opportunities**: Discord servers can be a great place to find others who share your interests and are looking for collaboration opportunities. By networking with other developers, you can discover new projects to work on and form valuable partnerships.
+- **অন্য ডেভেলপারদের সাথে যুক্ত হওয়া**: Discord-এ আপনি অন্য ডেভেলপারদের সাথে চ্যাট করতে, প্রশ্ন করতে এবং কমিউনিটির সাথে নিজের জ্ঞান ভাগ করে নিতে পারেন।
+- **হালনাগাদ থাকা**: অনেক ওপেন সোর্স প্রজেক্ট আপডেট, ঘোষণা ও অন্যান্য গুরুত্বপূর্ণ তথ্য জানাতে Discord ব্যবহার করে। তাদের সার্ভারে যোগ দিলে আপনি সর্বশেষ অগ্রগতি সম্পর্কে জানতে পারবেন এবং আরও কার্যকরভাবে অবদান রাখতে পারবেন।
+- **আলোচনায় অংশ নেওয়া**: Discord সার্ভারে প্রায়ই ওপেন সোর্স ডেভেলপমেন্ট-সংক্রান্ত নানা বিষয়ে আলোচনা হয়। এসব আলোচনায় অংশ নিয়ে আপনি অন্যদের কাছ থেকে শিখতে, নিজের অন্তর্দৃষ্টি ভাগ করে নিতে এবং কমিউনিটির সম্মিলিত জ্ঞানে অবদান রাখতে পারেন।
+- **সহযোগিতার সুযোগ খোঁজা**: যাঁদের আগ্রহ আপনার মতো এবং যাঁরা সহযোগিতার সুযোগ খুঁজছেন, তাঁদের সন্ধান পেতে Discord সার্ভার দারুণ একটি জায়গা। অন্য ডেভেলপারদের সাথে নেটওয়ার্ক গড়ে আপনি নতুন প্রজেক্টের সন্ধান এবং মূল্যবান অংশীদারিত্ব গড়ে তোলার সুযোগ পেতে পারেন।
 
-To get started with Discord, visit the [official website](https://discord.com/) and sign up for an account. Once you have an account, you can search for open source communities and projects on platforms like GitHub or GitLab to find their Discord servers and join the conversation.
+Discord দিয়ে শুরু করতে [অফিসিয়াল ওয়েবসাইটে](https://discord.com/) গিয়ে একটি অ্যাকাউন্ট খুলুন। অ্যাকাউন্ট খোলা হয়ে গেলে GitHub বা GitLab-এর মতো প্ল্যাটফর্মে ওপেন সোর্স কমিউনিটি ও প্রজেক্ট খুঁজে সেগুলোর Discord সার্ভারের সন্ধান করতে পারেন এবং আলোচনায় যোগ দিতে পারেন।
 
-By familiarizing yourself with these tools and platforms, you'll be equipped to collaborate effectively, manage your projects, and contribute to open source projects. In the [next chapter](how-to-contribute-to-open-source.md), we'll discuss how to contribute to open source projects, including finding projects to work on, submitting contributions, and what happens after your contribution is accepted.
+এই টুল ও প্ল্যাটফর্মগুলোর সাথে পরিচিত হয়ে আপনি কার্যকরভাবে সহযোগিতা করতে, নিজের প্রজেক্ট পরিচালনা করতে এবং ওপেন সোর্স প্রজেক্টে অবদান রাখতে সক্ষম হবেন। [পরবর্তী অধ্যায়ে](how-to-contribute-to-open-source.md) আমরা আলোচনা করব ওপেন সোর্স প্রজেক্টে কীভাবে অবদান রাখবেন, যার মধ্যে থাকবে কাজ করার মতো প্রজেক্ট খুঁজে নেওয়া, অবদান জমা দেওয়া এবং আপনার অবদান গৃহীত হওয়ার পর কী ঘটে।

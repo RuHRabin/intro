@@ -2,32 +2,26 @@
 id: maintaining-code-quality
 title: "কোডের মান ও ডকুমেন্টেশন কীভাবে বজায় রাখবেন"
 sidebar_label: "কোডের মান ও ডকুমেন্টেশন বজায় রাখা"
-keywords: ["maintaining code quality", "maintaining code quality of open source projects", "maintaining documentation", "maintaining open source project documentation", "code reviews best practices", "ensuring high-quality contributions in open source", "open source maintainers", "Open Source", "Open Source Community"]
+keywords: ["ওপেন সোর্সে কোডের মান বজায় রাখা", "ওপেন সোর্সে ডকুমেন্টেশন বজায় রাখা", "কোড রিভিউ", "Conventional Commits", "ব্রাঞ্চ প্রোটেকশন রুল", "ওপেন সোর্সে স্বয়ংক্রিয় টেস্ট", "ওপেন সোর্স মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+উচ্চমানের কোড ও হালনাগাদ ডকুমেন্টেশন নিয়ে একটি প্রজেক্ট রক্ষণাবেক্ষণ করা গুরুত্বপূর্ণ। এটি কন্ট্রিবিউটরদের প্রজেক্ট বুঝতে সাহায্য করে এবং তাঁদের জন্য অবদান রাখা সহজ করে তোলে।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+এই অধ্যায়ে আপনার ওপেন সোর্স প্রজেক্টে কোডের মান ও ডকুমেন্টেশন বজায় রাখার নানা উপায় নিয়ে আলোচনা করা হবে।
 
-:::
+## কোড রিভিউ ও উচ্চমানের অবদান
 
-Maintaining a project with high code quality and up-to-date documentation is important. This helps contributors understand the project and makes it easier for them to contribute.
+ওপেন সোর্স প্রজেক্টে কোডের মান বজায় রাখতে কোড রিভিউ অপরিহার্য। প্রতিটি পুল রিকোয়েস্ট রিভিউ করতে এবং প্রস্তাবিত পরিবর্তনগুলো উচ্চমানের ও নতুন কোনো বাগ বা সমস্যা তৈরি করছে না, তা নিশ্চিত করতে আপনাকে সময় নিতে হবে। আপনি এমন কন্ট্রিবিউটরদের কাছ থেকেও পুল রিকোয়েস্ট পাবেন, যাঁরা প্রজেক্টে নতুন এবং কোডবেসের সাথে পরিচিত নাও হতে পারেন। ধৈর্য ধরা এবং তাঁদের অবদান উন্নত করতে সাহায্য করার জন্য গঠনমূলক মতামত দেওয়া গুরুত্বপূর্ণ।
 
-This chapter will cover ways to maintain code quality and documentation in your open source project.
-
-## Code Reviews and High-Quality Contributions
-
-Code reviews are essential to maintaining code quality in an open source project. You should take the time to review each pull request and ensure that the proposed changes are high quality and do not introduce any new bugs or issues. You will receive pull requests from contributors who are new to the project and might not be familiar with the codebase. It is important to be patient and provide constructive feedback to help them improve their contributions.
-
-The following sections will cover some best practices for conducting code reviews and ensuring high-quality contributions.
+নিচের অংশগুলোতে কোড রিভিউ পরিচালনা এবং উচ্চমানের অবদান নিশ্চিত করার কিছু সেরা চর্চা আলোচনা করা হবে।
 
 ### Conventional Commits
 
-[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) is a specification for structuring commit messages. It provides an easy way to understand the type of changes being made and helps maintain a clean and organized commit history.
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) হলো কমিট মেসেজ সাজানোর একটি স্পেসিফিকেশন। এটি কী ধরনের পরিবর্তন করা হচ্ছে তা সহজে বোঝার উপায় দেয় এবং পরিচ্ছন্ন ও সুসংগঠিত কমিট ইতিহাস বজায় রাখতে সাহায্য করে।
 
-Using Conventional Commits in your project is highly recommended. You can encourage contributors to use them when making changes to the project by adding a guide to your contribution guidelines. The "[Commits](https://opensauced.pizza/docs/contributing/introduction-to-contributing/#commits)" section in the OpenSauced contributing guidelines asks contributors to use Conventional Commits.
+আপনার প্রজেক্টে Conventional Commits ব্যবহার করার জোরালো পরামর্শ দেওয়া হয়। আপনার কন্ট্রিবিউশন গাইডলাইনে একটি গাইড যোগ করে আপনি কন্ট্রিবিউটরদের প্রজেক্টে পরিবর্তন করার সময় এগুলো ব্যবহার করতে উৎসাহিত করতে পারেন। OpenSauced কন্ট্রিবিউটিং গাইডলাইনের "[Commits](https://opensauced.pizza/docs/contributing/introduction-to-contributing/#commits)" অংশে কন্ট্রিবিউটরদের Conventional Commits ব্যবহার করতে বলা হয়েছে।
 
-Here are some examples of Conventional Commit messages:
+Conventional Commit মেসেজের কয়েকটি উদাহরণ:
 
 ```text
 feat: add password reset functionality
@@ -37,54 +31,54 @@ fix(login): resolve issue with incorrect password validation
 refactor(api): streamline error handling in user service
 ```
 
-### Incomplete Pull Requests
+### অসম্পূর্ণ পুল রিকোয়েস্ট
 
-When you review a pull request, the first thing to check is that the proposed changes are complete and do not introduce new bugs or issues. It should also be clear what the proposed changes are about and what problem they are trying to solve.
+কোনো পুল রিকোয়েস্ট রিভিউ করার সময় প্রথম যে বিষয়টি দেখবেন, তা হলো প্রস্তাবিত পরিবর্তনগুলো সম্পূর্ণ কি না এবং নতুন কোনো বাগ বা সমস্যা তৈরি করছে কি না। প্রস্তাবিত পরিবর্তনগুলো কী নিয়ে এবং কোন সমস্যা সমাধানের চেষ্টা করছে, তাও স্পষ্ট হওয়া উচিত।
 
-The contributor should link the proposed changes to an existing issue, and they should fill out all necessary information in the pull request template. If the pull request is incomplete, reach out to the contributor and ask them to provide the missing information.
+কন্ট্রিবিউটরের উচিত প্রস্তাবিত পরিবর্তনগুলো কোনো বিদ্যমান ইস্যুর সাথে লিংক করা এবং পুল রিকোয়েস্ট টেমপ্লেটের সব প্রয়োজনীয় তথ্য পূরণ করা। পুল রিকোয়েস্ট অসম্পূর্ণ হলে কন্ট্রিবিউটরের সাথে যোগাযোগ করে বাদ পড়া তথ্য দিতে বলুন।
 
-Remember that you will be dealing with contributors at all levels. Some might be new to open source and not realize they have failed to provide the necessary information. Giving constructive feedback with patience is important to help them improve their contributions.
+মনে রাখবেন, আপনি সব স্তরের কন্ট্রিবিউটরের সাথে কাজ করবেন। কেউ কেউ ওপেন সোর্সে নতুন হতে পারেন এবং বুঝতে পারেননি যে তাঁরা প্রয়োজনীয় তথ্য দিতে ব্যর্থ হয়েছেন। তাঁদের অবদান উন্নত করতে সাহায্য করার জন্য ধৈর্যের সাথে গঠনমূলক মতামত দেওয়া গুরুত্বপূর্ণ।
 
-### Large and Unfocused Pull Requests
+### বড় ও অগোছালো পুল রিকোয়েস্ট
 
-Sometimes, you might get pull requests that are too large and unfocused. Examples of large and unfocused pull requests include:
+কখনো কখনো আপনি এমন পুল রিকোয়েস্ট পেতে পারেন, যা অতিরিক্ত বড় ও অগোছালো। বড় ও অগোছালো পুল রিকোয়েস্টের উদাহরণ:
 
-- Pull requests that try to solve multiple issues at once
-- Pull requests that refactor large parts of the codebase
-- Pull requests that add a lot of new functionality
+- যেসব পুল রিকোয়েস্ট একসাথে একাধিক ইস্যু সমাধানের চেষ্টা করে
+- যেসব পুল রিকোয়েস্ট কোডবেসের বড় অংশ রিফ্যাক্টর করে
+- যেসব পুল রিকোয়েস্ট অনেক নতুন কার্যকারিতা যোগ করে
 
-Large pull requests can be challenging to review effectively and sometimes introduce bugs. In this situation, it is important to ask the contributor to break down the pull request into smaller, more focused pull requests.
+বড় পুল রিকোয়েস্ট কার্যকরভাবে রিভিউ করা কঠিন হতে পারে এবং কখনো কখনো বাগ নিয়ে আসে। এই পরিস্থিতিতে কন্ট্রিবিউটরকে পুল রিকোয়েস্টটি ছোট ও আরও কেন্দ্রীভূত কয়েকটি পুল রিকোয়েস্টে ভেঙে দিতে বলা গুরুত্বপূর্ণ।
 
-### Automated Tests
+### স্বয়ংক্রিয় টেস্ট
 
-Setting up testing can help ensure that new contributions don't break existing functionality. Automated tests can be run on every pull request to ensure the new code passes all the tests. This will help maintain the quality of the code and make it easier for contributors to contribute.
+টেস্টিং সেট আপ করলে নতুন অবদান যেন বিদ্যমান কার্যকারিতা ভেঙে না ফেলে, তা নিশ্চিত করতে সাহায্য হয়। নতুন কোড সব টেস্টে পাস করছে কি না নিশ্চিত করতে প্রতিটি পুল রিকোয়েস্টে স্বয়ংক্রিয় টেস্ট চালানো যায়। এটি কোডের মান বজায় রাখতে এবং কন্ট্রিবিউটরদের জন্য অবদান রাখা সহজ করতে সাহায্য করবে।
 
-If some tests in the new pull request don't pass the checks, contact the contributor and ask them to fix the failing tests. Sometimes, the contributor might need help understanding why the tests are failing. In these cases, you need to work with the contributor to help them understand the problem and fix the failing tests.
+নতুন পুল রিকোয়েস্টের কিছু টেস্ট চেক পাস না করলে কন্ট্রিবিউটরের সাথে যোগাযোগ করে ব্যর্থ টেস্টগুলো ঠিক করতে বলুন। কখনো কখনো কন্ট্রিবিউটরের বুঝতে সাহায্য লাগতে পারে টেস্টগুলো কেন ব্যর্থ হচ্ছে। এসব ক্ষেত্রে সমস্যাটি বুঝতে এবং ব্যর্থ টেস্টগুলো ঠিক করতে তাঁকে সাহায্য করার জন্য আপনাকে তাঁর সাথে কাজ করতে হবে।
 
-To learn more about testing, please refer to [this section](maintainer-powerups.md#testing) in the "Maintainer Power Ups" chapter.
+টেস্টিং সম্পর্কে আরও জানতে "মেইনটেইনার পাওয়ার-আপ" অধ্যায়ের [এই অংশটি](maintainer-powerups.md#testing) দেখুন।
 
-### Code Quality Check
+### কোডের মান যাচাই
 
-It is important to check for code quality and good software engineering practices when conducting code reviews. This includes checking for proper variable naming, adherence to coding standards, and easy-to-read and understand code. A coding style guide is encouraged to help contributors understand your project's coding standards.
+কোড রিভিউ করার সময় কোডের মান এবং সফটওয়্যার ইঞ্জিনিয়ারিংয়ের ভালো চর্চা যাচাই করা গুরুত্বপূর্ণ। এর মধ্যে আছে সঠিক ভ্যারিয়েবল নামকরণ, কোডিং মানদণ্ড মেনে চলা এবং সহজে পড়া ও বোঝা যায় এমন কোড। আপনার প্রজেক্টের কোডিং মানদণ্ড কন্ট্রিবিউটরদের বুঝতে সাহায্য করতে একটি কোডিং স্টাইল গাইড রাখার পরামর্শ দেওয়া হয়।
 
-Many tools can help you check for code quality. You can set up linting for your project to ensure there are no syntax errors or style issues. You can also set up code scanning tools to check for security vulnerabilities and other issues in the codebase.
+কোডের মান যাচাই করতে সাহায্য করে এমন অনেক টুল আছে। কোনো সিনট্যাক্স ত্রুটি বা স্টাইল সমস্যা যেন না থাকে, তা নিশ্চিত করতে আপনি আপনার প্রজেক্টে লিন্টিং সেট আপ করতে পারেন। কোডবেসের নিরাপত্তা দুর্বলতা ও অন্যান্য সমস্যা যাচাই করতে কোড স্ক্যানিং টুলও সেট আপ করতে পারেন।
 
-To learn more about these tools, please refer to [this section](maintainer-powerups.md#code-scanning-tools) in the "Maintainer Power Ups" chapter.
+এই টুলগুলো সম্পর্কে আরও জানতে "মেইনটেইনার পাওয়ার-আপ" অধ্যায়ের [এই অংশটি](maintainer-powerups.md#code-scanning-tools) দেখুন।
 
-### Branch Protection Rules
+### ব্রাঞ্চ প্রোটেকশন রুল
 
-You can set up branch protection rules on GitHub to ensure all pull requests are reviewed before merging. You can also create a rule to require a certain number of approvals before a pull request can be merged. This not only ensures that maintainers have reviewed all contributions but also helps maintain the quality of the code, especially for larger projects.
+GitHub-এ ব্রাঞ্চ প্রোটেকশন রুল সেট আপ করে আপনি নিশ্চিত করতে পারেন, মার্জ করার আগে সব পুল রিকোয়েস্ট রিভিউ হয়েছে। পুল রিকোয়েস্ট মার্জ করার আগে নির্দিষ্ট সংখ্যক অনুমোদন লাগবে, এমন একটি নিয়মও আপনি তৈরি করতে পারেন। এতে শুধু যে মেইনটেইনাররা সব অবদান রিভিউ করেছেন তা নিশ্চিত হয় এমন নয়, বিশেষ করে বড় প্রজেক্টে কোডের মান বজায় রাখতেও সাহায্য করে।
 
-You can learn more about branch protection rules in the [official GitHub documentation](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#about-branch-protection-rules).
+ব্রাঞ্চ প্রোটেকশন রুল সম্পর্কে আরও জানতে পারবেন [অফিসিয়াল GitHub ডকুমেন্টেশনে](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#about-branch-protection-rules)।
 
-## Project Documentation Maintainance
+## প্রজেক্ট ডকুমেন্টেশন রক্ষণাবেক্ষণ
 
-Documentation is an essential part of maintaining an open source project. It helps contributors understand the project and makes it easier for them to contribute. Therefore, it is important to keep the documentation up to date and ensure it reflects the project's current state.
+ওপেন সোর্স প্রজেক্ট রক্ষণাবেক্ষণের একটি অপরিহার্য অংশ হলো ডকুমেন্টেশন। এটি কন্ট্রিবিউটরদের প্রজেক্ট বুঝতে সাহায্য করে এবং তাঁদের জন্য অবদান রাখা সহজ করে। তাই ডকুমেন্টেশন হালনাগাদ রাখা এবং তা প্রজেক্টের বর্তমান অবস্থা প্রতিফলিত করছে কি না নিশ্চিত করা গুরুত্বপূর্ণ।
 
-Regularly reviewing your project's documentation is recommended to ensure it is up-to-date and accurate. You can set a schedule to review your project's documentation manually once a month. As you review the documentation, look for ways to improve it and make it easier for contributors to understand the project. Think about times when a new contributor struggled to understand the project and update the documentation to make it easier for them to understand.
+ডকুমেন্টেশন হালনাগাদ ও নির্ভুল আছে কি না নিশ্চিত করতে আপনার প্রজেক্টের ডকুমেন্টেশন নিয়মিত পর্যালোচনা করার পরামর্শ দেওয়া হয়। আপনি মাসে একবার ম্যানুয়ালি ডকুমেন্টেশন পর্যালোচনার একটি সূচি ঠিক করতে পারেন। ডকুমেন্টেশন পর্যালোচনার সময় এটি উন্নত করার এবং কন্ট্রিবিউটরদের জন্য প্রজেক্ট বোঝা সহজ করার উপায় খুঁজুন। কোন সময়ে কোনো নতুন কন্ট্রিবিউটর প্রজেক্ট বুঝতে হিমশিম খেয়েছিলেন, তা ভাবুন এবং তাঁদের বুঝতে সুবিধা হয় এমনভাবে ডকুমেন্টেশন হালনাগাদ করুন।
 
-Another thing to consider in your review is running through the installation and setup instructions to ensure they are accurate and up to date. Are there any steps that still need to be included? Are there any steps that are no longer necessary? If so, update the documentation to reflect the project's current state.
+আপনার পর্যালোচনায় আরেকটি বিবেচ্য বিষয় হলো ইনস্টলেশন ও সেটআপের নির্দেশনাগুলো ধাপে ধাপে চালিয়ে দেখা, যাতে সেগুলো নির্ভুল ও হালনাগাদ থাকে। এমন কোনো ধাপ কি বাদ পড়েছে? এমন কোনো ধাপ কি আছে, যা আর প্রয়োজন নেই? থাকলে প্রজেক্টের বর্তমান অবস্থা প্রতিফলিত করতে ডকুমেন্টেশন হালনাগাদ করুন।
 
-If you have a more complex project, consider adding diagrams or images to help explain the project's architecture. This can help contributors understand how the project is structured and make it easier for them to contribute.
+আপনার প্রজেক্ট আরও জটিল হলে প্রজেক্টের আর্কিটেকচার ব্যাখ্যা করতে ডায়াগ্রাম বা ছবি যোগ করার কথা ভাবুন। এতে কন্ট্রিবিউটররা প্রজেক্টের কাঠামো কেমন, তা বুঝতে পারবেন এবং তাঁদের জন্য অবদান রাখা সহজ হবে।
 
-Now, let's move to the [next chapter](building-community.md), where we will discuss building and nurturing a welcoming and supportive community.
+এবার চলুন [পরবর্তী অধ্যায়ে](building-community.md) যাই, যেখানে আমরা স্বাগতপূর্ণ ও সহায়ক কমিউনিটি গড়ে তোলা ও লালন করা নিয়ে আলোচনা করব।

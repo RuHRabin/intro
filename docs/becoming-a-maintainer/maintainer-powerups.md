@@ -2,154 +2,148 @@
 id: maintainer-powerups
 title: "মেইনটেইনার পাওয়ার-আপ"
 sidebar_label: "মেইনটেইনার পাওয়ার-আপ"
-keywords: ["maintainer powerups", "GitHub tools for open source maintainers", "open source maintainers productivity", "GitHub Actions", "GitHub Actions for open source projects", "types of GitHub Actions for open source projects", "automating open source maintainers tasks", "GitHub", "GitHub tools", "open source maintainers", "Open Source", "Open Source Community"]
+keywords: ["মেইনটেইনার পাওয়ার-আপ", "ওপেন সোর্স মেইনটেইনারদের জন্য GitHub টুল", "GitHub Actions", "CI/CD পাইপলাইন", "GitHub CLI", "ইস্যু ও পুল রিকোয়েস্ট টেমপ্লেট", "Saved Replies", "Code Owners", "CODEOWNERS", "ওপেন সোর্স মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+মেইনটেইনারদের প্রতিদিনের নানা কাজ থাকে। আপনি প্রায়ই নতুন ইস্যু ট্রায়াজ করা, পুল রিকোয়েস্ট রিভিউ করা, পরিবর্তন পরীক্ষা করা এবং কমিউনিটি পরিচালনা ও মডারেট করার মধ্যে ভারসাম্য রাখেন, যেমন নতুন কন্ট্রিবিউটরদের স্বাগত জানানো এবং তাঁদের অবদানের জন্য ধন্যবাদ জানানো। বেশিরভাগ সময় এই কাজগুলোয় আপনার কাছ থেকে দ্রুত সাড়া আশা করা হয়। কখনো কখনো এই কখনো-শেষ-না-হওয়া কাজগুলো অনেক সময় নিয়ে নেয় এবং ক্লান্তিকর হয়ে ওঠে। তাই আপনি যা করেন, তাতে দক্ষ হওয়া দরকার।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
-
-:::
-
-Maintainers have a variety of daily tasks. You often juggle triaging new issues, reviewing pull requests, testing changes, and managing and moderating the community, such as welcoming new contributors and thanking contributors for their contributions. Most of the time, you are expected to respond to these tasks promptly. Sometimes, these never-ending tasks take too much time and are overwhelming. It would help if you were efficient in what you do.
-
-The good news is that some tools and features on GitHub allow you to automate tasks, which can help you save time and make your work lighter. In this chapter, we will talk about these maintainer power ups from GitHub.
+সুখবর হলো, GitHub-এ এমন কিছু টুল ও ফিচার আছে, যা দিয়ে কাজ স্বয়ংক্রিয় করা যায়, যা আপনার সময় বাঁচাতে এবং কাজ হালকা করতে পারে। এই অধ্যায়ে আমরা GitHub-এর এই মেইনটেইনার পাওয়ার-আপগুলো নিয়ে কথা বলব।
 
 ## GitHub Actions
 
-Let's say your project receives more new issues and pull requests daily. You want to welcome each new contributor, thank them for their contributions, and tell them you will triage their issues and review their pull requests. You want to do more but don't have time to respond to them because you're still busy with something else.
+ধরুন, আপনার প্রজেক্টে প্রতিদিন আরও বেশি নতুন ইস্যু ও পুল রিকোয়েস্ট আসছে। আপনি প্রতিটি নতুন কন্ট্রিবিউটরকে স্বাগত জানাতে, তাঁদের অবদানের জন্য ধন্যবাদ দিতে এবং জানাতে চান যে আপনি তাঁদের ইস্যু ট্রায়াজ ও পুল রিকোয়েস্ট রিভিউ করবেন। আপনি আরও কিছু করতে চান, কিন্তু অন্য কিছুতে ব্যস্ত থাকায় তাঁদের উত্তর দেওয়ার সময় নেই।
 
-Setting up actions to automate these tasks will save you time responding to contributions individually. You can decide which actions to include in each repository.
+এই কাজগুলো স্বয়ংক্রিয় করতে অ্যাকশন সেট আপ করলে প্রতিটি অবদানে আলাদাভাবে উত্তর দেওয়ার সময় বাঁচবে। প্রতিটি রিপোজিটরিতে কোন কোন অ্যাকশন রাখবেন, তা আপনি ঠিক করতে পারেন।
 
-![Create GitHub Action](../_assets/images/gh-actions.png)
+![GitHub Action তৈরি](../_assets/images/gh-actions.png)
 
-### Types of Actions
+### অ্যাকশনের ধরন
 
-There are many types of actions that you can set up for your project, depending on what you need. Below are some GitHub Actions that you usually find across repositories:
+আপনার প্রয়োজন অনুযায়ী আপনার প্রজেক্টের জন্য অনেক ধরনের অ্যাকশন সেট আপ করা যায়। নিচে কয়েকটি GitHub Actions দেওয়া হলো, যেগুলো সাধারণত রিপোজিটরিগুলোতে দেখা যায়:
 
-#### Linter
+#### লিন্টার
 
-Most open source repositories have linters that run on each pull request. Linter is a tool for detecting potential errors and maintaining a consistent code style in a project. [Super-Linter](https://github.com/marketplace/actions/super-linter) is one of the most used actions. This action can help you maintain code quality and achieve a more readable and consistent style.
+বেশিরভাগ ওপেন সোর্স রিপোজিটরিতে এমন লিন্টার থাকে, যা প্রতিটি পুল রিকোয়েস্টে চলে। লিন্টার হলো এমন একটি টুল, যা সম্ভাব্য ত্রুটি শনাক্ত করে এবং প্রজেক্টে একই ধরনের কোড স্টাইল বজায় রাখে। [Super-Linter](https://github.com/marketplace/actions/super-linter) সবচেয়ে বেশি ব্যবহৃত অ্যাকশনগুলোর একটি। এই অ্যাকশন আপনাকে কোডের মান বজায় রাখতে এবং আরও পাঠযোগ্য ও সামঞ্জস্যপূর্ণ স্টাইল পেতে সাহায্য করতে পারে।
 
-#### Deployed Previews
+#### ডিপ্লয় করা প্রিভিউ
 
-You want to be able to view changes, especially visual ones, without shipping them to production. Having these previews in every pull request with [Netlify](https://docs.netlify.com/site-deploys/deploy-previews/) or [Vercel](https://vercel.com/features/previews) lets you preview changes before merging the pull request.
+আপনি প্রোডাকশনে না পাঠিয়েই পরিবর্তন, বিশেষ করে দৃশ্যমান পরিবর্তন, দেখতে পাওয়ার সুবিধা চাইবেন। [Netlify](https://docs.netlify.com/site-deploys/deploy-previews/) বা [Vercel](https://vercel.com/features/previews) দিয়ে প্রতিটি পুল রিকোয়েস্টে এই প্রিভিউ রাখলে পুল রিকোয়েস্ট মার্জ করার আগে পরিবর্তনগুলো দেখে নেওয়া যায়।
 
-#### Issue and Pull Request Scripts
+#### ইস্যু ও পুল রিকোয়েস্ট স্ক্রিপ্ট
 
-Having scripts to welcome new issues and pull requests and let contributors know that you will triage and review them will save you more time than writing them manually, one by one. You can use the [Create or Update Comment](https://github.com/marketplace/actions/create-or-update-comment) action, as we do here at OpenSauced, to [welcome new issues](https://github.com/open-sauced/app/blob/beta/.github/workflows/issue.yml).
+নতুন ইস্যু ও পুল রিকোয়েস্টকে স্বাগত জানাতে এবং কন্ট্রিবিউটরদের জানাতে স্ক্রিপ্ট থাকলে, আপনি যে ট্রায়াজ ও রিভিউ করবেন, ম্যানুয়ালি একটি একটি করে লেখার চেয়ে তাতে অনেক বেশি সময় বাঁচবে। এখানে OpenSauced-এ আমরা যেমন করি, তেমনি আপনিও [নতুন ইস্যুকে স্বাগত জানাতে](https://github.com/open-sauced/app/blob/beta/.github/workflows/issue.yml) [Create or Update Comment](https://github.com/marketplace/actions/create-or-update-comment) অ্যাকশন ব্যবহার করতে পারেন।
 
-#### Code Scanning Tools
+#### কোড স্ক্যানিং টুল {#code-scanning-tools}
 
-Code scanning is a tool for detecting security vulnerabilities, possible bugs, and errors in code. You can use GitHub's [code scanning](https://docs.github.com/en/code-security/code-scanning) feature and configure tools like [CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql), which GitHub maintains, or third-party scanning tools such as [SonarQube](https://github.com/marketplace/actions/official-sonarqube-scan).
+কোড স্ক্যানিং এমন একটি টুল, যা কোডের নিরাপত্তা দুর্বলতা, সম্ভাব্য বাগ ও ত্রুটি শনাক্ত করে। আপনি GitHub-এর [code scanning](https://docs.github.com/en/code-security/code-scanning) ফিচার ব্যবহার করতে এবং GitHub যে [CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) রক্ষণাবেক্ষণ করে তার মতো টুল, কিংবা [SonarQube](https://github.com/marketplace/actions/official-sonarqube-scan)-এর মতো তৃতীয় পক্ষের স্ক্যানিং টুল কনফিগার করতে পারেন।
 
-#### Testing
+#### টেস্টিং {#testing}
 
-Setting up actions to run tests is helpful to ensure your app functions and performs as it should and that no regressions occur with new changes. [Cypress GitHub Action](https://docs.cypress.io/guides/continuous-integration/github-actions) is one of the examples of actions for E2E testing. You can also check out [Is Website Vulnerable](https://github.com/marketplace/actions/is-website-vulnerable) to find publicly known security vulnerabilities in JavaScript libraries' websites or [Step CI Action](https://github.com/marketplace/actions/step-ci-action) for API quality assurance.
+টেস্ট চালানোর জন্য অ্যাকশন সেট আপ করা সহায়ক, কারণ এটি নিশ্চিত করে আপনার অ্যাপ প্রত্যাশামতো কাজ করছে ও চলছে এবং নতুন পরিবর্তনে কোনো রিগ্রেশন হচ্ছে না। [Cypress GitHub Action](https://docs.cypress.io/guides/continuous-integration/github-actions) E2E টেস্টিংয়ের অ্যাকশনের একটি উদাহরণ। আপনি JavaScript লাইব্রেরির ওয়েবসাইটগুলোর জানা নিরাপত্তা দুর্বলতা খুঁজে পেতে [Is Website Vulnerable](https://github.com/marketplace/actions/is-website-vulnerable) দেখতে পারেন, কিংবা এপিআইয়ের মান নিশ্চিত করতে [Step CI Action](https://github.com/marketplace/actions/step-ci-action) দেখতে পারেন।
 
-### Creating and Customizing Actions
+### অ্যাকশন তৈরি ও কাস্টমাইজ করা
 
-You can search for available GitHub Actions on the [GitHub Marketplace](https://github.com/marketplace?type=actions). But if you can't find the one you need, you can create or customize your own actions from existing GitHub Actions.
+আপনি [GitHub Marketplace](https://github.com/marketplace?type=actions)-এ উপলব্ধ GitHub Actions খুঁজতে পারেন। কিন্তু আপনার প্রয়োজনীয়টি না পেলে বিদ্যমান GitHub Actions থেকে নিজের অ্যাকশন তৈরি বা কাস্টমাইজ করতে পারেন।
 
-Brian Douglas, the founder of OpenSauced, created [Take Action](https://github.com/marketplace/actions/contributor-takes-action). This action allows contributors to assign themselves to an issue by typing the `.take` command in the issue's comment, allowing maintainers to focus on more important tasks than assigning issues.
+OpenSauced-এর প্রতিষ্ঠাতা ব্রায়ান ডগলাস [Take Action](https://github.com/marketplace/actions/contributor-takes-action) তৈরি করেছেন। এই অ্যাকশন কন্ট্রিবিউটরদের ইস্যুর মন্তব্যে `.take` কমান্ড লিখে নিজেকে ইস্যুতে অ্যাসাইন করতে দেয়। এতে মেইনটেইনাররা ইস্যু অ্যাসাইন করার চেয়ে আরও গুরুত্বপূর্ণ কাজে মনোযোগ দিতে পারেন।
 
-However, we want contributors only able to take issues that have passed our triage or are not meant to be worked on by the core team. So, we create the [Triage Action](https://github.com/open-sauced/app/blob/beta/.github/workflows/triage.yml) that will block the Take Action whenever a `needs triage` or `core team work` label exists.
+তবে আমরা চাই, কন্ট্রিবিউটররা শুধু সেই ইস্যুগুলোই নিতে পারবেন, যেগুলো আমাদের ট্রায়াজ পেরিয়েছে বা কোর টিমের কাজ করার জন্য নয়। তাই আমরা [Triage Action](https://github.com/open-sauced/app/blob/beta/.github/workflows/triage.yml) তৈরি করেছি, যা `needs triage` বা `core team work` লেবেল থাকলেই Take Action আটকে দেবে।
 
-You can read more about GitHub Actions and how to create one in [the official documentation](https://github.com/features/actions).
+GitHub Actions সম্পর্কে এবং কীভাবে একটি তৈরি করতে হয়, তা আরও জানতে পারবেন [অফিসিয়াল ডকুমেন্টেশনে](https://github.com/features/actions)।
 
-Here are some more resources to give you more information about GitHub Actions and how to set one up:
+GitHub Actions সম্পর্কে আরও তথ্য এবং কীভাবে একটি সেট আপ করবেন, তার জন্য আরও কিছু রিসোর্স:
 
 - [GitHub Actions: A Maintainer's Best Friend](https://dev.to/opensauced/github-actions-a-maintainers-best-friend-488n)
 - [Setting Up Your First GitHub Action](https://dev.to/opensauced/setting-up-your-first-github-action-for-specific-contributions-33a4)
 
-## CI/CD Pipelines
+## CI/CD পাইপলাইন
 
-Leveraging GitHub Actions to bring Continuous Integration / Continuous Delivery or Deployment (CI/CD) into your workflow directly in your repository will let you run code, test, build, and deliver or deploy software with simple and secure workflows. Automating these tasks will speed up your deployment process.
+আপনার রিপোজিটরিতেই সরাসরি আপনার ওয়ার্কফ্লোতে কন্টিনিউয়াস ইন্টিগ্রেশন / কন্টিনিউয়াস ডেলিভারি বা ডিপ্লয়মেন্ট (CI/CD) আনতে GitHub Actions কাজে লাগালে আপনি সহজ ও নিরাপদ ওয়ার্কফ্লোর মাধ্যমে কোড চালাতে, টেস্ট করতে, বিল্ড করতে এবং সফটওয়্যার সরবরাহ বা ডিপ্লয় করতে পারবেন। এই কাজগুলো স্বয়ংক্রিয় করলে আপনার ডিপ্লয়মেন্ট প্রক্রিয়া দ্রুততর হবে।
 
-Using Git, GitHub, and GitHub Actions to build a CI/CD pipeline should give you confidence in your code.
+Git, GitHub ও GitHub Actions ব্যবহার করে একটি CI/CD পাইপলাইন বানালে আপনার কোডের প্রতি আপনার আত্মবিশ্বাস আসা উচিত।
 
-### Continuous Delivery vs. Continuous Deployment
+### কন্টিনিউয়াস ডেলিভারি বনাম কন্টিনিউয়াস ডিপ্লয়মেন্ট
 
-From the official [GitHub Resources](https://resources.github.com/ci-cd/):
+অফিসিয়াল [GitHub Resources](https://resources.github.com/ci-cd/) থেকে:
 
-> In a CI/CD pipeline that uses continuous _delivery_, automation pauses when developers push to production. A human—your operations, security, or compliance team—still needs to manually sign off before final release, adding more delays.
+> যে CI/CD পাইপলাইনে কন্টিনিউয়াস _ডেলিভারি_ ব্যবহার হয়, সেখানে ডেভেলপাররা প্রোডাকশনে পুশ করার সময় অটোমেশন থেমে যায়। চূড়ান্ত রিলিজের আগে একজন মানুষ, অর্থাৎ আপনার অপারেশনস, নিরাপত্তা বা কমপ্লায়েন্স টিমকে, তখনো ম্যানুয়ালি অনুমোদন দিতে হয়, যা আরও দেরি যোগ করে।
 >
-> On the other hand, continuous _deployment_ automates the entire release process. Code changes are deployed to customers as soon as they pass all the required tests.
+> অন্যদিকে, কন্টিনিউয়াস _ডিপ্লয়মেন্ট_ পুরো রিলিজ প্রক্রিয়া স্বয়ংক্রিয় করে। সব প্রয়োজনীয় টেস্ট পাস করার সাথে সাথেই কোড পরিবর্তনগুলো গ্রাহকদের কাছে ডিপ্লয় হয়ে যায়।
 
-A project usually starts with continuous delivery and integrates more automated testing over time.
+একটি প্রজেক্ট সাধারণত কন্টিনিউয়াস ডেলিভারি দিয়ে শুরু করে এবং সময়ের সাথে আরও স্বয়ংক্রিয় টেস্টিং যুক্ত করে।
 
-### Build a CI/CD Pipeline with GitHub Actions
+### GitHub Actions দিয়ে একটি CI/CD পাইপলাইন বানান
 
-Below are some helpful resources to help you build a CI/CD pipeline with GitHub Actions:
+GitHub Actions দিয়ে একটি CI/CD পাইপলাইন বানাতে সহায়ক কয়েকটি রিসোর্স:
 
 - [GitHub Docs: The complete CI/CD solution](https://github.com/solutions/ci-cd/)
 - [How to build a CI/CD pipeline with GitHub Actions in four simple steps](https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/)
 
 ## GitHub CLI
 
-[GitHub CLI](https://cli.github.com/) is an open source tool that enables you to use GitHub from your computer's command line. It allows you to:
+[GitHub CLI](https://cli.github.com/) হলো একটি ওপেন সোর্স টুল, যা আপনাকে আপনার কম্পিউটারের কমান্ড লাইন থেকে GitHub ব্যবহার করতে দেয়। এটি দিয়ে আপনি করতে পারেন:
 
-- forking and cloning repositories,
-- checking out a pull request and reviewing it locally,
-- creating issues and pull requests,
-- viewing a pull request, issue, or repository right from your terminal.
+- রিপোজিটরি ফর্ক ও ক্লোন করা,
+- কোনো পুল রিকোয়েস্ট চেকআউট করে লোকালি রিভিউ করা,
+- ইস্যু ও পুল রিকোয়েস্ট তৈরি করা,
+- আপনার টার্মিনাল থেকেই সরাসরি কোনো পুল রিকোয়েস্ট, ইস্যু বা রিপোজিটরি দেখা।
 
-Using the GitHub CLI will save you time and boost your productivity as a maintainer. You don't need to switch between the GitHub website and your terminal.
+GitHub CLI ব্যবহার করলে আপনার সময় বাঁচবে এবং মেইনটেইনার হিসেবে উৎপাদনশীলতা বাড়বে। আপনাকে GitHub ওয়েবসাইট ও আপনার টার্মিনালের মধ্যে বারবার যাওয়া-আসা করতে হবে না।
 
-Visit the [GitHub CLI repository](https://github.com/cli/cli#installation) for information on installing GitHub CLI on your machine, and read [this blog post](https://dev.to/opensauced/boost-productivity-with-the-github-cli-2mne) to get started.
+আপনার মেশিনে GitHub CLI ইনস্টল করার তথ্যের জন্য [GitHub CLI রিপোজিটরি](https://github.com/cli/cli#installation) দেখুন এবং শুরু করতে [এই ব্লগ পোস্টটি](https://dev.to/opensauced/boost-productivity-with-the-github-cli-2mne) (ইংরেজি) পড়ুন।
 
-## Issues and Pull Request Templates
+## ইস্যু ও পুল রিকোয়েস্ট টেমপ্লেট
 
-Have you ever found yourself in a situation where you're reviewing pull requests or triaging issues, but you can't understand what's happening because contributors didn't provide sufficient information? Or, have you had to close an issue or pull request because the description, screenshot, or other crucial information was missing?
+আপনি কি কখনো এমন পরিস্থিতিতে পড়েছেন, যেখানে পুল রিকোয়েস্ট রিভিউ বা ইস্যু ট্রায়াজ করছেন, কিন্তু কন্ট্রিবিউটররা পর্যাপ্ত তথ্য না দেওয়ায় কী ঘটছে তা বুঝতে পারছেন না? অথবা বিবরণ, স্ক্রিনশট বা অন্য জরুরি তথ্য না থাকায় কি আপনাকে কোনো ইস্যু বা পুল রিকোয়েস্ট বন্ধ করতে হয়েছে?
 
-The good news is that you can address these problems by creating issue and pull request templates. These templates allow you to customize and standardize it to include necessary information. You can see them as guides for contributors to follow when writing an issue or pull request for your project. Creating templates saves time on triaging issues, reviewing pull requests, and ensuring you get all the information you need from your contributors. Additionally, future contributors can benefit from these templates by understanding the history of changes made, which can help them debug or understand the code involved.
+সুখবর হলো, ইস্যু ও পুল রিকোয়েস্ট টেমপ্লেট তৈরি করে আপনি এই সমস্যাগুলো মোকাবিলা করতে পারেন। এই টেমপ্লেটগুলো আপনাকে প্রয়োজনীয় তথ্য অন্তর্ভুক্ত করার জন্য এটিকে নিজের মতো সাজাতে ও মানসম্মত করতে দেয়। আপনি এগুলোকে আপনার প্রজেক্টের জন্য ইস্যু বা পুল রিকোয়েস্ট লেখার সময় কন্ট্রিবিউটরদের অনুসরণ করার গাইড হিসেবে দেখতে পারেন। টেমপ্লেট তৈরি করলে ইস্যু ট্রায়াজ ও পুল রিকোয়েস্ট রিভিউয়ে সময় বাঁচে এবং আপনার কন্ট্রিবিউটরদের কাছ থেকে প্রয়োজনীয় সব তথ্য পাওয়া নিশ্চিত হয়। এছাড়া ভবিষ্যতের কন্ট্রিবিউটররাও এই টেমপ্লেট থেকে উপকৃত হতে পারেন, কারণ তাঁরা পরিবর্তনের ইতিহাস বুঝতে পারবেন, যা তাঁদের ডিবাগ করতে বা সংশ্লিষ্ট কোড বুঝতে সাহায্য করতে পারে।
 
-You can learn more about [configuring issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) and [creating a pull request template](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) on the official GitHub documentation.
+অফিসিয়াল GitHub ডকুমেন্টেশনে আপনি [ইস্যু টেমপ্লেট কনফিগার করা](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) এবং [পুল রিকোয়েস্ট টেমপ্লেট তৈরি করা](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) সম্পর্কে আরও জানতে পারবেন।
 
 ## Saved Replies
 
-Sometimes, you repeatedly write the same reply to issues or pull requests. Clear communication between maintainers and contributors is crucial. So, when you write all comments manually, your messages will no longer be consistent and may be unclear. You can create saved replies when you frequently respond to issues and pull requests with the same comments.
+কখনো কখনো আপনি ইস্যু বা পুল রিকোয়েস্টে বারবার একই উত্তর লেখেন। মেইনটেইনার ও কন্ট্রিবিউটরদের মধ্যে স্পষ্ট যোগাযোগ অত্যন্ত গুরুত্বপূর্ণ। তাই আপনি সব মন্তব্য ম্যানুয়ালি লিখলে আপনার বার্তাগুলো আর সামঞ্জস্যপূর্ণ থাকবে না এবং অস্পষ্ট হতে পারে। ইস্যু ও পুল রিকোয়েস্টে ঘন ঘন একই মন্তব্য দিয়ে উত্তর দিলে আপনি সেভড রিপ্লাই তৈরি করতে পারেন।
 
-[Saved replies](https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/about-saved-replies) allow you to create a reusable response to issues, pull requests, and discussions and use it across repositories. It will save you time responding to contributors while keeping the consistency of your message. You can always modify your replies if necessary.
+[সেভড রিপ্লাই](https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/about-saved-replies) আপনাকে ইস্যু, পুল রিকোয়েস্ট ও ডিসকাশনের জন্য পুনর্ব্যবহারযোগ্য উত্তর তৈরি করতে এবং তা বিভিন্ন রিপোজিটরিতে ব্যবহার করতে দেয়। এটি কন্ট্রিবিউটরদের উত্তর দিতে আপনার সময় বাঁচাবে এবং আপনার বার্তার সামঞ্জস্যও বজায় রাখবে। প্রয়োজন হলে আপনি সবসময় আপনার উত্তর পরিবর্তন করতে পারেন।
 
-Read the GitHub documentation for complete instructions about how to [create saved replies](https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/creating-a-saved-reply).
+কীভাবে [সেভড রিপ্লাই তৈরি করবেন](https://docs.github.com/en/get-started/writing-on-github/working-with-saved-replies/creating-a-saved-reply), তার পূর্ণাঙ্গ নির্দেশনার জন্য GitHub ডকুমেন্টেশন পড়ুন।
 
-![Saved replies gif](../_assets/gifs/saved-replies.gif)
+![সেভড রিপ্লাইয়ের GIF](../_assets/gifs/saved-replies.gif)
 
 ## Code Owners
 
-Most of the time, contributors don't know the maintainers of a project, so they don't know who to reach out to review their pull requests. When they create a pull request, they usually leave a comment without tagging anyone, like, "Can you please review my PR?" Without being tagged, maintainers don't get notified about this new pull request and comment, causing it to be missed from the radar. Adding the CODEOWNERS file to the repository will help you to automate and tackle this issue.
+বেশিরভাগ সময় কন্ট্রিবিউটররা প্রজেক্টের মেইনটেইনারদের চেনেন না, তাই জানেন না তাঁদের পুল রিকোয়েস্ট রিভিউয়ের জন্য কার কাছে যেতে হবে। পুল রিকোয়েস্ট তৈরি করার সময় তাঁরা সাধারণত কাউকে ট্যাগ না করেই একটি মন্তব্য রাখেন, যেমন "Can you please review my PR?" (আপনি কি আমার PR রিভিউ করতে পারবেন?)। ট্যাগ না করলে মেইনটেইনাররা এই নতুন পুল রিকোয়েস্ট ও মন্তব্যের বিজ্ঞপ্তি পান না, ফলে তা নজরের বাইরে থেকে যায়। রিপোজিটরিতে CODEOWNERS ফাইল যোগ করলে এই সমস্যা স্বয়ংক্রিয়ভাবে সামাল দেওয়া যাবে।
 
-From the [official GitHub documentation](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners):
+[অফিসিয়াল GitHub ডকুমেন্টেশন](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) থেকে:
 
-> You can use a CODEOWNERS file to define individuals or teams that are responsible for code in a repository.
+> রিপোজিটরির কোডের দায়িত্বে থাকা ব্যক্তি বা দল নির্ধারণ করতে আপনি একটি CODEOWNERS ফাইল ব্যবহার করতে পারেন।
 
-Here is an example of a [CODEOWNERS file](https://github.com/open-sauced/docs/blob/main/.github/CODEOWNERS) in the OpenSauced docs repository that contains code as below:
+OpenSauced docs রিপোজিটরির [CODEOWNERS ফাইলের](https://github.com/open-sauced/docs/blob/main/.github/CODEOWNERS) একটি উদাহরণ এখানে দেওয়া হলো, যাতে নিচের কোড আছে:
 
 ```text
 * @open-sauced/docs
 ```
 
-This syntax means that the `@open-sauced/docs` team will be the default owner for everything in the repository and will automatically added as reviewers whenever someone creates a pull request.
+এই সিনট্যাক্সের অর্থ হলো, রিপোজিটরির সবকিছুর ডিফল্ট মালিক হবে `@open-sauced/docs` টিম এবং কেউ পুল রিকোয়েস্ট তৈরি করলেই তাঁদের স্বয়ংক্রিয়ভাবে রিভিউয়ার হিসেবে যোগ করা হবে।
 
 :::note
 
-If you want to match two or more code owners with the same pattern, all the code owners must be on the same line.
+একই প্যাটার্নের সাথে দুই বা ততোধিক কোড ওনার মেলাতে চাইলে সব কোড ওনারকে একই লাইনে থাকতে হবে।
 
 :::
 
-There are some benefits to having this file in your repository:
+আপনার রিপোজিটরিতে এই ফাইল রাখার কিছু সুবিধা:
 
-- **Review request notification**
+- **রিভিউ অনুরোধের বিজ্ঞপ্তি**
 
-  Once you have specified who can review and maintain a repository, these code owners are automatically notified and requested for review when someone opens a pull request that modifies code that they own. That way, you don't need to add reviewers manually.
+  কারা রিপোজিটরি রিভিউ ও রক্ষণাবেক্ষণ করতে পারবেন, তা নির্ধারণ করে দেওয়ার পর যখন কেউ এমন পুল রিকোয়েস্ট খোলেন, যা এই কোড ওনারদের মালিকানাধীন কোড পরিবর্তন করে, তখন তাঁরা স্বয়ংক্রিয়ভাবে বিজ্ঞপ্তি পান এবং রিভিউয়ের জন্য অনুরোধ পান। এভাবে আপনাকে ম্যানুয়ালি রিভিউয়ার যোগ করতে হয় না।
 
-- **Prevent contributors from manually adding reviewers**
+- **কন্ট্রিবিউটরদের ম্যানুয়ালি রিভিউয়ার যোগ করা আটকানো**
 
-  Setting up the CODEOWNERS file prevents external contributors from manually adding reviewers because it automatically adds them. That way, contributors don't have to comment and tag anyone on the comment to review their pull request. It also helps you to stop them from adding non-maintainers — such as regular contributors — as reviewers.
+  CODEOWNERS ফাইল সেট আপ করলে বাইরের কন্ট্রিবিউটররা ম্যানুয়ালি রিভিউয়ার যোগ করতে পারেন না, কারণ তা স্বয়ংক্রিয়ভাবে যোগ হয়ে যায়। এতে কন্ট্রিবিউটরদের নিজেদের পুল রিকোয়েস্ট রিভিউ করাতে মন্তব্য করে কাউকে ট্যাগ করতে হয় না। এটি নিয়মিত কন্ট্রিবিউটরদের মতো যাঁরা মেইনটেইনার নন, তাঁদের রিভিউয়ার হিসেবে যোগ করা বন্ধ করতেও আপনাকে সাহায্য করে।
 
-- **Branch protection**
+- **ব্রাঞ্চ প্রোটেকশন**
 
-  If you opt-in to "Require approval" and "Require review from Code Owners" to protect a branch, a certain number of code owners must approve any pull request before it can be merged into the protected branch. This can reduce the chance of merging pull requests that can break production.
+  কোনো ব্রাঞ্চ সুরক্ষিত করতে আপনি "Require approval" ও "Require review from Code Owners" বেছে নিলে সুরক্ষিত ব্রাঞ্চে মার্জ হওয়ার আগে যেকোনো পুল রিকোয়েস্টকে নির্দিষ্ট সংখ্যক কোড ওনারের অনুমোদন পেতে হবে। এতে প্রোডাকশন ভেঙে দিতে পারে এমন পুল রিকোয়েস্ট মার্জ হওয়ার সম্ভাবনা কমতে পারে।
 
-Now that you understand the basics of what maintainers do and the tools, the [next chapter](your-team.md) will teach you how to build your team.
+মেইনটেইনাররা কী করেন এবং কোন কোন টুল আছে, এর মৌলিক বিষয়গুলো এখন আপনার জানা। [পরবর্তী অধ্যায়ে](your-team.md) আপনি শিখবেন কীভাবে আপনার টিম গড়ে তুলবেন।

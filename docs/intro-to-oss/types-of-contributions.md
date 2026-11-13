@@ -2,117 +2,111 @@
 id: types-of-contributions
 title: "ওপেন সোর্স অবদানের ধরন"
 sidebar_label: "অবদানের ধরন"
-keywords: ["types of contributions", "types of open source contributions", "open source contributions", "non-coding contributions", "types of non-coding contributions", "open source non-coding contributions", "types of coding contributions", "coding contributions", "open source coding contribution", "contributing to open source documentation", "graphic design contribution in open source", "content creation contribution in open source", "open source for beginners", "open source contribution for beginners", "Open Source", "Open Source Community"]
+keywords: ["ওপেন সোর্স অবদানের ধরন", "নন-কোডিং অবদান", "কোডিং অবদান", "ওপেন সোর্সে ডকুমেন্টেশন অবদান", "ওপেন সোর্সে গ্রাফিক ডিজাইন অবদান", "ওপেন সোর্সে কনটেন্ট তৈরির অবদান", "কোড ছাড়া ওপেন সোর্সে অবদান", "ওপেন সোর্সে অবদান", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+ওপেন সোর্স প্রজেক্টে অবদান নানা রূপে হতে পারে, যেমন কোডিং, ডকুমেন্টেশন, টেস্টিং ও আরও অনেক কিছু। এটা মনে রাখা জরুরি যে ওপেন সোর্স অবদান শুধু ডেভেলপারদের মধ্যেই সীমাবদ্ধ নয়। কারিগরি দক্ষতা যা-ই হোক, যে কেউ ওপেন সোর্স প্রজেক্টে অবদান রাখতে পারেন।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+এই অধ্যায়ে আমরা ওপেন সোর্সের নন-কোডিং ও কোডিং অবদানের ধরনগুলো নিয়ে আলোচনা করব।
 
-:::
+## নন-কোডিং অবদান
 
-Contributions to open source projects can take many forms, such as coding, documentation, testing, and more. It is important to note that open source contributions are not limited to developers only. Anyone can contribute to open source projects, regardless of their technical skills.
+নন-কোডিং অবদান হলো এমন ধরনের অবদান, যাতে কোড লেখা বা পরিবর্তন করার প্রয়োজন হয় না। তবুও ওপেন সোর্স প্রজেক্টের টেকসই অস্তিত্ব ও বিকাশের জন্য এগুলো অপরিহার্য।
 
-In this chapter, we will discuss the non-coding and coding types of contributions in open source.
+এ ধরনের অবদান বিভিন্ন দক্ষতা ও পটভূমির মানুষকে সফটওয়্যার ও কমিউনিটিতে অংশ নিতে এবং অর্থবহ অবদান রাখতে সুযোগ দেয়। কোডিং না জেনে ওপেন সোর্স প্রজেক্টে কীভাবে অবদান রাখা যায়, তা আরও জানতে আপনি [এই প্রবন্ধটি](https://dev.to/opensauced/how-to-contribute-to-open-source-without-knowing-how-to-code-a-guide-with-project-suggestions-59e5) (ইংরেজি) পড়তে পারেন।
 
-## Non-Coding Contributions
+এরপর আমরা কিছু প্রচলিত নন-কোডিং অবদান নিয়ে কথা বলব।
 
-Non-coding contributions are types of contributions that do not involve writing or modifying code. However, they are essential for the sustainability and growth of open source projects.
+### ডকুমেন্টেশন
 
-These types of contributions allow individuals with various skills and backgrounds to participate and make meaningful contributions to the software and the community. You can read [this article](https://dev.to/opensauced/how-to-contribute-to-open-source-without-knowing-how-to-code-a-guide-with-project-suggestions-59e5) to learn more about contributing to open source projects without knowing how to code.
+আপনি কি শব্দ ভালোবাসেন? ব্যাকরণের ভুল কি আপনাকে বিরক্ত করে? জটিল সমস্যা ভেঙে সহজ করতে বা মানুষকে শিখতে সাহায্য করতে কি আপনার ভালো লাগে? তাহলে ডকুমেন্টেশন আপনার জন্যই!
 
-Next, we will talk about some common non-coding contributions.
+ওপেন সোর্স প্রজেক্টের জন্য ডকুমেন্টেশন অত্যন্ত গুরুত্বপূর্ণ। এতে ওপেন সোর্স সফটওয়্যার প্রজেক্টের সাথে থাকা লিখিত রিসোর্স তৈরি, উন্নত বা রক্ষণাবেক্ষণ করা হয়। ডকুমেন্টেশন একটি প্রজেক্টকে আরও সহজলভ্য ও ব্যবহারবান্ধব করে তুলতে, নতুন ব্যবহারকারী আকৃষ্ট করতে এবং প্রজেক্টে বারবার অবদান রাখতে উৎসাহ জোগাতে পারে।
 
-### Documentation
+#### ডকুমেন্টেশনে অবদান রাখার টিপস
 
-Are you a lover of words? Do grammar errors irritate you? Do you like breaking down complex problems or helping people learn? Then, documentation is for you!
+আপনি যদি ডকুমেন্টেশনে অবদান রাখতে আগ্রহী হন, তাহলে নিচের কয়েকটি টিপস আপনার কাজে লাগতে পারে:
 
-Documentation is crucial to open source projects. It involves creating, improving, or maintaining the written resources accompanying open source software projects. Documentation can make a project more accessible and user-friendly, help attract new users, and encourage repeat contributions to the project.
+- **পুরো ডকুমেন্টেশন পড়ুন**। <br/> পুরো ডকুমেন্টেশন পড়লে পণ্যটি এবং তা কীভাবে ব্যবহার করতে হয়, সে সম্পর্কে আপনার ধারণা আরও পরিষ্কার হবে।
 
-#### Tips for Contributing to Documentation
+- **আপনার দক্ষতা ও আগ্রহের সাথে মেলে এমন একটি কাজ খুঁজুন**। <br/> কোথা থেকে শুরু করবেন বুঝতে না পারলে মেইনটেইনারের কাছে যাওয়ার আগে এমন ইস্যু বা আলোচনা খুঁজুন, যেগুলো আপনি নিজে সমাধান করতে পারবেন বলে মনে করেন।
 
-If you are interested in contributing to documentation, here are a few tips that you might find helpful:
+- **পণ্যটি ব্যবহার করুন**। <br/> নিজে পণ্যটি ব্যবহার করলে আপনি ব্যবহারকারীর দৃষ্টিভঙ্গি বুঝতে পারবেন এবং ডকুমেন্টেশনে কোন তথ্য যোগ করা বা বাদ দেওয়া দরকার, তা ঠিক করতে পারবেন।
 
-- **Read the entire documentation**. <br/> Reading the whole documentation will help you better understand the product and how to use it.
+- **ধৈর্য ধরুন ও লেগে থাকুন**। <br/> ভালো ডকুমেন্টেশন লিখতে সময় লাগে। দরকার হলে সাহায্য চাইতে ভয় পাবেন না।
 
-- **Find a task that fits your skills and interests**. <br/> If you're unsure where to start, look for issues or discussions you believe you can solve before reaching out to a maintainer.
+#### ডকুমেন্টেশনে অবদানের উদাহরণ
 
-- **Use the product**. <br/> Using the product yourself will help you gain user insight and help you determine which information needs to be added to or removed from the documentation.
+এখন হয়তো ভাবছেন, কোনো প্রজেক্টের ডকুমেন্টেশনে অবদান রাখতে কী করা উচিত। কী কী অবদান রাখা যায়, তার কিছু উদাহরণ এখানে দেওয়া হলো:
 
-- **Be patient and persistent**. <br/> Writing good documentation takes time. Don't be afraid to ask for help if you need it.
+- **README ফাইল লেখা বা হালনাগাদ করা** <br/> আপনি যদি দেখেন কোনো প্রজেক্টের এমন একটি README দরকার, যা ব্যাখ্যা করে তা কীভাবে ইনস্টল ও ব্যবহার করতে হয়, তাহলে আপনি একটি লিখে দেওয়ার প্রস্তাব দিতে পারেন। অথবা README-তে কোনো তথ্য বা নির্দেশনা বাদ পড়েছে বলে মনে হলে আপনি একটি ইস্যু খুলে তা কীভাবে হালনাগাদ করা যায়, সে বিষয়ে পরামর্শ দিতে পারেন।
 
-#### Examples of Documentation Contributions
+- **টিউটোরিয়াল তৈরি করা** <br/> কোনো ফিচার নিয়ে ডকুমেন্টেশন না থাকলে আপনি সেই ঘাটতি পূরণ করে ফিচারটির মাধ্যমে ব্যবহারকারীদের পথ দেখানো একটি টিউটোরিয়াল তৈরি করতে পারেন।
 
-Now, you might wonder what you should do to contribute to a project's documentation. Here are some examples of what to contribute:
+- **ডকুমেন্টেশন হালনাগাদ করা** <br/> কখনো কখনো একটি প্রজেক্টে নতুন পরিবর্তন বা রিলিজ আসে, কিন্তু মেইনটেইনারদের তখনো ডকুমেন্টেশন হালনাগাদ করা বাকি থাকে। এই নতুন পরিবর্তনগুলো প্রতিফলিত করে ডকুমেন্টেশন হালনাগাদ করতে আপনি সাহায্য করতে পারেন।
 
-- **Write or update the README file** <br/> If you see that a project needs a README explaining how to install and use it, you can offer to write one. Or, if you notice information or instructions are missing from the README, you can create an issue and suggest how to update it.
+- **ডকুমেন্টেশন অনুবাদ করা** <br/> আপনি যদি অন্য ভাষায় দক্ষ হন, তাহলে ডকুমেন্টেশন অনুবাদ করে প্রজেক্টকে আরও বেশি ব্যবহারকারীর কাছে পৌঁছাতে সাহায্য করতে পারেন।
 
-- **Create a tutorial** <br/> When the documentation about a feature is unavailable, you can address this and create a tutorial that guides users through the feature.
+- **টাইপো ও ব্যাকরণগত ভুল ঠিক করা** <br/> ছোট মনে হলেও টাইপো ও ব্যাকরণগত ভুল ঠিক করা ডকুমেন্টেশনে সামঞ্জস্য ও স্পষ্টতা বজায় রাখতে সাহায্য করে।
 
-- **Update documentation** <br/> Sometimes, a project has new changes or releases, but the maintainers still need to update the documentation. You can help update the documentation to reflect these new changes.
+### গ্রাফিক ডিজাইন
 
-- **Translate documentation** <br/> If you are proficient in other languages, you can help a project by translating the documentation to expand its reach to more users.
+আপনি কি সৃজনশীল মানুষ, যিনি ডিজাইনে আগ্রহী? তাহলে ডিজাইনের মাধ্যমে কোনো ওপেন সোর্স প্রজেক্টে অবদান রাখার কথা ভাবতে পারেন।
 
-- **Fix typos and grammatical errors** <br/> Although they seem small, fixing typos and grammatical errors can help maintain consistency and clarity in the documentation.
+এই অবদানের মধ্যে আছে ওপেন সোর্স প্রজেক্টের জন্য ভিজ্যুয়াল উপাদান তৈরি করা, যেমন লোগো, আইকন, ইলাস্ট্রেশন, ওয়েবসাইট ডিজাইন এবং অন্যান্য গ্রাফিক্যাল উপাদান। এই ভিজ্যুয়াল উপাদানগুলো প্রজেক্টের সামগ্রিক ব্যবহারকারী অভিজ্ঞতা ও ব্র্যান্ডিং বাড়াতে গুরুত্বপূর্ণ ভূমিকা রাখে। গ্রাফিক ডিজাইনের অবদান ওপেন সোর্স সফটওয়্যারকে আরও আকর্ষণীয়, ব্যবহারবান্ধব ও সহজে চেনার মতো করে তুলতে পারে।
 
-### Graphic Design
+ডিজাইনের মাধ্যমে কী কী অবদান রাখা যায়, তার কিছু উদাহরণ:
 
-Are you a creative person who's into design? If so, you might want to consider contributing to an open source project through design.
+- **লোগো ও ব্র্যান্ডিং** <br/> একটি ওপেন সোর্স প্রজেক্টের জন্য অনন্য ও স্মরণীয় লোগো ডিজাইন করলে তার পরিচয় ও ব্র্যান্ড প্রতিষ্ঠিত হতে পারে। ভালোভাবে ডিজাইন করা লোগো প্রজেক্টকে সহজে চেনার মতো করে তোলে এবং তাকে পেশাদার ভাবমূর্তি দেয়।
 
-This contribution involves creating visual assets for open source projects, such as logos, icons, illustrations, website designs, and other graphical elements. These visual assets play a significant role in enhancing the project's overall user experience and branding. Graphic design contributions can make open source software more appealing, user-friendly, and recognizable.
+- **আইকন ডিজাইন** <br/> ব্যবহারকারী ইন্টারফেসের জন্য আইকন অপরিহার্য। আপনি সফটওয়্যার অ্যাপ্লিকেশন বা ওয়েবসাইটের জন্য কাস্টম আইকন তৈরি করে প্রজেক্টের দৃশ্যগত আকর্ষণ ও ব্যবহারযোগ্যতা বাড়াতে পারেন।
 
-Here are some examples of what to contribute through design:
+- **ওয়েবসাইট ডিজাইন** <br/> ওপেন সোর্স প্রজেক্টের প্রায়ই প্রজেক্ট সম্পর্কে তথ্য ও ডকুমেন্টেশন দেওয়ার জন্য ওয়েবসাইট থাকে। আপনি ওয়েবসাইটের লেআউট, গ্রাফিক্স, ব্যানার ও অন্যান্য ভিজ্যুয়াল উপাদান ডিজাইন করে সাইটটিকে আরও আকর্ষণীয় ও ব্যবহারবান্ধব করতে অবদান রাখতে পারেন।
 
-- **Logo and branding** <br/> Designing a unique and memorable logo for an open source project can help establish its identity and brand. A well-designed logo can make the project recognizable and give it a professional image.
+- **ইউজার ইন্টারফেস (UI) ডিজাইন** <br/> সফটওয়্যার প্রজেক্টের জন্য UI ডিজাইন অত্যন্ত গুরুত্বপূর্ণ। আপনি ইউজার ইন্টারফেসের মকআপ, ওয়্যারফ্রেম ও হাই-ফিডেলিটি ডিজাইন তৈরি করে সেটিকে আরও সহজবোধ্য ও দৃষ্টিনন্দন করতে পারেন।
 
-- **Icon design** <br/> Icons are essential for user interfaces. You can create custom icons for software applications or websites, improving the visual appeal and usability of the project.
+- **ইউজার এক্সপেরিয়েন্স (UX) ডিজাইন** <br/> ব্যবহারকারীরা সফটওয়্যারের সাথে কীভাবে মিথস্ক্রিয়া করেন তা বিবেচনা করে আপনি সামগ্রিক ব্যবহারকারী অভিজ্ঞতা উন্নত করতে অবদান রাখতে পারেন। এর মধ্যে আছে ইউজার ফ্লো, নেভিগেশন ও ইউজেবিলিটি টেস্টিং ডিজাইন করা।
 
-- **Website design** <br/> Open source projects often have websites to provide information and documentation about the project. You can contribute by designing website layouts, graphics, banners, and other visual elements to make the site more attractive and user-friendly.
+- **অ্যাক্সেসিবিলিটি ডিজাইন** <br/> সফটওয়্যার ও ওয়েবসাইট অবশ্যই সব ব্যবহারকারীর জন্য সহজলভ্য হতে হবে, তাঁদের কোনো প্রতিবন্ধিতা থাকুক বা না থাকুক। যেমন, অ্যাক্সেসিবল রঙের স্কিম ও কন্ট্রাস্ট তৈরি করে কিংবা প্রজেক্টের ভেতরে ভিজ্যুয়াল উপাদানের অবস্থান ঠিক করে আপনি অবদান রাখতে পারেন। সব ভিজ্যুয়াল উপাদান যেন স্পষ্ট ও ব্যবহার করা সহজ হয়, তা নিশ্চিত করতে আপনি সাহায্য করতে পারেন।
 
-- **User Interface (UI) design** <br/> UI design is crucial for software projects. You can create mockups, wireframes, and high-fidelity designs for the user interface, making it more intuitive and visually appealing.
+- **রেসপন্সিভ ডিজাইন** <br/> বিভিন্ন ডিভাইস ও স্ক্রিনের আকারে ভালোভাবে কাজ করে এমন ভিজ্যুয়াল ডিজাইন করা আধুনিক ওয়েব অ্যাপ্লিকেশনের জন্য অত্যন্ত গুরুত্বপূর্ণ। রেসপন্সিভ ডিজাইন নিশ্চিত করে যে প্রজেক্টটি ডেস্কটপ ও মোবাইল, উভয় ডিভাইসেই দেখতে ভালো লাগে এবং সঠিকভাবে কাজ করে।
 
-- **User Experience (UX) design** <br/> By considering how users interact with the software, you can contribute to improving the overall user experience. This includes designing user flows, navigation, and usability testing.
+### কনটেন্ট তৈরি
 
-- **Accessibility design** <br/> Software and websites must be accessible to all users, regardless of whether they have disabilities. You can contribute, for example, by creating accessible color schemes and contrast or positioning visual elements within the project. You can help ensure all visual elements are clear and easy to use.
+ব্লগ পোস্ট, ভিডিও বা স্ট্রিমিংয়ের মতো কনটেন্ট তৈরির মাধ্যমে অবদান রাখার মধ্যে আছে কনটেন্ট নিয়ে গবেষণা করা, লেখা বা রেকর্ড করা, সম্পাদনা করা এবং প্রকাশ করা। এর লক্ষ্য হলো কোনো নির্দিষ্ট ওপেন সোর্স সফটওয়্যার, প্রজেক্ট, প্রযুক্তি বা সেরা চর্চা সম্পর্কে অন্যদের জানানো ও শেখানো, যাতে আরও বেশি ব্যবহারকারী ও কন্ট্রিবিউটর আকৃষ্ট হন। ডকুমেন্টেশনের মতোই এসব কনটেন্ট তৈরি করতে আপনাকে কোডিং জানতে হবে এমন নয়।
 
-- **Responsive design** <br/> Designing visuals that work well on various devices and screen sizes is crucial for modern web applications. Responsive design ensures the project looks good and functions properly on desktop and mobile devices.
+কী তৈরি করা যায়, তার কিছু ধারণা:
 
-### Content Creation
+- **সর্বশেষ ফিচার** <br/> আপনি কোনো ওপেন সোর্স প্রজেক্টের সর্বশেষ ফিচার সম্পর্কে জানাতে পারেন, যেমন সফটওয়্যারের নতুন সংস্করণ বা নতুন প্লাগইন।
 
-Contribution through content creation—blog posts, videos, or streaming—involves researching, writing or recording, editing, and publishing the content. The goal is to inform and educate others on a particular open source software, project, technology, or best practices to attract more users and contributors. Like documentation, you don't necessarily have to know how to code to create these contents.
+- **টিউটোরিয়াল** <br/> বেশিরভাগ সময় ডকুমেন্টেশনে সব স্তরের ব্যবহারকারীর কথা মাথায় রেখে প্রজেক্টটি বিস্তারিত ব্যাখ্যা করার জায়গা সীমিত থাকে। আপনি এই সুযোগ কাজে লাগিয়ে নির্দিষ্ট শ্রোতাদের লক্ষ্য করে সফটওয়্যারটি ইনস্টল, কনফিগার বা ব্যবহার করার টিউটোরিয়াল তৈরি করতে পারেন।
 
-Here are some ideas about what to create:
+- **প্রভাব** <br/> কোনো ওপেন সোর্স প্রজেক্ট তার ব্যবহারকারীদের ওপর কী প্রভাব ফেলে, সে সম্পর্কে আপনি লেখার কথা ভাবতে পারেন। তাঁরা কেন এটি ব্যবহার করতে চান, কিংবা সফটওয়্যারটি ব্যবহারের সুবিধাগুলো কী কী? এভাবে আপনি আরও ব্যবহারকারী পেতে প্রজেক্টটির প্রচারে সাহায্য করছেন।
 
-- **Latest features** <br/> You can share the latest features of an open source project, such as a new version of the software or a new plugin.
+- **ওপেন সোর্সের সেরা চর্চা** <br/> Git ও GitHub কীভাবে ব্যবহার করতে হয় বা ওপেন সোর্সে কীভাবে অবদান রাখতে হয়, সে সম্পর্কে অনেক কনটেন্ট নির্মাতা তথ্য ভাগ করে নিয়েছেন। তবুও নতুন কিছু শিখলে আপনি সবসময়ই তা নিজের কনটেন্টের মাধ্যমে ভাগ করে নিতে পারেন। আপনার তৈরি কনটেন্ট কাকে ওপেন সোর্সে অবদান রাখতে অনুপ্রাণিত ও সাহায্য করবে, তা আপনি কখনোই জানতে পারবেন না।
 
-- **Tutorial** <br/> Most of the time, documentation has limited space to explain the project in detail to accommodate all levels of users. You can take this opportunity to target particular audiences and create a tutorial on installing and configuring the software or using it.
+## কোডিং অবদান
 
-- **Impact** <br/> You can consider sharing about an open source project's impact on its users. Why do they want to use it, or what are the benefits of using the software? That way, you are helping to promote the project to gain more users.
+কোডিং অবদানই ওপেন সোর্স ডেভেলপমেন্টকে এগিয়ে নিয়ে যায়। এর মধ্যে আছে ওপেন সোর্স প্রজেক্টের আসল সোর্স কোড লেখা, পরিবর্তন করা বা উন্নত করা, যা সরাসরি সফটওয়্যারের কার্যকারিতা ও মানের ওপর প্রভাব ফেলে।
 
-- **Open source best practices** <br/> Although many content creators have shared information about how to use Git and GitHub or how to contribute to open source, whenever you learn something new, you can always share it through your content. You never know if what you create can inspire and help others contribute to open source.
+কন্ট্রিবিউটররা প্রজেক্ট মেইনটেইনার ও কমিউনিটির সাথে মিলে কাজ করেন, যাতে তাঁদের কোড অবদান প্রজেক্টের লক্ষ্য ও কোডিং মানদণ্ডের সাথে সামঞ্জস্যপূর্ণ হয়। ওপেন সোর্স প্রজেক্টে সাধারণত কোডিং অবদান গ্রহণ ও একীভূত করার জন্য নির্দেশিকা ও প্রক্রিয়া থাকে, যেমন কোড রিভিউ ও কন্টিনিউয়াস ইন্টিগ্রেশন।
 
-## Coding Contributions
+আপনার কোডিং দক্ষতা দিয়ে কোনো প্রজেক্টে যেসব অবদান রাখতে পারেন, তার কিছু উদাহরণ:
 
-Coding contributions power open source development. They entail writing, modifying, or improving the actual source code of an open source project, directly impacting the software's functionality and quality.
+- **নতুন কোড লেখা** <br/> এটি কোডিং অবদানের সবচেয়ে প্রচলিত ধরন। আপনি ফিচার যোগ করতে বা কোনো ওপেন সোর্স প্রজেক্টের কার্যকারিতা বাড়াতে নতুন কোড লেখেন।
 
-Contributors collaborate with project maintainers and the community to ensure their code contributions align with project goals and coding standards. Open source projects typically have guidelines and processes for accepting and integrating coding contributions, such as code reviews and continuous integration.
+- **বাগ ফিক্স** <br/> বাগ শনাক্ত করা ও সমাধান করা একটি গুরুত্বপূর্ণ কোডিং অবদান। আপনি কোডবেসের সমস্যাগুলো খুঁজে বের করেন, সেগুলোর কারণ নির্ণয় করেন এবং তারপর তা ঠিক করার কোড লেখেন। বাগ ফিক্স সফটওয়্যারের স্থিতিশীলতা ও নির্ভরযোগ্যতা বাড়ায়।
 
-Here are some examples of contributions you can make to a project with your coding skills:
+- **কোড রিফ্যাক্টর** <br/> কোড রিফ্যাক্টরিংয়ে কোডের আচরণ না বদলে বিদ্যমান কোডের কাঠামো নতুন করে সাজানো ও উন্নত করা হয়। এতে কোডের পাঠযোগ্যতা, রক্ষণাবেক্ষণযোগ্যতা ও স্কেলযোগ্যতা বাড়ে, যা প্রজেক্টের দীর্ঘমেয়াদি সুস্থতার জন্য অত্যাবশ্যক।
 
-- **Write new code** <br/> This is the most common type of coding contribution. You write new code to add features or enhance the functionality of an open source project.
+- **এপিআই ডিজাইন ও রক্ষণাবেক্ষণ** <br/> যেসব প্রজেক্টের পাবলিক এপিআই আছে, সেগুলোতে আপনি এপিআইয়ের মান ও নির্ভরযোগ্যতা নিশ্চিত করতে তা ডিজাইন, রক্ষণাবেক্ষণ বা উন্নত করার মাধ্যমে অবদান রাখতে পারেন।
 
-- **Bug fix** <br/> Identifying and fixing bugs is a critical coding contribution. You locate issues within the codebase, diagnose them, and then write code to fix them. Bug fixes improve the software's stability and reliability.
+- **ফিচার ডেভেলপমেন্ট** <br/> ব্যবহারকারীর চাহিদা বা প্রজেক্টের লক্ষ্য মেটাতে আপনি নতুন ফিচার বা কার্যকারিতা বাস্তবায়নে সাহায্য করতে পারেন। ফিচার ডেভেলপমেন্টে নতুন উপাদান বা সক্ষমতার পরিকল্পনা, ডিজাইন ও কোডিং করা হয়।
 
-- **Code refactor** <br/> Refactoring code involves restructuring and improving existing code without changing its behavior. This helps enhance code readability, maintainability, and scalability, which are vital for the project's long-term health.
+- **পারফরম্যান্স অপ্টিমাইজেশন** <br/> অ্যালগরিদম উন্নত করে বা রিসোর্স ব্যবহার অপ্টিমাইজ করে আপনি সফটওয়্যারের পারফরম্যান্স অপ্টিমাইজেশনে অবদান রাখতে পারেন। এ ধরনের অবদানের লক্ষ্য হলো সফটওয়্যারকে আরও দক্ষভাবে চালানো।
 
-- **API design and maintenance** <br/> You can contribute to projects with public APIs by designing, maintaining, or improving the API to ensure its quality and reliability.
-
-- **Feature development** <br/> You can help implement new features or functionalities in response to user needs or project goals. Feature development involves planning, designing, and coding new components or capabilities.
-
-- **Performance optimization** <br/> You can contribute to optimizing the software's performance by improving algorithms or optimizing resource usage. This type of contribution aims to make the software run more efficiently.
-
-- **Testing and Quality Assurance (QA)** <br/> Writing automated tests, including unit tests, integration tests, and end-to-end tests, is a coding contribution that ensures software reliability. Testing helps catch and prevent regressions and issues.
+- **টেস্টিং ও কোয়ালিটি অ্যাশিওরেন্স (QA)** <br/> ইউনিট টেস্ট, ইন্টিগ্রেশন টেস্ট ও এন্ড-টু-এন্ড টেস্টসহ স্বয়ংক্রিয় টেস্ট লেখা এমন একটি কোডিং অবদান, যা সফটওয়্যারের নির্ভরযোগ্যতা নিশ্চিত করে। টেস্টিং রিগ্রেশন ও সমস্যা ধরতে এবং প্রতিরোধ করতে সাহায্য করে।
 
 ---
 
-Congratulations on finishing this course! Let's recap what you have learned in the [next chapter](conclusion.md).
+এই কোর্স শেষ করার জন্য অভিনন্দন! আপনি যা শিখেছেন, তা [পরবর্তী অধ্যায়ে](conclusion.md) আরেকবার দেখে নেওয়া যাক।

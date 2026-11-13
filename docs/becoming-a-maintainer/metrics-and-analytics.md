@@ -2,193 +2,187 @@
 id: metrics-and-analytics
 title: "নতুন মেইনটেইনারদের জন্য ওপেন সোর্স মেট্রিক্স ও অ্যানালিটিক্সের শক্তি"
 sidebar_label: "মেট্রিক্স ও অ্যানালিটিক্সের শক্তি"
-keywords: ["metrics and analytics for open source maintainers", "understanding types of metrics in open source", "setting open source project goals", "understanding and interpreting open source project data", "making open source project data-driven decisions with OpenSauced", "Workspace OpenSauced", "Repository Insights Page OpenSauced", "Contributor Insight Page OpenSauced", "open source maintainers", "Open Source", "Open Source metrics"]
+keywords: ["ওপেন সোর্স মেট্রিক্স", "ওপেন সোর্স অ্যানালিটিক্স", "ওপেন সোর্স প্রজেক্টের মেট্রিক্স", "ওপেন সোর্স মেট্রিক্স ও অ্যানালিটিক্স", "ডেটা-নির্ভর সিদ্ধান্ত", "OpenSauced Workspace", "Repository Insights", "Contributor Insights", "ওপেন সোর্স মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+প্রজেক্ট বড় হওয়ার সাথে সাথে তাতে এবং কন্ট্রিবিউটরদের মধ্যে কী ঘটছে তা বোঝা নতুন মেইনটেইনারদের জন্য চ্যালেঞ্জিং হতে পারে। ওপেন সোর্স মেট্রিক্স ও অ্যানালিটিক্সকে আপনার মেইনটেইনার যাত্রার কম্পাস ও মানচিত্র মনে করুন। ওপেন সোর্স প্রজেক্টের মেট্রিক্স এবং নিজের প্রজেক্টের মেট্রিক্স বোঝা আপনাকে লক্ষ্য ঠিক করতে, প্রজেক্টের প্রয়োজন শনাক্ত করতে এবং আপনার কমিউনিটিকে বুঝতে সাহায্য করতে পারে। এই অধ্যায়ে একটি সমৃদ্ধ ওপেন সোর্স প্রজেক্ট গড়ে তুলতে এই অন্তর্দৃষ্টিগুলো বোঝা, কাজে লাগানো এবং তার ভিত্তিতে সিদ্ধান্ত নেওয়ার পথ দেখানো হবে।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+## ওপেন সোর্স মেট্রিক্সের ধরন বোঝা
 
-:::
+- **কোড মেট্রিক্স:** কোড মেট্রিক্স কোডবেসের অবস্থার একটি পরিমাণগত পরিমাপ দেয়, যা এর মান, রক্ষণাবেক্ষণযোগ্যতা ও স্কেলযোগ্যতাকে প্রভাবিত করে এমন দিকগুলোর ওপর জোর দেয়।
+- **কমিউনিটি মেট্রিক্স:** কমিউনিটি মেট্রিক্স প্রজেক্টের মানবিক দিকটির ওপর আলো ফেলে এবং আশপাশের কমিউনিটির বৃদ্ধি, সম্পৃক্ততা ও সার্বিক সুস্থতা তুলে ধরে।
+- **প্রজেক্ট হেলথ মেট্রিক্স:** প্রজেক্ট হেলথ মেট্রিক্স প্রজেক্টের সাড়া দেওয়ার ক্ষমতা, দক্ষতা ও সার্বিক কল্যাণ সম্পর্কে অন্তর্দৃষ্টি দেয়।
 
-Understanding what's happening with your project and contributors as it grows can be challenging for new maintainers. Think of open source metrics and analytics as a compass and map in your maintainer journey. Understanding metrics for open source projects and your own project can help you set goals, identify project needs, and understand your community. This chapter will guide you through understanding, leveraging, and making decisions based on these insights to create a thriving open source project.
+ওপেন সোর্স মেট্রিক্সে সামগ্রিক দৃষ্টিভঙ্গি নিলে আপনি নিশ্চিত হন যে অন্যগুলোর ক্ষতি করে কোনো একটি ধরনের ওপর বেশি জোর দিচ্ছেন না। যেমন, উচ্চ কোড মান গুরুত্বপূর্ণ হলেও প্রজেক্টের টেকসই ভবিষ্যৎ নিশ্চিত করতে তার সাথে শক্তিশালী কমিউনিটি সম্পৃক্ততার ভারসাম্য থাকা উচিত।
 
-## Understanding Types of Open Source Metrics
+বৈচিত্র্যময় মেট্রিক্স প্রজেক্টের সুস্থতা এবং বৃদ্ধি বা উন্নতির সম্ভাব্য ক্ষেত্রগুলোর আরও পূর্ণাঙ্গ চিত্র দেয়। এর মধ্যে কোড মেট্রিক্সের সাথে কমিউনিটি ও প্রজেক্ট হেলথ মেট্রিক্সের ভারসাম্য রাখাও থাকতে পারে, যাতে প্রজেক্ট শুধু কারিগরিভাবে সুসংহত নয়, নতুন কন্ট্রিবিউটরদের জন্য স্বাগতপূর্ণ ও আকর্ষণীয়ও হয়। বিষয়টি হলো আপনার প্রজেক্টের লক্ষ্য ও মূল্যবোধকে সমর্থন করে এমন সঠিক মিশ্রণ খুঁজে বের করা, যা এমন পরিবেশ গড়ে তোলে যেখানে কোডবেস ও কমিউনিটি একসাথে সমৃদ্ধ হয়।
 
-- **Code Metrics:** Code metrics provide a quantitative measure of the codebase's state, focusing on aspects that impact its quality, maintainability, and scalability.
-- **Community Metrics:** Community metrics shed light on the human element of the project, highlighting the growth, engagement, and overall health of the surrounding community.
-- **Project Health Metrics:** Project health metrics provide insights into the project's responsiveness, efficiency, and overall well-being.
+## প্রজেক্টের লক্ষ্য নির্ধারণ
 
-Taking a holistic approach to open source metrics ensures you're not overly focused on one type to the detriment of others. For example, while high code quality is important, it should be balanced with strong community engagement to ensure a sustainable project future.
+স্পষ্ট ও অর্জনযোগ্য লক্ষ্য নির্ধারণ আপনাকে প্রজেক্ট ব্যবস্থাপনায় সাহায্য করতে পারে। আপনার লক্ষ্য নানা রকম হতে পারে, যেমন কোডের মান উন্নত করা, কমিউনিটি বড় করা বা ইস্যু সমাধান সহজ করা। নির্দিষ্ট লক্ষ্য ঠিক করলে আপনি অগ্রাধিকার নির্ধারণ ও সম্পদ ব্যবহারের বিষয়ে আরও ভালো সিদ্ধান্ত নিতে পারেন (ভুলবেন না, সময়ও একটি সম্পদ!)।
 
-Diverse metrics offer a more complete picture of a project's health and potential areas for growth or improvement. This could include balancing code metrics with community and project health metrics to ensure the project is not only technically sound but also welcoming and engaging for new contributors. It's about finding the right mix that supports your project's goals and values, fostering an environment where both the codebase and the community thrive together.
+মনে রাখবেন, আপনার ওপেন সোর্স প্রজেক্টের লক্ষ্য চূড়ান্ত নয়। প্রজেক্ট বড় হওয়ার সাথে সাথে তা বদলাবে। মেট্রিক্স এই পরিবর্তনগুলোর দিকনির্দেশ দিতে পারে এবং নতুন সুযোগ বা চ্যালেঞ্জ প্রকাশ করে এমন অন্তর্দৃষ্টি জোগাতে পারে। যেমন, কোনো প্রজেক্ট শুরুতে কন্ট্রিবিউটরের সংখ্যা বাড়ানোর লক্ষ্য ঠিক করে, কিন্তু পরে দেখে সম্পৃক্ততা বা মান ক্ষতিগ্রস্ত হচ্ছে। তখন তারা অনবোর্ডিং প্রক্রিয়া বা ডকুমেন্টেশন উন্নত করার দিকে মনোযোগ সরাতে পারে।
 
-## Setting Project Goals
+মেইনটেইনারদের উচিত প্রজেক্টের বর্তমান মেট্রিক্স ও বৃহত্তর গতিপথের প্রেক্ষাপটে নিয়মিত তাঁদের লক্ষ্য পর্যালোচনা করা। এই অভিযোজনক্ষমতা নিশ্চিত করে, প্রজেক্ট তার কমিউনিটির প্রয়োজন এবং মেইনটেইনার হিসেবে আপনার দৃষ্টিভঙ্গির সাথে সামঞ্জস্যপূর্ণ থাকে।
 
-Setting clear and achievable goals can help you with project management. Your goals might vary and include improving code quality, expanding the community, or streamlining issue resolution. When you set specific goals, you're better able to make decisions about prioritization and using resources (don't forget, time is a resource!).
+আপনার প্রজেক্টের অগ্রাধিকারের সাথে মানানসই মেট্রিক্স বেছে নিন। যেমন, কমিউনিটি বৃদ্ধি লক্ষ্য হলে নতুন কন্ট্রিবিউটরের হার ও সম্পৃক্ততার মাত্রার ওপর মনোযোগ দিন। আপনি ট্র্যাক করতে চান এমন মেট্রিক্সের কয়েকটি উদাহরণ নিচে দেওয়া হলো।
 
-Remember, goals for your open source project are not final. They will evolve as the project grows. Metrics can inform these changes, providing insights that reveal new opportunities or challenges. For instance, if a project sets an initial goal to increase contributor numbers but later finds that engagement or quality is suffering, it might shift focus towards improving onboarding processes or documentation.
+### কমিউনিটি বৃদ্ধির লক্ষ্য
 
-Maintainers should regularly review their goals in the context of the project's current metrics and broader trajectory. This adaptability ensures the project remains aligned with its community's needs and your vision as a maintainer.
+- **নতুন কন্ট্রিবিউটরের হার**: নতুন কন্ট্রিবিউটর ট্র্যাক করা আপনার প্রজেক্টের আকর্ষণ ও বৃদ্ধির সম্ভাবনার একটি মূল সূচক হতে পারে।
+- **সক্রিয় কন্ট্রিবিউটর**: গত এক মাসে অন্তত একটি কমিট, পুল রিকোয়েস্ট বা মন্তব্য করেছেন এমন কন্ট্রিবিউটরের সংখ্যা।
+- **কমিউনিটি সম্পৃক্ততা**: সম্পৃক্ততার মেট্রিক্সে ইস্যু ও পুল রিকোয়েস্টে মন্তব্যের সংখ্যা, PR রিভিউ, কিংবা আপনার কমিউনিটি স্পেসে (Slack, Discord ইত্যাদি) সদস্যের সংখ্যা থাকতে পারে।
+- **ধরে রাখার হার**: নতুন কন্ট্রিবিউটরদের যে শতাংশ সময়ের সাথে অবদান রাখা চালিয়ে যান। এটি দেখায় প্রজেক্ট তার কমিউনিটি সদস্যদের কতটা ভালোভাবে ধরে রাখতে পারছে।
 
-Choose metrics that align with your project's priorities. For example, if community growth is the goal, focus on new contributor rates and engagement levels. Below are some examples of metrics you may want to track.
+### কোডের মানের লক্ষ্য
 
-### Community Growth Goals
+- **ডকুমেন্টেশন কভারেজ**: ডকুমেন্টেশন কভারেজ থাকলে আপনার প্রজেক্ট নতুনদের জন্য সহজলভ্য হয় এবং কন্ট্রিবিউটরদের প্রবেশের বাধা কমে।
+- **কমিটের ঘনত্ব**: কমিটের ঘনত্ব জানা থাকলে সময়ের সাথে প্রজেক্টের ডেভেলপমেন্ট কার্যকলাপ বোঝা যায় এবং অবদানের প্রবণতা, সম্ভাব্য স্থবিরতা বা সহায়তার প্রয়োজন শনাক্ত করতে সাহায্য হয়।
 
-- **New Contributor Rates**: Tracking new contributors can be a key indicator of your project's appeal and growth potential.
-- **Active Contributors**: The count of contributors who have made at least one commit, pull request, or comment in the last month.
-- **Community Engagement**: Engagement metrics might include the number of comments on issues and pull requests, PR reviews, or the number of members in your community space (Slack, Discord, etc.).
-- **Retention Rate**: The percentage of new contributors who continue contributing over time, indicating how well the project retains its community members.
+### প্রজেক্ট হেলথের লক্ষ্য
 
-### Code Quality Goals
+- **ইস্যু ভেলোসিটি**: কত দ্রুত ইস্যু বন্ধ হচ্ছে। এটি প্রতিফলিত করতে পারে উদ্বেগগুলো কত দ্রুত স্বীকার করা হচ্ছে, যা প্রজেক্টের সাড়া দেওয়ার ক্ষমতার একটি গুরুত্বপূর্ণ দিক।
+- **পুল রিকোয়েস্ট ভেলোসিটি**: কত দ্রুত পুল রিকোয়েস্ট বন্ধ হচ্ছে। এটি আপনাকে দেখতে সাহায্য করতে পারে সমস্যাগুলো কত দক্ষতার সাথে সমাধান হচ্ছে।
+- **বেঞ্চমার্কিং**: বর্তমান মেট্রিক্সকে বেঞ্চমার্ক হিসেবে ঠিক করতে OpenSauced ব্যবহার করুন এবং উন্নতির জন্য বাস্তবসম্মত লক্ষ্যমাত্রা নির্ধারণ করুন।
+- **সময়সীমা**: এই লক্ষ্যগুলো অর্জনের জন্য একটি স্পষ্ট সময়সীমা ঠিক করুন, যা তাগিদ ও গতি তৈরি করবে।
 
-- **Documentation Coverage**: Having documentation coverage ensures your project is accessible to newcomers and reduces the entry barrier for contributors.
-- **Commit Frequency**: Knowing the commit frequency can help you understand the project's development activity over time and can help you identify trends in contribution, potential stagnation, or support needs.
+## ওপেন সোর্স মেট্রিক্স বোঝা ও ব্যাখ্যা করা
 
-### Project Health Goals
+ডেটা বোঝা ও ব্যাখ্যা করা আপনাকে সংখ্যার পেছনের গল্পটি বুঝতে ও অন্যদের জানাতে সাহায্য করে। এটি করার কয়েকটি উপায়:
 
-- **Issue Velocity**: How quickly issues are closed. This can reflect how quickly the concerns are acknowledged, an important aspect of project responsiveness.
-- **Pull Request Velocity**: How fast pull requests are closed. This can help you see how efficiently problems are solved.
-- **Benchmarking**: Use OpenSauced to establish current metrics as benchmarks, setting realistic targets for improvement.
-- **Timeline**: Set a clear timeline for achieving these goals, creating a sense of urgency and momentum.
+- **প্রবণতা বিশ্লেষণ**: ভবিষ্যতে সম্পদ বণ্টনের পরিকল্পনা করতে সময়ের সাথে নকশা খুঁজুন, যেমন অবদান কার্যকলাপের চক্রাকার বৃদ্ধি।
+- **অস্বাভাবিকতা শনাক্তকরণ**: মেট্রিক্সে অপ্রত্যাশিত উত্থান বা পতন চিহ্নিত করুন এবং সম্ভাব্য কারণ, যেমন নতুন ফিচার রিলিজ বা কমিউনিটি ইভেন্ট, খুঁজে দেখুন।
+- **তুলনামূলক বিশ্লেষণ**: বৃহত্তর ওপেন সোর্স ইকোসিস্টেমে আপনার প্রজেক্ট কেমন করছে তা বুঝতে অনুরূপ প্রজেক্টের সাথে মেট্রিক্স তুলনা করুন।
 
-## Understanding and Interpreting Open Source Metrics
+## ডেটা-নির্ভর সিদ্ধান্ত নেওয়া
 
-Understanding and interpreting data helps you understand and share the story behind the numbers. Some ways to do this include:
+ডেটা-নির্ভর সিদ্ধান্ত নেওয়ার অর্থ আপনার প্রজেক্টের দিকনির্দেশনা ঠিক করতে সংগৃহীত অন্তর্দৃষ্টি কাজে লাগানো। যেমন, আপনার প্রজেক্টে নতুন কন্ট্রিবিউটরের সংখ্যা বেশি কিন্তু ধরে রাখার হার কম দেখলে আপনি নতুন কন্ট্রিবিউটরদের অনবোর্ডিং প্রক্রিয়া উন্নত করার ওপর মনোযোগ দেওয়ার সিদ্ধান্ত নিতে পারেন।
 
-- **Trend Analysis**: Look for patterns over time, such as cyclical increases in contribution activity, to plan for future resource allocation.
-- **Anomaly Detection**: Identify unexpected spikes or drops in metrics and investigate potential causes, such as new feature releases or community events.
-- **Comparative Analysis**: Compare metrics against similar projects to gauge your project's performance in the broader open source ecosystem.
+আপনার প্রজেক্ট নিয়ে ডেটা-নির্ভর সিদ্ধান্ত নেওয়ার একটি দারুণ উপায় হলো OpenSauced-এ একটি Workspace তৈরি করা। এতে আপনি রিপোজিটরি, ইনসাইট ও সহযোগিতার টুল এক জায়গায় আনতে পারবেন।
 
-## Making Data-Driven Decisions
+## OpenSauced দিয়ে আপনার প্রজেক্টের জন্য একটি Workspace তৈরি করা
 
-Making data-driven decisions involves using the insights you've gathered to guide your project's direction. For example, if you see that your project has a high number of new contributors but a low retention rate, you might decide to focus on improving the onboarding process for new contributors.
+OpenSauced-এর একটি [Workspace](https://opensauced.pizza/docs/features/workspaces/) আপনার প্রজেক্টের কমান্ড সেন্টার হিসেবে কাজ করে, যেখানে আপনি আপনার প্রজেক্ট সম্পর্কে আরও জানতে এবং তা অন্যদের সাথে শেয়ার করতে পারেন। এই অংশে আপনার প্রজেক্ট দক্ষতার সাথে পরিচালনা করতে কীভাবে একটি Workspace তৈরি ও অপ্টিমাইজ করবেন, তা দেখানো হয়েছে।
 
-A great way to make data-driven decisions about your project is to create a Workspace in OpenSauced. This will allow you to bring together repositories, insights, and collaboration tools in one place.
+একটি Workspace তৈরি করতে:
 
-## Creating a Workspace for Your Project with OpenSauced
-
-An OpenSauced [Workspace](https://opensauced.pizza/docs/features/workspaces/) serves as your project's command center, where you can learn more about your project and share it with others. This section guides you through creating and optimizing a Workspace to manage your project efficiently.
-
-To create a Workspace:
-
-1. Log in to your [OpenSauced account](https://app.opensauced.pizza/). Once you're there, click the "Workspace" on the top bar, and you should see your personal workspace.
-2. Click on the "Edit" button. You'll be prompted to name your workspace and add repositories.
-3. Add your project's repository.
-4. Click "Create Workspace" to create your Workspace.
+1. আপনার [OpenSauced অ্যাকাউন্টে](https://app.opensauced.pizza/) লগ ইন করুন। সেখানে পৌঁছে ওপরের বারে "Workspace"-এ ক্লিক করুন, তাহলে আপনি আপনার ব্যক্তিগত ওয়ার্কস্পেস দেখতে পাবেন।
+2. "Edit" বোতামে ক্লিক করুন। আপনাকে ওয়ার্কস্পেসের একটি নাম দিতে এবং রিপোজিটরি যোগ করতে বলা হবে।
+3. আপনার প্রজেক্টের রিপোজিটরি যোগ করুন।
+4. আপনার Workspace তৈরি করতে "Create Workspace"-এ ক্লিক করুন।
 
 ![Workspaces](../_assets/images/workspace.png)
 
-Within the Repositories dashboard, you can view the following metrics, which are shown over a period of thirty days by default:
+Repositories ড্যাশবোর্ডে আপনি নিচের মেট্রিক্স দেখতে পারবেন, যা ডিফল্টভাবে ত্রিশ দিনের সময়কালে দেখানো হয়:
 
-- **Pull Requests**: This includes the total opened and merged pull requests for the repositories included in your workspace, as well as the velocity of pull requests being merged.
-- **Issues**: This includes the total opened and closed issues for the repositories included in your workspace, as well as the velocity of issues being closed.
-- **Engagement**: This includes the total stars, forks, and activity ratio for the repositories included in your workspace.
-
-:::tip
-
-You can customize the time period for these metrics by selecting 7 days, 30 days, or 90 days from the dropdown menu.
-
-:::
-
-If you want to benchmark your project against other similar projects or if you'd like to create a list of repositories for inspiration, you can create a [Repository Insight](https://opensauced.pizza/docs/features/repo-insights/) in your Workspace.
-
-### Creating a New Repository Insight Page
-
-To connect and track repositories, click the "+" next to "Insights" in the sidebar, then select "New Repository Insight." You will be redirected to a page where you can create your new Repository Insight Page.
-
-#### Using Your Repository Insights Page
-
-Once you have connected your repositories, you will be redirected to your Repository Insight Page. Here, you will see a dashboard with an overview of the repositories and the contributors who have contributed to them.
-
-There are three tabs that provide you with more information on these repositories:
-
-##### Repositories Dashboard
-
-This dashboard allows you to view more detailed information on each repository, including activity levels, PR overview, PR velocity, spam PRs, contributors, and activity stats over the last 30 days.
+- **Pull Requests**: এতে আপনার ওয়ার্কস্পেসের রিপোজিটরিগুলোর জন্য মোট খোলা ও মার্জ হওয়া পুল রিকোয়েস্ট এবং মার্জ হওয়া পুল রিকোয়েস্টের ভেলোসিটি অন্তর্ভুক্ত।
+- **Issues**: এতে আপনার ওয়ার্কস্পেসের রিপোজিটরিগুলোর জন্য মোট খোলা ও বন্ধ ইস্যু এবং বন্ধ হওয়া ইস্যুর ভেলোসিটি অন্তর্ভুক্ত।
+- **Engagement**: এতে আপনার ওয়ার্কস্পেসের রিপোজিটরিগুলোর জন্য মোট স্টার, ফর্ক এবং অ্যাক্টিভিটি রেশিও অন্তর্ভুক্ত।
 
 :::tip
 
-To learn and understand more about the data provided, see [Understanding Repository Insights Data](https://opensauced.pizza/docs/maintainers/understanding-repo-insights/).
+ড্রপডাউন মেনু থেকে ৭ দিন, ৩০ দিন বা ৯০ দিন বেছে নিয়ে আপনি এই মেট্রিক্সের সময়কাল নিজের মতো করতে পারেন।
 
 :::
 
-![repositories dashboard](../_assets/images/repos-insights.png)
+আপনার প্রজেক্টকে অন্য অনুরূপ প্রজেক্টের সাথে বেঞ্চমার্ক করতে চাইলে, কিংবা অনুপ্রেরণার জন্য রিপোজিটরির একটি তালিকা বানাতে চাইলে আপনি আপনার Workspace-এ একটি [Repository Insight](https://opensauced.pizza/docs/features/repo-insights/) তৈরি করতে পারেন।
 
-##### Contributors Dashboard
+### একটি নতুন Repository Insight Page তৈরি করা
 
-The Contributors dashboard allows you to view more detailed information on each contributor, including their activity levels, the number of repositories they contributed to, the date of their last contribution, their most used language, their time zone, the number of contributions, and their activity stats over the last 30 days.
+রিপোজিটরি সংযুক্ত ও ট্র্যাক করতে সাইডবারে "Insights"-এর পাশে "+"-এ ক্লিক করুন, তারপর "New Repository Insight" বেছে নিন। আপনাকে এমন একটি পাতায় নিয়ে যাওয়া হবে, যেখানে আপনি আপনার নতুন Repository Insight Page তৈরি করতে পারবেন।
 
-You can select and add your contributors to a [Contributor Insight Page](https://opensauced.pizza/docs/features/contributor-insights/) to learn more about them.
+#### আপনার Repository Insights Page ব্যবহার করা
 
-##### Activity Dashboard
+আপনার রিপোজিটরিগুলো সংযুক্ত করার পর আপনাকে আপনার Repository Insight Page-এ নিয়ে যাওয়া হবে। এখানে আপনি রিপোজিটরিগুলো এবং সেগুলোতে অবদান রাখা কন্ট্রিবিউটরদের একটি সারসংক্ষেপসহ ড্যাশবোর্ড দেখতে পাবেন।
 
-The Activity dashboard shows a graph of the last time each contributor created their PR and how many lines of code they've touched. It also provides more detailed information on each contributor when you hover over their image, including their latest PRs and repositories they've contributed to. Clicking their image will bring you to their profile on OpenSauced.
+এই রিপোজিটরিগুলো সম্পর্কে আরও তথ্য দেওয়া তিনটি ট্যাব আছে:
 
-You can use the information in this dashboard to help you learn about their engagement and general interests. It will be helpful if you want to collaborate with them or consider recruiting a maintainer for your project.
+##### Repositories ড্যাশবোর্ড
 
-![activity graph](../_assets/images/activity-repos-insights.png)
-
-You can create a Contributor Insight Page to track your contributors and ensure you're growing a healthy open source community.
-
-### Creating a Contributor Insight Page
-
-The OpenSauced Contributor Insights feature allows you to categorize, monitor, and analyze various groups of contributors. This feature offers insights into each contributor's activities and contributions, helping you track individual contribution histories, identify active engagement, recognize new or alumni contributors, and compare the performance of different contributors.
-
-The Contributor Insights features allow you to:
-
-- track the commits and PRs of the contributors on your list
-- filter your contributors by their activity level, including most active, new, and alumni
-- view the repositories your contributors have contributed to, the top programming languages they've used, and their time zones
-
-In terms of tracking metrics to understand your contributors, here are some things you could look at:
-
-- **Engaged contributors**: Keep tabs on contributors actively interacting with your repository.
-- **VIP contributors**: Highlight and track contributors you've identified as key maintainers or significant contributors.
-- **Alumni contributors**: Keep an eye on contributors who have decreased their engagement or left the project.
-
-To create a new Contributor Insight Page:
-
-1. Click the "+" next to "Insights" in the sidebar.
-2. Click "New Contributor Insight." You will be redirected to a page where you can create your new Contributor Insight Page.
-
-   ![New Contributor Insight Page](../_assets/images/contrib-insight-new.png)
-
-3. Give your page a name.
-4. Add contributors to your page by searching for their GitHub username, syncing your GitHub Team, or importing your GitHub Following.
-
-   ![team sync gif](../_assets/gifs/team-sync.gif)
-
-#### Using Your Contributor Insight Page
-
-Once you have created your page, you will be redirected to your Contributor Insight Page. Here, you will see a dashboard with an overview of the contributors.
-
-There are three tabs that provide you with more information on these contributors:
-
-##### Overview Dashboard
-
-The Overview dashboard gives you a high-level view of the contributors in your Contributor Insight Page, including the total number of commits in the last 30 days and the types of contributors: Active, New, and Alumni.
-
-##### Activity Dashboard
-
-The Activity dashboard gives you a graph view with more detailed information on each contributor, including the type of activity, repositories they've contributed to, and how they compare to each other.
-
-You can filter your Contributor Insight Page by All Contributors, Active Contributors, New Contributors, and Alumni Contributors.
-
-![list graph](../_assets/images/list-graph.png)
-
-##### Staying Informed About Contributor Activity
-
-To stay informed about what your contributors are up to and show them support, consider following their activity on GitHub, engaging with their social media posts about contributions, or setting up notifications for their pull requests and issues. You can also acknowledge their work in release notes, README acknowledgments, or community shout-outs.
+এই ড্যাশবোর্ড আপনাকে প্রতিটি রিপোজিটরি সম্পর্কে আরও বিস্তারিত তথ্য দেখতে দেয়, যার মধ্যে আছে কার্যকলাপের মাত্রা, PR-এর সারসংক্ষেপ, PR ভেলোসিটি, স্প্যাম PR, কন্ট্রিবিউটর এবং গত ৩০ দিনের কার্যকলাপের পরিসংখ্যান।
 
 :::tip
 
-To learn and understand more about the data provided, see [Understanding Contributor Insights Data](https://opensauced.pizza/docs/maintainers/understanding-contribs-insights/).
+প্রদত্ত ডেটা আরও ভালোভাবে জানতে ও বুঝতে [Understanding Repository Insights Data](https://opensauced.pizza/docs/maintainers/understanding-repo-insights/) দেখুন।
 
 :::
 
-### Leveraging OpenSauced for Project Success
+![repositories ড্যাশবোর্ড](../_assets/images/repos-insights.png)
 
-Embracing open source metrics and analytics through OpenSauced gives you the knowledge to make informed decisions and foster a culture of transparency and continuous improvement. By setting clear goals, analyzing project data, and engaging with your community, you create a foundation for sustained growth and success. Remember, the open source journey is a marathon, not a sprint. With OpenSauced, you have a partner every step of the way, guiding your project toward achieving its full potential.
+##### Contributors ড্যাশবোর্ড
 
-It's time to put what you've learned into practice! Let's move on to the [next chapter](getting-practical.md).
+Contributors ড্যাশবোর্ড আপনাকে প্রতিটি কন্ট্রিবিউটর সম্পর্কে আরও বিস্তারিত তথ্য দেখতে দেয়। এর মধ্যে আছে তাঁদের কার্যকলাপের মাত্রা, কতগুলো রিপোজিটরিতে তাঁরা অবদান রেখেছেন, সর্বশেষ অবদানের তারিখ, তাঁদের সবচেয়ে বেশি ব্যবহৃত ভাষা, তাঁদের টাইমজোন, অবদানের সংখ্যা এবং গত ৩০ দিনের কার্যকলাপের পরিসংখ্যান।
+
+কন্ট্রিবিউটরদের সম্পর্কে আরও জানতে আপনি তাঁদের বেছে নিয়ে একটি [Contributor Insight Page](https://opensauced.pizza/docs/features/contributor-insights/)-এ যোগ করতে পারেন।
+
+##### Activity ড্যাশবোর্ড
+
+Activity ড্যাশবোর্ড একটি গ্রাফ দেখায়, যাতে প্রতিটি কন্ট্রিবিউটর সর্বশেষ কখন তাঁর PR তৈরি করেছেন এবং কত লাইন কোড স্পর্শ করেছেন, তা দেখা যায়। তাঁদের ছবির ওপর মাউস নিলে এটি প্রতিটি কন্ট্রিবিউটর সম্পর্কে আরও বিস্তারিত তথ্যও দেয়, যার মধ্যে আছে তাঁদের সর্বশেষ PR এবং যেসব রিপোজিটরিতে তাঁরা অবদান রেখেছেন। তাঁদের ছবিতে ক্লিক করলে আপনি OpenSauced-এ তাঁদের প্রোফাইলে পৌঁছে যাবেন।
+
+তাঁদের সম্পৃক্ততা ও সাধারণ আগ্রহ সম্পর্কে জানতে আপনি এই ড্যাশবোর্ডের তথ্য ব্যবহার করতে পারেন। আপনি যদি তাঁদের সাথে সহযোগিতা করতে চান কিংবা আপনার প্রজেক্টের জন্য মেইনটেইনার নিয়োগের কথা ভাবেন, তাহলে এটি কাজে আসবে।
+
+![অ্যাক্টিভিটি গ্রাফ](../_assets/images/activity-repos-insights.png)
+
+আপনার কন্ট্রিবিউটরদের ট্র্যাক করতে এবং আপনি একটি সুস্থ ওপেন সোর্স কমিউনিটি গড়ে তুলছেন তা নিশ্চিত করতে আপনি একটি Contributor Insight Page তৈরি করতে পারেন।
+
+### একটি Contributor Insight Page তৈরি করা
+
+OpenSauced-এর Contributor Insights ফিচার আপনাকে বিভিন্ন কন্ট্রিবিউটর গ্রুপকে শ্রেণিবদ্ধ, পর্যবেক্ষণ ও বিশ্লেষণ করতে দেয়। এই ফিচার প্রতিটি কন্ট্রিবিউটরের কার্যকলাপ ও অবদান সম্পর্কে অন্তর্দৃষ্টি দেয়, যা আপনাকে ব্যক্তিগত অবদানের ইতিহাস ট্র্যাক করতে, সক্রিয় সম্পৃক্ততা শনাক্ত করতে, নতুন বা প্রাক্তন কন্ট্রিবিউটরদের চিনতে এবং বিভিন্ন কন্ট্রিবিউটরের পারফরম্যান্সের তুলনা করতে সাহায্য করে।
+
+Contributor Insights ফিচার আপনাকে দেয়:
+
+- আপনার তালিকার কন্ট্রিবিউটরদের কমিট ও PR ট্র্যাক করা
+- কন্ট্রিবিউটরদের কার্যকলাপের মাত্রা অনুযায়ী ফিল্টার করা, যার মধ্যে আছে সবচেয়ে সক্রিয়, নতুন এবং প্রাক্তন
+- আপনার কন্ট্রিবিউটররা কোন কোন রিপোজিটরিতে অবদান রেখেছেন, সবচেয়ে বেশি কোন প্রোগ্রামিং ভাষা ব্যবহার করেছেন এবং তাঁদের টাইমজোন দেখা
+
+আপনার কন্ট্রিবিউটরদের বুঝতে মেট্রিক্স ট্র্যাক করার ক্ষেত্রে আপনি যা যা দেখতে পারেন:
+
+- **সম্পৃক্ত কন্ট্রিবিউটর**: আপনার রিপোজিটরির সাথে সক্রিয়ভাবে মিথস্ক্রিয়া করছেন এমন কন্ট্রিবিউটরদের ওপর নজর রাখুন।
+- **VIP কন্ট্রিবিউটর**: আপনি যাঁদের মূল মেইনটেইনার বা উল্লেখযোগ্য কন্ট্রিবিউটর হিসেবে চিহ্নিত করেছেন, তাঁদের তুলে ধরুন ও ট্র্যাক করুন।
+- **প্রাক্তন কন্ট্রিবিউটর**: যেসব কন্ট্রিবিউটরের সম্পৃক্ততা কমে গেছে বা যাঁরা প্রজেক্ট ছেড়ে গেছেন, তাঁদের ওপর নজর রাখুন।
+
+একটি নতুন Contributor Insight Page তৈরি করতে:
+
+1. সাইডবারে "Insights"-এর পাশে "+"-এ ক্লিক করুন।
+2. "New Contributor Insight"-এ ক্লিক করুন। আপনাকে এমন একটি পাতায় নিয়ে যাওয়া হবে, যেখানে আপনি আপনার নতুন Contributor Insight Page তৈরি করতে পারবেন।
+
+   ![নতুন Contributor Insight Page](../_assets/images/contrib-insight-new.png)
+
+3. আপনার পাতাটির একটি নাম দিন।
+4. GitHub ইউজারনেম দিয়ে খুঁজে, আপনার GitHub Team সিঙ্ক করে বা আপনার GitHub Following ইমপোর্ট করে পাতায় কন্ট্রিবিউটর যোগ করুন।
+
+   ![টিম সিঙ্কের GIF](../_assets/gifs/team-sync.gif)
+
+#### আপনার Contributor Insight Page ব্যবহার করা
+
+পাতাটি তৈরি করার পর আপনাকে আপনার Contributor Insight Page-এ নিয়ে যাওয়া হবে। এখানে আপনি কন্ট্রিবিউটরদের একটি সারসংক্ষেপসহ ড্যাশবোর্ড দেখতে পাবেন।
+
+এই কন্ট্রিবিউটরদের সম্পর্কে আরও তথ্য দেওয়া তিনটি ট্যাব আছে:
+
+##### Overview ড্যাশবোর্ড
+
+Overview ড্যাশবোর্ড আপনার Contributor Insight Page-এর কন্ট্রিবিউটরদের একটি উচ্চ স্তরের চিত্র দেয়, যার মধ্যে আছে গত ৩০ দিনে মোট কমিটের সংখ্যা এবং কন্ট্রিবিউটরের ধরন: সক্রিয়, নতুন ও প্রাক্তন।
+
+##### Activity ড্যাশবোর্ড
+
+Activity ড্যাশবোর্ড প্রতিটি কন্ট্রিবিউটর সম্পর্কে আরও বিস্তারিত তথ্যসহ একটি গ্রাফ দেখায়, যার মধ্যে আছে কার্যকলাপের ধরন, তাঁরা কোন কোন রিপোজিটরিতে অবদান রেখেছেন এবং তাঁরা একে অপরের তুলনায় কেমন।
+
+আপনি আপনার Contributor Insight Page-কে সব কন্ট্রিবিউটর, সক্রিয় কন্ট্রিবিউটর, নতুন কন্ট্রিবিউটর ও প্রাক্তন কন্ট্রিবিউটর অনুযায়ী ফিল্টার করতে পারেন।
+
+![তালিকার গ্রাফ](../_assets/images/list-graph.png)
+
+##### কন্ট্রিবিউটরদের কার্যকলাপ সম্পর্কে অবহিত থাকা
+
+আপনার কন্ট্রিবিউটররা কী করছেন সে সম্পর্কে অবহিত থাকতে এবং তাঁদের সমর্থন জানাতে GitHub-এ তাঁদের কার্যকলাপ অনুসরণ করার কথা ভাবুন, অবদান নিয়ে তাঁদের সোশ্যাল মিডিয়া পোস্টে সাড়া দিন, কিংবা তাঁদের পুল রিকোয়েস্ট ও ইস্যুর জন্য নোটিফিকেশন সেট আপ করুন। আপনি রিলিজ নোটস, README-র স্বীকৃতি বা কমিউনিটির প্রশংসার মাধ্যমেও তাঁদের কাজের স্বীকৃতি দিতে পারেন।
+
+:::tip
+
+প্রদত্ত ডেটা আরও ভালোভাবে জানতে ও বুঝতে [Understanding Contributor Insights Data](https://opensauced.pizza/docs/maintainers/understanding-contribs-insights/) দেখুন।
+
+:::
+
+### প্রজেক্টের সাফল্যে OpenSauced কাজে লাগানো
+
+OpenSauced-এর মাধ্যমে ওপেন সোর্স মেট্রিক্স ও অ্যানালিটিক্সকে আপন করে নিলে আপনি সচেতন সিদ্ধান্ত নেওয়ার জ্ঞান পান এবং স্বচ্ছতা ও নিরন্তর উন্নতির একটি সংস্কৃতি গড়ে তুলতে পারেন। স্পষ্ট লক্ষ্য নির্ধারণ, প্রজেক্টের ডেটা বিশ্লেষণ এবং আপনার কমিউনিটির সাথে সম্পৃক্ত থেকে আপনি টেকসই বৃদ্ধি ও সাফল্যের ভিত্তি তৈরি করেন। মনে রাখবেন, ওপেন সোর্স যাত্রা একটি ম্যারাথন, স্প্রিন্ট নয়। OpenSauced-এর সাথে আপনি প্রতিটি পদক্ষেপে একজন সঙ্গী পাবেন, যিনি আপনার প্রজেক্টকে তার পূর্ণ সম্ভাবনা অর্জনের পথে নিয়ে যাবেন।
+
+আপনি যা শিখেছেন, তা বাস্তবে প্রয়োগ করার সময় এসেছে! চলুন [পরবর্তী অধ্যায়ে](getting-practical.md) যাই।

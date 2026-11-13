@@ -2,57 +2,51 @@
 id: getting-practical
 title: "চলুন হাতে-কলমে শুরু করি: আপনার প্রজেক্ট চালু করা"
 sidebar_label: "হাতে-কলমে শুরু"
-keywords: ["getting practical by creating a new open source project", "creating an open source project", "creating an open source project tutorial", "creating an open source project for beginners", "creating a repository", "creating a README", "adding an open source license", "creating contributing guidelines for an open source project", "adding an open source code of conduct", "creating open source issue forms", "creating an open source pull request template", "promoting open source projects", "recognizing open source contributors", "monitoring open source projects", "open source maintainers", "Open Source", "Open Source Community"]
+keywords: ["হাতে-কলমে ওপেন সোর্স প্রজেক্ট শুরু", "প্রথম ওপেন সোর্স প্রজেক্ট তৈরি", "ওপেন সোর্স রিপোজিটরি তৈরি", "README টেমপ্লেট", "CONTRIBUTING টেমপ্লেট", "ইস্যু ফর্ম তৈরি", "ওপেন সোর্স প্রজেক্টের প্রচার", "ওপেন সোর্স মেইনটেইনার টিউটোরিয়াল", "ওপেন সোর্স মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+কোর্সটি শেষ করে এবং একজন সফল মেইনটেইনার হতে কী লাগে তা বুঝে ফেলার পর চলুন হাতে-কলমে শুরু করি এবং মেইনটেইনার হিসেবে আপনার প্রথম ওপেন সোর্স প্রজেক্ট চালু করি!
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+## পূর্বশর্ত
 
-:::
+আপনার লাগবে:
 
-Now that you've gone through the course and understand what it takes to be a successful maintainer, let's get practical and start your first open source project as a maintainer!
+- একটি [GitHub অ্যাকাউন্ট](https://github.com)
 
-## Prerequisites
+## আপনার প্রজেক্ট বেছে নেওয়া
 
-You'll need the following:
+কখনো কখনো সবচেয়ে কঠিন অংশ হলো ঠিক করা, কী নিয়ে কাজ করবেন। শুরু করার জন্য কয়েকটি সাধারণ ধারণা:
 
-- A [GitHub Account](https://github.com)
+- ওপেন সোর্স কমিউনিটির কোনো সমস্যা বা প্রয়োজন শনাক্ত করুন।
+- এমন কোনো বিষয়ের কথা ভাবুন, যা নিয়ে আপনি আবেগী এবং যাতে অন্যরাও আগ্রহী হতে পারেন।
+- এমন কোনো সমস্যার কথা ভাবুন, যা আপনাকে সমাধান করতে হয়েছে এবং যা থেকে অন্যরাও উপকৃত হতে পারেন।
 
-## Choosing Your Project
+আপাতত খুব বেশি ভাববেন না। আপনি সবসময় পরে ফিরে এসে বিষয়গুলো হালনাগাদ করতে পারবেন। এখনকার জন্য কোথা থেকে শুরু করবেন বুঝতে না পারলে আসুন আপনার প্রিয় ওপেন সোর্স রিসোর্সগুলোর জন্য একটি রিপোজিটরি তৈরি করি।
 
-Sometimes, the hardest part is deciding what to work on. Here are some general ideas to get you started:
+## আপনার রিপোজিটরি তৈরি করা
 
-- Identify a problem or need in the open source community.
-- Think about a topic you're passionate about that others might be interested in.
-- Think about a problem you've had to solve that others can benefit from.
+GitHub-এ কীভাবে আপনার প্রজেক্ট সেটআপ করবেন, তা আমরা ধাপে ধাপে দেখাব। প্রজেক্ট শুরু করার এটিই একমাত্র উপায় নয়, তবে এই প্রদর্শনীতে আমরা এটিই ব্যবহার করব।
 
-Don't overthink it for now. You can always go back and update things later. For now, if you need a place to start, let's create a repository for your favorite open source resources.
+- [GitHub](https://github.com)-এ গিয়ে সাইন ইন করুন।
+- ওপরের ডান কোণের "+" আইকনে ক্লিক করে "New repository" বেছে নিন।
+- রিপোজিটরির একটি নাম ও বর্ণনা দিন এবং রিপোজিটরিটি পাবলিক হবে নাকি প্রাইভেট, তা বেছে নিন।
+- একটি README ফাইল দিয়ে রিপোজিটরি শুরু করুন এবং একটি লাইসেন্স যোগ করুন।
+- "Create repository" বোতামে ক্লিক করুন।
 
-## Creating Your Repository
+![রিপোজিটরি সেট আপ করা](../_assets/gifs/set-up-repo.gif)
 
-We will walk through the steps to set up your project in GitHub. Although it's not the only way to get started with a project, it's the one we'll use in this demonstration.
-
-- Go to [GitHub](https://github.com) and sign in.
-- Click on the "+" icon in the upper right corner and select "New repository."
-- Enter a repository name and description, and choose whether the repository should be public or private.
-- Initialize the repository with a README file and add a license.
-- Click the "Create repository" button.
-
-![setting up a repo](../_assets/gifs/set-up-repo.gif)
-
-If you're using our starter idea, you could use the following:
+আমাদের শুরুর ধারণাটি ব্যবহার করলে আপনি এটি দিতে পারেন (নাম ও বর্ণনা ইংরেজিতেই রাখা হয়েছে, কারণ এটি রিপোজিটরির নাম ও বর্ণনা হিসেবে বসবে। বর্ণনার অর্থ: "আমার সবচেয়ে সহায়ক মনে হওয়া রিসোর্সগুলোর একটি Markdown ফাইল"):
 
     - Name: favorite-open-source-resources
     - Description: A markdown file of resources I've found most helpful.
 
-## Adding Repository Documentation
+## রিপোজিটরির ডকুমেন্টেশন যোগ করা
 
-Now that you have the repository, you can either edit it directly on GitHub or clone the project and work on it locally. We previously learned how to create detailed READMEs, contributing guides, and codes of conduct in "[How to Setup Your Open Source Project](how-to-setup-your-project.md)". If you need a reminder, take a look back at that chapter.
+রিপোজিটরি তৈরি হয়ে গেছে, এখন আপনি সরাসরি GitHub-এ এটি সম্পাদনা করতে পারেন, কিংবা প্রজেক্টটি ক্লোন করে লোকালিও কাজ করতে পারেন। "[আপনার ওপেন সোর্স প্রজেক্ট কীভাবে সেটআপ করবেন](how-to-setup-your-project.md)" অধ্যায়ে আমরা আগে শিখেছি কীভাবে বিস্তারিত README, কন্ট্রিবিউটিং গাইড ও আচরণবিধি তৈরি করতে হয়। মনে করিয়ে নেওয়ার দরকার হলে সেই অধ্যায়টি আবার দেখুন।
 
-### Creating Your README
+### আপনার README তৈরি করা
 
-Your project already has a README file, but it's a good idea to update it with information about your project. Here's a template you can use:
+আপনার প্রজেক্টে ইতোমধ্যে একটি README ফাইল আছে, তবে তাতে প্রজেক্ট সম্পর্কে তথ্য দিয়ে হালনাগাদ করা ভালো। এখানে আপনি ব্যবহার করতে পারেন এমন একটি টেমপ্লেট দেওয়া হলো (টেমপ্লেটটি আপনার রিপোজিটরিতে কপি করার জন্য, তাই ইংরেজিতেই রাখা হয়েছে):
 
 ```markdown
 # Project Name
@@ -94,20 +88,21 @@ Show appreciation for the community's contributions, including developers, write
 State the license under which the project is released and provide a link to the full license text.
 ```
 
-### Adding a License
 
-You should have initialized your project with a license, but if you did not, you can add a license to your project by creating a new file named `LICENSE` in the root of your repository. You can use the [Choose a License](https://choosealicense.com/) website to help you select the right license for your project.
+### লাইসেন্স যোগ করা
 
-### Setting Up Contributing Guidelines
+আপনার প্রজেক্ট লাইসেন্সসহ শুরু করা উচিত ছিল। তা না করে থাকলে আপনি রিপোজিটরির রুটে `LICENSE` নামে একটি নতুন ফাইল তৈরি করে লাইসেন্স যোগ করতে পারেন। আপনার প্রজেক্টের জন্য সঠিক লাইসেন্স বেছে নিতে [Choose a License](https://choosealicense.com/) ওয়েবসাইট সাহায্য করতে পারে।
 
-Your project will likely have similar contribution guidelines to other projects. You can follow these steps to create guidelines and provide a template. However, if you need a specific example, you can always refer to the [OpenSauced Contributing Guidelines](https://opensauced.pizza/docs/contributing/introduction-to-contributing/). Feel free to use those guidelines and update them as you see fit for your project.
+### অবদান রাখার নির্দেশিকা তৈরি করা
 
-- [ ] Create a new file named `CONTRIBUTING.md` in the root of your repository.
-- [ ] Outline the process for submitting issues and pull requests.
-- [ ] Include coding standards, style guides, or any specific requirements.
-- [ ] Mention how contributors can ask for help or clarification.
+আপনার প্রজেক্টের অবদানের নির্দেশিকা সম্ভবত অন্য প্রজেক্টগুলোর মতোই হবে। নির্দেশিকা তৈরি করতে ও একটি টেমপ্লেট দিতে আপনি এই ধাপগুলো অনুসরণ করতে পারেন। তবে নির্দিষ্ট কোনো উদাহরণ দরকার হলে আপনি সবসময় [OpenSauced Contributing Guidelines](https://opensauced.pizza/docs/contributing/introduction-to-contributing/) দেখতে পারেন। নির্দ্বিধায় সেই নির্দেশিকা ব্যবহার করুন এবং নিজের প্রজেক্টের জন্য যেভাবে ঠিক মনে করেন, সেভাবে হালনাগাদ করুন।
 
-#### Contributing Guidelines Template
+- [ ] আপনার রিপোজিটরির রুটে `CONTRIBUTING.md` নামে একটি নতুন ফাইল তৈরি করুন।
+- [ ] ইস্যু ও পুল রিকোয়েস্ট জমা দেওয়ার প্রক্রিয়ার রূপরেখা দিন।
+- [ ] কোডিং মানদণ্ড, স্টাইল গাইড বা বিশেষ কোনো প্রয়োজনীয়তা অন্তর্ভুক্ত করুন।
+- [ ] কন্ট্রিবিউটররা কীভাবে সাহায্য বা ব্যাখ্যা চাইতে পারেন, তা উল্লেখ করুন।
+
+#### কন্ট্রিবিউটিং গাইডলাইন টেমপ্লেট
 
 ```markdown
 # Contributing to [Project Name]
@@ -149,49 +144,50 @@ We believe in recognizing all contributions, not just code. Here's how we do it.
 Thank you for contributing to [Project Name]!
 ```
 
-### Setting Up a Code of Conduct
 
-It's essential to have a code of conduct to ensure that everyone feels welcome and safe in your project. There are two ways to add one to your project:
+### আচরণবিধি যোগ করা
 
-1. **Use a template**. GitHub provides common code of conduct templates to help you set one up quickly. You can read [the instructions on their docs](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project#adding-a-code-of-conduct-using-a-template) to add one to your project.
+আপনার প্রজেক্টে প্রত্যেকে যেন স্বাগত ও নিরাপদ বোধ করেন, তা নিশ্চিত করতে একটি আচরণবিধি থাকা অত্যাবশ্যক। আপনার প্রজেক্টে একটি যোগ করার দুটি উপায় আছে:
 
-2. **Add manually**. If you want to copy or adapt from other codes of conduct, you need to add your code of conduct manually by following these steps:
+1. **টেমপ্লেট ব্যবহার করুন**। GitHub দ্রুত একটি সেট আপ করতে সাহায্য করার জন্য সাধারণ আচরণবিধির টেমপ্লেট দেয়। আপনার প্রজেক্টে একটি যোগ করতে [তাদের ডকুমেন্টেশনের নির্দেশনা](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project#adding-a-code-of-conduct-using-a-template) পড়তে পারেন।
 
-   - [ ] Create a new file named `CONTRIBUTING.md` in the root of your repository.
-   - [ ] Copy and paste the code of conduct you'd like to use. We recommend using the [Contributor Covenant](https://www.contributor-covenant.org/).
-   - [ ] Add a link to the code of conduct in your README and CONTRIBUTING files.
+2. **ম্যানুয়ালি যোগ করুন**। অন্য আচরণবিধি থেকে কপি বা মানিয়ে নিতে চাইলে আপনাকে এই ধাপগুলো অনুসরণ করে ম্যানুয়ালি আপনার আচরণবিধি যোগ করতে হবে:
+
+   - [ ] আপনার রিপোজিটরির রুটে `CONTRIBUTING.md` নামে একটি নতুন ফাইল তৈরি করুন।
+   - [ ] আপনি যে আচরণবিধি ব্যবহার করতে চান, সেটি কপি করে পেস্ট করুন। আমরা [Contributor Covenant](https://www.contributor-covenant.org/) ব্যবহারের পরামর্শ দিই।
+   - [ ] আপনার README ও CONTRIBUTING ফাইলে আচরণবিধির একটি লিংক যোগ করুন।
 
    :::note
-   
-   Make sure you attribute the code of conduct to the original author.
+
+   আচরণবিধির মূল লেখককে অবশ্যই কৃতিত্ব দিন।
 
    :::
 
-### Using Issue Forms, Pull Request Templates, and Labels
+### ইস্যু ফর্ম, পুল রিকোয়েস্ট টেমপ্লেট ও লেবেল ব্যবহার করা
 
-Creating good issues and using labels will help to create a strong project. Before creating your first issue, start by creating issue templates to make the process of submitting an issue clear to your contributors.
+ভালো ইস্যু তৈরি করা এবং লেবেল ব্যবহার করা একটি মজবুত প্রজেক্ট গড়তে সাহায্য করবে। প্রথম ইস্যু তৈরি করার আগে আপনার কন্ট্রিবিউটরদের জন্য ইস্যু জমা দেওয়ার প্রক্রিয়া স্পষ্ট করতে ইস্যু টেমপ্লেট তৈরি দিয়ে শুরু করুন।
 
-#### Creating Issue Forms
+#### ইস্যু ফর্ম তৈরি করা
 
-In this section, we will create an issue template for a bug report. You can also create templates for other types of issues, such as feature requests, questions, or documentation requests.
+এই অংশে আমরা বাগ রিপোর্টের জন্য একটি ইস্যু টেমপ্লেট তৈরি করব। ফিচারের অনুরোধ, প্রশ্ন বা ডকুমেন্টেশনের অনুরোধের মতো অন্যান্য ধরনের ইস্যুর জন্যও আপনি টেমপ্লেট তৈরি করতে পারেন।
 
-Below are the steps to create the template. After the steps, we'll share with you what we use at OpenSauced. Feel free to copy and paste that information into your repository and update it as needed.
+নিচে টেমপ্লেট তৈরির ধাপগুলো দেওয়া হলো। ধাপগুলোর পর আমরা OpenSauced-এ যা ব্যবহার করি তা আপনাদের সাথে ভাগ করব। নির্দ্বিধায় সেই তথ্য আপনার রিপোজিটরিতে কপি-পেস্ট করুন এবং প্রয়োজনমতো হালনাগাদ করুন।
 
-##### Bug Report
+##### বাগ রিপোর্ট
 
-- [ ] Create a new folder named `.github` in the root of your repository.
-- [ ] Within that folder, create a new folder named `ISSUE_TEMPLATE`.
-- [ ] In the `.github/ISSUE_TEMPLATE` directory, create a new file named `bug_report.yml`.
-- [ ] Add a name (🐛 Bug report), description (Create a bug report to help us improve Open Sauced 🍕) to the template, and title ("Bug: ").
-- [ ] If there are specific labels you want automatically generated when this issue is created, add them to the template. (`labels: [👀 needs triage, 🐛 bug]`)
-- [ ] Next, you'll add the body, which includes the type and attributes for each section. This generally contains a checklist of steps to reproduce the bug. As part of that section, you should:
-  - [ ] Add a section for the expected behavior and actual behavior.
-  - [ ] Add a checklist of steps to reproduce the bug.
-  - [ ] Add a section for screenshots, if applicable.
-  - [ ] Add a section for additional context, if applicable.
-- [ ] Finally, add a section for the code of conduct and contributing docs.
+- [ ] আপনার রিপোজিটরির রুটে `.github` নামে একটি নতুন ফোল্ডার তৈরি করুন।
+- [ ] সেই ফোল্ডারের ভেতরে `ISSUE_TEMPLATE` নামে একটি নতুন ফোল্ডার তৈরি করুন।
+- [ ] `.github/ISSUE_TEMPLATE` ডিরেক্টরিতে `bug_report.yml` নামে একটি নতুন ফাইল তৈরি করুন।
+- [ ] টেমপ্লেটে একটি নাম (🐛 Bug report), বর্ণনা (Create a bug report to help us improve Open Sauced 🍕) এবং শিরোনাম ("Bug: ") যোগ করুন।
+- [ ] এই ইস্যু তৈরি হলে স্বয়ংক্রিয়ভাবে নির্দিষ্ট কোনো লেবেল যুক্ত হোক চাইলে সেগুলো টেমপ্লেটে যোগ করুন। (`labels: [👀 needs triage, 🐛 bug]`)
+- [ ] এরপর আপনি বডি যোগ করবেন, যাতে প্রতিটি অংশের জন্য ধরন ও অ্যাট্রিবিউট থাকে। এতে সাধারণত বাগ পুনরুৎপাদনের ধাপগুলোর একটি চেকলিস্ট থাকে। এই অংশের জন্য আপনাকে:
+  - [ ] প্রত্যাশিত আচরণ ও প্রকৃত আচরণের জন্য একটি অংশ যোগ করতে হবে।
+  - [ ] বাগ পুনরুৎপাদনের ধাপগুলোর একটি চেকলিস্ট যোগ করতে হবে।
+  - [ ] প্রযোজ্য হলে স্ক্রিনশটের জন্য একটি অংশ যোগ করতে হবে।
+  - [ ] প্রযোজ্য হলে বাড়তি প্রেক্ষাপটের জন্য একটি অংশ যোগ করতে হবে।
+- [ ] সবশেষে আচরণবিধি ও কন্ট্রিবিউটিং ডকুমেন্টেশনের জন্য একটি অংশ যোগ করুন।
 
-Here's what we use at OpenSauced:
+OpenSauced-এ আমরা যা ব্যবহার করি:
 
 ```yml
 name: 🐛 Bug report
@@ -255,22 +251,23 @@ body:
           required: false
 ```
 
-##### Feature Request
 
-Now, let's follow the same process and make a feature request template.
+##### ফিচারের অনুরোধ
 
-- [ ] In the `.github/ISSUE_TEMPLATE` directory, create a new file named `feature_request.yml`.
-- [ ] Add a name (🚀 Feature request), description (Suggest an idea for this project 💡), and title ("Feature: ") to the template.
-- [ ] If there are specific labels you want automatically generated when this issue is created, add them to the template. We use 👀 needs triage, 💡 feature.
-- [ ] Next, you'll add the body, which includes the type and attributes for each section. This generally contains a checklist of steps to reproduce the bug. As part of that section, you should:
-  - [ ] Add a section for the expected behavior and actual behavior.
-  - [ ] Add a dropdown for the type of feature request.
-  - [ ] Add a section for the suggested solution.
-  - [ ] Add a section for screenshots, if applicable.
-  - [ ] Add a section for additional context, if applicable.
-- [ ] Finally, add a section for the code of conduct and contributing docs.
+এবার চলুন একই প্রক্রিয়া অনুসরণ করে একটি ফিচার রিকোয়েস্ট টেমপ্লেট বানাই।
 
-Here's what we use at OpenSauced:
+- [ ] `.github/ISSUE_TEMPLATE` ডিরেক্টরিতে `feature_request.yml` নামে একটি নতুন ফাইল তৈরি করুন।
+- [ ] টেমপ্লেটে একটি নাম (🚀 Feature request), বর্ণনা (Suggest an idea for this project 💡) এবং শিরোনাম ("Feature: ") যোগ করুন।
+- [ ] এই ইস্যু তৈরি হলে স্বয়ংক্রিয়ভাবে নির্দিষ্ট কোনো লেবেল যুক্ত হোক চাইলে সেগুলো টেমপ্লেটে যোগ করুন। আমরা 👀 needs triage ও 💡 feature ব্যবহার করি।
+- [ ] এরপর আপনি বডি যোগ করবেন, যাতে প্রতিটি অংশের জন্য ধরন ও অ্যাট্রিবিউট থাকে। এতে সাধারণত বাগ পুনরুৎপাদনের ধাপগুলোর একটি চেকলিস্ট থাকে। এই অংশের জন্য আপনাকে:
+  - [ ] প্রত্যাশিত আচরণ ও প্রকৃত আচরণের জন্য একটি অংশ যোগ করতে হবে।
+  - [ ] ফিচারের অনুরোধের ধরনের জন্য একটি ড্রপডাউন যোগ করতে হবে।
+  - [ ] প্রস্তাবিত সমাধানের জন্য একটি অংশ যোগ করতে হবে।
+  - [ ] প্রযোজ্য হলে স্ক্রিনশটের জন্য একটি অংশ যোগ করতে হবে।
+  - [ ] প্রযোজ্য হলে বাড়তি প্রেক্ষাপটের জন্য একটি অংশ যোগ করতে হবে।
+- [ ] সবশেষে আচরণবিধি ও কন্ট্রিবিউটিং ডকুমেন্টেশনের জন্য একটি অংশ যোগ করুন।
+
+OpenSauced-এ আমরা যা ব্যবহার করি:
 
 ```yml
 name: 🚀 Feature request
@@ -334,14 +331,15 @@ body:
           required: false
 ```
 
-#### Writing Your First Issue
 
-- In your repository, click the "Issues" tab and then the "New issue" button.
+#### আপনার প্রথম ইস্যু লেখা
 
-  ![create issue](../_assets/images/create-issue.png)
+- আপনার রিপোজিটরিতে "Issues" ট্যাবে এবং তারপর "New issue" বোতামে ক্লিক করুন।
 
-- Select the type of issue you want to create. In this example, we'll select Feature Request.
-- Write your issue. If you're following along the example, we'll write a feature request for a new resource:
+  ![ইস্যু তৈরি](../_assets/images/create-issue.png)
+
+- আপনি কোন ধরনের ইস্যু তৈরি করতে চান, তা বেছে নিন। এই উদাহরণে আমরা Feature Request বেছে নেব।
+- আপনার ইস্যু লিখুন। উদাহরণটি অনুসরণ করলে আমরা একটি নতুন রিসোর্সের জন্য ফিচারের অনুরোধ লিখব:
 
   ```markdown
   **Type of feature:** 🍕 Feature
@@ -351,47 +349,48 @@ body:
   **Contributing Docs:** I agree to follow this project's Contribution Docs.
   ```
 
-- Once you've completed the issues, click "Submit new issue."
+
+- ইস্যু পূরণ করা হলে "Submit new issue"-তে ক্লিক করুন।
 
   ![feature-form.png](../_assets/images/feature-form.png)
 
-### Promoting Your Project
+### আপনার প্রজেক্টের প্রচার
 
-Now that you have your project set up, it's time to promote it! Here are some ideas to get you started:
+প্রজেক্ট সেট আপ হয়ে গেছে, এবার এর প্রচারের সময়! শুরু করার জন্য কয়েকটি ধারণা:
 
-- Share your project on social media, forums, and relevant communities.
-- Write blog posts or tutorials about your project.
-- Present your project at meetups, conferences, or online webinars.
-- Post about your project on LinkedIn, X (Twitter), or Mastodon for professional visibility.
-- Share your project with friends, family, and colleagues.
-- Ask for feedback from your network.
+- আপনার প্রজেক্ট সোশ্যাল মিডিয়া, ফোরাম ও প্রাসঙ্গিক কমিউনিটিতে শেয়ার করুন।
+- আপনার প্রজেক্ট নিয়ে ব্লগ পোস্ট বা টিউটোরিয়াল লিখুন।
+- মিটআপ, সম্মেলন বা অনলাইন ওয়েবিনারে আপনার প্রজেক্ট উপস্থাপন করুন।
+- পেশাগত দৃশ্যমানতার জন্য LinkedIn, X (Twitter) বা Mastodon-এ আপনার প্রজেক্ট নিয়ে পোস্ট করুন।
+- বন্ধু, পরিবার ও সহকর্মীদের সাথে আপনার প্রজেক্ট শেয়ার করুন।
+- আপনার নেটওয়ার্কের কাছ থেকে মতামত চান।
 
-### Recognizing Contributions
+### অবদানের স্বীকৃতি
 
-In order to maintain a healthy project where contributors feel valued, it's important to recognize contributions. Here are some ways to do that:
+কন্ট্রিবিউটররা যেখানে মূল্যবান বোধ করেন, এমন একটি সুস্থ প্রজেক্ট বজায় রাখতে অবদানের স্বীকৃতি দেওয়া গুরুত্বপূর্ণ। এটি করার কয়েকটি উপায়:
 
-- Use tools like the [All Contributors](https://allcontributors.org) bot to acknowledge different types of contributions.
-- Highlight contributors in your README or on your project's website.
-- Share contributor achievements on social media with a thank-you and link to their PR or issue.
-- Thank contributors publicly for their work.
+- বিভিন্ন ধরনের অবদানের স্বীকৃতি দিতে [All Contributors](https://allcontributors.org) বটের মতো টুল ব্যবহার করুন।
+- আপনার README-তে বা প্রজেক্টের ওয়েবসাইটে কন্ট্রিবিউটরদের তুলে ধরুন।
+- ধন্যবাদ জানিয়ে এবং তাঁদের PR বা ইস্যুর লিংক দিয়ে কন্ট্রিবিউটরদের অর্জন সোশ্যাল মিডিয়ায় শেয়ার করুন।
+- কন্ট্রিবিউটরদের কাজের জন্য প্রকাশ্যে ধন্যবাদ জানান।
 
-### Monitoring Your Project
+### আপনার প্রজেক্ট পর্যবেক্ষণ
 
-Once your project is up and running, monitoring its health and activity is important. Here are some ways to do that:
+আপনার প্রজেক্ট চালু হয়ে গেলে এর সুস্থতা ও কার্যকলাপ পর্যবেক্ষণ করা গুরুত্বপূর্ণ। এটি করার কয়েকটি উপায়:
 
-- Create an OpenSauced [Workspace](https://opensauced.pizza/docs/features/workspaces/) to track your project's activity.
-- Set up notifications for new issues and pull requests.
-- Solicit feedback from users and contributors using discussions or surveys.
-- Reflect on the project's direction and make adjustments as necessary.
+- আপনার প্রজেক্টের কার্যকলাপ ট্র্যাক করতে একটি OpenSauced [Workspace](https://opensauced.pizza/docs/features/workspaces/) তৈরি করুন।
+- নতুন ইস্যু ও পুল রিকোয়েস্টের জন্য নোটিফিকেশন সেট আপ করুন।
+- ডিসকাশন বা জরিপের মাধ্যমে ব্যবহারকারী ও কন্ট্রিবিউটরদের কাছ থেকে মতামত নিন।
+- প্রজেক্টের দিকনির্দেশনা নিয়ে ভাবুন এবং প্রয়োজনমতো সমন্বয় করুন।
 
-You can learn more about how to create a successful project with OpenSauced with our [Maintainers Guide to OpenSauced](https://opensauced.pizza/docs/maintainers/maintainers-guide-to-open-sauced/).
+OpenSauced দিয়ে কীভাবে একটি সফল প্রজেক্ট গড়বেন, তা আমাদের [Maintainers Guide to OpenSauced](https://opensauced.pizza/docs/maintainers/maintainers-guide-to-open-sauced/)-এ আরও জানতে পারবেন।
 
 ---
 
-Congratulations on creating your first project! Now, you can share it on our [Maintainers Guestbook](maintainers-guestbook.md) page.
+আপনার প্রথম প্রজেক্ট তৈরির জন্য অভিনন্দন! এখন আপনি এটি আমাদের [মেইনটেইনারদের অতিথি-খাতা](maintainers-guestbook.md) পাতায় শেয়ার করতে পারেন।
 
 :::tip
 
-Remember, these steps are guidelines; the key to a healthy open source project is to foster an open, inclusive, and collaborative environment.
+মনে রাখবেন, এই ধাপগুলো নির্দেশিকা মাত্র। একটি সুস্থ ওপেন সোর্স প্রজেক্টের চাবিকাঠি হলো একটি উন্মুক্ত, অন্তর্ভুক্তিমূলক ও সহযোগিতামূলক পরিবেশ গড়ে তোলা।
 
 :::

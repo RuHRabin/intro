@@ -2,220 +2,214 @@
 id: communication-and-collaboration
 title: "কার্যকরভাবে যোগাযোগ ও সহযোগিতা কীভাবে করবেন"
 sidebar_label: "কার্যকর যোগাযোগ ও সহযোগিতা"
-keywords: ["communication and collaboration", "effective communication and collaboration in open source", "open source community communication strategies", "managing communication in open source", "fostering collaboration in open source", "best practices for communication in open source communities", "using Discord/Slack/Github Discussions for open source communication", "how to handle conflicts in open source community", "open source maintainers", "Open Source", "Open Source Community"]
+keywords: ["ওপেন সোর্স প্রজেক্টে যোগাযোগ", "ওপেন সোর্স প্রজেক্টে সহযোগিতা", "ওপেন সোর্স প্রজেক্ট অনবোর্ডিং", "ওপেন সোর্স কমিউনিটি যোগাযোগ মাধ্যম", "ওপেন সোর্সে কঠিন পরিস্থিতি সামলানো", "ওপেন সোর্সে সীমা নির্ধারণ", "ওপেন সোর্স মেইনটেইনারদের জন্য যোগাযোগ", "Discord", "Slack", "GitHub Discussions", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+কন্ট্রিবিউটরদের সাথে কার্যকর যোগাযোগ ও সহযোগিতাই একটি সমৃদ্ধ ওপেন সোর্স কমিউনিটির চাবিকাঠি। মেইনটেইনার হিসেবে আপনি চাইবেন নিজের প্রজেক্টে নতুন কন্ট্রিবিউটরদের সহজে অনবোর্ড করতে এবং এমন একটি স্বাগতপূর্ণ কমিউনিটি গড়ে তুলতে, যেখানে কন্ট্রিবিউটর ও মেইনটেইনারদের মধ্যে যোগাযোগের পথ খোলা থাকে।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+এই অধ্যায়ে আলোচনা করা হবে নতুন কন্ট্রিবিউটরদের অনবোর্ড করা, আপনার ওপেন সোর্স প্রজেক্টের কমিউনিটির জন্য বিভিন্ন যোগাযোগ মাধ্যম ব্যবহার এবং সুস্থ যোগাযোগ বজায় রাখা নিয়ে।
 
-:::
+## প্রজেক্ট অনবোর্ডিং
 
-Effective communication and collaboration with contributors are the keys to a thriving open source community. As maintainers, you want to smoothly onboard new contributors to your projects and build a welcoming community with open lines of communication between contributors and maintainers.
+প্রজেক্টের সুস্থতা ও বিকাশ বজায় রাখতে নতুন কন্ট্রিবিউটরদের অনবোর্ড করা অত্যাবশ্যক। আর এটি সম্ভব হয় কার্যকর যোগাযোগ প্রতিষ্ঠার মাধ্যমে, যা শুরু হয় আপনার প্রজেক্টের ডকুমেন্টেশন থেকেই।
 
-This chapter will discuss how to onboard new contributors, utilize different communication channels for your open source project's community, and maintain healthy communication.
+প্রজেক্টের লক্ষ্য, প্রক্রিয়া ও কোডবেস সম্পর্কে স্পষ্ট তথ্য ও দিকনির্দেশনা দেওয়াই নতুন কন্ট্রিবিউটরদের সহযোগিতা করতে সাহায্য করার মূল চাবিকাঠি। কার্যকর যোগাযোগ আপনাকে কন্ট্রিবিউটরদের ফিরে আসতে, আপনার প্রজেক্ট সম্পর্কে আরও জানতে এবং অবদান চালিয়ে যেতে আকৃষ্ট করতে দেয়। এভাবে আপনি এমন একটি টেকসই ইকোসিস্টেম গড়তে পারেন, যেখানে জ্ঞান ভাগ করে নেওয়া হয়, দায়িত্ব বণ্টন করা হয় এবং প্রজেক্ট ক্রমাগত বিকশিত হতে ও বড় হতে পারে।
 
-## Project Onboarding
+ভালো সহযোগিতা অর্জনে আপনার প্রজেক্টে কার্যকর যোগাযোগ প্রতিষ্ঠার কয়েকটি উপায় আছে।
 
-Onboarding new contributors to your project is essential to maintaining its health and growth. And that will become possible through establishing effective communication, starting from your project's documentation.
+### স্পষ্ট ডকুমেন্টেশন
 
-Providing clear information and directions about the project's goals, processes, and codebase is the key to helping new contributors collaborate. Effective communication allows you to attract contributors to return, learn more about your projects, and continue contributing. That way, you can create a sustainable ecosystem where knowledge is shared, responsibilities are distributed, and the project can continue to evolve and grow.
+সহজবোধ্য ও সুসংগঠিত ডকুমেন্টেশন নতুন কন্ট্রিবিউটরদের জন্য ভালো অনবোর্ডিং অভিজ্ঞতা নিশ্চিত করবে। স্পষ্ট ডকুমেন্টেশন সময় বাঁচাতে, ভুল এড়াতে এবং স্বচ্ছতা ও জবাবদিহি বাড়াতে পারে, যা কার্যকর যোগাযোগের জন্য অত্যন্ত গুরুত্বপূর্ণ। আপনার প্রজেক্টের জন্য স্পষ্ট ডকুমেন্টেশন তৈরিতে সময় ও শ্রম বিনিয়োগ করাই ভালো।
 
-There are ways to establish effective communication on your project to achieve good collaboration.
+ডকুমেন্টেশন লেখা বা হালনাগাদ করার সময় এগুলো মাথায় রাখুন:
 
-### Clear Documentation
+- **সহজ ভাষা ও সর্বজনীন উদাহরণ**
 
-Easy-to-understand and well-organized documentation will ensure a good onboarding experience for new contributors. Clear documentation can save time, prevent errors, and promote transparency and accountability, which can be vital for effective communication. It is best to invest time and effort in creating clear documentation for your project.
+  আপনার ডকুমেন্টেশন যেন বেশিরভাগ কন্ট্রিবিউটরের, সম্ভব হলে সবারই, কাছে সহজে বোধগম্য হয়, তা নিশ্চিত করুন, যার মধ্যে ইংরেজি যাঁদের মাতৃভাষা নয় তাঁরাও আছেন।
 
-Consider these when you write or update your documentation:
+- **স্পষ্ট গাইড**
 
-- **Simple language and universal examples**
+  README-তে সেটআপ গাইড হোক, প্রজেক্ট চালানো ও ব্যবহারের নির্দেশনা হোক, কিংবা কন্ট্রিবিউটিং গাইডলাইন, আরও ভালো সহযোগিতার জন্য কন্ট্রিবিউটরদের অনুসরণ করার মতো স্পষ্ট দিকনির্দেশনা আপনি সবসময় দিতে চাইবেন।
 
-  You want to ensure that your documentation is easy to understand by most contributors — if not everyone — including non-native English speakers.
+- **ডকুমেন্টেশনের জন্য নির্দিষ্ট জায়গা**
 
-- **Clear guide**
+  আপনার README ক্রমশ লম্বা হতে থাকলে প্রজেক্টের ডকুমেন্টেশনের জন্য নতুন একটি ফাইল বা রিপোজিটরি তৈরির কথা ভাবুন। এতে ডকুমেন্টেশনের প্রবাহ ভালো থাকবে এবং আপনি নিজের প্রজেক্ট আরও ভালোভাবে বোঝাতে পারবেন।
 
-  Whether it's the setup guide on the README, instructions to run and use the project, or contributing guidelines, you always want to provide a clear direction for contributors to follow for better collaboration.
+### ইস্যু লেবেল
 
-- **Dedicated place for documentation**
+ইস্যুতে লেবেল দেওয়া আপনার প্রজেক্টের ইস্যুগুলোকে শ্রেণিবদ্ধ করার এবং সেগুলোর অবস্থা জানানোর চমৎকার উপায়। এটি কন্ট্রিবিউটরদের জন্য পথ তৈরির একটি মাধ্যমও হতে পারে। "[ওপেন ইস্যু ও পুল রিকোয়েস্ট কীভাবে সামলাবেন](issues-and-pull-requests.md)" অধ্যায়ে এই বিষয়টি আরও গভীরভাবে আলোচনা করা হয়েছে।
 
-  If your README is growing longer, consider creating a new file or repository dedicated to your project's documentation. This will ensure a good documentation flow, allowing you to communicate your project better.
+`good first issue` লেবেল নতুনদের উপযোগী ইস্যুতে যোগ করার জন্য একেবারে উপযুক্ত। এমন কন্ট্রিবিউটরদের কথা ভাবুন, যাঁরা প্রযুক্তি স্ট্যাকে বা সাধারণভাবে ওপেন সোর্সে নতুন। আপনার প্রজেক্টে অবদান রাখার জন্য এটি তাঁদের ভালো একটি শুরুর বিন্দু হতে পারে। এ ধরনের ইস্যুতে কোডের নির্দিষ্ট অংশ দেখিয়ে দেওয়া এবং সমাধানে কাজ করার ধাপে ধাপে নির্দেশনা দেওয়ার কথা ভাবুন।
 
-### Issue Labels
+কোনো ইস্যু জটিল হলে এবং দ্রুত ঠিক করতে হলে হতাশা ও বিভ্রান্তি এড়াতে আপনি `core team work`, `critical` বা আপনার প্রজেক্টের রীতি অনুযায়ী অন্য কোনো লেবেল যোগ করতে পারেন।
 
-Labeling issues is an excellent way to categorize and communicate the status of issues in your project. It can also be a way to create contributors' paths. The "[How to Handle Open Issues and Pull Requests](issues-and-pull-requests.md)" chapter covers this topic in more deeply.
+### ইস্যু ও পুল রিকোয়েস্ট টেমপ্লেট
 
-The `good first issue` label is perfect to be added to beginner-friendly issues. Think of contributors who are beginners in the tech stack or open source in general. It can be a good starting point for them to contribute to your project. Consider pointing to the code blocks and providing step-by-step instructions to work on the solutions for this type of issue.
+আপনার প্রজেক্টে ইস্যু ও পুল রিকোয়েস্ট টেমপ্লেট থাকলে সেগুলো ট্রায়াজ ও রিভিউ করা আপনার জন্য সহজ হয়। এগুলো কন্ট্রিবিউটরদের বুঝতে সাহায্য করে প্রজেক্টের কাছে কীভাবে যেতে হবে এবং একটি তৈরি করার সময় আপনি তাঁদের কোন বিষয়গুলো ভালোভাবে খেয়াল করতে চান।
 
-If an issue is complicated and has to be fixed promptly, you can add `core team work`, `critical`, or any other label based on your project's convention to prevent frustrations and confusion.
+## নিয়মিত যোগাযোগ
 
-### Issues and Pull Request Templates
+কন্ট্রিবিউটররা যাতে প্রশ্ন করতে, দিকনির্দেশনা চাইতে এবং ভাবনা ভাগ করে নিতে পারেন, সে জন্য আপনার প্রজেক্টের বাইরে জায়গা রাখার পরামর্শ দেওয়া হয়। এতে তাঁরা অন্য সহযোগী ও মেইনটেইনারদের সাথে সক্রিয়ভাবে যোগাযোগ ও সহযোগিতা করতে পারবেন।
 
-Having issues and pull request templates in your project makes it easier for you to triage and review them, and they help contributors understand how to approach the project and what you expect them to look closer at when creating one.
+নিয়মিত যোগাযোগ তৈরির জন্য বিবেচনা করার মতো কয়েকটি মাধ্যম:
 
-## Regular Communication
+### চ্যাট সার্ভিস অ্যাপ
 
-It is recommended that you provide spaces outside your project for contributors to ask questions, request guidance, and share ideas. That way, they can communicate and collaborate actively with other collaborators and maintainers.
+আপনার কমিউনিটির অ্যাসিনক্রোনাস ও সিনক্রোনাস, দুই ধরনের যোগাযোগের জন্যই একটি চ্যাট সার্ভিস অ্যাপ থাকা সবচেয়ে ভালো। এই অ্যাপে কন্ট্রিবিউটররা প্রশ্ন করতে, সংযোগ গড়তে এবং প্রায় রিয়েল-টাইমে খোলামেলা সহযোগিতা করতে পারেন। বিভিন্ন টাইমজোনে যোগাযোগ সহায়তার জন্যও এটি দারুণ উপায়। মেইনটেইনার হিসেবে আপনারও চ্যাট সার্ভিস অ্যাপে সুবিধা আছে: প্রজেক্ট ও কমিউনিটির হালনাগাদ দ্রুত ঘোষণা করা, সাহায্য চাওয়া, সিনক্রোনাস অফিস আওয়ার চালানো ইত্যাদি।
 
-Here are some channels for you to consider to create regular communication:
+নিচে উল্লিখিত অ্যাপগুলো প্রযুক্তি কমিউনিটিতে বহুল ব্যবহৃত। আপনার পছন্দ ও কমিউনিটির প্রয়োজন অনুযায়ী আপনি যেকোনোটি বেছে নিতে পারেন।
 
-### Chat Service App
+#### Discord কমিউনিটি
 
-It would be best to provide a chat service app to accommodate asynchronous and synchronous communication for your community. With this app, contributors can ask questions, connect, and collaborate openly in nearly real-time. It's also a great way to support communication in different time zones. A chat service app can also benefit you as a maintainer by quickly announcing project and community updates, asking for help, holding synchronous office hours, etc.
+> [Discord](https://discord.com/) হলো ভয়েস, ভিডিও ও টেক্সট যোগাযোগের একটি সেবা, যা দশ কোটিরও বেশি মানুষ নিজেদের বন্ধু ও কমিউনিটির সাথে আড্ডা ও কথাবার্তার জন্য ব্যবহার করেন।
 
-Tech communities widely use the apps mentioned below. You can choose which one to use based on your preference and your community's needs.
+আপনার কমিউনিটি যদি গ্রুপ ভয়েস ও ভিডিও কলের ওপর বেশি নির্ভর করে, তাহলে Discord ভালো পছন্দ। ভয়েস কলের জন্য একটি চ্যানেল বানালে কমিউনিটির সদস্যরা সহজেই চ্যানেলে যোগ দিয়ে যে কারও সাথে তাৎক্ষণিক কথা বলতে পারেন। বড় কমিউনিটি গড়ার জন্যও Discord উপযুক্ত, কারণ আপনার সার্ভার পাবলিক হলে Discord অ্যাকাউন্ট আছে এমন যে কেউ আপনার গ্রুপ খুঁজে তাতে যোগ দিতে পারেন।
 
-#### Discord Community
+#### Slack গ্রুপ
 
-> [Discord](https://discord.com/) is a voice, video and text communication service used by over a hundred million people to hang out and talk with their friends and communities.
+> [Slack](https://slack.com/) হলো এমন একটি উৎপাদনশীলতা প্ল্যাটফর্ম, যা নো-কোড অটোমেশন ও এআই দিয়ে সবাইকে সক্ষম করে, সার্চ ও জ্ঞান ভাগাভাগি মসৃণ করে এবং দলগুলোকে যুক্ত ও সক্রিয় রাখে।
 
-Discord is a good choice if your community heavily uses group voice and video calls. Creating a channel for voice calls makes it easy for community members to join the channel and talk to anyone instantly. Discord is also suitable for building a larger community because if your server is public, anyone with a Discord account can search and join your group.
-
-#### Slack Group
-
-> [Slack](https://slack.com/) is the productivity platform that empowers everyone with no-code automation and AI, makes search and knowledge sharing seamless, and keeps teams connected and engaged.
-
-Slack primarily targets businesses and professional teams. That said, if your community prioritizes using chat more than voice or video calls, Slack can accommodate this through its simple and intuitive interface and ability to organize conversations. Slack can automate workflow and be integrated with thousands of business applications, including Zoom and GitHub.
+Slack মূলত ব্যবসা ও পেশাদার দলের কথা মাথায় রেখে তৈরি। তবে আপনার কমিউনিটি যদি ভয়েস বা ভিডিও কলের চেয়ে চ্যাট বেশি ব্যবহার করে, তাহলে এর সহজ ও স্বজ্ঞাত ইন্টারফেস এবং আলাপ সাজিয়ে রাখার সক্ষমতার মাধ্যমে Slack এ প্রয়োজন মেটাতে পারে। Slack ওয়ার্কফ্লো স্বয়ংক্রিয় করতে পারে এবং Zoom ও GitHub-সহ হাজার হাজার ব্যবসায়িক অ্যাপ্লিকেশনের সাথে সংযুক্ত করা যায়।
 
 ### GitHub Discussions
 
-[Discussions](https://github.com/features/discussions) is a collaborative communication forum for the community around an open source project. It's a feature on GitHub that allows users to ask questions, share ideas, and build connections around the project.
+[Discussions](https://github.com/features/discussions) হলো কোনো ওপেন সোর্স প্রজেক্টকে ঘিরে থাকা কমিউনিটির জন্য একটি সহযোগিতামূলক যোগাযোগ ফোরাম। এটি GitHub-এর একটি ফিচার, যা ব্যবহারকারীদের প্রজেক্টকে ঘিরে প্রশ্ন করতে, ভাবনা ভাগ করে নিতে এবং সংযোগ গড়তে সুযোগ দেয়।
 
-You can easily enable discussions in your project by following the [complete instructions](https://docs.github.com/en/discussions/quickstart#enabling-github-discussions-on-your-repository).
+[পূর্ণাঙ্গ নির্দেশনা](https://docs.github.com/en/discussions/quickstart#enabling-github-discussions-on-your-repository) অনুসরণ করে আপনি সহজেই আপনার প্রজেক্টে Discussions চালু করতে পারেন।
 
-### Community Forum
+### কমিউনিটি ফোরাম
 
-Another place to create a communication space is a forum. A community forum is an online space where community members connect, engage, and discuss topics with each other.
+যোগাযোগের জায়গা তৈরির আরেকটি স্থান হলো ফোরাম। কমিউনিটি ফোরাম এমন একটি অনলাইন পরিসর, যেখানে কমিউনিটির সদস্যরা সংযুক্ত হন, অংশ নেন এবং একে অপরের সাথে নানা বিষয়ে আলোচনা করেন।
 
-One of the benefits of having a community forum is that it provides a place for members to discuss and ask specific questions about your project. Whenever someone encounters the same problem that has been fixed before, they can fix it faster by searching for solutions on the forum. This can increase your productivity because you don't have to answer the same questions repeatedly. A forum is also available publicly, so it's searchable on search engines and can increase the number of users and contributors.
+কমিউনিটি ফোরাম রাখার একটি সুবিধা হলো এটি সদস্যদের আপনার প্রজেক্ট নিয়ে নির্দিষ্ট প্রশ্ন করা ও আলোচনা করার জায়গা দেয়। আগে ঠিক হয়ে গেছে এমন সমস্যার মুখোমুখি কেউ হলে ফোরামে সমাধান খুঁজে তিনি আরও দ্রুত তা ঠিক করতে পারেন। এতে আপনার উৎপাদনশীলতা বাড়তে পারে, কারণ একই প্রশ্নের উত্তর আপনাকে বারবার দিতে হয় না। ফোরাম প্রকাশ্যে পাওয়া যায় বলে সার্চ ইঞ্জিনেও খুঁজে পাওয়া যায়, ফলে ব্যবহারকারী ও কন্ট্রিবিউটরের সংখ্যা বাড়তে পারে।
 
-You can make a subdomain on your website or create a website to host the forum. The [freeCodeCamp forum](https://forum.freecodecamp.org/) is an excellent example of this.
+আপনি নিজের ওয়েবসাইটে একটি সাবডোমেইন বানিয়ে বা ফোরাম হোস্ট করার জন্য একটি ওয়েবসাইট তৈরি করতে পারেন। [freeCodeCamp ফোরাম](https://forum.freecodecamp.org/) এর একটি চমৎকার উদাহরণ।
 
-## Effective Communication
+## কার্যকর যোগাযোগ
 
-Effective communication is key to project success. It plays a vital role in resolving issues, building trust and transparency, and encouraging collaboration. By enabling open and healthy communication, you can ensure everyone is on the same page and working towards a common goal.
+কার্যকর যোগাযোগ প্রজেক্টের সাফল্যের চাবিকাঠি। সমস্যা সমাধান, আস্থা ও স্বচ্ছতা গড়ে তোলা এবং সহযোগিতাকে উৎসাহ দেওয়ায় এটি গুরুত্বপূর্ণ ভূমিকা রাখে। খোলামেলা ও সুস্থ যোগাযোগ সম্ভব করে আপনি নিশ্চিত করতে পারেন, সবাই একই ধারণার ওপর আছেন এবং একটি অভিন্ন লক্ষ্যের দিকে কাজ করছেন।
 
-### Engaging with Contributors
+### কন্ট্রিবিউটরদের সাথে সম্পৃক্ত হওয়া
 
-One of the maintainers' goals is to have contributors return and continue contributing to the project. To nurture this relationship, you should have time to engage with your contributors between tasks.
+মেইনটেইনারদের একটি লক্ষ্য হলো কন্ট্রিবিউটররা যেন ফিরে আসেন এবং প্রজেক্টে অবদান রাখা চালিয়ে যান। এই সম্পর্ক লালন করতে কাজের ফাঁকে আপনার কন্ট্রিবিউটরদের সাথে সম্পৃক্ত হওয়ার সময় থাকা উচিত।
 
-Start by acknowledging and thanking them for the issue or pull request they created. Ask them questions if something needs to be clarified, and don't assume.
+শুরু করুন তাঁরা যে ইস্যু বা পুল রিকোয়েস্ট তৈরি করেছেন, তার জন্য স্বীকৃতি ও ধন্যবাদ জানিয়ে। কিছু স্পষ্ট করার দরকার হলে প্রশ্ন করুন এবং ধরে নেবেন না।
 
-One of the golden rules in an international remote environment is never to make an assumption. Asynchronous communication, more often than not, can lead to misunderstanding because writing is different from speaking. People with different cultural and language backgrounds might need help explaining their intentions or understanding specific cultural sayings. Consider using words with explicit meanings when you communicate, and keep your message clear and short so they can understand your purpose. When you deliver a few topics, using bullet points in a comment or splitting your message into several comments is recommended.
+আন্তর্জাতিক রিমোট পরিবেশের একটি সোনালি নিয়ম হলো কখনো কোনো অনুমান না করা। অ্যাসিনক্রোনাস যোগাযোগ প্রায়ই ভুল বোঝাবুঝির কারণ হতে পারে, কারণ লেখা আর বলা আলাদা। ভিন্ন সাংস্কৃতিক ও ভাষাগত পটভূমির মানুষদের নিজেদের উদ্দেশ্য ব্যাখ্যা করতে বা নির্দিষ্ট সাংস্কৃতিক প্রবাদ বুঝতে সাহায্য লাগতে পারে। যোগাযোগের সময় স্পষ্ট অর্থের শব্দ ব্যবহার করার কথা ভাবুন এবং আপনার বার্তা পরিষ্কার ও ছোট রাখুন, যাতে তাঁরা আপনার উদ্দেশ্য বুঝতে পারেন। কয়েকটি বিষয় জানানোর সময় মন্তব্যে বুলেট পয়েন্ট ব্যবহার করা বা বার্তা কয়েকটি মন্তব্যে ভাগ করে দেওয়ার পরামর্শ দেওয়া হয়।
 
-Another way to engage with your contributors is through live streams. At OpenSauced, we do monthly live streams to thank our contributors for their pull requests and other support and give shoutouts as a token of our appreciation. You can also do live streams to work on issues publicly and ask your community to attend.
+কন্ট্রিবিউটরদের সাথে সম্পৃক্ত হওয়ার আরেকটি উপায় লাইভ স্ট্রিম। OpenSauced-এ আমরা প্রতি মাসে লাইভ স্ট্রিম করি, যেখানে কন্ট্রিবিউটরদের পুল রিকোয়েস্ট ও অন্যান্য সহায়তার জন্য ধন্যবাদ জানাই এবং কৃতজ্ঞতার নিদর্শন হিসেবে তাঁদের নাম ধরে প্রশংসা করি। আপনিও প্রকাশ্যে ইস্যুর কাজ করতে লাইভ স্ট্রিম করতে পারেন এবং কমিউনিটিকে অংশ নিতে আমন্ত্রণ জানাতে পারেন।
 
-Maintainers are human. Sometimes, a discussion with a contributor can upset you when you're tired or having a bad day. But always remember that you want to foster healthy communication and a welcoming environment. It's okay to cool down and take time to answer them. You can take a couple of hours or even a day before you return to them to avoid a bitter tone.
+মেইনটেইনাররাও মানুষ। কখনো কখনো ক্লান্ত থাকলে বা দিনটি খারাপ গেলে কোনো কন্ট্রিবিউটরের সাথে আলোচনা আপনাকে বিরক্ত করতে পারে। কিন্তু সবসময় মনে রাখবেন, আপনি সুস্থ যোগাযোগ ও স্বাগতপূর্ণ পরিবেশ গড়ে তুলতে চান। মাথা ঠান্ডা করে সময় নিয়ে উত্তর দেওয়া ঠিক আছে। তিক্ত সুর এড়াতে তাঁদের কাছে ফিরে যাওয়ার আগে আপনি কয়েক ঘণ্টা, এমনকি একদিনও সময় নিতে পারেন।
 
-### Managing Expectations
+### প্রত্যাশা ব্যবস্থাপনা
 
-The earlier you let contributors know what they can expect from you and what you expect from them, the better. Setting and managing expectations is the key to smooth contributions and project management. So, how can you manage and communicate your expectations?
+কন্ট্রিবিউটররা আপনার কাছে কী আশা করতে পারেন এবং আপনি তাঁদের কাছে কী আশা করেন, তা যত আগে জানাবেন, তত ভালো। প্রত্যাশা ঠিক করা ও তা পরিচালনা করাই মসৃণ অবদান ও প্রজেক্ট ব্যবস্থাপনার চাবিকাঠি। তাহলে আপনি কীভাবে নিজের প্রত্যাশা পরিচালনা ও জানাতে পারেন?
 
-#### Small Issues
+#### ছোট ইস্যু
 
-Just like maintainers, most open source contributors are volunteers. They are not required to, but they help you fix and enhance your project in their spare time. So you can't expect them to work on their issues promptly like a regular employee. With this expectation, you can, for example, break your issues into several small ones to prevent them from taking a long time to work on an issue.
+মেইনটেইনারদের মতোই বেশিরভাগ ওপেন সোর্স কন্ট্রিবিউটর স্বেচ্ছাসেবক। তাঁদের এটি করতে হয় না, তবু তাঁরা অবসর সময়ে আপনার প্রজেক্ট ঠিক ও উন্নত করতে সাহায্য করেন। তাই একজন সাধারণ কর্মচারীর মতো তাঁরা দ্রুত নিজেদের ইস্যুতে কাজ করবেন, এমন আশা করতে পারেন না। এই প্রত্যাশা মাথায় রেখে আপনি, যেমন, আপনার ইস্যুগুলোকে কয়েকটি ছোট ইস্যুতে ভাগ করতে পারেন, যাতে একটি ইস্যুতে কাজ করতে দীর্ঘ সময় না লাগে।
 
-#### Style Guide
+#### স্টাইল গাইড
 
-You might prefer contributors to add a prefix in brackets to issue and pull request titles. For example, "[Bug]: Documentation link goes to 404 Page Not Found." Or you want them to follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) to their commit messages, such as `feat: add user authentication`. In another case, you might select particular Markdown rules for your project, like one underscore for italics, two asterisks for bolds, etc.
+আপনি হয়তো চাইতে পারেন, কন্ট্রিবিউটররা ইস্যু ও পুল রিকোয়েস্টের শিরোনামের শুরুতে ব্র্যাকেটে একটি উপসর্গ যোগ করুন। যেমন, "[Bug]: Documentation link goes to 404 Page Not Found." অথবা আপনি চাইতে পারেন, তাঁরা কমিট মেসেজে [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) অনুসরণ করুন, যেমন `feat: add user authentication`। আরেক ক্ষেত্রে আপনি প্রজেক্টের জন্য নির্দিষ্ট Markdown নিয়ম বেছে নিতে পারেন, যেমন ইটালিকের জন্য একটি আন্ডারস্কোর, বোল্ডের জন্য দুটি অ্যাস্টেরিস্ক ইত্যাদি।
 
-Every project has its own convention to maintain consistency. So, don't expect your contributors to know what to do when contributing to your project. Consider communicating this in a clear style guide they must follow. You can take an example from GitHub's [Style Guide](https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide).
+সামঞ্জস্য বজায় রাখতে প্রতিটি প্রজেক্টের নিজস্ব রীতি আছে। তাই আপনার প্রজেক্টে অবদান রাখার সময় কী করতে হবে, তা আপনার কন্ট্রিবিউটররা জানবেন বলে আশা করবেন না। এটি একটি স্পষ্ট স্টাইল গাইডে জানানোর কথা ভাবুন, যা তাঁদের অনুসরণ করতে হবে। উদাহরণ হিসেবে আপনি GitHub-এর [Style Guide](https://docs.github.com/en/contributing/style-guide-and-content-model/style-guide) দেখতে পারেন।
 
-#### Support
+#### সহায়তা
 
-What kind of support can you provide your contributors? You can think of these amongst other supports:
+আপনি আপনার কন্ট্রিবিউটরদের কী ধরনের সহায়তা দিতে পারেন? অন্য সহায়তার মধ্যে আপনি এগুলো ভেবে দেখতে পারেন:
 
-- **Space**: Where can contributors ask questions and throw ideas?
-- **Pair programming**: Some contributors, especially beginners, might need extra guidance and hand-holding. Can you provide this support when necessary? How can they ask for it?
-- **Office hours**: Regular office hours are a great way to engage directly with your contributors. It allows you to listen to their ideas and challenges, identify areas that need to be improved, communicate with them about the direction of your project, and build a better relationship with them.
+- **জায়গা**: কন্ট্রিবিউটররা কোথায় প্রশ্ন করতে ও ভাবনা তুলে ধরতে পারবেন?
+- **পেয়ার প্রোগ্রামিং**: কিছু কন্ট্রিবিউটরের, বিশেষ করে নতুনদের, বাড়তি দিকনির্দেশনা ও হাতে ধরে শেখানোর দরকার হতে পারে। প্রয়োজনে আপনি কি এই সহায়তা দিতে পারবেন? তাঁরা কীভাবে তা চাইবেন?
+- **অফিস আওয়ার**: নিয়মিত অফিস আওয়ার আপনার কন্ট্রিবিউটরদের সাথে সরাসরি সম্পৃক্ত হওয়ার একটি দারুণ উপায়। এতে আপনি তাঁদের ভাবনা ও চ্যালেঞ্জগুলো শুনতে, কোথায় উন্নতি দরকার তা চিহ্নিত করতে, প্রজেক্টের দিকনির্দেশনা নিয়ে তাঁদের সাথে কথা বলতে এবং তাঁদের সাথে আরও ভালো সম্পর্ক গড়ে তুলতে পারেন।
 
-When you support your contributors, you can gain their trust and motivation and create a more collaborative and productive environment. By providing them with the help they need, you can establish a culture where everyone feels respected and supported, which leads to even greater achievements.
+আপনি কন্ট্রিবিউটরদের সহায়তা করলে তাঁদের আস্থা ও অনুপ্রেরণা পেতে পারেন এবং আরও সহযোগিতামূলক ও উৎপাদনশীল পরিবেশ গড়ে তুলতে পারেন। তাঁদের প্রয়োজনীয় সাহায্য দিয়ে আপনি এমন একটি সংস্কৃতি প্রতিষ্ঠা করতে পারেন, যেখানে প্রত্যেকে সম্মানিত ও সমর্থিত বোধ করেন, আর তা আরও বড় অর্জনের পথ খুলে দেয়।
 
-You can add a section in your README or contributing guidelines to inform about the support you can give and how to get one.
+আপনি কী সহায়তা দিতে পারেন এবং তা কীভাবে পেতে হয়, তা জানাতে আপনি README বা কন্ট্রিবিউটিং গাইডলাইনে একটি অংশ যোগ করতে পারেন।
 
-#### Timeline
+#### সময়সীমা
 
-Let your contributors know how long they can expect you to review a pull request or answer their questions. Inform them, for example, if you won't be available on weekends or after working hours. If you prefer, you can automate this message with an action. Read our "[Maintainer Power Ups](maintainer-powerups.md)" chapter for more information about GitHub Actions.
+কন্ট্রিবিউটররা আপনার কাছ থেকে পুল রিকোয়েস্ট রিভিউ বা তাঁদের প্রশ্নের উত্তর পেতে কত সময় আশা করতে পারেন, তা জানিয়ে দিন। যেমন, সপ্তাহান্তে বা কাজের সময়ের পরে আপনি পাওয়া না গেলে তা তাঁদের জানান। চাইলে একটি অ্যাকশনের মাধ্যমে এই বার্তা স্বয়ংক্রিয় করতে পারেন। GitHub Actions সম্পর্কে আরও তথ্যের জন্য আমাদের "[মেইনটেইনার পাওয়ার-আপ](maintainer-powerups.md)" অধ্যায়টি পড়ুন।
 
-#### Boundaries
+#### সীমা নির্ধারণ
 
-As your project grows and gains popularity, it will attract more contributors. Creating and setting clear boundaries becomes essential to prevent you from getting burned out quickly and balancing your life.
+আপনার প্রজেক্ট বড় হলে এবং জনপ্রিয়তা পেলে তা আরও কন্ট্রিবিউটরকে আকৃষ্ট করবে। আপনি যেন দ্রুত বার্নআউটের শিকার না হন এবং জীবনে ভারসাম্য রাখতে পারেন, সে জন্য স্পষ্ট সীমা তৈরি ও নির্ধারণ করা অত্যাবশ্যক হয়ে ওঠে।
 
-Here are some ways to create boundaries:
+সীমা তৈরির কয়েকটি উপায়:
 
-- **Take a break**
+- **বিরতি নিন**
 
-  You need to know that it's okay to take time off, step away from your project, and take care of yourself. You can inform your contributors that you will review their pull requests after you return. Here is an example of what you can say:
+  আপনার জানা দরকার, ছুটি নেওয়া, প্রজেক্ট থেকে সরে আসা এবং নিজের যত্ন নেওয়া ঠিক আছে। আপনি কন্ট্রিবিউটরদের জানাতে পারেন যে ফিরে এসে তাঁদের পুল রিকোয়েস্ট রিভিউ করবেন। কী বলা যায়, তার একটি উদাহরণ:
 
-  > "Hey \{username}, thank you for your PR. I will take two weeks off starting tomorrow and review this upon my return. You may ask about the status of your PR if I haven't responded to it in the next three weeks."
+  > "হাই \{username}, আপনার PR-এর জন্য ধন্যবাদ। আমি আগামীকাল থেকে দুই সপ্তাহের ছুটিতে যাচ্ছি এবং ফিরে এসে এটি রিভিউ করব। আগামী তিন সপ্তাহের মধ্যে আমি সাড়া না দিলে আপনি আপনার PR-এর অবস্থা জানতে চাইতে পারেন।"
 
-  When pull requests come during your days off, after you return, you can thank and let the contributors know you will review the pull requests. Consider saying something like this:
+  আপনার ছুটির দিনগুলোতে পুল রিকোয়েস্ট এলে ফিরে এসে আপনি কন্ট্রিবিউটরদের ধন্যবাদ জানিয়ে বলতে পারেন যে আপনি পুল রিকোয়েস্টগুলো রিভিউ করবেন। এমন কিছু বলার কথা ভাবুন:
 
-  > "Hey \{username}, I just returned from my days off. Thank you for taking this on! I need time to review it and will get back to you soon. I appreciate your patience."
+  > "হাই \{username}, আমি এইমাত্র ছুটি থেকে ফিরেছি। এটি হাতে নেওয়ার জন্য ধন্যবাদ! রিভিউ করতে আমার একটু সময় লাগবে, শীঘ্রই আপনাকে জানাব। আপনার ধৈর্যের জন্য কৃতজ্ঞ।"
 
-- **No private or direct message**
+- **ব্যক্তিগত বা সরাসরি বার্তা নয়**
 
-  Another boundary you can set is for contributors not to send you private or direct messages on chat service apps like Discord or social media.
+  আরেকটি সীমা আপনি ঠিক করে দিতে পারেন: কন্ট্রিবিউটররা Discord-এর মতো চ্যাট সার্ভিস অ্যাপে বা সোশ্যাল মিডিয়ায় আপনাকে ব্যক্তিগত বা সরাসরি বার্তা পাঠাবেন না।
 
-  The culture of open source is open communication and transparency. It is best to keep all contributors in the loop by communicating anything related to the project in the open so everyone knows what's happening and what to expect. It will also give you the necessary privacy, separating your project from your personal life.
+  ওপেন সোর্সের সংস্কৃতি হলো খোলামেলা যোগাযোগ ও স্বচ্ছতা। প্রজেক্ট-সংক্রান্ত যেকোনো কিছু প্রকাশ্যে জানিয়ে সব কন্ট্রিবিউটরকে অবহিত রাখাই ভালো, যাতে সবাই জানেন কী ঘটছে এবং কী আশা করতে হবে। এটি আপনাকে প্রয়োজনীয় গোপনীয়তাও দেবে, কারণ এতে আপনার প্রজেক্ট ও ব্যক্তিগত জীবন আলাদা থাকে।
 
-### Handling Difficult Situations
+### কঠিন পরিস্থিতি সামলানো {#handling-difficult-situations}
 
-One day, you might need to handle difficult situations or resolve conflicts around your project's community. There is no easy way to handle situations like this, but you need to prepare yourself sooner or later.
+কোনো একদিন আপনাকে আপনার প্রজেক্টের কমিউনিটির কঠিন পরিস্থিতি সামলাতে বা দ্বন্দ্ব মেটাতে হতে পারে। এ ধরনের পরিস্থিতি সামলানোর কোনো সহজ উপায় নেই, কিন্তু আজ হোক কাল হোক, আপনাকে নিজেকে প্রস্তুত করতে হবে।
 
-Here are essential things to do when handling difficult situations:
+কঠিন পরিস্থিতি সামলানোর সময় করণীয় অপরিহার্য বিষয়গুলো:
 
-#### Active Listening
+#### মনোযোগ দিয়ে শোনা
 
-Active listening plays a vital role in handling a difficult situation. You can only resolve a problem if you understand it clearly.
+কঠিন পরিস্থিতি সামলাতে মনোযোগ দিয়ে শোনা (active listening) গুরুত্বপূর্ণ ভূমিকা রাখে। কোনো সমস্যা তখনই সমাধান করা সম্ভব, যখন আপনি তা পরিষ্কারভাবে বুঝবেন।
 
-Active listening is a communication skill that involves hearing a speaker's words, trying to understand their intentions completely, and acknowledging their feelings.
+মনোযোগ দিয়ে শোনা একটি যোগাযোগ দক্ষতা, যাতে বক্তার কথা শোনা, তাঁর উদ্দেশ্য পুরোপুরি বোঝার চেষ্টা করা এবং তাঁর অনুভূতির স্বীকৃতি দেওয়া জড়িত।
 
-Here are some techniques that you can train for active listening:
+মনোযোগ দিয়ে শোনার জন্য আপনি যে কৌশলগুলো রপ্ত করতে পারেন:
 
-- **Being fully present**
+- **পুরোপুরি উপস্থিত থাকা**
 
-  Avoid listening to someone talking while preparing your answer. Doing so will distract you and make you miss something they've said, which can cause you to fail to understand the exact intention.
+  উত্তর তৈরি করতে করতে কারও কথা শোনা এড়িয়ে চলুন। এতে আপনার মনোযোগ নষ্ট হবে এবং তিনি যা বলেছেন, তার কিছু আপনার বাদ পড়ে যাবে, ফলে আপনি তাঁর সঠিক উদ্দেশ্য বুঝতে ব্যর্থ হতে পারেন।
 
-- **Showing interest**
+- **আগ্রহ দেখানো**
 
-  If it's a synchronous conversation, use eye contact to show your interest in what the speaker is saying. In an asynchronous chat, you can repeat what they are saying in your own words based on your understanding. It will show them that you are interested in their conversation. And they can correct you if you need help understanding it clearly.
+  সিনক্রোনাস আলাপ হলে বক্তা যা বলছেন তাতে আপনার আগ্রহ দেখাতে চোখে চোখ রাখুন। অ্যাসিনক্রোনাস চ্যাটে তিনি যা বলছেন, আপনার বোঝা অনুযায়ী তা নিজের ভাষায় আবার বলতে পারেন। এতে তিনি বুঝবেন, আপনি তাঁর কথোপকথনে আগ্রহী। আর আপনি পরিষ্কারভাবে না বুঝলে তিনি আপনাকে শুধরে দিতে পারবেন।
 
-- **Acknowledging emotions**
+- **আবেগের স্বীকৃতি দেওয়া**
 
-  You want to be able to recognize and acknowledge the speaker's feelings in synchronous or asynchronous conversations. For example, you can say, "I see that it upsets you," or, "I'm excited for you!" when the speaker uses many exclamation marks in their writing.
+  সিনক্রোনাস বা অ্যাসিনক্রোনাস আলাপে বক্তার অনুভূতি চিনতে ও স্বীকার করতে পারা দরকার। যেমন, বক্তা লেখায় অনেক বিস্ময়বোধক চিহ্ন ব্যবহার করলে আপনি বলতে পারেন, "আমি বুঝতে পারছি এটি আপনাকে বিচলিত করেছে," অথবা, "আপনার জন্য আমিও উচ্ছ্বসিত!"
 
-- **Asking and clarifying**
+- **প্রশ্ন করা ও স্পষ্ট করা**
 
-  When someone feels many emotions, they usually want to talk and let their feelings out fast. That can result in a lack of information or the inability to think of more suitable words to describe the situation. You always want to gain more information and clarify what is said. For example, "You said they contacted you on Monday [_clarifying_]. Did they file the complaint on the same day? [_asking for more information_]"
+  কেউ অনেক আবেগে ভরে থাকলে তিনি সাধারণত কথা বলে দ্রুত অনুভূতি প্রকাশ করতে চান। এতে তথ্যের ঘাটতি থাকতে পারে, কিংবা পরিস্থিতি বর্ণনার জন্য আরও মানানসই শব্দ খুঁজে না পাওয়ার ঘটনা ঘটতে পারে। আপনি সবসময় আরও তথ্য জানতে এবং যা বলা হয়েছে তা স্পষ্ট করে নিতে চাইবেন। যেমন, "আপনি বলেছেন তাঁরা সোমবার আপনার সাথে যোগাযোগ করেছিলেন [_স্পষ্ট করা_]। অভিযোগটি কি সেদিনই দায়ের করা হয়েছিল? [_আরও তথ্য চাওয়া_]"
 
-#### Having Empathy and Compassion
+#### সহমর্মিতা ও সমানুভূতি রাখা
 
-When handling a problem, such as a dispute between contributors or community members, it is best to be empathetic and compassionate.
+কন্ট্রিবিউটর বা কমিউনিটির সদস্যদের মধ্যকার বিরোধের মতো কোনো সমস্যা সামলানোর সময় সহমর্মিতা ও সমানুভূতিশীল হওয়াই ভালো।
 
-You must look at and listen to the problem from both sides to be non-judgemental. Then, put yourself in their shoes to see the case from their perspective so you can better understand it. Empathy and compassion will help you resolve a conflict and create a positive environment.
+বিচারপ্রবণতা এড়াতে আপনাকে সমস্যাটি দুই পক্ষ থেকেই দেখতে ও শুনতে হবে। এরপর বিষয়টি তাঁদের দৃষ্টিকোণ থেকে দেখতে নিজেকে তাঁদের জায়গায় রাখুন, যাতে আপনি এটি আরও ভালোভাবে বুঝতে পারেন। সহমর্মিতা ও সমানুভূতি দ্বন্দ্ব মেটাতে এবং ইতিবাচক পরিবেশ তৈরি করতে আপনাকে সাহায্য করবে।
 
-#### Being Tactful and Diplomatic
+#### কৌশলী ও কূটনৈতিক হওয়া
 
-A critical factor in successfully addressing a problem is approaching it in a way that values and respects the feelings and perspectives of others. This can prevent harm to the relationship and lead to positive outcomes when resolving conflicts.
+কোনো সমস্যা সফলভাবে মোকাবিলার একটি গুরুত্বপূর্ণ উপাদান হলো এমনভাবে এগোনো, যাতে অন্যদের অনুভূতি ও দৃষ্টিভঙ্গির মূল্য ও সম্মান থাকে। এতে সম্পর্কের ক্ষতি এড়ানো যায় এবং দ্বন্দ্ব মেটানোর সময় ইতিবাচক ফল আসে।
 
-The key is to think before you speak and choose your words wisely. You want to be able to tell the truth, but at the same time, also consider others' feelings and make them feel safe. Use positive yet direct language to prevent misunderstandings; consider balancing being straightforward and sensitive, and avoid pointing fingers.
+মূল কথা হলো বলার আগে ভাবা এবং বুদ্ধি করে শব্দ বাছাই করা। আপনি সত্যি কথা বলতে পারবেন, কিন্তু একই সাথে অন্যদের অনুভূতির কথাও ভেবে তাঁদের নিরাপদ বোধ করাতে পারবেন। ভুল বোঝাবুঝি এড়াতে ইতিবাচক অথচ সরাসরি ভাষা ব্যবহার করুন, সোজাসাপ্টা ও সংবেদনশীল হওয়ার মধ্যে ভারসাম্য রাখার কথা ভাবুন এবং কাউকে দোষারোপ করা এড়িয়ে চলুন।
 
-**Here is an example of a scenario**:
+**একটি পরিস্থিতির উদাহরণ**:
 
-You have a contributor who contributes multiple times and has been working fast to deliver their code. But when you review their pull request and test their branch locally, it works differently than you intended. You know they often don't understand the issue, but they assume they do. And you also notice that they rarely run the code locally to test it. You keep giving them support and positive feedback until, one day, you can't take it anymore.
+আপনার একজন কন্ট্রিবিউটর আছেন, যিনি বহুবার অবদান রেখেছেন এবং দ্রুত কোড দিতে কাজ করছেন। কিন্তু তাঁর পুল রিকোয়েস্ট রিভিউ করে এবং ব্রাঞ্চ লোকালি পরীক্ষা করতে গিয়ে আপনি দেখলেন, এটি আপনার উদ্দেশ্যের চেয়ে আলাদাভাবে কাজ করছে। আপনি জানেন, তিনি প্রায়ই ইস্যুটি বোঝেন না, অথচ ধরে নেন যে বুঝেছেন। আপনি এটিও লক্ষ করেছেন, তিনি কোড পরীক্ষা করতে খুব কমই লোকালি চালান। আপনি তাঁকে সহায়তা ও ইতিবাচক মতামত দিয়ে যাচ্ছিলেন, যতক্ষণ না একদিন আর সহ্য করতে পারলেন না।
 
-Instead of saying:
+এভাবে বলার বদলে:
 
-> "Hey, why do you always deliver the code that doesn't align with what we want? I notice you've done this so many times. Do you even understand the issues? I'm also curious if you ever run your code locally because it often doesn't work the way it should and, worst, breaks the app."
+> "আরে, আপনি সবসময় এমন কোড কেন দেন, যা আমাদের চাওয়ার সাথে মেলে না? আমি দেখেছি আপনি এটি বহুবার করেছেন। আপনি কি ইস্যুগুলো আদৌ বোঝেন? আমি এটাও ভাবছি, আপনি কখনো নিজের কোড লোকালি চালান কি না, কারণ এটি প্রায়ই যেভাবে কাজ করার কথা সেভাবে করে না, আর আরও খারাপ হলো, অ্যাপটাই ভেঙে দেয়।"
 
-You can say something like:
+আপনি এমন কিছু বলতে পারেন:
 
-> "Thank you for your prompt work on the PRs, \{username}. I really appreciate it! However, let's focus more on quality than quantity. I noticed a few things that I believe could further improve the quality of your work:
+> "PR-গুলোতে আপনার দ্রুত কাজের জন্য ধন্যবাদ, \{username}। আমি সত্যিই এর প্রশংসা করি! তবে চলুন পরিমাণের চেয়ে মানের ওপর আরও জোর দিই। আমি কয়েকটি বিষয় লক্ষ করেছি, যা আমার মনে হয় আপনার কাজের মান আরও বাড়াতে পারে:
 >
-> - It might be a good idea to take time to fully understand the issue before starting work on a PR, as this solution is different from what we asked in the issue. If you need help or clarification, don't hesitate to reach out.
-> - Another thing that could be helpful is running and testing the code locally before submitting a PR. This way, you'll be able to ensure that the code runs as it should. It can save you time from going back and forth on revisions.
+> - PR-এর কাজ শুরুর আগে ইস্যুটি পুরোপুরি বুঝে নিতে সময় নেওয়া ভালো হতে পারে, কারণ এই সমাধান ইস্যুতে আমরা যা চেয়েছিলাম, তার থেকে আলাদা। সাহায্য বা ব্যাখ্যার দরকার হলে নির্দ্বিধায় যোগাযোগ করুন।
+> - আরেকটি সহায়ক বিষয় হতে পারে PR জমা দেওয়ার আগে লোকালি কোড চালিয়ে পরীক্ষা করা। এভাবে আপনি নিশ্চিত হতে পারবেন, কোড যেভাবে চলার কথা সেভাবেই চলছে। এতে সংশোধনের জন্য বারবার আসা-যাওয়ার সময়ও বাঁচবে।
 >
-> I hope you find this feedback helpful. If there's anything I can do to support you, please let me know."
+> আশা করি এই মতামত আপনার কাজে লাগবে। আপনাকে সহায়তা করতে আমি কিছু করতে পারলে অনুগ্রহ করে জানান।"
 
-In the [next chapter](maintaining-code-quality.md), we will talk about maintaining code quality and documentation.
+[পরবর্তী অধ্যায়ে](maintaining-code-quality.md) আমরা কোডের মান ও ডকুমেন্টেশন বজায় রাখা নিয়ে কথা বলব।

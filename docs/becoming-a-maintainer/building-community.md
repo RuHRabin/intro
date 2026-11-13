@@ -2,137 +2,131 @@
 id: building-community
 title: "স্বাগত জানানো ও সহায়ক কমিউনিটি গড়ে তোলা এবং লালন করা"
 sidebar_label: "কমিউনিটি গড়ে তোলা ও লালন করা"
-keywords: ["building community", "building open source community", "nurturing community", "nurturing open source community", "welcoming and supportive community", "positive community culture", "how to build and nurture community", "best practices in building and nurturing community", "fostering community", "fostering open source community", "open source maintainer", "Open Source", "Open Source Community"]
+keywords: ["ওপেন সোর্স কমিউনিটি গড়ে তোলা", "ওপেন সোর্স কমিউনিটি লালন করা", "ওপেন সোর্স কমিউনিটির ইতিবাচক সংস্কৃতি", "ওপেন সোর্স কমিউনিটিতে অন্তর্ভুক্তি", "ওপেন সোর্সে কন্ট্রিবিউটরদের স্বীকৃতি", "ওপেন সোর্সে নতুন প্রতিভা শনাক্ত করা", "OpenSauced Insights", "ওপেন সোর্স মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+ওপেন সোর্স শুধু একটি প্রজেক্ট রক্ষণাবেক্ষণ ও উন্নত করার বিষয় নয়। এটি এমন একটি গতিশীল পরিবেশ, যেখানে মেইনটেইনার, কন্ট্রিবিউটর ও ব্যবহারকারীরা একসাথে সহযোগিতা করেন, অবদান রাখেন এবং বেড়ে ওঠেন। তাই প্রজেক্টের সাথে জড়িত মানুষরাই ওপেন সোর্সের মূল ও প্রাণ।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+আপনার প্রজেক্টে যত বেশি মানুষ অংশ নেবেন ও অবদান রাখবেন, ততই একটি স্বাগতপূর্ণ ও ইতিবাচক ওপেন সোর্স কমিউনিটির পরিবেশ গড়ে তুলতে তাঁদের প্রয়োজনীয় সহায়তা ও অনুপ্রেরণা জোগানো আপনার জন্য গুরুত্বপূর্ণ হয়ে ওঠে। এটি করলে আপনি আরও শক্তিশালী সম্পর্ক গড়তে এবং কমিউনিটির সদস্যদের মধ্যে আপন বোধ জাগাতে পারেন, যা তাঁদের ফিরে আসতে ও নিবেদিত থাকতে সাহায্য করে।
 
-:::
+এই অধ্যায়ে আপনি শিখবেন কীভাবে একটি স্বাগতপূর্ণ ও সহায়ক ওপেন সোর্স কমিউনিটি গড়ে তুলবেন ও লালন করবেন।
 
-Open source is more than just maintaining and improving a project. It's a dynamic environment where maintainers, contributors, and users come together to collaborate, contribute, and grow. That said, the people involved in the project are the core and heart of open source.
+## ইতিবাচক কমিউনিটি সংস্কৃতি
 
-As more people engage and contribute to your projects, it becomes crucial for you to provide them with the necessary support and motivation to establish a welcoming and positive open source community environment. Doing so can build stronger relationships and promote a sense of belonging among your community members, keeping them returning and remaining dedicated.
+কমিউনিটিতে সম্পৃক্ততার ক্ষেত্রে নানা ধরনের মানুষ আছেন। কেউ সক্রিয়ভাবে অংশ নেন, কেউ আসা-যাওয়া করেন, আবার কেউ নীরব দর্শক। কিন্তু একটি বিষয় নিশ্চিত: সবার আগ্রহ একই (আপনার প্রজেক্ট) এবং তাঁরা সবাই আপনার প্রজেক্টে মূল্য যোগ করেন। আপনি সবসময় নিশ্চিত করতে চাইবেন, কমিউনিটিতে প্রত্যেকে স্বাগত, অন্তর্ভুক্ত এবং সবচেয়ে গুরুত্বপূর্ণ হলো, নিরাপদ বোধ করছেন। এটি অর্জনের একটি চাবিকাঠি হলো ইতিবাচক কমিউনিটি সংস্কৃতি গড়ে তোলা।
 
-In this chapter, you will learn how to build and nurture a welcoming and supportive open source community.
+### খোলামেলা যোগাযোগ
 
-## Positive Community Culture
+সফল ওপেন সোর্স কমিউনিটি খোলামেলা যোগাযোগকে উৎসাহিত করে। খোলামেলা যোগাযোগ প্রজেক্ট ও কমিউনিটির আশপাশে কী ঘটছে তা সবাইকে বুঝতে দেয়, আস্থা গড়তে সাহায্য করে এবং সুস্থ সহযোগিতা বাড়ায়। প্রত্যেকের নিজের ভাবনা ও চিন্তা প্রকাশে স্বচ্ছন্দ বোধ করা উচিত, একই সাথে অন্যদের কথা শোনা এবং সম্মানের সাথে তার উত্তর দেওয়ার সক্ষমতাও থাকা উচিত। যোগাযোগ ও সহযোগিতার টিপসের জন্য "[কার্যকরভাবে যোগাযোগ ও সহযোগিতা কীভাবে করবেন](communication-and-collaboration.md)" অধ্যায়টি পড়ুন।
 
-There are many types of people when talking about engagements in a community. Some are actively engaging, some come and go, and some are lurkers. But one thing is certain: everyone has the same interest (your project), and they bring value to your project. You always want to ensure everyone feels welcomed, included, and, most importantly, safe in your community. One key to achieving this is fostering a positive community culture.
+### বৈচিত্র্য ও অন্তর্ভুক্তি
 
-### Open Communication
+নিরাপদ ও স্বাগতপূর্ণ কমিউনিটি পরিবেশ গড়ে তোলার অর্থ অন্তর্ভুক্তিকে অগ্রাধিকার দেওয়া এবং বৈচিত্র্যকে এগিয়ে নেওয়া। অন্তর্ভুক্তি মানে পটভূমি, বিশ্বাস বা মতামত নির্বিশেষে সবাইকে মূল্য দেওয়া। এমন একটি সংস্কৃতি গড়ে তুলে, যেখানে সবাইকে নিজের মতো থাকতে উৎসাহিত করা হয় এবং একই সাথে অন্যদের প্রশংসা করা হয়, আপনি এমন একটি কমিউনিটি লালন করতে পারেন যেখানে প্রত্যেকে সম্মানিত ও মূল্যবান বোধ করেন। প্রত্যেকে নিজেকে এই কমিউনিটির অংশ মনে করেন, এমন একটি কমিউনিটি গড়াই সবচেয়ে গুরুত্বপূর্ণ।
 
-Successful open source communities encourage open communication. Open communication allows everyone to understand what's happening around the project and community, helps build trust, and increases healthy collaboration. Everyone should feel comfortable expressing thoughts and ideas, but at the same time, they should be able to listen and respectfully respond to others. For tips about communication and collaboration, read the chapter "[How to Communicate and Collaborate Effectively](communication-and-collaboration.md)."
+### আচরণবিধি
 
-### Diversity and Inclusivity
+ওপেন সোর্স কমিউনিটির সদস্যদের কেমন আচরণ করা উচিত এবং একে অপরের সাথে কেমন ব্যবহার করা উচিত, তার স্পষ্ট নির্দেশিকা হিসেবে প্রতিটি প্রজেক্টে একটি আচরণবিধি থাকা উচিত। যেমন, আপনি ইতিবাচক ও অন্তর্ভুক্তিমূলক ভাষা ব্যবহার, অন্যদের প্রতি সম্মান দেখানো এবং বৈষম্য বা হয়রানি এড়ানোর গুরুত্বের ওপর জোর দিতে পারেন। নির্দেশিকা না মানলে তাঁদের কী পরিণতির মুখে পড়তে হতে পারে, তাও জানিয়ে রাখুন। আচরণবিধি দ্বন্দ্ব এড়াতে, সম্মান বাড়াতে এবং কমিউনিটির প্রত্যেকে যেন নিরাপদ ও স্বচ্ছন্দ বোধ করেন, তা নিশ্চিত করতে সাহায্য করে। একটি আচরণবিধি তৈরি করতে "আপনার ওপেন সোর্স প্রজেক্ট কীভাবে সেটআপ করবেন" অধ্যায়ের "[আচরণবিধি](how-to-setup-your-project.md#code-of-conduct)" অংশটি পড়তে পারেন।
 
-Creating a safe and welcoming community environment involves prioritizing inclusion and promoting diversity. Inclusion means treating everyone with value, regardless of background, beliefs, or opinions. By fostering a culture where everyone is encouraged to be authentic while appreciating others, you can nurture a community where everyone feels respected and valued. Building a community where everyone feels they belong is the most important thing.
+### দ্বন্দ্ব মোকাবিলা
 
-### Code of Conduct
+কল্পনা করুন, GitHub বা Discord-এ কোনো সদস্যকে অন্য সদস্যের প্রতি অসম্মানজনক আচরণ করতে দেখছেন, কিংবা কোনো সদস্যের কাছ থেকে এমন ঘটনার রিপোর্ট পাচ্ছেন যে কেউ তাঁকে হয়রানি করেছে। দুর্ভাগ্যবশত, বেশিরভাগ ওপেন সোর্স কমিউনিটিকে কোনো না কোনো সময় দ্বন্দ্ব মোকাবিলা করতে হবে। এ জন্য প্রস্তুত থাকলে ইতিবাচক সংস্কৃতি বজায় রাখা সহজ হবে। "কার্যকরভাবে যোগাযোগ ও সহযোগিতা কীভাবে করবেন" অধ্যায়ের "[কঠিন পরিস্থিতি সামলানো](communication-and-collaboration.md#handling-difficult-situations)" অংশে আপনি দ্বন্দ্ব ব্যবস্থাপনা সম্পর্কে আরও জানতে পারবেন।
 
-Every project should have a code of conduct as a clear set of guidelines for how members within the open source community should behave and treat each other. You can, for example, emphasize the importance of using positive and inclusive language, treating others with respect, and avoiding discrimination or harassment. Inform them of the consequences they may face if they do not follow the guidelines. A code of conduct helps to prevent conflicts, promotes respect, and ensures that everyone in the community feels safe and comfortable. You can read the "[Code of Conduct](how-to-setup-your-project.md#code-of-conduct)" section in the "How to Setup Your Open Source Project" chapter to create one.
+### উদাহরণ হয়ে নেতৃত্ব দেওয়া
 
-### Addressing Conflicts
+নেতৃত্ব মানে কর্তৃত্ব করা নয়। এর অর্থ দায়িত্ব নেওয়া এবং অন্যদের অনুসরণ করার মতো দৃষ্টান্ত স্থাপন করা। আপনি ইতিবাচক আচরণ প্রদর্শন করতে, অন্যদের প্রতি শ্রদ্ধাশীল হতে এবং শুনতে ও শিখতে ইচ্ছুক থাকতে চাইবেন। এটি করলে অন্যরা আপনার উদাহরণ অনুসরণ করতে উৎসাহিত হবেন।
 
-Imagine seeing a member behave disrespectfully towards another member on GitHub or Discord, or receiving an incident report from a member saying someone harassed them. Unfortunately, most open source communities will have to address conflicts at some point. Being prepared to do so will help to maintain a positive culture. You can learn more about managing conflicts in the "[Handling Difficult Situations](communication-and-collaboration.md#handling-difficult-situations)" section in the "How to Communicate and Collaborate Effectively" chapter.
+### স্বীকৃতি ও কৃতজ্ঞতা
 
-### Leading by Examples
+ওপেন সোর্স কমিউনিটির পূর্ণ সম্ভাবনা উন্মোচনের চাবিকাঠি হলো স্বীকৃতি। অন্যদের প্রতি, এ ক্ষেত্রে আপনার দল ও কন্ট্রিবিউটরদের প্রতি, কৃতজ্ঞতা ও সহৃদয়তা প্রকাশ করা একটি সহায়ক ও ইতিবাচক কমিউনিটি সংস্কৃতি গড়ার মূল ভিত্তি।
 
-Leadership is not about being in charge. It's about taking responsibility and setting an example for others to follow. You want to demonstrate positive behavior, be respectful to others, and be willing to listen and learn. Doing so will encourage others to follow your example.
+ওপেন সোর্সে অবদান নানা রূপ ও আকারে আসে। এই অমূল্য অবদানগুলোর স্বীকৃতি দিতে এবং হিসাব রাখতে আপনি কিছুটা সময় বের করতে চাইবেন। অবদানের প্রশংসা অনেকভাবে হতে পারে, যেমন পুরস্কার, প্রকাশ্য স্বীকৃতি, কিংবা শুধু তাঁদের অবদান ও প্রচেষ্টার কথা স্বীকার করে নেওয়া। আপনার কন্ট্রিবিউটরদের স্বীকৃতি ও প্রশংসা জানানোর একটি উপায় হলো প্রজেক্টে [All Contributors](https://allcontributors.org/) বট ইনস্টল করা, যা প্রজেক্টের কন্ট্রিবিউটরদের যোগ করার কাজ স্বয়ংক্রিয় করে।
 
-### Recognization and Appreciation
+OpenSauced-এ আমরা মনে করি, [অবদান শুধু সবুজ ঘর নয়](https://opensauced.pizza/blog/moneyball-for-engineers) এবং আমাদের প্রজেক্ট ও কমিউনিটিকে সমৃদ্ধ করেছে এমন সব ধরনের অবদানের প্রশংসা করি। তাই আমাদের [guestbook রিপোজিটরিতে](https://github.com/open-sauced/guestbook) All Contributors ইনস্টল করার পাশাপাশি আমরা মাসিক লাইভ স্ট্রিম, ব্লগ পোস্ট, নিউজলেটার ও সোশ্যাল মিডিয়ার মাধ্যমে আমাদের কন্ট্রিবিউটরদের স্বীকৃতি দিতে এবং তাঁদের নাম ধরে প্রশংসা করতে ভালোবাসি।
 
-Recognition is the key to unlocking the full potential of the open source community. Expressing gratitude and kindness towards others — in this case, your team and contributors — is fundamental to creating a supportive and positive community culture.
+মনে রাখবেন, অবদানের স্বীকৃতি ও প্রশংসা পুরো কমিউনিটিতে একটি তরঙ্গ-প্রভাব তৈরি করতে পারে, যা অন্যদেরও একই কাজে অনুপ্রাণিত করে এবং ইতিবাচকতা বাড়ায়।
 
-Contributions to open source come in all shapes and sizes. You want to take a moment to recognize and track these invaluable contributions. Appreciating contributions can be made in many ways, such as through awards or rewards, public recognition, or even just acknowledging their contributions and efforts. One way to recognize and appreciate your contributors is by installing the [All Contributors](https://allcontributors.org/) bot in your project to automate adding project contributors.
+## অবদানের সুযোগ তৈরি করা
 
-At OpenSauced, we recognize that [contributions aren't just green squares](https://opensauced.pizza/blog/moneyball-for-engineers) and appreciate all kinds of contributions that have made our projects and community thrive. That's why, besides having the All Contributors installed in our [guestbook repository](https://github.com/open-sauced/guestbook), we enjoy recognizing and giving shoutouts to our contributors through our monthly live stream, blog posts, newsletter, and social media.
+ওপেন সোর্স পরিবেশে মানুষ অর্থবহ অবদান রাখতে এবং কমিউনিটির অংশ হতে চান। আপনি যদি কন্ট্রিবিউটরদের বারবার ফিরে আসতে দেখতে চান, তাহলে তাঁদের ফিরে আসতে ও আরও অবদান রাখতে উৎসাহিত করার জন্য আপনাকে জায়গা ও সুযোগ তৈরি করতে হবে। এই অংশে আমরা আলোচনা করব অবদানের সুযোগ কীভাবে তৈরি করবেন।
 
-Remember that recognizing and appreciating contributions can create a ripple effect throughout the community, inspiring others to do the same and increasing positivity.
+### কন্ট্রিবিউটরদের স্তর শনাক্ত করা
 
-## Creating Opportunities for Contributions
+সুযোগ তৈরির জন্য আপনাকে প্রথমে কন্ট্রিবিউটরদের প্রবেশের বিন্দুগুলো শনাক্ত করতে হবে।
 
-In an open source environment, people want to make meaningful contributions and be part of the community. If you want to see return contributors, you need to create the space and opportunities to encourage them to return and contribute more. In this section, we will discuss how to create opportunities for contributions.
+#### নতুন কন্ট্রিবিউটর
 
-### Identifying Contributors Levels
+তাঁরা সাধারণত ওপেন সোর্সে নতুন, কিংবা আপনার প্রজেক্টে নতুন কেউ। এ ধরনের কন্ট্রিবিউটরদের সাধারণত এখনো হাতে ধরে দেখানো ও দিকনির্দেশনার দরকার হয়। তাই আপনি তাঁদের ওপেন সোর্সের প্রবাহ এবং Git ও GitHub কীভাবে ব্যবহার করবেন, সে বিষয়ক রিসোর্সের দিকে নির্দেশ করতে চাইবেন। তাঁদের দেখার জন্য স্পষ্ট ও হালনাগাদ প্রজেক্ট ডকুমেন্টেশন রাখার কথা ভাবুন।
 
-To create opportunities, you need first to identify contributors' entry points.
+#### মাঝারি স্তরের কন্ট্রিবিউটর
 
-#### New Contributors
+মাঝারি স্তরের কন্ট্রিবিউটরদের ওপেন সোর্সে কিছুটা অভিজ্ঞতা আছে, কিন্তু তাঁরা নিজেদের সম্পৃক্ততা ও অবদানে আরও গভীরে যেতে চান। তাঁদের সাধারণত হাতে ধরে দেখানোর দরকার হয় না এবং তাঁরা ডকুমেন্টেশন পড়ে বা নিজে রিসোর্স খুঁজে আপনার প্রজেক্টে কীভাবে কাজ করতে হয় তা বুঝতে পারেন। এই স্তরে তাঁরা হয়তো নিজেদের দক্ষতা ও নেটওয়ার্ক বাড়াতে চান এবং মেইনটেইনার হতে আগ্রহী হতে পারেন।
 
-They are generally new to open source or someone new to your project. This type of contributor usually still needs hand-holding and guidance. So, you want to be able to point them to resources about the flow of open source and how to use Git and GitHub. Consider having clear and updated project documentation for them to refer to.
+#### অভিজ্ঞ কন্ট্রিবিউটর
 
-#### Intermediate Contributors
+তাঁরা পোড় খাওয়া ওপেন সোর্স কন্ট্রিবিউটর, যাঁরা উচ্চ স্তরে অবদান রাখতে পারেন এবং সম্ভবত প্রজেক্টের নেতৃত্ব দিতে পারেন। এই স্তরে তাঁরা আপনার প্রজেক্ট ব্যবহার করে আনন্দ পান বলে গতানুগতিকতার বাইরে গিয়ে ভাবনা দিতে এবং আপনার প্রজেক্ট উন্নত করতে অবদান রাখতে পারেন। কোনো বাগ পেলে তাঁরা দ্রুত তা ঠিক করতে চান, যাতে নিজেরা আপনার প্রজেক্ট ব্যবহার করে যেতে এবং নিজেদের প্রজেক্টে তা কাজে লাগাতে পারেন।
 
-Intermediate contributors have some experience in open source but want to go deeper in their engagement and contributions. They usually don't need hand-holding and can understand how to work with your project by reading the documentation or finding resources independently. On this level, they might want to grow their skills and network and be interested in becoming a maintainer.
+### বৈচিত্র্যময় অবদানকে উৎসাহ দেওয়া
 
-#### Expert Contributors
+আপনার প্রজেক্টের সাফল্যের জন্য কন্ট্রিবিউটরদের কোডিং দক্ষতা নির্বিশেষে বৈচিত্র্যময় অবদানকে স্বাগত জানায় এমন একটি জায়গা তৈরি করতে চাইবেন। কোডিং ও নন-কোডিং, দুই ধরনের অবদানকে উৎসাহ দিয়ে আপনি নিশ্চিত করতে পারেন, সবাই অংশ নিতে এবং নিজেদের অনন্য দক্ষতা ও দৃষ্টিভঙ্গি নিয়ে অবদান রাখতে পারেন। তবে তাঁদের প্রয়োজন হলে আপনি কতটা সহায়তা দিতে পারবেন, সেটিও আপনাকে বিবেচনা করতে হবে।
 
-They are seasoned open source contributors who can contribute at a high level and potentially lead projects. At this level, they can give ideas and contribute to enhancing your project outside the box because they enjoy using it. Whenever they encounter bugs, they want to fix them quickly so they can still use your project and implement it on their projects.
+#### কোড অবদান
 
-### Encouraging Diverse Contributions
+তাঁদের প্রবেশ-বিন্দু শনাক্ত করার পর সব স্তরের কন্ট্রিবিউটরের জন্য ইস্যু তৈরির কথা ভাবুন। গুড ফার্স্ট ইস্যু সাধারণত ওপেন সোর্সে নতুন এবং আপনার প্রজেক্টে নতুন কারও জন্য। একটি `good first issue` তৈরি করার সময় সম্ভাব্য সমাধান, যে কোডের লাইনগুলো সমস্যাটি তৈরি করছে এবং তাতে কাজ করতে সাহায্য করবে এমন রিসোর্স দেওয়ার কথা ভাবুন। যাঁদের বাড়তি সহায়তা লাগে না, তাঁদের জন্য জটিলতা অনুযায়ী আপনি `beginners` বা `help wanted` লেবেলসহ ইস্যু তৈরি করতে পারেন।
 
-You want to create a space that welcomes diverse contributions, regardless of contributors' coding skills, for the success of your projects. By encouraging both coding and non-coding contributions, you can ensure everyone can participate and contribute their unique skills and perspectives. However, you also need to consider the amount of support you can give them if they need it.
+#### ডকুমেন্টেশন
 
-#### Code Contributions
+আপনি হয়তো আপনার প্রজেক্টে নতুন ফিচার যোগ করবেন বা কিছু জিনিস বদলাবেন। তাই আপনি সবসময় আপনার ডকুমেন্টেশন হালনাগাদ রাখতে চান, যাতে তা প্রজেক্টের বর্তমান অবস্থা প্রতিফলিত করে।
 
-After identifying their entry points, consider creating issues for all levels of contributors. Good first issues are usually for beginners in open source and someone new to your project. When creating a `good first issue`, think of providing suggested solutions, the lines of code that cause the issue, and resources to help them work on it. For contributors who don't need extra support, you can create an issue with `beginners` or `help wanted` labels based on the complexity.
+ডকুমেন্টেশন উন্নত করতে আপনি ইস্যু তৈরি করতে পারেন, কিংবা আপনার কমিউনিটিকে টিউটোরিয়াল ও হাউ-টু গাইড তৈরি করতে উৎসাহিত করতে পারেন।
 
-#### Documentation
+#### কমিউনিটি অবদান
 
-You might add new features or change some things in your projects. That's one reason you want to always keep your documentation up to date: to reflect on the current state of your project.
+আপনার কমিউনিটি বড় হওয়ার সাথে সাথে প্রতিটি সদস্যের সাথে সম্পৃক্ত হওয়া ক্রমেই কঠিন হয়ে ওঠে। আপনার কমিউনিটি কার্যকরভাবে পরিচালনা করতে এমন মানুষ থাকা সহায়ক হবে, যাঁরা সদস্যদের মধ্যে মিথস্ক্রিয়া সহজ করতে এবং সময়মতো সাড়া দিতে পারেন।
 
-You can create issues to improve the documentation or encourage your community to create tutorials and how-to guides.
+অনলাইন ফোরাম ও চ্যাট অ্যাপে সক্রিয় থেকে অবদান রাখতে আপনি কমিউনিটির সদস্যদের উৎসাহিত করতে পারেন। তাঁরা প্রশ্নের উত্তর দিতে, অন্তর্দৃষ্টি ভাগ করে নিতে এবং সহায়তা দিতে পারেন। এটি শুধু আপনার প্রজেক্টকে ঘিরে কমিউনিটি বোধ গড়তেই সাহায্য করে না, সহযোগিতা ও পারস্পরিক সহায়তার সংস্কৃতি গড়ে তুলতেও সাহায্য করে।
 
-#### Community Contributions
+#### প্রচার ও যোগাযোগ
 
-As your community grows, engaging with each member becomes increasingly challenging. To manage your community effectively, having people who can facilitate interactions between members and provide timely responses will be helpful.
+আপনার কিছু কন্ট্রিবিউটরের এমন দক্ষতা থাকতে পারে, যা আপনার প্রজেক্ট ও প্রতিষ্ঠানের প্রচারে কাজে লাগে, যেমন লেখালেখি বা জনসমক্ষে বক্তব্য দেওয়া। আপনি তাঁদের ব্লগ পোস্ট লিখতে এবং আপনার প্রজেক্ট-সম্পর্কিত শিক্ষামূলক কনটেন্ট বানাতে উৎসাহ দিয়ে সম্পৃক্ত হতে অনুপ্রাণিত করতে পারেন। তাঁরা চাইলে সম্মেলনে বক্তব্য দিতে বা কর্মশালা করাতে পারেন। সোশ্যাল মিডিয়ায় আপনার প্রজেক্টের তথ্য পোস্ট বা রিপোস্ট করাও অবদান রাখার আরেকটি উপায়। OpenSauced-এ আমরা আমাদের কমিউনিটিকে [Dev.to-তে আমাদের প্রতিষ্ঠানের](https://dev.to/opensauced) অধীনে ব্লগ পোস্ট লিখতে উৎসাহিত করি।
 
-You can encourage community members to contribute by engaging in online forums and chat apps. They can help answer questions, share insights, and provide support. This not only helps to build a sense of community around your project but also helps to foster a culture of collaboration and mutual support.
+#### ইস্যু ব্যবস্থাপনা
 
-#### Advocacy and Outreach
+ইস্যু ব্যবস্থাপনায় ডেভেলপমেন্টের সময় বাগ ইস্যু ও ফিচারের অনুরোধ শনাক্ত, বিশ্লেষণ ও অগ্রাধিকার নির্ধারণ করা হয়। আপনি একটি ট্রায়াজ টিম তৈরি করতে এবং আপনার রিপোজিটরির ইস্যুগুলো ট্রায়াজ ও অগ্রাধিকার ঠিক করতে আপনার কমিউনিটিকে সাহায্য করতে উৎসাহিত করতে পারেন। OpenSauced-এ আমাদের [Triage Guide](https://opensauced.pizza/docs/contributing/triage-guide/)-এর মতো ইস্যু ব্যবস্থাপনার একটি স্পষ্ট নির্দেশিকা দিয়ে তাঁদের সজ্জিত করতে চাইবেন। ইস্যু ব্যবস্থাপনা সম্পর্কে আরও জানতে আপনি [এই প্রবন্ধটিও](https://dev.to/opensauced/collaborate-conquer-grow-mastering-the-art-of-issue-management-for-open-source-projects-49gi) (ইংরেজি) পড়তে পারেন।
 
-Some of your contributors may have skills that can be useful to promote your project and organization, such as writing or public speaking. You can motivate them to get involved by encouraging them to write blog posts and create educational content related to your project. They can also speak at conferences or give workshops if they want to. Posting or reposting information about your project on social media is another way to contribute. At OpenSauced, we encourage our community to write blog posts under our [organization on Dev.to](https://dev.to/opensauced).
+#### কমিউনিটি ইভেন্ট ও হ্যাকাথন
 
-#### Managing Issues
+OpenSauced-এ আমরা [#100DaysOfOSS চ্যালেঞ্জ](https://opensauced.pizza/docs/community/100-days-of-oss/) আয়োজন করি, যাতে সব কারিগরি পটভূমির কন্ট্রিবিউটর সহযোগিতামূলক ডেভেলপমেন্টে ডুবে যেতে এবং একটি সহায়ক কমিউনিটির সাথে যুক্ত হতে উৎসাহিত হন।
 
-Issue management involves identifying, analyzing, and prioritizing bug issues and feature requests during development. You can create a triage team and encourage your community to help you triage and prioritize the issues in your repositories. You want to equip them with a clear guide on managing issues like what we have at OpenSauced in our [Triage Guide](https://opensauced.pizza/docs/contributing/triage-guide/). You can also read [this article](https://dev.to/opensauced/collaborate-conquer-grow-mastering-the-art-of-issue-management-for-open-source-projects-49gi) to learn more about issue management.
+কমিউনিটি ইভেন্ট ও হ্যাকাথন আয়োজন আপনার কমিউনিটির সহযোগিতা ও সম্পর্ক শক্তিশালী করার একটি উপায়। আপনার কমিউনিটি কী ধরনের ইভেন্ট দেখতে চায়, সে বিষয়ে মতামত নিতে আপনি একটি জরিপ বা পোল তৈরি করতে পারেন। এরপর ইভেন্ট আয়োজনে আগ্রহী সদস্যদের নিয়ে একটি কমিটি বা দল গঠনের কথা ভাবুন এবং আপনার সহায়তায় তাঁদের দায়িত্ব নিতে দিন। সদস্যদের সম্পৃক্ত হতে ও অবদান রাখতে দিলে আপনি কমিউনিটি ও আপন বোধ বাড়াতে পারবেন।
 
-#### Community Events and Hackathons
+## নতুন প্রতিভা লালন করা
 
-At OpenSauced, we organize the [#100DaysOfOSS challenge](https://opensauced.pizza/docs/community/100-days-of-oss/) to encourage contributors of all technical backgrounds to immerse themselves in collaborative development and engage with a supportive community.
+মানুষের জন্য আপনার প্রজেক্টে অবদান রাখার সুযোগ তৈরি করার পর কোন কন্ট্রিবিউটররা বারবার ফিরে আসছেন এবং ধারাবাহিকভাবে মানসম্পন্ন কাজ করছেন, তার হিসাব রাখা গুরুত্বপূর্ণ। এই কন্ট্রিবিউটররা আপনার কমিউনিটির কোর সদস্য হয়ে ওঠার সম্ভাবনা রাখেন এবং আপনি আপনার প্রজেক্টের মধ্যে তাঁদের বেড়ে ওঠা ও বিকাশ লালন করতে চাইবেন।
 
-Organizing community events and hackathons is one way to strengthen your community's collaboration and relationships. You can create a survey or poll to gather feedback on what events your community wants to see. Then, consider forming a committee or group of members interested in organizing the events and letting them take charge with your support. By allowing your members to get involved and contribute, you can increase the sense of community and belonging.
+কমিউনিটির সদস্যদের একটি কোর গ্রুপ গড়ে তুলে আপনি নিশ্চিত করতে পারেন, মেইনটেইনাররা অন্য প্রজেক্টে চলে গেলেও আপনার প্রজেক্ট বড় ও বিকশিত হতে থাকবে। এই কোর সদস্যরা নতুন কন্ট্রিবিউটরদের অনবোর্ড করতে, জ্ঞান ও দক্ষতা ভাগ করে নিতে এবং প্রজেক্টের উন্নয়নে ধারাবাহিকতা দিতে সাহায্য করতে পারেন।
 
-## Fostering New Talents
+এই নতুন প্রতিভাদের বিকাশ লালন করতে আপনি তাঁদের মেন্টরশিপ, মতামত এবং প্রজেক্টের ভেতরে নেতৃত্বের ভূমিকার সুযোগ দিতে পারেন। এই কন্ট্রিবিউটরদের মধ্যে বিনিয়োগ করলে আপনি একটি মজবুত ও টেকসই কমিউনিটি গড়ে তুলতে পারেন, যা দীর্ঘ মেয়াদে আপনার প্রজেক্টকে সমৃদ্ধ করতে সাহায্য করবে।
 
-After you have created opportunities for people to contribute to your project, it's important to keep track of which contributors keep coming back and consistently producing quality work. These contributors have the potential to become core members of your community, and you want to foster their growth and development within your project.
+### OpenSauced দিয়ে নতুন প্রতিভা শনাক্ত করা
 
-By building a core group of community members, you can ensure that your project can continue to grow and evolve even after maintainers move on to other projects. These core members can help to onboard new contributors, share knowledge and expertise, and provide continuity in the project's development.
+সক্রিয় প্রজেক্ট কন্ট্রিবিউটরদের ওপর নজর রেখে নতুন প্রতিভা শনাক্ত করতে আপনি OpenSauced-এর [Repository Insights](https://opensauced.pizza/docs/features/repo-insights/) ও [Contributor Insights](https://opensauced.pizza/docs/features/contributor-insights/) ফিচার ব্যবহার করতে পারেন।
 
-To foster the growth of these new talents, you can provide them with mentorship, feedback, and opportunities for leadership roles within the project. Investing in these contributors can build a solid and sustainable community to help your project thrive over the long term.
+#### 1. Repository Insights ব্যবহার করে
 
-### Identify New Talents with OpenSauced
+আপনি যেসব প্রজেক্ট রক্ষণাবেক্ষণ করেন, সেগুলো একটি Repository Insights পাতায় তালিকাভুক্ত করতে পারেন। এই ফিচার আপনাকে আপনার প্রজেক্টের কার্যকলাপ পর্যবেক্ষণ করতে এবং যেসব কন্ট্রিবিউটর সক্রিয়ভাবে অবদান রাখছেন ও প্রভাব ফেলছেন, তাঁদের শনাক্ত করতে দেয়।
 
-You can utilize OpenSauced [Repository Insights](https://opensauced.pizza/docs/features/repo-insights/) and [Contributor Insights](https://opensauced.pizza/docs/features/contributor-insights/) features to identify new talents by tracking active project contributors.
+কন্ট্রিবিউটর ড্যাশবোর্ডে আপনি আপনার কন্ট্রিবিউটরদের সম্পর্কে আরও তথ্য পাবেন। এতে আপনি তাঁদের কার্যকলাপের মাত্রা, সর্বশেষ অবদানের তারিখ এবং অবদানের সংখ্যা দেখতে পারেন। এটি তাঁদের টাইমজোন ও সবচেয়ে বেশি ব্যবহৃত ভাষার তথ্যও দেয়। মেইনটেইনারদের জন্য Repository Insights সম্পর্কে এবং এটি কীভাবে তৈরি করবেন তা আরও জানতে [OpenSauced Docs](https://opensauced.pizza/docs/maintainers/maintainers-guide-to-open-sauced/#repository-insights-connecting-your-repositories) দেখুন।
 
-#### 1. Using Repository Insights
+#### 2. Contributor Insights ব্যবহার করে
 
-You can list the projects you maintain on a Repository Insights Page. This feature allows you to monitor your projects' activity and identify contributors who actively contribute to and impact them.
+আপনার প্রজেক্টের সম্ভাব্য নতুন প্রতিভা শনাক্ত করার পর আপনি তাঁদের বেছে নিয়ে নতুন বা বিদ্যমান কোনো Contributor Insights পাতার তালিকায় যোগ করতে পারেন। এই ফিচার আপনাকে আপনার কন্ট্রিবিউটরদের কার্যকলাপের মাত্রা ও অবদান আরও গভীরভাবে পর্যবেক্ষণ ও বিশ্লেষণ করতে দেয়, যেমন তাঁরা কতগুলো কমিট ও পুল রিকোয়েস্ট করেছেন তা ট্র্যাক করা। মেইনটেইনারদের জন্য Contributor Insights সম্পর্কে এবং এটি কীভাবে তৈরি করবেন তা আরও জানতে [OpenSauced Docs](https://opensauced.pizza/docs/maintainers/maintainers-guide-to-open-sauced/#contributor-insights-connecting-with-contributors) পড়ুন।
 
-You can find more information about your contributors in the Contributors dashboard. It allows you to view their activity level, the date of their last contribution, and the number of contributions. It also gives you information on their time zone and the languages they use most. Learn more about Repository Insights for maintainers and how to create one on [OpenSauced Docs](https://opensauced.pizza/docs/maintainers/maintainers-guide-to-open-sauced/#repository-insights-connecting-your-repositories).
+## উপসংহার
 
-#### 2. Using Contributor Insights
+ওপেন সোর্স শেখা, বেড়ে ওঠা ও সুযোগের একটি যাত্রা। তাই দীর্ঘমেয়াদি সাফল্যের জন্য একটি স্বাগতপূর্ণ ও সহায়ক কমিউনিটি গড়ে তোলা ও লালন করা অত্যন্ত গুরুত্বপূর্ণ।
 
-After identifying potential new talents for your projects, you can select and add them to the list of a new or existing Contributor Insights Page. This feature enables you to monitor and analyze your contributors' activity levels and contributions more deeply, such as tracking the number of commits and pull requests they have made. You can read more about Contributor Insights for maintainers and how to create one on [OpenSauced Docs](https://opensauced.pizza/docs/maintainers/maintainers-guide-to-open-sauced/#contributor-insights-connecting-with-contributors).
+বৈচিত্র্যময় অবদানকে উৎসাহ দেয় এবং নতুন প্রতিভা লালন করে, এমন ইতিবাচক কমিউনিটি সংস্কৃতি আপনাকে সেরা প্রতিভা আকৃষ্ট ও ধরে রাখতে, উদ্ভাবনকে উদ্দীপিত করতে এবং উৎপাদনশীলতা বাড়াতে সাহায্য করতে পারে। এমন একটি সহায়ক পরিবেশ তৈরি করে, যেখানে মানুষ নিজেদের মূল্যবান, সম্মানিত এবং ভাবনা ভাগ করে নেওয়ার জন্য ক্ষমতায়িত বোধ করেন, আপনি আপনার কন্ট্রিবিউটরদের পূর্ণ সম্ভাবনা উন্মোচন করতে এবং আপনার লক্ষ্য অর্জন করতে পারেন।
 
-## Conclusion
+তবে ইতিবাচক কমিউনিটি সংস্কৃতি গড়ে তোলা একবারের কাজ নয়। এর জন্য সংশ্লিষ্ট সবার নিরন্তর প্রচেষ্টা ও প্রতিশ্রুতি লাগে। আপনাকে বৈচিত্র্য ও অন্তর্ভুক্তি প্রসারে, সহযোগিতা ও দলগত কাজকে উৎসাহ দিতে এবং আপন বোধ গড়ে তুলতে বিনিয়োগ করতে হবে। এটি করলে আপনি আস্থা ও সম্মানের এমন একটি সংস্কৃতি তৈরি করতে পারেন, যা আপনার কমিউনিটি ও প্রজেক্টকে সমৃদ্ধ হতে সক্ষম করে। সংক্ষেপে, একটি স্বাগতপূর্ণ ও সহায়ক কমিউনিটি গড়ে তোলা ও লালন করা যেমন ঠিক কাজ, তেমনি আপনার প্রজেক্ট ও কমিউনিটির সাফল্যে সাহায্য করার একটি দারুণ কৌশলও।
 
-Open source is a journey of learning, growth, and opportunity. So, building and nurturing a welcoming and supportive community is crucial for long-term success.
-
-A positive community culture that encourages diverse contributions and fosters new talents can help you attract and retain top talent, stimulate innovation, and increase productivity. By creating a supportive environment where people feel valued, respected, and empowered to share their ideas, you can unlock the full potential of your contributors and achieve your goals.
-
-However, building a positive community culture is not a one-time task; it requires continuous effort and commitment from everyone involved. You must invest in promoting diversity and inclusion, encouraging collaboration and teamwork, and fostering a sense of belonging. Doing so can create a culture of trust and respect that enables your community and projects to thrive. In short, building and nurturing a welcoming and supportive community is the right thing to do and a great strategy to help your project and your community succeed.
-
-In the [next chapter](maintainer-powerups.md), we will discuss tools and features on GitHub that can help save maintainers time.
+[পরবর্তী অধ্যায়ে](maintainer-powerups.md) আমরা GitHub-এর এমন কিছু টুল ও ফিচার নিয়ে আলোচনা করব, যা মেইনটেইনারদের সময় বাঁচাতে সাহায্য করতে পারে।

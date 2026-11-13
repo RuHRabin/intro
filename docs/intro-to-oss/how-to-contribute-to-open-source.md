@@ -2,246 +2,220 @@
 id: how-to-contribute-to-open-source
 title: "ওপেন সোর্সে কীভাবে অবদান রাখবেন"
 sidebar_label: "ওপেন সোর্সে কীভাবে অবদান রাখবেন"
-keywords:
-  [
-    "how to contribute to open source",
-    "contribute to open source projects",
-    "finding open source projects to contribute to",
-    "finding open source projects to contribute to with OpenSauced",
-    "onboarding to open source projects",
-    "open source contribution for beginners",
-    "get started contributing to open source",
-    "open source contribution workflow",
-    "contributing to open source tutorial",
-    "merge conflicts",
-    "resolving merge conflicts",
-    "open source for beginners",
-    "open source tutorial for beginners",
-    "best practices for contributing to open source projects",
-    "GitHub",
-    "Git",
-    "Open Source",
-    "Open Source Community",
-  ]
+keywords: ["ওপেন সোর্সে কীভাবে অবদান রাখবেন", "ওপেন সোর্স প্রজেক্টে অবদান রাখা", "অবদান রাখার মতো ওপেন সোর্স প্রজেক্ট খুঁজে নেওয়া", "OpenSauced দিয়ে অবদান রাখার মতো ওপেন সোর্স প্রজেক্ট খুঁজে নেওয়া", "ওপেন সোর্স প্রজেক্টে অনবোর্ডিং", "নতুনদের জন্য ওপেন সোর্স অবদান", "ওপেন সোর্সে অবদান রাখা শুরু করা", "ওপেন সোর্স অবদানের ওয়ার্কফ্লো", "ওপেন সোর্সে অবদান রাখার টিউটোরিয়াল", "মার্জ কনফ্লিক্ট", "মার্জ কনফ্লিক্ট সমাধান", "নতুনদের জন্য ওপেন সোর্স", "নতুনদের জন্য ওপেন সোর্স টিউটোরিয়াল", "ওপেন সোর্স প্রজেক্টে অবদান রাখার সেরা চর্চা", "GitHub", "Git", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+এই অধ্যায়ে আমরা ধাপে ধাপে দেখব ওপেন সোর্সে কীভাবে অবদান রাখতে হয়।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+## কাজ করার মতো প্রজেক্ট খুঁজে নেওয়া
 
-:::
+ওপেন সোর্সে কীভাবে অবদান রাখতে হয় শেখার সময় আপনি প্রথম যে চ্যালেঞ্জগুলোর মুখোমুখি হতে পারেন, তার একটি হলো অবদান রাখার মতো একটি প্রজেক্ট খুঁজে পাওয়া। আপনার আগ্রহ ও দক্ষতার সাথে মেলে এমন প্রজেক্ট খুঁজে পেতে কয়েকটি টিপস:
 
-In this chapter, we'll guide you through the process of how to contribute to open source.
+1. **GitHub ও GitLab ঘেঁটে দেখুন**: GitHub ও GitLab, দুটি প্ল্যাটফর্মেই বিপুল সংখ্যক ওপেন সোর্স প্রজেক্ট হোস্ট করা হয়। নির্দিষ্ট কীওয়ার্ড, প্রোগ্রামিং ভাষা বা বিষয়ের ভিত্তিতে প্রজেক্ট খুঁজতে আপনি এগুলোর সার্চ সুবিধা ব্যবহার করতে পারেন।
 
-## Finding Projects to Work On
+2. **নিজের আগ্রহ অনুসরণ করুন**: আপনি যেসব টুল, ফ্রেমওয়ার্ক ও লাইব্রেরি ব্যবহার করেন, কিংবা যেগুলো সম্পর্কে আরও জানতে আগ্রহী, সেগুলোর কথা ভাবুন। এর অনেকগুলোই ওপেন সোর্স এবং কমিউনিটির অবদানকে স্বাগত জানায়।
 
-One of the first challenges you might face when learning how to contribute to open source is finding a project to contribute to. Here are some tips to help you discover projects that align with your interests and skills:
+3. **ওপেন সোর্স কমিউনিটিতে যোগ দিন**: ওপেন সোর্স ডেভেলপমেন্টে নিবেদিত অসংখ্য অনলাইন কমিউনিটি, ফোরাম ও চ্যাট প্ল্যাটফর্ম আছে। এসব কমিউনিটিতে যোগ দিয়ে আপনি অন্য ডেভেলপারদের সাথে যুক্ত হতে, নতুন প্রজেক্টের সন্ধান পেতে এবং সহযোগিতার সুযোগ খুঁজে পেতে পারেন। যেমন, আমাদের [কমিউনিটিতে](https://github.com/orgs/open-sauced/discussions) আমরা গুড ফার্স্ট ইস্যু, দারুণ সব GitHub প্রজেক্ট এবং আমাদের রিপোজিটরিতে খোলা ইস্যুগুলো ভাগ করে নিই।
 
-1. **Browse GitHub and GitLab**: Both GitHub and GitLab host a vast number of open source projects. You can use their search functionality to find projects based on specific keywords, programming languages, or topics.
-
-2. **Follow your interests**: Think about the tools, frameworks, and libraries you use or are interested in learning more about. Many of these projects are open source and welcome contributions from the community.
-
-3. **Join open source communities**: There are numerous online communities, forums, and chat platforms dedicated to open source development. By joining these communities, you can connect with other developers, discover new projects, and find collaboration opportunities. In the [Community](https://github.com/orgs/open-sauced/discussions), for example, we share good first issues, cool GitHub projects, and issues we have open on our repositories.
-
-4. **Leverage OpenSauced**: [OpenSauced](https://opensauced.pizza/) is a platform that helps developers discover and contribute to open source projects. By using OpenSauced, you can find projects that align with your interests, skills, and goals.
+4. **OpenSauced ব্যবহার করুন**: [OpenSauced](https://opensauced.pizza/) এমন একটি প্ল্যাটফর্ম, যা ডেভেলপারদের ওপেন সোর্স প্রজেক্ট খুঁজে পেতে ও তাতে অবদান রাখতে সাহায্য করে। OpenSauced ব্যবহার করে আপনি আপনার আগ্রহ, দক্ষতা ও লক্ষ্যের সাথে মেলে এমন প্রজেক্ট খুঁজে পেতে পারেন।
 
 :::tip
 
-To understand how to contribute in open source, it’s important to start by familiarizing yourself with the project’s guidelines and community standards.
+ওপেন সোর্সে কীভাবে অবদান রাখতে হয় তা বুঝতে হলে প্রথমে প্রজেক্টের নির্দেশিকা ও কমিউনিটির মানদণ্ডের সাথে পরিচিত হওয়া জরুরি।
 
 :::
 
-### Discovering Open Source with OpenSauced
+### OpenSauced দিয়ে ওপেন সোর্স খুঁজে পাওয়া
 
-OpenSauced is a powerful tool for finding open source projects to contribute to. To get started with OpenSauced, follow these steps:
+অবদান রাখার মতো ওপেন সোর্স প্রজেক্ট খুঁজে পেতে OpenSauced একটি শক্তিশালী টুল। OpenSauced দিয়ে শুরু করতে নিচের ধাপগুলো অনুসরণ করুন:
 
-1. **Sign up for an account**: Visit https://www.opensauced.pizza/ and sign up for an account using your GitHub credentials.
+1. **একটি অ্যাকাউন্টের জন্য সাইন আপ করুন**: https://www.opensauced.pizza/ এ গিয়ে আপনার GitHub পরিচয়পত্র দিয়ে সাইন আপ করুন।
 
-   ![OpenSauced signup](../_assets/images/opensauced-signup.png)
+   ![OpenSauced সাইন আপ](../_assets/images/opensauced-signup.png)
 
-   During the sign up process, you'll be asked to pick some interests and set your timezone. This will help OpenSauced recommend projects that align with your interests and schedule.
+   সাইন আপের সময় আপনাকে কিছু আগ্রহের বিষয় বেছে নিতে এবং আপনার টাইমজোন ঠিক করতে বলা হবে। এতে OpenSauced আপনার আগ্রহ ও সময়সূচির সাথে মানানসই প্রজেক্ট সুপারিশ করতে পারবে।
 
-2. **Explore dashboard**: Once you've signed up, you'll be taken to your dashboard, where you can view your current projects, goals, and contributions. Clicking "Explore" in the header will take you to the Explore dashboard where you can browse projects based on your interests and skills.
+2. **ড্যাশবোর্ড ঘুরে দেখুন**: সাইন আপ করার পর আপনি আপনার ড্যাশবোর্ডে পৌঁছে যাবেন, যেখানে আপনি আপনার বর্তমান প্রজেক্ট, লক্ষ্য ও অবদান দেখতে পারবেন। হেডারে "Explore"-এ ক্লিক করলে আপনি Explore ড্যাশবোর্ডে যাবেন, যেখানে আপনার আগ্রহ ও দক্ষতার ভিত্তিতে প্রজেক্ট ঘেঁটে দেখতে পারবেন।
 
-3. **Search for projects**: In the Explore dashboard, you can see a list of repositories and their relevant activity levels and engagement levels that are currently trending. You can also search for projects by typing in the search bar. You can search for projects by name, description, or topic and use this tool to find something that resonates with you.
+3. **প্রজেক্ট খুঁজুন**: Explore ড্যাশবোর্ডে আপনি বর্তমানে জনপ্রিয় রিপোজিটরির তালিকা এবং সেগুলোর কার্যকলাপ ও সম্পৃক্ততার মাত্রা দেখতে পাবেন। সার্চ বারে লিখেও আপনি প্রজেক্ট খুঁজতে পারেন। নাম, বর্ণনা বা বিষয় দিয়ে প্রজেক্ট খুঁজে এই টুল দিয়ে আপনার মনের মতো কিছু বেছে নিতে পারেন।
 
-   ![Explore dashboard](../_assets/images/opensauced-explore.png)
+   ![Explore ড্যাশবোর্ড](../_assets/images/opensauced-explore.png)
 
-4. **Save projects to your Insights pages**: When you find projects you're interested in, you can add them to "Insights" pages that give you more details about the activity over the projects. Or, if you'd rather just dive in and contribute, you can skip to the next step.
+4. **আপনার Insights পাতায় প্রজেক্ট সংরক্ষণ করুন**: আগ্রহের কোনো প্রজেক্ট খুঁজে পেলে আপনি সেগুলোকে "Insights" পাতায় যোগ করতে পারেন, যেখানে প্রজেক্টগুলোর কার্যকলাপ সম্পর্কে আরও বিস্তারিত তথ্য পাওয়া যায়। অথবা সরাসরি অবদান রাখতে চাইলে আপনি পরের ধাপে যেতে পারেন।
 
-5. **Start contributing**: When you click on the name of a repository, you'll be taken to its GitHub page, where you can explore issues that are open and ready for contribution, knowing that the community around this project is active and your contributions will be welcomed.
+5. **অবদান রাখা শুরু করুন**: কোনো রিপোজিটরির নামে ক্লিক করলে আপনি সেটির GitHub পাতায় যাবেন। সেখানে অবদানের জন্য প্রস্তুত খোলা ইস্যুগুলো ঘেঁটে দেখতে পারবেন। আপনি জানবেন, এই প্রজেক্টের কমিউনিটি সক্রিয় এবং আপনার অবদানকে স্বাগত জানানো হবে।
 
-Understanding how to contribute to open source involves not only coding but also participating in discussions, reporting bugs, and improving documentation. By using OpenSauced, you can streamline the process of finding open source projects to work on and focus on contributing to the projects that align with your interests and goals.
+ওপেন সোর্সে কীভাবে অবদান রাখতে হয় তা বোঝার অর্থ শুধু কোডিং নয়, আলোচনায় অংশ নেওয়া, বাগ রিপোর্ট করা এবং ডকুমেন্টেশন উন্নত করাও এর অন্তর্ভুক্ত। OpenSauced ব্যবহার করে আপনি কাজ করার মতো ওপেন সোর্স প্রজেক্ট খোঁজার প্রক্রিয়া সহজ করতে এবং আপনার আগ্রহ ও লক্ষ্যের সাথে মেলে এমন প্রজেক্টে অবদান রাখায় মনোযোগ দিতে পারেন।
 
-## Onboarding in a New Project
+## নতুন প্রজেক্টে অনবোর্ডিং
 
-When you're interested in contributing to a new open source project, it's important to familiarize yourself with the project's guidelines, conventions, and workflow and take the initiative to onboard yourself.
+কোনো নতুন ওপেন সোর্স প্রজেক্টে অবদান রাখতে আগ্রহী হলে প্রজেক্টের নির্দেশিকা, রীতি ও ওয়ার্কফ্লোর সাথে পরিচিত হওয়া এবং নিজে উদ্যোগ নিয়ে নিজেকে অনবোর্ড করা জরুরি।
 
-Here are some tips to help you onboard successfully:
+সফলভাবে অনবোর্ড হতে কয়েকটি টিপস:
 
-1. **Read the project's documentation**: Read the README file, contributing guidelines, and code of conduct to familiarize yourself with the project. They will help you understand the project's goals, requirements, and expectations for contributors.
+1. **প্রজেক্টের ডকুমেন্টেশন পড়ুন**: প্রজেক্টের সাথে পরিচিত হতে README ফাইল, কন্ট্রিবিউটিং গাইডলাইন ও আচরণবিধি পড়ুন। এগুলো প্রজেক্টের লক্ষ্য, প্রয়োজনীয়তা এবং কন্ট্রিবিউটরদের কাছে প্রত্যাশা বুঝতে আপনাকে সাহায্য করবে।
 
-2. **Start small**: When you're new to a project, it's a good idea to start with small, manageable tasks, such as fixing bugs, adding tests, or updating documentation. This will help you become familiar with the codebase and development workflow without getting overwhelmed.
+2. **ছোট করে শুরু করুন**: কোনো প্রজেক্টে নতুন হলে বাগ ঠিক করা, টেস্ট যোগ করা বা ডকুমেন্টেশন হালনাগাদ করার মতো ছোট ও সামলানো যায় এমন কাজ দিয়ে শুরু করা ভালো। এতে হাঁপিয়ে না উঠে আপনি কোডবেস ও ডেভেলপমেন্ট ওয়ার্কফ্লোর সাথে পরিচিত হতে পারবেন।
 
-3. **Join the open source community**: Many open source projects have online communities, forums, or chat platforms where developers can ask questions, share knowledge, and collaborate. To learn how to contribute to open source, you can connect with other contributors, learn from their experiences, and get help with any issues you encounter.
+3. **ওপেন সোর্স কমিউনিটিতে যোগ দিন**: অনেক ওপেন সোর্স প্রজেক্টের অনলাইন কমিউনিটি, ফোরাম বা চ্যাট প্ল্যাটফর্ম আছে, যেখানে ডেভেলপাররা প্রশ্ন করতে, জ্ঞান ভাগ করে নিতে এবং সহযোগিতা করতে পারেন। ওপেন সোর্সে কীভাবে অবদান রাখতে হয় শিখতে আপনি অন্য কন্ট্রিবিউটরদের সাথে যুক্ত হতে, তাঁদের অভিজ্ঞতা থেকে শিখতে এবং আপনার মুখোমুখি হওয়া যেকোনো সমস্যায় সাহায্য পেতে পারেন।
 
-4. **Ask for help**: If you need clarification or encounter a problem, don't hesitate to ask for help. Open source communities are generally supportive and welcoming; other contributors will gladly assist you.
+4. **সাহায্য চান**: ব্যাখ্যার দরকার হলে বা কোনো সমস্যায় পড়লে সাহায্য চাইতে দ্বিধা করবেন না। ওপেন সোর্স কমিউনিটি সাধারণত সহায়ক ও স্বাগতপূর্ণ হয়। অন্য কন্ট্রিবিউটররা আনন্দের সাথে আপনাকে সহায়তা করবেন।
 
-5. **Be patient and persistent**: Onboarding in a new project can be challenging, especially if you're new to open source development. Be patient, and don't be discouraged by setbacks or mistakes. You'll become more comfortable and confident in your contributions with persistence and practice.
+5. **ধৈর্য ধরুন ও লেগে থাকুন**: নতুন প্রজেক্টে অনবোর্ডিং চ্যালেঞ্জিং হতে পারে, বিশেষ করে আপনি যদি ওপেন সোর্স ডেভেলপমেন্টে নতুন হন। ধৈর্য ধরুন এবং বাধা বা ভুলের কারণে হতাশ হবেন না। লেগে থেকে এবং অনুশীলনের মাধ্যমে আপনি নিজের অবদানে আরও স্বচ্ছন্দ ও আত্মবিশ্বাসী হয়ে উঠবেন।
 
-## Getting Started With Contributing
+## অবদান রাখা শুরু করা
 
-So, you've onboarded yourself in the project. Now, you can prepare to contribute by following these steps:
+তাহলে আপনি প্রজেক্টে নিজেকে অনবোর্ড করে ফেলেছেন। এবার নিচের ধাপগুলো অনুসরণ করে অবদান রাখার জন্য প্রস্তুতি নিতে পারেন:
 
-### 1. Read the Documentation
+### 1. ডকুমেন্টেশন পড়ুন
 
-We touched on this briefly in the previous section. But it's worth revisiting because it's important to read the project's documentation thoroughly before you start contributing.
+আগের অংশে আমরা এ নিয়ে সংক্ষেপে কথা বলেছি। তবু বিষয়টি আবার তোলা দরকার, কারণ অবদান রাখা শুরুর আগে প্রজেক্টের ডকুমেন্টেশন ভালোভাবে পড়ে নেওয়া গুরুত্বপূর্ণ।
 
-Start by reading the README and familiarizing yourself with the project. A README contains an introduction to the project, such as how it works, its purpose, the tech stacks it uses, and how to set up and run the local environment.
+README পড়ে এবং প্রজেক্টের সাথে পরিচিত হয়ে শুরু করুন। README-তে প্রজেক্টের একটি পরিচিতি থাকে, যেমন এটি কীভাবে কাজ করে, এর উদ্দেশ্য, এটি কোন টেক স্ট্যাক ব্যবহার করে এবং লোকাল পরিবেশ কীভাবে সেটআপ ও চালাতে হয়।
 
-Once you're familiar with the project and interested in contributing, don't jump in without reading the contributing guidelines. These guidelines are in the CONTRIBUTING file at the project's root. If the file is unavailable, you can find them in the README.
+প্রজেক্টের সাথে পরিচিত হওয়ার পর অবদান রাখতে আগ্রহী হলে কন্ট্রিবিউটিং গাইডলাইন না পড়ে ঝাঁপিয়ে পড়বেন না। এই নির্দেশিকা প্রজেক্টের রুট ডিরেক্টরির CONTRIBUTING ফাইলে থাকে। ফাইলটি না থাকলে আপনি README-তে এগুলো খুঁজে পেতে পারেন।
 
-Every project has different contributing rules. These rules are written in the contributing guidelines, which contain information on how to claim and work with issues, create pull requests, and preferable methods of communication. For example, you can look at the [OpenSauced Contributing Guidelines](https://opensauced.pizza/docs/contributing/introduction-to-contributing/).
+প্রতিটি প্রজেক্টের অবদান রাখার নিয়ম আলাদা। এই নিয়মগুলো কন্ট্রিবিউটিং গাইডলাইনে লেখা থাকে, যাতে ইস্যু কীভাবে দাবি করবেন ও তাতে কাজ করবেন, পুল রিকোয়েস্ট কীভাবে তৈরি করবেন এবং যোগাযোগের পছন্দের মাধ্যম কী, সেসব তথ্য থাকে। উদাহরণ হিসেবে আপনি [OpenSauced কন্ট্রিবিউটিং গাইডলাইন](https://opensauced.pizza/docs/contributing/introduction-to-contributing/) দেখতে পারেন।
 
-Some projects also have conventions, such as code and Markdown style, how to write commit messages, pull requests and issue titles, and so on. You might find these in their style guide or contributing guidelines.
+কিছু প্রজেক্টের কিছু রীতিও থাকে, যেমন কোড ও Markdown-এর স্টাইল, কমিট মেসেজ, পুল রিকোয়েস্ট ও ইস্যুর শিরোনাম কীভাবে লিখতে হবে ইত্যাদি। এগুলো আপনি তাদের স্টাইল গাইড বা কন্ট্রিবিউটিং গাইডলাইনে পেতে পারেন।
 
 :::tip
 
-Read the contributing guidelines carefully to understand how the project receives contributions. Following these guidelines will make your contribution process smoother.
+প্রজেক্ট কীভাবে অবদান গ্রহণ করে তা বুঝতে কন্ট্রিবিউটিং গাইডলাইন মনোযোগ দিয়ে পড়ুন। এই নির্দেশিকা অনুসরণ করলে আপনার অবদান রাখার প্রক্রিয়া মসৃণ হবে।
 
 :::
 
-### 2. Find or Create an Issue
+### 2. একটি ইস্যু খুঁজুন বা তৈরি করুন
 
-After reading the documentation, you can start looking for issues labeled as "good first issue" or "beginner-friendly" that are suitable for your skill level. When choosing which issues to work on, consider your interests, skill level, and available time.
+ডকুমেন্টেশন পড়া শেষ হলে আপনি আপনার দক্ষতার স্তরের উপযোগী "good first issue" বা "beginner-friendly" লেবেলযুক্ত ইস্যু খুঁজতে পারেন। কোন ইস্যুতে কাজ করবেন তা বেছে নেওয়ার সময় আপনার আগ্রহ, দক্ষতার স্তর ও হাতে থাকা সময় বিবেচনা করুন।
 
-Issues can be seen as proposals for changes. Suppose you want to report a bug or have ideas for a feature or improvement of the project or its documentation and want to propose them. In that case, you can create an issue to propose your intention. Read [this blog post](https://dev.to/opensauced/streamline-your-contributions-mastering-issue-forms-and-pr-templates-36j5) to learn how to fill in issue forms.
+ইস্যুকে পরিবর্তনের প্রস্তাব হিসেবে দেখা যায়। ধরুন, আপনি কোনো বাগ রিপোর্ট করতে চান কিংবা প্রজেক্ট বা এর ডকুমেন্টেশনের জন্য কোনো ফিচার বা উন্নয়নের ভাবনা প্রস্তাব করতে চান। সে ক্ষেত্রে আপনি নিজের অভিপ্রায় জানাতে একটি ইস্যু তৈরি করতে পারেন। ইস্যু ফর্ম কীভাবে পূরণ করতে হয় জানতে [এই ব্লগ পোস্টটি](https://dev.to/opensauced/streamline-your-contributions-mastering-issue-forms-and-pr-templates-36j5) (ইংরেজি) পড়ুন।
 
-In open source, it is crucial to accompany a pull request with an issue for several reasons:
+ওপেন সোর্সে কয়েকটি কারণে পুল রিকোয়েস্টের সাথে একটি ইস্যু থাকা অত্যন্ত গুরুত্বপূর্ণ:
 
-- **Context and Discussion**: Giving context to your proposal and discussing it with the maintainers can help to ensure that the proposed change is aligned with the project's goals, architecture, and roadmap. This discussion helps set clear expectations and increases the chance of your pull request being accepted.
+- **প্রেক্ষাপট ও আলোচনা**: আপনার প্রস্তাবের প্রেক্ষাপট তুলে ধরা এবং মেইনটেইনারদের সাথে তা নিয়ে আলোচনা করলে প্রস্তাবিত পরিবর্তন প্রজেক্টের লক্ষ্য, আর্কিটেকচার ও রোডম্যাপের সাথে সামঞ্জস্যপূর্ণ কি না তা নিশ্চিত করা যায়। এই আলোচনা স্পষ্ট প্রত্যাশা ঠিক করতে সাহায্য করে এবং আপনার পুল রিকোয়েস্ট গৃহীত হওয়ার সম্ভাবনা বাড়ায়।
 
-- **Documentation and Tracking**: Issues act as a form of documentation, providing a historical record of the identified problem, proposed solution, and decision-making process behind the change. They help maintainers track the project's progress and prioritize tasks. At the same time, they also allow other contributors to understand the context and reasons behind the changes introduced in the pull request.
+- **নথিভুক্তকরণ ও ট্র্যাকিং**: ইস্যু এক ধরনের ডকুমেন্টেশনের কাজ করে, যেখানে শনাক্ত করা সমস্যা, প্রস্তাবিত সমাধান এবং পরিবর্তনের পেছনের সিদ্ধান্ত গ্রহণের প্রক্রিয়ার একটি ঐতিহাসিক রেকর্ড থাকে। এগুলো মেইনটেইনারদের প্রজেক্টের অগ্রগতি ট্র্যাক করতে এবং কাজের অগ্রাধিকার ঠিক করতে সাহায্য করে। একই সাথে পুল রিকোয়েস্টে আনা পরিবর্তনের প্রেক্ষাপট ও কারণ অন্য কন্ট্রিবিউটরদেরও বুঝতে সাহায্য করে।
 
-- **Reducing Back-and-Forth Communication**: Discussing and agreeing upon the proposed changes in advance through the issue can reduce the back-and-forth communication during the pull request review process. This can save both your time and the maintainers' time.
+- **বারবার যোগাযোগের প্রয়োজন কমানো**: ইস্যুর মাধ্যমে আগেই প্রস্তাবিত পরিবর্তন নিয়ে আলোচনা ও একমত হলে পুল রিকোয়েস্ট রিভিউ প্রক্রিয়ায় বারবার যোগাযোগ করার প্রয়োজন কমে যায়। এতে আপনার ও মেইনটেইনারদের, দুই পক্ষেরই সময় বাঁচে।
 
-- **Avoiding Unnecessary Work**: Creating an issue allows maintainers to provide early feedback on the proposed change. They can advise if a similar issue exists, if the proposed change aligns with the project's goals, or if alternative approaches are preferable. This helps you avoid wasting time and effort working on something that may not be accepted because it conflicts with existing plans.
+- **অপ্রয়োজনীয় কাজ এড়ানো**: ইস্যু তৈরি করলে মেইনটেইনাররা প্রস্তাবিত পরিবর্তন নিয়ে আগেভাগেই মতামত দিতে পারেন। তাঁরা পরামর্শ দিতে পারেন যে অনুরূপ কোনো ইস্যু আছে কি না, প্রস্তাবিত পরিবর্তন প্রজেক্টের লক্ষ্যের সাথে মেলে কি না, কিংবা বিকল্প কোনো পদ্ধতি বেশি ভালো কি না। এতে বিদ্যমান পরিকল্পনার সাথে সাংঘর্ষিক হওয়ায় গৃহীত না-ও হতে পারে, এমন কিছুর পেছনে আপনার সময় ও শ্রম নষ্ট হওয়া থেকে বাঁচবেন।
 
-- **Avoiding Spam Pull Requests**: Unsolicited (pull requests without an issue) and unwanted pull requests may be marked as spam because they're seen as introducing irrelevant, low-quality, or harmful changes to the project's codebase. Having your pull request marked as spam can lead to rejection, lost contribution opportunities, and potentially damage your reputation.
+- **স্প্যাম পুল রিকোয়েস্ট এড়ানো**: অনাহূত (ইস্যু ছাড়া পুল রিকোয়েস্ট) ও অবাঞ্ছিত পুল রিকোয়েস্ট স্প্যাম হিসেবে চিহ্নিত হতে পারে, কারণ সেগুলোকে প্রজেক্টের কোডবেসে অপ্রাসঙ্গিক, নিম্নমানের বা ক্ষতিকর পরিবর্তন আনার চেষ্টা হিসেবে দেখা হয়। আপনার পুল রিকোয়েস্ট স্প্যাম হিসেবে চিহ্নিত হলে তা প্রত্যাখ্যাত হতে পারে, অবদান রাখার সুযোগ হাতছাড়া হতে পারে এবং আপনার সুনামও ক্ষুণ্ন হতে পারে।
 
-### 3. Ask to be Assigned to an Issue
+### 3. ইস্যুতে নিজেকে অ্যাসাইন করার অনুরোধ করুন
 
-Certain projects may have specific rules regarding the assignment of issues. Some projects may require you to ask permission before working on an issue, while others allow you to assign yourself to an issue. That's why reviewing the project's contributing guidelines is essential to knowing how to claim issues.
+কিছু প্রজেক্টে ইস্যু বরাদ্দ করার ব্যাপারে নির্দিষ্ট নিয়ম থাকতে পারে। কিছু প্রজেক্টে ইস্যুতে কাজ করার আগে অনুমতি চাইতে হয়, আবার কিছু প্রজেক্ট আপনাকে নিজেই ইস্যুতে নিজেকে অ্যাসাইন করার সুযোগ দেয়। এ কারণেই ইস্যু কীভাবে দাবি করতে হয় তা জানতে প্রজেক্টের কন্ট্রিবিউটিং গাইডলাইন দেখে নেওয়া অত্যাবশ্যক।
 
-If the contributing guidelines do not state how to claim an issue, you can ask the maintainers to assign it to you. This will ensure no duplication and that your contribution is aligned with the project's goals and requirements.
+কন্ট্রিবিউটিং গাইডলাইনে ইস্যু কীভাবে দাবি করতে হয় তা বলা না থাকলে আপনি মেইনটেইনারদের কাছে ইস্যুটি আপনাকে অ্যাসাইন করার অনুরোধ করতে পারেন। এতে কাজের পুনরাবৃত্তি হবে না এবং আপনার অবদান প্রজেক্টের লক্ষ্য ও প্রয়োজনের সাথে সামঞ্জস্যপূর্ণ হবে।
 
-You can leave a comment on the issue, like, "Can I please be assigned to this issue?" When the maintainer has assigned you, you'll notice that your username is now under the "Assignees" section.
+আপনি ইস্যুতে একটি মন্তব্য রাখতে পারেন, যেমন "Can I please be assigned to this issue?" (আমাকে কি এই ইস্যুটি অ্যাসাইন করা যেতে পারে?)। মেইনটেইনার আপনাকে অ্যাসাইন করলে আপনি দেখবেন, আপনার ইউজারনেম এখন "Assignees" অংশে রয়েছে।
 
-![Issue assignees section on GitHub](../_assets/images/issue-assign.png)
+![GitHub-এ ইস্যুর Assignees অংশ](../_assets/images/issue-assign.png)
 
-## Contribution Workflow
+## অবদান রাখার ওয়ার্কফ্লো
 
-Once a maintainer has assigned you an issue, the next step is to work on the changes. Here's a general workflow of the process:
+মেইনটেইনার আপনাকে ইস্যু অ্যাসাইন করার পর পরবর্তী ধাপ হলো পরিবর্তনগুলো নিয়ে কাজ করা। প্রক্রিয়াটির একটি সাধারণ ওয়ার্কফ্লো এখানে দেওয়া হলো:
 
-### 1. Fork the Repository
+### 1. রিপোজিটরি ফর্ক করুন
 
-[Forking a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) means creating a copy of the repository under your GitHub account. It allows you to push changes to the remote codebase without affecting the original project.
+[রিপোজিটরি ফর্ক করা](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) মানে আপনার GitHub অ্যাকাউন্টের অধীনে রিপোজিটরির একটি কপি তৈরি করা। এতে আপনি মূল প্রজেক্টকে প্রভাবিত না করেই রিমোট কোডবেসে পরিবর্তন পুশ করতে পারেন।
 
-### 2. Clone the Forked Repository
+### 2. ফর্ক করা রিপোজিটরি ক্লোন করুন
 
-[Cloning your forked repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) means making a copy of your forked repository to your local machine. Run the following command in your terminal:
+[আপনার ফর্ক করা রিপোজিটরি ক্লোন করা](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository) মানে আপনার ফর্ক করা রিপোজিটরির একটি কপি আপনার লোকাল মেশিনে নেওয়া। আপনার টার্মিনালে নিচের কমান্ডটি চালান:
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/REPOSITORY-NAME.git
 ```
 
-Replace "YOUR-USERNAME" with your GitHub username and "REPOSITORY-NAME" with the repository's name.
+"YOUR-USERNAME"-এর জায়গায় আপনার GitHub ইউজারনেম এবং "REPOSITORY-NAME"-এর জায়গায় রিপোজিটরির নাম লিখুন।
 
-### 3. Create a New Branch
+### 3. একটি নতুন ব্রাঞ্চ তৈরি করুন
 
-Before making any changes, create a new branch in your local repository to work on your contribution. Creating a new branch is the best practice in open source because it keeps your changes separate from the `main` branch.
+কোনো পরিবর্তন করার আগে আপনার অবদানের কাজ করার জন্য আপনার লোকাল রিপোজিটরিতে একটি নতুন ব্রাঞ্চ তৈরি করুন। নতুন ব্রাঞ্চ তৈরি করা ওপেন সোর্সের সেরা চর্চা, কারণ এতে আপনার পরিবর্তনগুলো `main` ব্রাঞ্চ থেকে আলাদা থাকে।
 
-You can create a new branch using the following command:
+আপনি নিচের কমান্ড দিয়ে একটি নতুন ব্রাঞ্চ তৈরি করতে পারেন:
 
 ```bash
 git checkout -b YOUR-BRANCH-NAME
 ```
 
-Replace "YOUR-BRANCH-NAME" with a descriptive name for your branch, such as "fix-bug-123" or "add-new-feature".
+"YOUR-BRANCH-NAME"-এর জায়গায় আপনার ব্রাঞ্চের একটি বর্ণনামূলক নাম লিখুন, যেমন "fix-bug-123" বা "add-new-feature"।
 
-### 4. Make Changes
+### 4. পরিবর্তন করুন
 
-Now that you have a new branch, you can make changes to the codebase. Always follow the project's coding guidelines and conventions.
+নতুন ব্রাঞ্চ তৈরি হয়ে গেলে এবার আপনি কোডবেসে পরিবর্তন করতে পারেন। সবসময় প্রজেক্টের কোডিং নির্দেশিকা ও রীতি অনুসরণ করুন।
 
-### 5. Run the Changes Locally
+### 5. পরিবর্তনগুলো লোকালি চালিয়ে দেখুন
 
-You should always run and check your changes in your local environment, regardless of how small they are. This is important to ensure they work as expected and won't break production.
+পরিবর্তন যত ছোটই হোক, সবসময় নিজের লোকাল পরিবেশে তা চালিয়ে দেখা উচিত। এটি নিশ্চিত করতে জরুরি যে পরিবর্তনগুলো প্রত্যাশামতো কাজ করছে এবং প্রোডাকশন ভেঙে ফেলবে না।
 
-You can find the instructions on how to run a project locally in the README file or in the contributing guidelines.
+প্রজেক্ট লোকালি কীভাবে চালাতে হয়, সে নির্দেশনা আপনি README ফাইলে বা কন্ট্রিবিউটিং গাইডলাইনে পাবেন।
 
-### 6. Add and Commit the Changes
+### 6. পরিবর্তনগুলো যোগ ও কমিট করুন
 
-Once you've made your changes, add your changes to the staging area and commit them with these commands:
+পরিবর্তন করা হয়ে গেলে এই কমান্ডগুলো দিয়ে আপনার পরিবর্তনগুলো স্টেজিং এরিয়ায় যোগ করুন এবং কমিট করুন:
 
 ```bash
 git add .
 git commit -m "Your commit message"
 ```
 
-Replace `"Your commit message"` with a brief description of your changes.
+`"Your commit message"`-এর জায়গায় আপনার পরিবর্তনের একটি সংক্ষিপ্ত বর্ণনা লিখুন।
 
-### 7. Push the Changes
+### 7. পরিবর্তনগুলো পুশ করুন
 
-Push your changes to your forked repository on GitHub by running the following command:
+নিচের কমান্ডটি চালিয়ে আপনার পরিবর্তনগুলো GitHub-এ আপনার ফর্ক করা রিপোজিটরিতে পুশ করুন:
 
 ```bash
 git push origin YOUR-BRANCH-NAME
 ```
 
-Replace "YOUR-BRANCH-NAME" with the name of your branch.
+"YOUR-BRANCH-NAME"-এর জায়গায় আপনার ব্রাঞ্চের নাম লিখুন।
 
-### 8. Working with a Pull Request
+### 8. পুল রিকোয়েস্ট নিয়ে কাজ করা
 
-#### Create a Pull Request
+#### পুল রিকোয়েস্ট তৈরি করুন
 
-Once you've pushed your changes, you can now [create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork). To create a pull request:
+পরিবর্তন পুশ করার পর আপনি এখন [একটি পুল রিকোয়েস্ট তৈরি](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork) করতে পারেন। পুল রিকোয়েস্ট তৈরি করতে:
 
-1. Navigate to the original project's repository on GitHub.
-2. Click the "Compare & pull request" button.
-3. Fill in all required information in the template.
-4. Click the "Create pull request" button.
+1. GitHub-এ মূল প্রজেক্টের রিপোজিটরিতে যান।
+2. "Compare & pull request" বোতামে ক্লিক করুন।
+3. টেমপ্লেটে প্রয়োজনীয় সব তথ্য পূরণ করুন।
+4. "Create pull request" বোতামে ক্লিক করুন।
 
-#### Fill In a Pull Request Template
+#### পুল রিকোয়েস্ট টেমপ্লেট পূরণ করা {#fill-in-a-pull-request-template}
 
-Most projects provided a pull request template that is shown and needs to be filled in Markdown. This template guides you in providing all the information maintainers need to review your pull request.
+বেশিরভাগ প্রজেক্টে একটি পুল রিকোয়েস্ট টেমপ্লেট দেওয়া থাকে, যা দেখানো হয় এবং Markdown-এ পূরণ করতে হয়। এই টেমপ্লেট আপনাকে সেই সব তথ্য দিতে পথ দেখায়, যা মেইনটেইনারদের আপনার পুল রিকোয়েস্ট রিভিউ করতে প্রয়োজন।
 
-##### Tips to Fill In a Pull Request Template
+##### পুল রিকোয়েস্ট টেমপ্লেট পূরণ করার টিপস
 
-It can be challenging to read and fill in a pull request template. Here is some tips on how to fill one:
+পুল রিকোয়েস্ট টেমপ্লেট পড়া ও পূরণ করা কঠিন হতে পারে। টেমপ্লেট পূরণ করার কিছু টিপস এখানে দেওয়া হলো:
 
-1. **Preview Mode**
+1. **প্রিভিউ মোড**
 
-   Click the "Preview" tab to see the sections you must fill in before you do so. It will be easier for you to notice them in this mode, but note that you cannot edit them in preview mode.
+   পূরণ করার আগে কোন কোন অংশ পূরণ করতে হবে তা দেখতে "Preview" ট্যাবে ক্লিক করুন। এই মোডে সেগুলো লক্ষ করা সহজ হবে, তবে মনে রাখবেন, প্রিভিউ মোডে আপনি সেগুলো সম্পাদনা করতে পারবেন না।
 
-   Here is an example of a pull request template at OpenSauced in preview mode:
+   OpenSauced-এর একটি পুল রিকোয়েস্ট টেমপ্লেট প্রিভিউ মোডে দেখতে কেমন, তার একটি উদাহরণ:
 
-   ![PR template in preview mode](../_assets/images/pr-template-preview.png)
+   ![প্রিভিউ মোডে পুল রিকোয়েস্ট টেমপ্লেট](../_assets/images/pr-template-preview.png)
 
-2. **Headings**
+2. **শিরোনাম**
 
-   Get back to the writing mode by clicking the "Write" tab. Pay attention to the headings with `#` symbols. You need to provide information right under these headings.
+   "Write" ট্যাবে ক্লিক করে আবার লেখার মোডে ফিরে যান। `#` চিহ্নযুক্ত শিরোনামগুলোর দিকে মনোযোগ দিন। এই শিরোনামগুলোর ঠিক নিচেই আপনাকে তথ্য দিতে হবে।
 
-3. **Comments**
+3. **মন্তব্য**
 
-   The instructions on what information you must provide are usually written in the comments under each heading. You need to read and follow all instructions thoroughly.
+   কোন তথ্য দিতে হবে, সে নির্দেশনা সাধারণত প্রতিটি শিরোনামের নিচের মন্তব্যে (comment) লেখা থাকে। আপনাকে সব নির্দেশনা মনোযোগ দিয়ে পড়ে অনুসরণ করতে হবে।
 
    :::tip
 
-   When filling in the information, write it below the comment so you can still see and follow the instructions.
+   তথ্য পূরণ করার সময় মন্তব্যের নিচে লিখুন, যাতে আপনি নির্দেশনাগুলো দেখতে ও অনুসরণ করতে পারেন।
 
    :::
 
-   Here is the template in Markdown. Now, pay attention to the headings and the comments as we discussed:
+   এখানে Markdown-এ টেমপ্লেটটি দেওয়া হলো। এবার আমাদের আলোচিত শিরোনাম ও মন্তব্যগুলোর দিকে মনোযোগ দিন:
 
    ```markdown
    ## Description
@@ -300,25 +274,25 @@ It can be challenging to read and fill in a pull request template. Here is some 
    -->
    ```
 
-4. **Don't skip and delete anything in the template**
+4. **টেমপ্লেটের কোনো কিছু বাদ দেবেন না বা মুছবেন না**
 
-   What's important is that you must fill in every section in the template that doesn't say "optional" or doesn't mean for the core team or staff to fill in. Also, you must never delete or modify the template, even if you think a section doesn't apply to your contribution.
+   গুরুত্বপূর্ণ হলো, টেমপ্লেটের যেসব অংশে "optional" (ঐচ্ছিক) লেখা নেই এবং যেগুলো কোর টিম বা স্টাফের পূরণ করার কথা নয়, তার প্রতিটি অংশ আপনাকে পূরণ করতেই হবে। এছাড়া আপনার মনে হলেও কোনো অংশ আপনার অবদানের সাথে প্রযোজ্য নয়, তবুও টেমপ্লেট কখনো মুছবেন না বা পরিবর্তন করবেন না।
 
-   If a section is irrelevant to your changes, leave a comment explaining why it's irrelevant or provide a brief "N/A" response. If you still need help with what to fill in, look at the previous pull requests and see how other contributors have done that.
+   কোনো অংশ আপনার পরিবর্তনের সাথে অপ্রাসঙ্গিক হলে একটি মন্তব্যে কেন তা অপ্রাসঙ্গিক সেটি ব্যাখ্যা করুন, কিংবা সংক্ষেপে "N/A" লিখুন। কী পূরণ করবেন তা নিয়ে এখনো সাহায্য দরকার হলে আগের পুল রিকোয়েস্টগুলো দেখুন এবং অন্য কন্ট্রিবিউটররা কীভাবে তা করেছেন তা দেখে নিন।
 
-##### Required Information to Provide in Most Pull Request Templates
+##### বেশিরভাগ পুল রিকোয়েস্ট টেমপ্লেটে যে তথ্য দিতে হয়
 
-Every project is unique. Each has its own pull request template structure and requires specific information to be provided. However, all projects typically require the following:
+প্রতিটি প্রজেক্ট আলাদা। প্রত্যেকের পুল রিকোয়েস্ট টেমপ্লেটের কাঠামো নিজস্ব এবং নির্দিষ্ট তথ্য দিতে হয়। তবে সাধারণত সব প্রজেক্টেই এগুলো চাওয়া হয়:
 
-- **Title**
+- **শিরোনাম**
 
-  Add a short and clear title that describes the change that you make. For example, "Fix: Color contrast in the landing page".
+  আপনি যে পরিবর্তন করেছেন তা বর্ণনা করে এমন একটি ছোট ও পরিষ্কার শিরোনাম দিন। যেমন, "Fix: Color contrast in the landing page"।
 
-- **Description**
+- **বর্ণনা**
 
-  Explain your changes in as much detail as possible. What did you fix? How did you fix it? Did you add a new function or modify a function? If there are several changes, consider using bullet points and providing links to the resources you use to back up your changes.
+  আপনার পরিবর্তনগুলো যতটা সম্ভব বিস্তারিতভাবে ব্যাখ্যা করুন। আপনি কী ঠিক করেছেন? কীভাবে ঠিক করেছেন? কোনো নতুন ফাংশন যোগ করেছেন নাকি কোনো ফাংশন পরিবর্তন করেছেন? একাধিক পরিবর্তন থাকলে বুলেট পয়েন্ট ব্যবহার করার কথা ভাবুন এবং আপনার পরিবর্তনের সমর্থনে যেসব রিসোর্স ব্যবহার করেছেন, সেগুলোর লিংক দিন।
 
-  Here is an example:
+  একটি উদাহরণ:
 
   ```markdown
   ## Description
@@ -328,240 +302,240 @@ Every project is unique. Each has its own pull request template structure and re
    This PR [adds/removes/fixes/replaces] the [feature/bug/etc].
    -->
 
-  This PR fixes the long repos' names that are partially stacked at the back of another name in the search input of the Explore tab.
+  এই PR Explore ট্যাবের সার্চ ইনপুটে লম্বা রিপো-নামগুলো আংশিকভাবে একটির পেছনে আরেকটি জমে যাওয়ার সমস্যা ঠিক করে।
 
-  The changes made here:
+  এখানে করা পরিবর্তনগুলো:
 
-  - Add Tailwind className:
+  - Tailwind className যোগ করা হয়েছে:
 
-    - [`truncate`](https://tailwindcss.com/docs/text-overflow#truncate) to truncate overflowing text.
-    - [`tracking-tighter`](https://tailwindcss.com/docs/letter-spacing) to reduce letter spacing for better space.
-    - `inline-block` to the `<span>` .
+    - উপচে পড়া টেক্সট ছোট করতে [`truncate`](https://tailwindcss.com/docs/text-overflow#truncate)।
+    - জায়গা বাঁচাতে অক্ষরের মাঝের ফাঁক কমাতে [`tracking-tighter`](https://tailwindcss.com/docs/letter-spacing)।
+    - `<span>`-এ `inline-block`।
 
-  - Remove Tailwind classNames:
+  - Tailwind className সরানো হয়েছে:
 
-    - `overflow-hidden` as it's [included in the `truncate`](https://tailwindcss.com/docs/text-overflow).
-    - `break-all` as we don't want to add line breaks.
+    - `overflow-hidden`, কারণ এটি [`truncate`-এর মধ্যেই অন্তর্ভুক্ত](https://tailwindcss.com/docs/text-overflow)।
+    - `break-all`, কারণ আমরা লাইন ব্রেক যোগ করতে চাই না।
   ```
 
-- **Related issue(s)**
+- **সম্পর্কিত ইস্যু**
 
-  Most projects don't receive unsolicited pull requests (pull requests that are not accompanied by an issue). One reason is to avoid spam pull requests that might introduce irrelevant, low-quality, or harmful changes to the project's codebase.
+  বেশিরভাগ প্রজেক্ট অনাহূত পুল রিকোয়েস্ট (যে পুল রিকোয়েস্টের সাথে কোনো ইস্যু নেই) গ্রহণ করে না। এর একটি কারণ হলো স্প্যাম পুল রিকোয়েস্ট এড়ানো, যা প্রজেক্টের কোডবেসে অপ্রাসঙ্গিক, নিম্নমানের বা ক্ষতিকর পরিবর্তন আনতে পারে।
 
-  So, when you create a pull request, you want to include the related issue number. Add the keyword "Closes," "Fixes," or "Resolves" in front of the issue number, for example, "Closes #123".
+  তাই পুল রিকোয়েস্ট তৈরি করার সময় আপনাকে সম্পর্কিত ইস্যুর নম্বর অন্তর্ভুক্ত করতে হবে। ইস্যু নম্বরের আগে "Closes", "Fixes" বা "Resolves" কীওয়ার্ড যোগ করুন, যেমন "Closes #123"।
 
-  [Linking a pull request](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) to an issue will automatically close the issue once the pull request gets merged.
+  একটি ইস্যুর সাথে [পুল রিকোয়েস্ট লিংক করলে](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue) পুল রিকোয়েস্ট মার্জ হওয়ার পর ইস্যুটি স্বয়ংক্রিয়ভাবে বন্ধ হয়ে যায়।
 
-  You can find the issue number right after the title, as shown below.
+  নিচে যেমন দেখানো হয়েছে, শিরোনামের ঠিক পরেই আপনি ইস্যু নম্বর পাবেন।
 
-  ![issue number](../_assets/images/issue-number.png)
+  ![ইস্যু নম্বর](../_assets/images/issue-number.png)
 
   :::info
 
-  Only add the [supported keyword](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) and the issue number here. Adding more words will prevent the issue from being closed automatically.
+  এখানে শুধু [সমর্থিত কীওয়ার্ড](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword) ও ইস্যু নম্বর যোগ করুন। আরও শব্দ যোগ করলে ইস্যুটি স্বয়ংক্রিয়ভাবে বন্ধ হবে না।
 
   :::
 
-- **Screenshots or screen recordings**
+- **স্ক্রিনশট বা স্ক্রিন রেকর্ডিং**
 
-  If your changes relate to UI improvement, consider adding screenshots or screen recordings to show the before-and-after changes.
+  আপনার পরিবর্তন UI উন্নয়নের সাথে সম্পর্কিত হলে আগে ও পরের পরিবর্তন দেখাতে স্ক্রিনশট বা স্ক্রিন রেকর্ডিং যোগ করার কথা ভাবুন।
 
-### 9. Respond to Feedback
+### 9. মতামতের জবাব দিন
 
-After submitting your pull request, the project maintainers may provide feedback or request changes. Be sure to respond promptly and address any concerns or suggestions they may have.
+আপনার পুল রিকোয়েস্ট জমা দেওয়ার পর প্রজেক্টের মেইনটেইনাররা মতামত দিতে বা পরিবর্তনের অনুরোধ করতে পারেন। দ্রুত সাড়া দিন এবং তাঁদের কোনো উদ্বেগ বা পরামর্শ থাকলে তা সমাধান করুন।
 
-By following these steps, you'll be able to submit your contributions to open source projects and collaborate with other developers to improve the codebase.
+এই ধাপগুলো অনুসরণ করে আপনি ওপেন সোর্স প্রজেক্টে নিজের অবদান জমা দিতে এবং কোডবেস উন্নত করতে অন্য ডেভেলপারদের সাথে সহযোগিতা করতে পারবেন।
 
-## What Happens Next?
+## এরপর কী ঘটে?
 
-After your contribution has been submitted and reviewed, one of the following outcomes may occur:
+আপনার অবদান জমা দেওয়ার ও রিভিউ হওয়ার পর নিচের ফলাফলগুলোর একটি হতে পারে:
 
-1. **Your contribution is accepted**: If your contribution is approved by the project maintainers, it will be merged into the main branch of the codebase. <br/>
-   Congratulations! Your work is now part of the project, and you've made a valuable contribution to the open source community.
+1. **আপনার অবদান গৃহীত হয়েছে**: আপনার অবদান প্রজেক্টের মেইনটেইনারদের অনুমোদন পেলে তা কোডবেসের মূল ব্রাঞ্চে মার্জ হবে। <br/>
+   অভিনন্দন! আপনার কাজ এখন প্রজেক্টের অংশ এবং আপনি ওপেন সোর্স কমিউনিটিতে একটি মূল্যবান অবদান রেখেছেন।
 
-2. **Your contribution requires changes**: Sometimes, the project maintainers may request changes to your contribution before it can be accepted. This could be due to coding issues, conflicts with other changes, or a need for additional documentation. In this case, make the requested changes and resubmit your pull request.
+2. **আপনার অবদানে পরিবর্তন দরকার**: কখনো কখনো প্রজেক্টের মেইনটেইনাররা আপনার অবদান গ্রহণের আগে তাতে পরিবর্তনের অনুরোধ করতে পারেন। এর কারণ হতে পারে কোডিং সমস্যা, অন্যান্য পরিবর্তনের সাথে সংঘাত, কিংবা বাড়তি ডকুমেন্টেশনের প্রয়োজন। এ ক্ষেত্রে অনুরোধ করা পরিবর্তনগুলো করুন এবং আপনার পুল রিকোয়েস্ট আবার জমা দিন।
 
-3. **Your contribution is rejected**: In some cases, your contribution may not align with the project's goals or requirements, or it may not be the best solution to a problem. If your contribution is rejected, don't be discouraged. Take the feedback you received as an opportunity to learn and improve. You can always try contributing to another project or submitting a different contribution to the same project.
+3. **আপনার অবদান প্রত্যাখ্যাত হয়েছে**: কিছু ক্ষেত্রে আপনার অবদান প্রজেক্টের লক্ষ্য বা প্রয়োজনের সাথে নাও মিলতে পারে, কিংবা তা কোনো সমস্যার সবচেয়ে ভালো সমাধান নাও হতে পারে। আপনার অবদান প্রত্যাখ্যাত হলে হতাশ হবেন না। পাওয়া মতামতকে শেখা ও উন্নতির সুযোগ হিসেবে নিন। আপনি সবসময় অন্য কোনো প্রজেক্টে অবদান রাখার চেষ্টা করতে পারেন, কিংবা একই প্রজেক্টে ভিন্ন কোনো অবদান জমা দিতে পারেন।
 
-## Let's Get Practical
+## চলুন হাতে-কলমে শুরু করি
 
-Now that you know how to find and contribute to open source projects, it's time to put your skills into practice. Let's do this by contributing to OpenSauced's [guestbook repository](https://github.com/open-sauced/guestbook).
+ওপেন সোর্স প্রজেক্ট কীভাবে খুঁজবেন এবং তাতে অবদান রাখবেন তা এখন আপনার জানা, এবার নিজের দক্ষতা কাজে লাগানোর সময়। চলুন OpenSauced-এর [guestbook রিপোজিটরিতে](https://github.com/open-sauced/guestbook) অবদান রেখে সেটি করা যাক।
 
-### Prerequisites
+### পূর্বশর্ত
 
-You'll need to have these tools downloaded and installed on your local machine:
+আপনার লোকাল মেশিনে এই টুলগুলো ডাউনলোড ও ইনস্টল করা থাকতে হবে:
 
 - [Node.js](https://nodejs.org)
 - [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
 
-### Getting Started
+### শুরু করা
 
-1. Create an issue by following these instructions:
+1. এই নির্দেশনা অনুসরণ করে একটি ইস্যু তৈরি করুন:
 
-   - Click the "Issues" tab on the top bar.
-   - Click the green "New issue" button at the top right.
-   - Click the "Get started" button to add contributors.
-   - Add a title, e.g., `Feature: Add @GITHUB-USERNAME as a contributor`. <br/> Change "@GITHUB-USERNAME" to your GitHub username.
-   - Complete the form. Read the instructions under each input label and fill in the textareas using the example shown in the screenshot below with the red line.
+   - ওপরের বার থেকে "Issues" ট্যাবে ক্লিক করুন।
+   - ওপরের ডান দিকের সবুজ "New issue" বোতামে ক্লিক করুন।
+   - কন্ট্রিবিউটর যোগ করতে "Get started" বোতামে ক্লিক করুন।
+   - একটি শিরোনাম দিন, যেমন `Feature: Add @GITHUB-USERNAME as a contributor`। <br/> "@GITHUB-USERNAME"-এর জায়গায় আপনার GitHub ইউজারনেম লিখুন।
+   - ফর্মটি পূরণ করুন। প্রতিটি ইনপুট লেবেলের নিচের নির্দেশনা পড়ুন এবং নিচের স্ক্রিনশটে লাল দাগ দেওয়া উদাহরণ অনুযায়ী টেক্সট এরিয়াগুলো পূরণ করুন।
 
-     ![guestbook issue form](../_assets/images/guestbook-issue-form.png)
+     ![guestbook ইস্যু ফর্ম](../_assets/images/guestbook-issue-form.png)
 
-   - Click the "Submit new issue" button.
+   - "Submit new issue" বোতামে ক্লিক করুন।
 
-2. Fork the [guestbook repository](https://github.com/open-sauced/guestbook).
-3. Clone your forked repository to your computer.
-4. Run `npm install` to install the dependencies.
-5. Create a new branch and use a descriptive name related to your contribution — for example, `feat/add-alice`.
-6. Run `npm run contributors:add` in your terminal.
+2. [guestbook রিপোজিটরি](https://github.com/open-sauced/guestbook) ফর্ক করুন।
+3. আপনার ফর্ক করা রিপোজিটরি আপনার কম্পিউটারে ক্লোন করুন।
+4. ডিপেন্ডেন্সি ইনস্টল করতে `npm install` চালান।
+5. একটি নতুন ব্রাঞ্চ তৈরি করুন এবং আপনার অবদানের সাথে সম্পর্কিত একটি বর্ণনামূলক নাম দিন, যেমন `feat/add-alice`।
+6. আপনার টার্মিনালে `npm run contributors:add` চালান।
 
-   Follow the instructions to add yourself to the guestbook. After you finish and click enter, you must click enter again to confirm your choices.
+   গেস্টবুকে নিজেকে যোগ করতে নির্দেশনা অনুসরণ করুন। শেষ করে এন্টার চাপার পর আপনার পছন্দগুলো নিশ্চিত করতে আবার এন্টার চাপতে হবে।
 
-   ![Adding contributor with CLI on a terminal](../_assets/gifs/cli-tool.gif)
+   ![টার্মিনালে CLI দিয়ে কন্ট্রিবিউটর যোগ করা](../_assets/gifs/cli-tool.gif)
 
-7. Run `npm run contributors:generate` in your terminal to generate the guestbook on the README.
-8. Copy and paste the Markdown of the README in [Markdown Live Preview](https://markdownlivepreview.com/) and take a screenshot of your profile being generated as the example below. You will need this later when creating a pull request.
+7. README-তে গেস্টবুক তৈরি করতে আপনার টার্মিনালে `npm run contributors:generate` চালান।
+8. README-এর Markdown কপি করে [Markdown Live Preview](https://markdownlivepreview.com/)-তে পেস্ট করুন এবং নিচের উদাহরণের মতো আপনার প্রোফাইল তৈরি হতে দেখে একটি স্ক্রিনশট নিন। পরে পুল রিকোয়েস্ট তৈরির সময় এটি আপনার দরকার হবে।
 
-   ![Profile generated on README](../_assets/images/profile-generated.png)
+   ![README-তে তৈরি হওয়া প্রোফাইল](../_assets/images/profile-generated.png)
 
    :::tip
 
-   If you don't see your profile in the "Contributors" section, zoom out the screen until you can see it before taking a screenshot.
+   "Contributors" অংশে আপনার প্রোফাইল দেখতে না পেলে স্ক্রিনশট নেওয়ার আগে স্ক্রিন জুম আউট করুন, যতক্ষণ না আপনি প্রোফাইলটি দেখতে পান।
 
    :::
 
-9. Run `git log` to check if your changes have been automatically committed. To close the log, press `Q`.
+9. আপনার পরিবর্তনগুলো স্বয়ংক্রিয়ভাবে কমিট হয়েছে কি না দেখতে `git log` চালান। লগ বন্ধ করতে `Q` চাপুন।
 
-   Here's what you should expect to see as your commit message:
+   আপনার কমিট মেসেজ হিসেবে আপনি এটি দেখতে পাওয়ার আশা করতে পারেন:
 
    ```bash
    docs: add @your_username as a contributor
    ```
 
-10. Push the commit to your forked repository with this command:
+10. এই কমান্ড দিয়ে কমিটটি আপনার ফর্ক করা রিপোজিটরিতে পুশ করুন:
 
     ```bash
     git push -u origin branch-name
     ```
 
-11. Go to your forked repository on GitHub. Create a pull request with the title `feat: Add <@github-username> as a contributor` and fill in all areas in the pull request template. Read the [Fill In a Pull Request Template](#fill-in-a-pull-request-template) section to help you complete the template.
+11. GitHub-এ আপনার ফর্ক করা রিপোজিটরিতে যান। `feat: Add <@github-username> as a contributor` শিরোনামে একটি পুল রিকোয়েস্ট তৈরি করুন এবং পুল রিকোয়েস্ট টেমপ্লেটের সব অংশ পূরণ করুন। টেমপ্লেট পূরণে সাহায্যের জন্য "[পুল রিকোয়েস্ট টেমপ্লেট পূরণ করা](#fill-in-a-pull-request-template)" অংশটি পড়ুন।
 
     :::warning
 
-    Your pull request will be marked as invalid and may be closed if the template is incomplete.
+    টেমপ্লেট অসম্পূর্ণ থাকলে আপনার পুল রিকোয়েস্ট অবৈধ হিসেবে চিহ্নিত হবে এবং বন্ধ করে দেওয়া হতে পারে।
 
     :::
 
-### Completed PR Template
+### পূরণ করা PR টেমপ্লেট
 
-Here's what a completed Pull Request Template for the guestbook looks like. Make sure yours looks like this, updated with your unique information.
+guestbook-এর জন্য একটি পূরণ করা পুল রিকোয়েস্ট টেমপ্লেট দেখতে কেমন, তা এখানে দেখানো হলো। আপনার নিজের অনন্য তথ্য দিয়ে হালনাগাদ করে আপনারটিও যেন এমন দেখায়, তা নিশ্চিত করুন।
 
-![Completed Pull Request Template](../_assets/images/completed-pr-template.png)
+![পূরণ করা পুল রিকোয়েস্ট টেমপ্লেট](../_assets/images/completed-pr-template.png)
 
-Congratulations on your first contribution! 🎉
+আপনার প্রথম অবদানের জন্য অভিনন্দন! 🎉
 
 :::tip
 
-If you're ready for your next contribution, check out the [pizza-verse repository](https://github.com/open-sauced/pizza-verse) and follow the contribution guidelines.
+পরবর্তী অবদানের জন্য প্রস্তুত হলে [pizza-verse রিপোজিটরিটি](https://github.com/open-sauced/pizza-verse) দেখুন এবং এর কন্ট্রিবিউটিং গাইডলাইন অনুসরণ করুন।
 
 :::
 
-## Keeping Branches Up to Date
+## ব্রাঞ্চ হালনাগাদ রাখা
 
-It is highly recommended that you update your remote and local branches habitually. That way, your branch will have the latest update when merged into the `main` branch of the original (`upstream`) repository.
+আপনার রিমোট ও লোকাল ব্রাঞ্চ নিয়মিত হালনাগাদ করার জোরালো পরামর্শ দেওয়া হয়। এতে মূল (`upstream`) রিপোজিটরির `main` ব্রাঞ্চে মার্জ হওয়ার সময় আপনার ব্রাঞ্চে সর্বশেষ পরিবর্তনগুলো থাকবে।
 
-The best times to update your branches are before you push your changes to the remote repository and while you're waiting for your pull request to be reviewed.
+ব্রাঞ্চ হালনাগাদ করার সবচেয়ে ভালো সময় হলো রিমোট রিপোজিটরিতে আপনার পরিবর্তন পুশ করার আগে এবং আপনার পুল রিকোয়েস্টের রিভিউয়ের অপেক্ষায় থাকার সময়।
 
-### Updating Branches
+### ব্রাঞ্চ হালনাগাদ করা {#updating-branches}
 
-First, you must update your forked (`origin`) repository:
+প্রথমে আপনাকে আপনার ফর্ক করা (`origin`) রিপোজিটরি হালনাগাদ করতে হবে:
 
-1. Go to your forked repository on GitHub.
-2. Click the "Sync fork" button.
-3. Click the green "Update branch" button.
+1. GitHub-এ আপনার ফর্ক করা রিপোজিটরিতে যান।
+2. "Sync fork" বোতামে ক্লিক করুন।
+3. সবুজ "Update branch" বোতামে ক্লিক করুন।
 
-Then, pull the latest changes in the `main` branch in the `origin` repository to update your local working branch by following these steps in your terminal:
+এরপর আপনার টার্মিনালে এই ধাপগুলো অনুসরণ করে `origin` রিপোজিটরির `main` ব্রাঞ্চের সর্বশেষ পরিবর্তনগুলো পুল করে আপনার লোকাল ওয়ার্কিং ব্রাঞ্চ হালনাগাদ করুন:
 
-1. Go to your working branch.
+1. আপনার ওয়ার্কিং ব্রাঞ্চে যান।
 
    ```bash
    git checkout YOUR-BRANCH-NAME
    ```
 
-2. Pull the latest changes with this command:
+2. এই কমান্ড দিয়ে সর্বশেষ পরিবর্তনগুলো পুল করুন:
 
    ```bash
    git pull origin main
    ```
 
-## Merge Conflicts
+## মার্জ কনফ্লিক্ট
 
-Merge conflicts are something you'll commonly encounter when contributing to an open source project. When two branches have made different changes to the same line(s) in the same file(s), Git cannot automatically determine which change to keep, resulting in a conflict.
+ওপেন সোর্স প্রজেক্টে অবদান রাখার সময় আপনি প্রায়ই মার্জ কনফ্লিক্টের মুখোমুখি হবেন। একই ফাইলের একই লাইনে দুটি ব্রাঞ্চ আলাদা আলাদা পরিবর্তন করলে Git স্বয়ংক্রিয়ভাবে ঠিক করতে পারে না কোন পরিবর্তনটি রাখবে, ফলে কনফ্লিক্ট তৈরি হয়।
 
-When a merge conflict occurs, Git adds conflict markers (`<<<<<<<`, `=======`, and `>>>>>>`) to indicate the conflicting lines from different branches. Everything between the `<<<<<<<` and `=======` is the changes that you worked on (current changes). And everything between the `=======` to `>>>>>>>` is the incoming changes from the remote `main` branch.
+মার্জ কনফ্লিক্ট হলে Git বিভিন্ন ব্রাঞ্চের সাংঘর্ষিক লাইনগুলো বোঝাতে কনফ্লিক্ট মার্কার (`<<<<<<<`, `=======` এবং `>>>>>>`) যোগ করে। `<<<<<<<` এবং `=======`-এর মাঝখানের সবকিছু হলো আপনার করা পরিবর্তন (current changes)। আর `=======` থেকে `>>>>>>>` পর্যন্ত সবকিছু হলো রিমোট `main` ব্রাঞ্চ থেকে আসা পরিবর্তন (incoming changes)।
 
-You need to pay attention to the conflicts and decide how you want to resolve them. You can keep only your change, incoming change, or both changes.
+আপনাকে কনফ্লিক্টগুলোর দিকে মনোযোগ দিতে হবে এবং কীভাবে সেগুলো সমাধান করবেন তা ঠিক করতে হবে। আপনি শুধু আপনার পরিবর্তন, শুধু আসা পরিবর্তন, কিংবা দুটি পরিবর্তনই রাখতে পারেন।
 
-### Tips to Prevent Resolving Merge Conflicts Repeatedly
+### বারবার মার্জ কনফ্লিক্ট সমাধান এড়ানোর টিপস
 
-Some open source repositories, such as OpenSauced's [guestbook](https://github.com/open-sauced/guestbook) and [pizza-verse](https://github.com/open-sauced/pizza-verse) repositories, have high contribution activities in the same files that can cause merge conflicts.
+OpenSauced-এর [guestbook](https://github.com/open-sauced/guestbook) ও [pizza-verse](https://github.com/open-sauced/pizza-verse) রিপোজিটরির মতো কিছু ওপেন সোর্স রিপোজিটরিতে একই ফাইলগুলোতে অবদানের পরিমাণ অনেক বেশি, যার ফলে মার্জ কনফ্লিক্ট হতে পারে।
 
-Below are some tips to prevent you from resolving merge conflicts repeatedly when contributing to open source projects:
+ওপেন সোর্স প্রজেক্টে অবদান রাখার সময় বারবার মার্জ কনফ্লিক্ট সমাধান করা এড়াতে নিচে কয়েকটি টিপস দেওয়া হলো:
 
-#### 1. Following Instructions
+#### 1. নির্দেশনা অনুসরণ করা
 
-Ensure you follow the instructions in the project's README or Contributing Guide, and don't miss any step.
+প্রজেক্টের README বা কন্ট্রিবিউটিং গাইডের নির্দেশনা অনুসরণ করুন এবং কোনো ধাপ বাদ দেবেন না।
 
-#### 2. Pull Request Form
+#### 2. পুল রিকোয়েস্ট ফর্ম
 
-Complete the template form and fill in all areas when creating a pull request.
+পুল রিকোয়েস্ট তৈরির সময় টেমপ্লেট ফর্মটি সম্পূর্ণ করুন এবং সব অংশ পূরণ করুন।
 
-If a repository doesn't provide you with a pull request template, you need to have these in your pull request form:
+কোনো রিপোজিটরি আপনাকে পুল রিকোয়েস্ট টেমপ্লেট না দিলে আপনার পুল রিকোয়েস্ট ফর্মে এগুলো থাকতে হবে:
 
-- **A descriptive title**: A descriptive title would help maintainers and other contributors gain an idea of what your contribution is. <br/>
-  Consider using the following method to write your title: `type: brief description of your contribution`. For example, `fix: color contrast issue on the navbar`, `feat: create a warning button`, etc.
+- **একটি বর্ণনামূলক শিরোনাম**: বর্ণনামূলক শিরোনাম মেইনটেইনার ও অন্য কন্ট্রিবিউটরদের আপনার অবদান কী তা বুঝতে সাহায্য করবে। <br/>
+  শিরোনাম লিখতে এই পদ্ধতিটি ব্যবহার করার কথা ভাবুন: `type: brief description of your contribution`। যেমন, `fix: color contrast issue on the navbar`, `feat: create a warning button` ইত্যাদি।
 
-- **A clear description of your pull request**: Describe your pull request clearly. Consider explaining your changes, thoughts behind the solution, etc. A clear description gives maintainers and other contributors insight into the details of your changes. Here is [an example of a clear description in a pull request](https://github.com/open-sauced/intro/pull/10).
+- **আপনার পুল রিকোয়েস্টের স্পষ্ট বর্ণনা**: আপনার পুল রিকোয়েস্ট স্পষ্টভাবে বর্ণনা করুন। আপনার পরিবর্তনগুলো, সমাধানের পেছনের ভাবনা ইত্যাদি ব্যাখ্যা করার কথা ভাবুন। স্পষ্ট বর্ণনা মেইনটেইনার ও অন্য কন্ট্রিবিউটরদের আপনার পরিবর্তনের খুঁটিনাটি বুঝতে সাহায্য করে। এখানে [পুল রিকোয়েস্টে স্পষ্ট বর্ণনার একটি উদাহরণ](https://github.com/open-sauced/intro/pull/10) দেওয়া হলো।
 
-- **The [link to the related issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)**: Linking a pull request to the addressed issue will close the linked issue automatically when the pull request gets merged. This makes it easier for maintainers to keep their projects organized.
+- **[সম্পর্কিত ইস্যুর লিংক](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue)**: পুল রিকোয়েস্টকে সমাধান করা ইস্যুর সাথে লিংক করলে পুল রিকোয়েস্ট মার্জ হওয়ার পর লিংক করা ইস্যুটি স্বয়ংক্রিয়ভাবে বন্ধ হয়ে যাবে। এতে মেইনটেইনারদের জন্য নিজেদের প্রজেক্ট গুছিয়ে রাখা সহজ হয়।
 
-- **A screenshot or screen recording when you make a UI change**: Providing screenshots or screen recordings will make it easier for maintenance to visualize your changes and review your pull request.
+- **UI পরিবর্তন করলে একটি স্ক্রিনশট বা স্ক্রিন রেকর্ডিং**: স্ক্রিনশট বা স্ক্রিন রেকর্ডিং দিলে মেইনটেইনারদের পক্ষে আপনার পরিবর্তন কল্পনা করা ও আপনার পুল রিকোয়েস্ট রিভিউ করা সহজ হবে।
 
-#### 3. Resolving Merge Conflicts Immediately
+#### 3. মার্জ কনফ্লিক্ট সঙ্গে সঙ্গে সমাধান করা
 
-If a branch has merge conflicts that must be resolved, the merge button is automatically disabled. So, maintainers are not able to merge the pull request.
+কোনো ব্রাঞ্চে সমাধান করার মতো মার্জ কনফ্লিক্ট থাকলে মার্জ বোতামটি স্বয়ংক্রিয়ভাবে নিষ্ক্রিয় হয়ে যায়। ফলে মেইনটেইনাররা পুল রিকোয়েস্টটি মার্জ করতে পারেন না।
 
-When you notice merge conflicts in your pull request or if a maintainer asks you to resolve merge conflicts, fix them immediately. The sooner you resolve the conflicts, the sooner maintainers can review and merge your pull request.
+আপনার পুল রিকোয়েস্টে মার্জ কনফ্লিক্ট দেখতে পেলে, কিংবা কোনো মেইনটেইনার মার্জ কনফ্লিক্ট সমাধান করতে বললে, তা সঙ্গে সঙ্গে ঠিক করুন। যত দ্রুত আপনি কনফ্লিক্ট সমাধান করবেন, তত দ্রুত মেইনটেইনাররা আপনার পুল রিকোয়েস্ট রিভিউ ও মার্জ করতে পারবেন।
 
-### Merge Conflicts in the Guestbook Repository
+### Guestbook রিপোজিটরিতে মার্জ কনফ্লিক্ট
 
-Since the primary purpose of the guestbook is to add your name to `.all-contributorsrc` and the `README.md` files, there is a high chance that you will encounter merge conflicts.
+guestbook-এর প্রধান উদ্দেশ্য যেহেতু `.all-contributorsrc` ও `README.md` ফাইলে আপনার নাম যোগ করা, তাই মার্জ কনফ্লিক্টের মুখোমুখি হওয়ার সম্ভাবনা অনেক বেশি।
 
-The conflicts happen when maintainers have merged pull requests before yours while you're working on your changes or waiting for your pull request to be reviewed. And you need to resolve them before your pull request can be merged.
+কনফ্লিক্ট ঘটে যখন আপনি পরিবর্তনের কাজ করছেন বা আপনার পুল রিকোয়েস্টের রিভিউয়ের অপেক্ষায় আছেন, সেই সময়ে মেইনটেইনাররা আপনার আগে অন্যদের পুল রিকোয়েস্ট মার্জ করে দেন। আপনার পুল রিকোয়েস্ট মার্জ হওয়ার আগে আপনাকে সেগুলো সমাধান করতে হবে।
 
-#### Resolving Merge Conflicts
+#### মার্জ কনফ্লিক্ট সমাধান করা
 
-Before resolving merge conflicts, you must first [update your branches](#updating-branches). Then, follow these steps:
+মার্জ কনফ্লিক্ট সমাধানের আগে আপনাকে প্রথমে [আপনার ব্রাঞ্চগুলো হালনাগাদ](#updating-branches) করতে হবে। এরপর এই ধাপগুলো অনুসরণ করুন:
 
-1. In the `.all-contributorsrc` file:
+1. `.all-contributorsrc` ফাইলে:
 
-   - Click the "Accept Both Change" option on the top of your workspace in VS Code.
-   - Move your profile details to the end of the contributors' array and fix anything necessary.
+   - VS Code-এ আপনার ওয়ার্কস্পেসের ওপরে "Accept Both Changes" অপশনে ক্লিক করুন।
+   - আপনার প্রোফাইলের তথ্য কন্ট্রিবিউটরদের অ্যারের শেষে সরিয়ে নিন এবং প্রয়োজনীয় কিছু থাকলে ঠিক করুন।
 
-2. In the `README.md` file:
+2. `README.md` ফাইলে:
 
-   - Click the "Accept Incoming Change" option on the top of your workspace in VS Code for each conflict in this file.
+   - এই ফাইলের প্রতিটি কনফ্লিক্টের জন্য VS Code-এ আপনার ওয়ার্কস্পেসের ওপরে "Accept Incoming Change" অপশনে ক্লিক করুন।
 
-3. Run `npm run contributors:generate`.
+3. `npm run contributors:generate` চালান।
 
-   You will now see that the all contributors badge has been incremented, and your profile is generated at the end of the contributors' list in the `README.md` file.
+   আপনি এখন দেখতে পাবেন, all contributors ব্যাজের সংখ্যা বেড়েছে এবং `README.md` ফাইলে কন্ট্রিবিউটরদের তালিকার শেষে আপনার প্রোফাইল তৈরি হয়েছে।
 
-4. Add and commit your changes.
+4. আপনার পরিবর্তনগুলো যোগ ও কমিট করুন।
 
    ```bash
    git commit -am "Resolve merge conflicts"
    ```
 
-5. Push your commits to your remote branch.
+5. আপনার কমিটগুলো আপনার রিমোট ব্রাঞ্চে পুশ করুন।
 
    ```bash
    git push
@@ -569,4 +543,4 @@ Before resolving merge conflicts, you must first [update your branches](#updatin
 
 <hr/>
 
-As you continue to contribute to open source projects, you'll gain valuable experience, develop new skills, and build a strong portfolio of work. In the [next chapter](the-secret-sauce.md), we'll discuss some strategies for getting started with open source contributions, gaining traction in your contributions, and developing your open source resume.
+ওপেন সোর্স প্রজেক্টে অবদান রাখা চালিয়ে গেলে আপনি মূল্যবান অভিজ্ঞতা অর্জন করবেন, নতুন দক্ষতা গড়ে তুলবেন এবং কাজের একটি শক্তিশালী পোর্টফোলিও তৈরি করবেন। [পরবর্তী অধ্যায়ে](the-secret-sauce.md) আমরা ওপেন সোর্স অবদান দিয়ে শুরু করা, নিজের অবদানে গতি আনা এবং ওপেন সোর্স রিজিউমি গড়ে তোলার কিছু কৌশল নিয়ে আলোচনা করব।

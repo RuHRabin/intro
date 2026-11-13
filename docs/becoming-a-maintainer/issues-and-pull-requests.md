@@ -2,194 +2,188 @@
 id: issues-and-pull-requests
 title: "ওপেন ইস্যু ও পুল রিকোয়েস্ট কীভাবে সামলাবেন"
 sidebar_label: "ইস্যু ও পুল রিকোয়েস্ট পরিচালনা"
-keywords: ["issues and pull requests", "how to handle issues and pull requests", "issues management in open source", "best practices for issue triage", "managing pull requests open source", "pull requests reviews", "showcasing contributor contributions", "handling security vulnerabilities in open source", "open source maintainers", "Open Source", "Open Source Community"]
+keywords: ["ওপেন সোর্স ইস্যু ট্রায়াজ", "ওপেন সোর্স ইস্যু ম্যানেজমেন্ট", "ওপেন সোর্স পুল রিকোয়েস্ট রিভিউ", "পুল রিকোয়েস্ট কীভাবে রিভিউ করবেন", "ওপেন সোর্স ইস্যু লেবেল", "ওপেন সোর্স নিরাপত্তা দুর্বলতা", "Dependabot", "ওপেন সোর্স মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+ওপেন সোর্স মেইনটেইনারের মূল দায়িত্বগুলোর একটি হলো ওপেন ইস্যু ট্রায়াজ করা এবং পুল রিকোয়েস্ট রিভিউ করা। এই অধ্যায়ে আমরা আলোচনা করব ওপেন ইস্যু, পুল রিকোয়েস্ট ও নিরাপত্তা দুর্বলতা সবচেয়ে ভালোভাবে কীভাবে সামলাবেন।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+## ইস্যু ট্রায়াজ ও ম্যানেজমেন্ট
 
-:::
+ইস্যু ট্রায়াজ বলতে বোঝায় বিদ্যমান ওপেন ইস্যুর তালিকা দেখে গুরুত্ব অনুযায়ী সেগুলোকে অগ্রাধিকার দেওয়া। নিচের অংশগুলোতে সবচেয়ে প্রচলিত ধরনের ইস্যু এবং সেগুলো কীভাবে ট্রায়াজ করবেন ও কন্ট্রিবিউটরদের উত্তর দেবেন, তা ভেঙে দেখানো হবে।
 
-One of the core responsibilities of an open source maintainer is triaging open issues and reviewing pull requests. In this chapter, we will talk about how to best handle open issues, pull requests, and security vulnerabilities.
+### Bug লেবেলযুক্ত ইস্যু
 
-## Issues Triage and Management
+বাগ ইস্যু ট্রায়াজ করার সময় সমস্যাটি বোঝার জন্য বাগটি পুনরুৎপাদন করার সময় বের করুন। বাগটি পুনরুৎপাদন করতে না পারলে দলের অন্য সদস্যদের কাছে জানতে চান, তাঁরা করতে পারেন কি না। আপনি একা মেইনটেইনার হলে ইস্যুর মূল পোস্টকারীকে উত্তর দিয়ে আরও তথ্য ও প্রেক্ষাপট জেনে নিন।
 
-Issue triage involves reviewing an existing list of open issues and prioritizing them in order of importance. The following sections will break down the most common types of issues and how to best triage and respond to contributors.
+এরপর আপনাকে ঠিক করতে হবে, বাগটি গুরুতর, মাঝারি নাকি ছোট।
 
-### Bug Labeled Issues
+#### গুরুতর বাগ
 
-When triaging bug issues, you want to make time to reproduce the bug to understand the problem. If you cannot reproduce the bug, reach out to other team members to see if they can reproduce it. If you are a solo maintainer, reply to the issue's original poster to gain more information and context.
+কোনো ওপেন ইস্যুতে এমন বাগ থাকলে, যা বড় ধরনের বাধা তৈরি করেছে এবং পুরো অ্যাপ্লিকেশন বা ওয়েবসাইটের কার্যকারিতাকে প্রভাবিত করেছে, তাকে আপনি উচ্চ অগ্রাধিকার বা গুরুতর হিসেবে ধরতে পারেন। এ ধরনের বাগ অবিলম্বে ঠিক করতে হয়।
 
-Then, you need to determine whether the bug is considered critical, medium, or small.
+এসব ইস্যুকে `critical` বা `high-priority` লেবেল দেওয়া ভালো, যাতে দল জানতে পারে সেগুলো আগে সামলাতে হবে। ভিন্ন ভিন্ন রঙের লেবেল ব্যবহার করার কথা ভাবুন। উজ্জ্বল লাল বা কমলা রঙের লেবেল ভালো পছন্দ, কারণ এগুলো গুরুত্বের মাত্রা বোঝায় এবং ইস্যুর তালিকায় সহজে চোখে পড়ে।
 
-#### Critical Bugs
+গুরুতর বাগ ঠিক করার জন্য কোর টিমের সদস্য বা নিয়মিত কন্ট্রিবিউটরদের দিয়ে কাজ করানো ভালো, যাতে কাজটি ভালোভাবে ও দ্রুত হয়। ইস্যুটি শুধু নির্বাচিত সদস্যদের জন্য উন্মুক্ত, তা বোঝাতে আপনি `core team work`-এর মতো একটি লেবেল ব্যবহার করতে পারেন।
 
-When an open issue contains a bug that is a major blocker and has affected the functionality of the whole application or website, you can consider it high priority or critical. This kind of bug must be fixed immediately.
+#### ছোট থেকে মাঝারি বাগ
 
-Labeling these issues as `critical` or `high-priority` is best so the team knows they must address them first. Consider using labels in different colors. Bright red or orange label colors are a good choice because they indicate the level of seriousness and are easier to spot in a list of issues.
+যে বাগ আপনার অ্যাপ্লিকেশনের কার্যকারিতাকে প্রভাবিত করছে না, তাকে গুরুতর ধরা হয় না। আসন্ন কোনো রিলিজ ডিপ্লয় করার পরে ঠিক করা যাবে, এমন বাগকে আপনি মাঝারি স্তরের বলে শ্রেণিবদ্ধ করতে পারেন। আর যেগুলো ডেভেলপমেন্টে আনবেন কি না ঠিক নেই, সেগুলোকে ছোট বাগ ধরা হয়।
 
-For critical bug fixes, it is best to have core team members or regular contributors work on these issues to ensure that they are done well and promptly. You can use a label like `core team work` to indicate that this issue is only open for select members.
+এই ইস্যুগুলো আপনি যে কারও কাজ করার জন্য উন্মুক্ত করে দিতে পারেন। এর কোনো কোনোটি এত ছোট হতে পারে যে নতুন কন্ট্রিবিউটরের জন্য ভালো সুযোগ হবে। এ ক্ষেত্রে ইস্যুটিতে `good first issue` বা `first timers only` লেবেল দিন।
 
-#### Small to Medium Bugs
+### Feature লেবেলযুক্ত ইস্যু
 
-A bug that is not affecting the functionality of your application is not considered critical. You can categorize bugs as medium-level when you can fix them after deploying an upcoming release. Those you may or may not include in development are considered small bugs.
+ফিচারের অনুরোধ ট্রায়াজ করার সময় নিশ্চিত হয়ে নিন যে এটি আপনার প্রজেক্টের জন্য উপযুক্ত এবং আপনি এটি যোগ করতে আগ্রহী। ইস্যুর মূল পোস্টকারী এটি নিয়ে কাজ করতে চান কি না জানতে তাঁর সাথে যোগাযোগ করুন। তিনি রাজি হলে ইস্যুটি তাঁকেই অ্যাসাইন করে দিন। নইলে এতে `help wanted` বা `accepting PRs` লেবেল যোগ করুন।
 
-You can open these issues up for anyone to work on. Some of these issues might be small enough that they would be a good opportunity for a new contributor. Label the issue with a `good first issue` or `first timers only` in this situation.
+ধরুন ফিচারটি প্রজেক্টের জন্য উপযুক্ত, কিন্তু জটিল। সে ক্ষেত্রে নিজে এটি নিয়ে কাজ করার কথা ভাবুন, কিংবা কোর টিমের কোনো সদস্যকে অ্যাসাইন করুন। আপনার অ্যাপ্লিকেশনের অনেক ফাইল ও অনেক চলমান অংশকে প্রভাবিত করে এমন বড় ফিচার সামলানো উচিত কোডবেস সম্পর্কে অভিজ্ঞ এমন কারও, যিনি নতুন সমস্যা তৈরি করবেন না।
 
-### Feature Labeled Issues
+কখনো কখনো ব্যবহারকারীরা এমন ফিচার চাইবেন, যা ইতোমধ্যে রোডম্যাপে আছে বা অন্য কোনো কন্ট্রিবিউটর নিয়ে কাজ করছেন। সে ক্ষেত্রে আপনি ভদ্রভাবে উত্তর দিয়ে তাঁদের অবস্থা জানিয়ে দিতে পারেন। উত্তরের জন্য একটি টেমপ্লেট:
 
-When triaging feature requests, you want to ensure it is a good fit for your project and that you are interested in adding it. Reach out to the original poster of the issue to see if they want to work on it. If they agree, go ahead and assign that issue to them. Otherwise, add a `help wanted` or `accepting PRs` label to it.
+> ইস্যুটি খোলার জন্য সময় দেওয়ায় আপনাকে ধন্যবাদ। দলের আরেকজন সদস্য এই ফিচারটি নিয়ে কাজ করছেন, যা শীঘ্রই যোগ করা হবে। তাই আমরা এই ইস্যুটি বন্ধ করে দিচ্ছি।
 
-Suppose the feature is a good fit for the project but is complex. Consider working on it yourself or having a core team member assigned. Large features affecting many files and moving parts in your application should be handled by someone experienced with the codebase and who won't create more problems.
+কোনো ফিচারের অনুরোধ আপনার প্রজেক্টের জন্য উপযুক্ত মনে না হলে আপনি মূল পোস্টকারীকে উত্তর দিয়ে ইস্যুটি বন্ধ করে দিতে পারেন। উত্তরের জন্য একটি টেমপ্লেট:
 
-Sometimes, users will ask for features already on the roadmap or being worked on by another contributor. If so, you can politely respond to let them know about the status. Here is a template that you can use for a response:
+> আমাদের প্রজেক্টের প্রতি এত আগ্রহ দেখানোর জন্য ধন্যবাদ। আপনার প্রস্তাবিত ফিচারটি এই প্রজেক্টের বর্তমান পরিধি ও দিকনির্দেশনার সাথে মানানসই হবে না। এই মুহূর্তে আমরা ফিচারটি নিয়ে এগোব না।
 
-> Thank you for taking the time to open this issue. Another team member is working on this feature, which will be added soon. As a result, we are going to close this issue.
+### Documentation লেবেলযুক্ত ইস্যু
 
-If a feature request does not sound like a good fit for your project, you can respond to the original poster and close the issue. Here is a template that you can use for a response:
+ইস্যুটি ছোটখাটো টাইপো বা ব্যাকরণগত ভুলের সাথে সম্পর্কিত হলে নতুন কন্ট্রিবিউটরদের জন্য উন্মুক্ত করতে `good first issue` লেবেল যোগ করুন। ইস্যুটি আরও জটিল হলে আপনাকে এর অগ্রাধিকার মূল্যায়ন করে `help wanted` লেবেল যোগ করতে হবে। এ ধরনের পরিস্থিতিতে অবদানের জন্য উন্মুক্ত করার আগে মূল পোস্টকারীর কাছ থেকে আপনার আরও তথ্য জেনে নেওয়ার দরকার হতে পারে।
 
-> Thank you for being so interested in our project. The feature you have proposed would not be a good fit for this project's current scope and direction. At this time, we will not be moving forward with this feature.
+### স্প্যাম ইস্যু
 
-### Documentation Labeled Issues
+কোনো ইস্যু স্পষ্টতই স্প্যাম বা অকেজো বার্তা হলে পোস্টকারীর সাথে আলাপে জড়ানোর দরকার নেই। বরং ইস্যুটি বন্ধ করে `spam` লেবেল যোগ করুন। স্প্যাম বার্তার একটি উদাহরণ:
 
-If the issue has to do with minor typos or grammar mistakes, add a `good first issue` label to open it up for new contributors. If the issue is more involved, you will need to evaluate the priority level and add a `help wanted` label. Also, in these situations, you might need to get more information from the original poster before opening it up for contribution.
+> এই প্রজেক্ট জঘন্য! কিছুই কাজ করে না, আর আপনাদের কোড আবর্জনা। কেউ এটা ব্যবহার করে ভাবতেই পারছি না। এক্ষুনি ঠিক করুন!!!111!!1!
 
-### Spam Issues
+এই পরিস্থিতিতে ইস্যুতে কোনো সুনির্দিষ্ট তথ্য নেই, আর পোস্টকারী স্পষ্টতই আক্রমণাত্মক। এ ধরনের ব্যবহারকারীর সাথে আলাপে না যাওয়াই গুরুত্বপূর্ণ। আপনি ইস্যুটি বন্ধ করে এগিয়ে যেতে পারেন।
 
-If an issue is clearly a spam or unhelpful message, you don't need to engage with the poster. Instead, close the issue and add a `spam` label. Here is an example of a spam message:
+### অপর্যাপ্ত তথ্যের ইস্যু
 
-> This project is terrible! Nothing works, and your code is garbage. I can't believe anyone would use this. Fix it ASAP!!!111!!1!
+ব্যবহারকারী ইস্যু সম্পর্কে সুনির্দিষ্ট তথ্য না দিলে ভদ্রভাবে উত্তর দিয়ে আরও তথ্য চান। এটি বাগ রিপোর্ট হলে বাগটি পুনরুৎপাদনের আরও বিবরণ জানতে চান। ফিচারের অনুরোধ হলে স্টাইল বা কার্যকারিতার পরিবর্তন সম্পর্কে ব্যাখ্যা চান।
 
-There are no concrete details on the issues in that situation, and the poster is clearly combative. It is important to refrain from engaging with these types of users. You can close the issue and move on.
+কিছু ব্যবহারকারী উত্তরে দ্রুত সাড়া দেবেন, আবার কেউ কেউ বেশি সময় নেবেন। এক সপ্তাহের মধ্যে সাড়া না পেলে আরও বিবরণের জন্য আবার বার্তা পাঠাতে পারেন। কয়েক সপ্তাহ কেটে গেলেও যদি ইস্যুটি গুরুতর বিবেচিত না হয়, তাহলে ইস্যুটি বন্ধ করে দিন।
 
-### Insufficient Information Issues
+### পুরোনো (Stale) ইস্যু
 
-If the user does not provide concrete details about the issue, kindly respond by asking them for more information. If it is a bug report, ask for more details on reproducing it. If it is a feature request, ask for clarification on style or functionality changes.
+যেসব ইস্যুতে কয়েক মাস ধরে কোনো কাজ হয়নি, সেগুলোকে স্টেল ধরা হয়। কখনো কখনো এই ইস্যুটি নতুন করে সচল করে উচ্চতর অগ্রাধিকারের কাজ বানাতে আপনি আগ্রহী হতে পারেন। সে ক্ষেত্রে স্বাভাবিক ট্রায়াজ প্রক্রিয়ার মধ্য দিয়ে গিয়ে যথাযথ লেবেল যোগ করুন।
 
-Some users will quickly respond to replies, while others might take longer. If you don't hear a response within a week, you can message them again for more details. If a few weeks pass and the issue is not considered critical, go ahead and close the issue.
+আবার কখনো আপনি বুঝতে পারেন, এই ইস্যুতে কাজ না করাই আপনি পছন্দ করেন। সে ক্ষেত্রে ইস্যুটি চিরতরে বন্ধ করে দিন। কিছু মেইনটেইনার [Close Stale Issues and PRs](https://github.com/actions/stale)-এর মতো অ্যাকশন ব্যবহার করে এই প্রক্রিয়া স্বয়ংক্রিয় করেন।
 
-### Stale Issues
+## পুল রিকোয়েস্ট রিভিউ
 
-Issues that haven't been worked on for months are considered stale. Sometimes, you might be interested in resurrecting this issue and making it a higher-priority item. If that is the case, then go through the normal triage process and add the appropriate labels.
+পুল রিকোয়েস্ট রিভিউ করার সময় অনেক কিছু বিবেচনায় রাখতে হয়। পরবর্তী এই অংশে আলোচনা করা হবে কীভাবে ভালো মতামত দেবেন এবং কন্ট্রিবিউটরদের পুল রিকোয়েস্ট নিয়ে তাঁদের সাথে কাজ করবেন।
 
-Other times, you might realize this is an issue that you prefer not to work on. If that is the case, go ahead and close it for good. Some maintainers automate this process using actions like [Close Stale Issues and PRs](https://github.com/actions/stale).
+### কার্যকর কোড রিভিউ
 
-## Pull Requests Reviews
+কোড রিভিউ হওয়া উচিত তথ্যসমৃদ্ধ, গঠনমূলক এবং রিভিউয়ার ও লেখক, দুজনের জন্যই সহায়ক। মনে রাখবেন, কন্ট্রিবিউটররা নিজেদের সময় স্বেচ্ছায় দিয়ে আপনার প্রজেক্টে সাহায্য করছেন। আপনার রিভিউ যেন সাধারণভাবে ইতিবাচক ও তথ্যসমৃদ্ধ হয়, তা নিশ্চিত করুন। এই ধরনের বাক্য ব্যবহার করার কথা ভাবুন:
 
-There are many things to consider when reviewing pull requests. This next section will discuss how to provide good feedback and work with contributors on their pull requests.
+> "ভালো পাঠযোগ্যতার জন্য আরও বর্ণনামূলক ভ্যারিয়েবল নাম ব্যবহার করা যাক। এখানে `d` ভ্যারিয়েবলের বদলে চলুন `days_until_deadline` ব্যবহার করি।"
 
-### Effective Code Reviews
+বিস্তারিত রিভিউ দেওয়া গুরুত্বপূর্ণ হলেও কোন পরিবর্তনগুলো অবশ্যই ঠিক করতে হবে এবং কোনগুলো শুধু পরামর্শ বা খুঁটিনাটি, তা আলাদা করে বলুন। কিছু ভেঙে গেলে বা পড়তে ও বুঝতে কঠিন হলে, সেটি পুল রিকোয়েস্টেই ঠিক করা উচিত। এমন কিছু বলার কথা ভাবুন:
 
-Code reviews should be informative, constructive, and helpful for both the reviewer and the author. Remember that contributors have volunteered their time to help your project. You want to ensure your review is generally positive and informative. Consider using phrases like this:
+> "এটি একটি ব্রেকিং পরিবর্তন, এটিকে বদলে এই রকম করা উচিত।"
 
-> "Let's use more descriptive variable names for better readability. Instead of variable d here, let's go with days_until_deadline".
+আপনার সুপারিশ করা পরিবর্তন ছোটখাটো পরামর্শ বা খুঁটিনাটি হলে রিভিউয়ে তা স্পষ্ট করে বলুন। এতে লেখক ঠিক করতে পারেন, সেই পরিবর্তনগুলো পুল রিকোয়েস্টে আনবেন কি না।
 
-While it is important to provide detailed reviews, you want to specify which changes are absolute fixes versus which ones are suggestions or nitpicks. If something is broken or hard to read/understand, then that should be something fixed in the pull request. Consider saying something like the following:
+### ম্যানুয়াল টেস্টিং
 
-> "This is a breaking change, and we should change it to be this instead."
+পুল রিকোয়েস্টে ডকুমেন্টেশন বা কোডে ছোট পরিবর্তন থাকলে ম্যানুয়ালি টেস্ট করার দরকার নেই। কিন্তু পুল রিকোয়েস্টে প্রজেক্টের উল্লেখযোগ্য পরিবর্তন থাকলে সবকিছু ঠিকমতো কাজ করছে কি না, তা নিশ্চিত করতে পরিবর্তনগুলো নিজে পরীক্ষা করা ভালো।
 
-If your suggested changes are minor suggestions or nitpicks, make sure to indicate that in your review. That lets the author decide whether to incorporate those changes in their pull request.
+আপনি যদি [Netlify](https://docs.netlify.com/site-deploys/deploy-previews/) বা [Vercel](https://vercel.com/docs/deployments/preview-deployments)-এর মতো সেবার মাধ্যমে ডিপ্লয় প্রিভিউ সেট করে থাকেন, তাহলে পরিবর্তনগুলো ম্যানুয়ালি পরীক্ষা করার জন্য সেটিই ভালো প্রথম ধাপ। প্রিভিউ সেট করা না থাকলে পরিবর্তনগুলো ম্যানুয়ালি পরীক্ষা করতে প্রজেক্টটি লোকালিতে নামিয়ে আনতে হবে। সবকিছু ম্যানুয়ালি পরীক্ষা করার জন্য সময় নেওয়া অত্যাবশ্যক, কারণ পুল রিকোয়েস্ট মার্জ হওয়ার আগে আপনিই শেষ প্রতিরক্ষা। যথাযথ পরীক্ষা ছাড়া নতুন কোনো পরিবর্তন অ্যাপ্লিকেশন ভেঙে দিতে পারে।
 
-### Manual Testing
+পুল রিকোয়েস্ট অ্যাপ্লিকেশনের কোনো অংশ ভেঙে দিলে লেখককে কী ভুল হয়েছে তার বিস্তারিত বিবরণ দিয়ে উত্তর দিন। কখনো কখনো কী ভেঙেছে তা দেখাতে একটি স্ক্রিনশট বা স্ক্রিন রেকর্ডিং যুক্ত করলে সুবিধা হয়। আপনার স্বয়ংক্রিয় টেস্ট এই ব্রেকিং পরিবর্তন ধরতে না পারলে টেস্ট স্যুট হালনাগাদ করার জন্য আলাদা একটি ইস্যু খুলুন। আর প্রতিটি পুল রিকোয়েস্টে চালানোর মতো টেস্ট স্যুট আপনার না থাকলে এটি তা সেটআপ করার একেবারে উপযুক্ত সময়।
 
-If a pull request involves a small change to documentation or code, manually testing the changes is unnecessary. But if the pull request involves significant changes to the project, it is best to test the changes yourself to ensure that everything is working properly.
+### বাদ পড়া টেস্ট
 
-If you have deployed previews set up through a service like [Netlify](https://docs.netlify.com/site-deploys/deploy-previews/) or [Vercel](https://vercel.com/docs/deployments/preview-deployments), that is a good first step to manually testing the changes. If you don't have previews set up, you should pull down the project locally to manually test the changes. It is essential to take your time to manually test everything because you are the last line of defense before a pull request is merged. A new set of changes can break the application without proper testing.
+সব পুল রিকোয়েস্টে টেস্টের দরকার হয় না, কারণ কিছু পরিবর্তন ছোট কোড পরিবর্তন বা ডকুমেন্টেশন হালনাগাদ। তবে বড় ফিচার বা রিফ্যাক্টরের ক্ষেত্রে সবকিছু প্রত্যাশামতো কাজ করছে তা নিশ্চিত করতে টেস্ট যোগ করা উচিত। পুল রিকোয়েস্টের লেখক টেস্ট সেটআপ না করলে পুল রিকোয়েস্টেই তাঁর সাথে যোগাযোগ করে জানান, কোন অংশগুলো টেস্ট করা দরকার। আপনার ডকুমেন্টেশনে টেস্ট যোগ করাকে একটি প্রত্যাশা হিসেবে উল্লেখ করে রাখাও সহায়ক।
 
-When the pull request has broken a part of the application, respond to the author with a detailed account of what went wrong. Sometimes, it helps to include a screenshot or screen recording to show what is broken. If your automated tests did not catch the breaking change, you should open up a separate issue to update your test suite. And if you don't have a test suite setup to run on every pull request, this is a perfect time to set that up.
+### ব্যর্থ স্বয়ংক্রিয় টেস্ট
 
-### Missing Tests
+কখনো কখনো কন্ট্রিবিউটররা এমন পুল রিকোয়েস্ট খুলবেন, যা আপনার কয়েকটি স্বয়ংক্রিয় টেস্টে ব্যর্থ হয়। পুল রিকোয়েস্ট খোলার পর কয়েক দিন অপেক্ষা করা ভালো, যাতে কন্ট্রিবিউটর ব্যর্থ টেস্ট নিয়ে কাজ করার এবং নিজেই সমস্যাটি সমাধান করার সুযোগ পান। তিনি সমস্যাটি না সামলালে পুল রিকোয়েস্টেই তাঁর সাথে যোগাযোগ করে জিজ্ঞেস করুন, তাঁর সাহায্য লাগবে কি না। লাগলে টেস্ট কেন ব্যর্থ হচ্ছে তা খতিয়ে দেখুন এবং কীভাবে ঠিক করবেন সে বিষয়ে গঠনমূলক মতামত দিন। ব্যর্থ টেস্ট যদি তাঁর পরিবর্তনের সাথে সম্পর্কহীন হয়, তাহলে তাঁকে জানান যে এটি উপেক্ষা করা নিরাপদ এবং অন্য একটি পুল রিকোয়েস্টে ঠিক করা হবে।
 
-Not all pull requests will need tests because they are small code changes or updates to documentation. However, for larger features or refactors, tests should be added to help ensure that everything is working as expected. If the pull request author has not set up tests, reach out to them on the pull request to let them know what parts need to be tested. It also helps to outline adding tests in your documentation as an expectation.
+লেখক সমস্যাটি না সামলালে বা আপনার প্রথম মন্তব্যে সাড়া না দিলে সম্ভাব্য সমাধানের পরামর্শ দিয়ে উত্তর দিন এবং আবারও জানান যে আপনি সাহায্য করতে প্রস্তুত। লেখকের সাড়া ছাড়া কয়েক সপ্তাহ বা মাস পার হয়ে গেলে পুল রিকোয়েস্ট বন্ধ করে এগিয়ে যান।
 
-### Failing Automated Tests
+একাধিক কন্ট্রিবিউটর একই গুচ্ছ টেস্টে ব্যর্থ হলে টেস্টগুলো অস্থির (flaky) বা ভাঙা হতে পারে এবং আপনার মনোযোগ দরকার। এসব পরিস্থিতিতে কন্ট্রিবিউটরকে স্পষ্ট করে জানিয়ে দিন যে ব্যর্থ টেস্টটি তাঁর দোষে হয়নি এবং এর সমাধান করা হবে।
 
-Sometimes, contributors will open a pull request that fails a few of your automated tests. It is best to wait a few days after the pull request is opened to allow the contributor to address the failing tests and resolve the issue independently. If they are not addressing the issue, reach out to them on the pull request and ask if they need help. When they do, look into why the test is failing and provide constructive feedback on how they can fix it. If the failing test is unrelated to their changes, let them know that it is safe to ignore it and that it will be fixed in another pull request.
+![ব্যর্থ স্বয়ংক্রিয় টেস্ট](../_assets/images/failed-automated-tests.png)
 
-If the author does not address the issue or respond to your initial comment, reply with suggested fixes and reiterate that you are here to help. After several weeks or months without the author's response, close the pull request and move on.
+### স্প্যাম পুল রিকোয়েস্ট
 
-If multiple contributors fail the same set of tests, the tests may be flaky or broken and need your attention. In those situations, you want to clarify to the contributor that the failing test is not their fault and will be resolved.
+কখনো কখনো আপনার প্রজেক্টে স্প্যাম পুল রিকোয়েস্ট আসতে পারে। এই পরিস্থিতিতে লেখককে উত্তর না দেওয়াই ভালো। বরং এটি বন্ধ করে `spam` লেবেল যোগ করুন।
 
-![Failed automated tests](../_assets/images/failed-automated-tests.png)
+স্প্যাম পুল রিকোয়েস্টের কয়েকটি উদাহরণ:
 
-### Spam Pull Requests
+- README ফাইল বা অন্য ফাইলে শুধু হোয়াইটস্পেসের পরিবর্তন
+- ইস্যু বা ব্যাখ্যা ছাড়াই ফাইলে এলোমেলো পরিবর্তন
+- সম্পর্কহীন ওয়েবসাইটের অসংখ্য লিংক অথবা পণ্য বা সেবার প্রচার
+- অনুমতি বা যথাযথ সূত্র উল্লেখ ছাড়া অন্য উৎস থেকে চুরি করা কনটেন্ট
 
-There might be times when you will get a spam pull request for your project. In these situations, it is best not to respond to the author. Instead, close it and add a `spam` label to it.
+### নিম্নমানের পুল রিকোয়েস্ট
 
-Here are some examples of spam pull requests:
+নিম্নমানের পুল রিকোয়েস্ট দুর্ভাগ্যবশত মেইনটেইনারের অনেক সময় ও শক্তি নিয়ে নেয়। নিম্নমানের পুল রিকোয়েস্টের কয়েকটি উদাহরণ:
 
-- whitespace changes to the README file or other files
-- random changes to files without an accompanying issue or explanation
-- numerous links to unrelated websites or promotes products/services
-- plagiarized content from other sources without permission or proper attribution
+- অসম্পূর্ণ পুল রিকোয়েস্ট, যা পুরো ইস্যুটি সমাধান করে না
+- প্রজেক্টের নির্ধারিত স্টাইল গাইডের সাথে না মেলা কোড
+- অসম্পূর্ণ পুল রিকোয়েস্ট ফর্ম, যাতে কী পরিবর্তন হয়েছে সে বিষয়ে পর্যাপ্ত তথ্য নেই
+- একসাথে একাধিক ইস্যু সমাধান করা, যা রিভিউ করা কঠিন করে তোলে
 
-### Low-Quality Pull Requests
+আপনি কম মানের কোনো পুল রিকোয়েস্ট পেলে লেখকের সাথে যোগাযোগ করে ব্যাখ্যা করুন কী যোগ করতে হবে এবং কী কী পরিবর্তন লাগবে। বেশিরভাগ সময় কন্ট্রিবিউটররা এসব সমস্যা সম্পর্কে সচেতন থাকেন না এবং তাঁদের পুল রিকোয়েস্ট উন্নত করতে বাড়তি ব্যাখ্যা ও সময় দরকার হয়।
 
-Low-quality pull requests, unfortunately, take a lot of time and energy from the maintainer. Here are a few examples of low-quality pull requests:
+### পুরোনো (Stale) পুল রিকোয়েস্ট
 
-- unfinished pull requests that do not address the entire issue
-- code that does not fit within the established style guide for the project
-- incomplete pull request forms that do not provide sufficient information on what changes were made
-- address multiple issues at once and make it challenging to review
+কখনো কখনো পুল রিকোয়েস্ট সপ্তাহ বা মাসের পর মাস খোলা থাকতে পারে। নিয়মিত হালনাগাদ ও আলোচনা চললে সেগুলোকে স্টেল পুল রিকোয়েস্ট ধরা হয় না। কয়েক সপ্তাহ ধরে কার্যকলাপ প্রায় না থাকলে আপনাকে কন্ট্রিবিউটরের সাথে যোগাযোগ করে জানতে হবে, তাঁর সাহায্য লাগবে কি না কিংবা তিনি এখনো এটি নিয়ে কাজ করতে আগ্রহী কি না।
 
-If you receive a pull request that is lower in quality, reach out to the author, explaining what needs to be added and what changes need to be made. Most of the time, contributors might not be aware of these issues and need extra explanation and time to improve their pull requests.
+বারবার যোগাযোগের চেষ্টা করেও সাড়া না পেলে আপনি পুল রিকোয়েস্টটি বন্ধ করে দিতে পারেন কিংবা নিজে তা হাতে নিতে পারেন। নিজে হাতে নিলে কন্ট্রিবিউটরকে জানান যে আপনি এটি শেষ পর্যন্ত নিয়ে যাচ্ছেন, কারণ এটি অন্য পুল রিকোয়েস্টগুলোর পথ আটকে রেখেছে।
 
-### Stale Pull Requests
+## কন্ট্রিবিউটরদের অর্জন তুলে ধরা
 
-Sometimes, pull requests can remain open for weeks or months at a time. They're not considered stale pull requests if they have regular updates and conversations. If there has been little to no activity for several weeks, you must contact the contributor to see if they need help or are still interested in working on it.
+কন্ট্রিবিউটরদের অর্জনের স্বীকৃতি দেওয়া ও তা তুলে ধরা কমিউনিটির মনোবল বাড়ায় এবং নতুন কন্ট্রিবিউটর আকৃষ্ট করে। ইস্যু ও পুল রিকোয়েস্ট তুলে ধরার কার্যকর কয়েকটি উপায়:
 
-If you have repeatedly tried to reach out and get no response, you should close the pull request or take it over. If you are taking it over, tell the contributor you are bringing this to the finish line because it is blocking other pull requests.
+### ইস্যুর হাইলাইট
 
-## Showcasing Contributor Achievements
+সমাধান হয়ে যাওয়া ইস্যু তুলে ধরার সময় সমস্যাটি কী ছিল, কন্ট্রিবিউটর তা কীভাবে সমাধান করেছেন এবং সমাধানটি প্রজেক্টে কী প্রভাব ফেলেছে, সে সম্পর্কে বলুন। এই গল্পগুলো আপনার প্রজেক্টের README, ব্লগ বা সোশ্যাল মিডিয়ায় (X, LinkedIn, Mastodon) শেয়ার করুন। কন্ট্রিবিউটরদের নিয়মিত প্রকাশ্যে স্বীকৃতি ও ধন্যবাদ জানালে প্রজেক্টের প্রতি তাঁদের আনুগত্য বাড়ে এবং আপনি কোন ধরনের অবদানকে মূল্য দেন, তা-ও বোঝা যায়।
 
-Recognizing and showcasing contributor achievements helps build community morale and attract new contributors. Here are effective ways to highlight issues and pull requests:
+### পুল রিকোয়েস্টের হাইলাইট
 
-### Issue Highlights
+মার্জ হওয়া পুল রিকোয়েস্ট তুলে ধরার সময় কী কী পরিবর্তন হয়েছে তার বিবরণ দিন, লেখককে নাম ও হ্যান্ডেলসহ স্বীকৃতি জানান এবং এটি কীভাবে প্রজেক্টকে উন্নত করে তা ব্যাখ্যা করুন। সবসময় পুল রিকোয়েস্টের লিংক দিন, যাতে অন্যরা কাজটি দেখতে পারেন। এতে সম্ভাব্য কন্ট্রিবিউটররা সরাসরি দেখতে পান আপনি কোন ধরনের অবদানকে স্বাগত জানান এবং কন্ট্রিবিউটরদের সাথে কীভাবে সহযোগিতা করেন।
 
-When showcasing resolved issues, talk about the problem, how the contributor solved it, and the impact of the solution on the project. Share these stories on your project's README, blog, or social media (X, LinkedIn, Mastodon). Regularly acknowledging and thanking contributors in public strengthens their loyalty to the project and demonstrates the kind of contributions you value.
+### কোথায় শেয়ার করবেন
 
-### Pull Request Highlights
+- **প্রজেক্টের README বা CHANGELOG**: "Contributors" বা "Recent Contributions" নামে একটি অংশ যোগ করুন, যা উল্লেখযোগ্য পুল রিকোয়েস্ট ও ইস্যুর লিংক দেয়।
+- **GitHub প্রোফাইল README বা প্রজেক্টের ওয়েবসাইট**: কন্ট্রিবিউটর স্পটলাইট বা রিলিজ নোটস প্রকাশ করুন, যেখানে নির্দিষ্ট অবদানের কথা উল্লেখ থাকে।
+- **সোশ্যাল মিডিয়া**: মার্জ হওয়া পুল রিকোয়েস্ট ও সমাধান হওয়া ইস্যু কন্ট্রিবিউটরকে ধন্যবাদ জানিয়ে শেয়ার করুন। দৃশ্যমানতা বাড়াতে উপযুক্ত ক্ষেত্রে তাঁদের ট্যাগ করুন।
+- **রিলিজ নোটস ও নিউজলেটার**: প্রজেক্টের হালনাগাদে কন্ট্রিবিউটরদের স্বীকৃতি অন্তর্ভুক্ত করুন।
 
-When highlighting merged pull requests, describe the changes made, acknowledge the author by name and handle, and explain how it improves the project. Always link to the pull request so others can review the work. This gives potential contributors a first-hand look at the types of contributions you welcome and how you collaborate with contributors.
+## দ্রুত সাড়া দেওয়া ও উদ্বেগ সামলানো
 
-### Where to Share
+আপনার কাছে ইস্যু ও পুল রিকোয়েস্ট আসতে থাকলে ট্রায়াজ ও রিভিউয়ের জন্য সময় নির্ধারণ করা অত্যাবশ্যক। কন্ট্রিবিউটরদের ইস্যু ট্রায়াজ করতে এবং সপ্তাহের মধ্যে বিস্তারিত পুল রিকোয়েস্ট রিভিউ দিতে আপনার সুবিধামতো একটি নিয়মিত সূচি তৈরি করুন।
 
-- **Project README or CHANGELOG**: Add a "Contributors" or "Recent Contributions" section that links to notable PRs and issues.
-- **GitHub profile README or project website**: Feature contributor spotlights or release notes that call out specific contributions.
-- **Social media**: Share merged PRs and resolved issues with a thank-you to the contributor. Tag them when appropriate for increased visibility.
-- **Release notes and newsletters**: Include contributor acknowledgments in project updates.
+নতুন ওপেন ইস্যু বা পুল রিকোয়েস্টে সঙ্গে সঙ্গে সাড়া দিতে আপনার চাপ অনুভব করা উচিত নয়। কয়েক দিন সেগুলো অপঠিত থাকলেও কোনো সমস্যা নেই। কোনো কন্ট্রিবিউটর রিভিউ বা ইস্যু বা পুল রিকোয়েস্টে মন্তব্যের জন্য তাগাদা দিলে ভদ্রভাবে জানিয়ে দিন যে সময় পেলে আপনি দেখবেন। আপনি নিজের [GitHub Actions](https://docs.github.com/en/actions)-ও সেট আপ করে নতুন ইস্যু ও পুল রিকোয়েস্টে স্বয়ংক্রিয় উত্তর দিতে পারেন, যাতে কন্ট্রিবিউটররা জানতে পারেন আপনি সময় পেলে দেখবেন। এটি কীভাবে সেট আপ করবেন, তা [এই প্রবন্ধে](https://dev.to/opensauced/github-actions-a-maintainers-best-friend-488n) (ইংরেজি) জানতে পারবেন।
 
-## Promptly Respond and Address Concerns
+কন্ট্রিবিউটরদের প্রজেক্ট নিয়ে কোনো উদ্বেগ থাকলে এমন একটি নিরাপদ পরিসর তৈরি করুন, যেখানে তাঁরা এই বিষয়গুলো নিয়ে স্বচ্ছন্দে কথা বলতে পারেন। কোড বা নিরাপত্তা-সংক্রান্ত উদ্বেগ থাকলে ওপেন ইস্যুতে আলোচনা করতে পারেন, এমনকি Discord বা Slack-এ ব্যক্তিগতভাবেও আলোচনা করতে পারেন।
 
-When you have incoming issues and pull requests, scheduling time for triage and reviews is essential. Design a regular schedule that works for you to triage contributor issues and provide detailed pull request reviews during the week.
+## কাজের অগ্রাধিকার ও বাস্তবসম্মত সময়সীমা
 
-You should not feel pressured to respond to new open issues or pull requests immediately. It is okay if they are left unread for a few days. If a contributor pushes you for a review or comment on an issue or a pull request, politely respond that you will get to it when you have time. You can also set up your own [GitHub Actions](https://docs.github.com/en/actions) to automate responses to new issues and pull requests, letting contributors know you will get to it when available. You can learn how to set one up in [this article](https://dev.to/opensauced/github-actions-a-maintainers-best-friend-488n).
+একটি ওপেন সোর্স প্রজেক্ট রক্ষণাবেক্ষণের সব কাজ একসাথে সামলানো কখনো কখনো কঠিন হতে পারে। ইস্যু ট্রায়াজ করতে এবং কোন কাজ আগে করতে হবে তা ঠিক করতে প্রজেক্ট ব্যাকলগ ঘেঁটে দেখার জন্য প্রতি সপ্তাহে সময় আলাদা করে রাখুন। কখন কোন ইস্যু ও পুল রিকোয়েস্টকে উচ্চ অগ্রাধিকার হিসেবে লেবেল করবেন, তা ঠিক করুন। বাস্তবে সবসময় কিছু ইস্যু থাকবে যেগুলোকে শীর্ষ অগ্রাধিকার ধরতে হবে, আর বাকিগুলো আপনি পরে সামলাতে পারেন।
 
-If contributors have concerns about the project, you will want to create a safe space to make them comfortable talking about these issues. If they have concerns about the code or security aspects, feel free to discuss it on an open issue or even privately through Discord or Slack.
+বাস্তবসম্মত সময়সীমা ঠিক করার সময় আপনার কাজের আনুমানিক হিসেবে বাড়তি কয়েক দিন যোগ করুন। আপনি যদি মনে করেন, নতুন একগুচ্ছ ফিচারে কয়েক সপ্তাহ লাগবে, তাহলে আরও এক সপ্তাহ যোগ করুন। প্রজেক্টে সবসময়ই নানা সমস্যা আসে। তাই যে সময়সীমা গোড়া থেকেই বাস্তবসম্মত ছিল না, তেমন কড়া সময়সীমায় নিজেকে বেঁধে ফেলা এড়িয়ে চলুন।
 
-## Task Prioritization and Realistic Timelines
+অন্য স্বেচ্ছাসেবক কন্ট্রিবিউটরদের সাথে কাজ করার সময় কাজ শেষ করার জন্য বাড়তি সময় দিন। তাঁরা নিজেদের সময় স্বেচ্ছায় দিলে অন্য দায়িত্ব এসে আপনার জন্য তাঁদের সময় কমিয়ে দিতে পারে। সহমর্মিতা ও বোঝাপড়ার সাথে নেতৃত্ব দেওয়া এবং কর্মচারীর মতো কড়া সময়সীমা মানতে তাঁদের চাপ না দেওয়া অত্যন্ত গুরুত্বপূর্ণ।
 
-Juggling all the tasks to maintain an open source project can be difficult sometimes. Set aside time each week to triage issues and look through the project backlog to prioritize work to be done. Choose when to label issues and pull requests as a high priority. Realistically, there will always be issues that should be considered a top priority, while you can address the rest later.
+## নিরাপত্তা দুর্বলতা সামলানো
 
-When setting realistic timelines, add an extra few days to your work estimate. If you think a new set of features will take a couple of weeks, tack on an extra week. Issues come up all the time in projects. So you want to avoid timeboxing yourself to a very strict deadline when it wasn't realistic in the first place.
+আপনার প্রজেক্টে নিরাপত্তা-সংক্রান্ত সমস্যা দেখা দিলে কন্ট্রিবিউটরদের জানা থাকতে হবে সেগুলো রিপোর্ট করার সবচেয়ে ভালো পদ্ধতি কী। নিরাপত্তা দুর্বলতা রিপোর্ট করার নীতিমালা `SECURITY.md` ফাইলে রাখা ভালো। এই ফাইল সাধারণত প্রজেক্টের রুট বা `.github` ডিরেক্টরিতে যোগ করা হয়। কমিউনিটির সহজে পাওয়ার জন্য README ফাইলে নিরাপত্তা ফাইলের লিংক দেওয়াও ভালো।
 
-When working with other volunteer contributors, allow extra time to complete the work. If they volunteer their time, they may run into other commitments which will delay their availability for you. It is crucial to lead with empathy and understanding and not demand that they adhere to a strict deadline like an employee would.
+অনেক মেইনটেইনার এই নিরাপত্তা নীতির টেমপ্লেটটি বেছে নেন:
 
-## Security Vulnerabilities Handling
-
-If security issues arise within your project, your contributors must be aware of the optimal methods for reporting them. It is best to have a policy for reporting security vulnerabilities stored in the `SECURITY.md` file. This file is usually added to the project's root or `.github` directory. It is also good to link to the security file in your README file for easier community access.
-
-Many maintainers will choose to go with this security policy template:
-
-> GitHub's [Bug Bounty program](https://bounty.github.com) rewards researchers for discovering security vulnerabilities in a number of repositories. The full list of projects that are eligible for rewards are [available on our Bug Bounty site](https://bounty.github.com/#scope).
+> GitHub-এর [Bug Bounty program](https://bounty.github.com) অনেকগুলো রিপোজিটরিতে নিরাপত্তা দুর্বলতা খুঁজে বের করার জন্য গবেষকদের পুরস্কৃত করে। পুরস্কারের যোগ্য প্রজেক্টগুলোর পূর্ণ তালিকা [আমাদের Bug Bounty সাইটে পাওয়া যাবে](https://bounty.github.com/#scope)।
 >
-> If the repository is eligible for rewards, you can submit a report via [HackerOne](https://hackerone.com/github). You can find more useful information in our [rules](https://bounty.github.com/#rules) and [FAQ](https://bounty.github.com/#faqs).
+> রিপোজিটরিটি পুরস্কারের যোগ্য হলে আপনি [HackerOne](https://hackerone.com/github)-এর মাধ্যমে রিপোর্ট জমা দিতে পারেন। আরও কাজের তথ্য আমাদের [নিয়মাবলি](https://bounty.github.com/#rules) ও [FAQ](https://bounty.github.com/#faqs)-এ পাবেন।
 >
-> For repositories not covered by the Bug Bounty program, please open an issue.
+> Bug Bounty program-এর আওতার বাইরের রিপোজিটরির জন্য অনুগ্রহ করে একটি ইস্যু খুলুন।
 
 ### Dependabot
 
-Dependabot is a GitHub feature that monitors your project's dependencies and reports any possible security vulnerabilities. You can configure Dependabot to report issues or create pull requests to update dependencies with security vulnerabilities. To learn more about this feature, please read through the [GitHub documentation](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide).
+Dependabot হলো GitHub-এর একটি ফিচার, যা আপনার প্রজেক্টের ডিপেন্ডেন্সি পর্যবেক্ষণ করে এবং সম্ভাব্য নিরাপত্তা দুর্বলতা রিপোর্ট করে। নিরাপত্তা দুর্বলতাযুক্ত ডিপেন্ডেন্সি হালনাগাদ করতে ইস্যু রিপোর্ট বা পুল রিকোয়েস্ট তৈরি করতে আপনি Dependabot কনফিগার করতে পারেন। এই ফিচার সম্পর্কে আরও জানতে [GitHub ডকুমেন্টেশন](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide) পড়ুন।
 
-Let's move to the [next chapter](communication-and-collaboration.md), which will discuss how to communicate and collaborate effectively.
+চলুন [পরবর্তী অধ্যায়ে](communication-and-collaboration.md) যাই, যেখানে আলোচনা হবে কার্যকরভাবে কীভাবে যোগাযোগ ও সহযোগিতা করবেন।

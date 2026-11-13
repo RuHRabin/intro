@@ -2,230 +2,224 @@
 id: how-to-setup-your-project
 title: "আপনার ওপেন সোর্স প্রজেক্ট কীভাবে সেটআপ করবেন"
 sidebar_label: "প্রজেক্ট সেটআপ করা"
-keywords: ["how to start an open source project", "how to setup open source project", "open source project setup", "start open source project", "create open source project", "write README for open source project", "project installation guide for open source", "open source license explained", "choosing open source license", "how to add code of conduct open source", "code of conduct open source project", "contributing guidelines open source", "issue templates", "create issue templates open source", "pull request template", "create pull request template open source", "Projects on GitHub", "GitHub project boards", "GitHub", "open source project best practices", "Open Source", "Open Source Community"]
+keywords: ["কীভাবে ওপেন সোর্স প্রজেক্ট শুরু করবেন", "ওপেন সোর্স প্রজেক্ট সেটআপ", "ওপেন সোর্স প্রজেক্টের README", "ওপেন সোর্স ইনস্টলেশন গাইড", "ওপেন সোর্স সফটওয়্যার লাইসেন্স", "ওপেন সোর্স আচরণবিধি", "ওপেন সোর্স অবদান নির্দেশিকা", "ওপেন সোর্স ইস্যু টেমপ্লেট", "ওপেন সোর্স পুল রিকোয়েস্ট টেমপ্লেট", "GitHub Projects", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+ওপেন সোর্স প্রজেক্ট শুরু করার সময় অনেক কিছু ভেবে দেখতে হয়। কোর্সের এই অংশে আমরা প্রতিটি প্রজেক্টের সফল হওয়ার জন্য অপরিহার্য মূল উপাদানগুলো ধাপে ধাপে দেখব।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+## বিস্তারিত README
 
-:::
+README ফাইলে আপনার ওপেন সোর্স প্রজেক্টের একটি পরিচিতি থাকে। একটি ভালো README হবে পরিষ্কার, সংক্ষিপ্ত, হালনাগাদ ও বিস্তারিত। ফাইলটি আপনার রুট ডিরেক্টরিতে থাকে এবং কন্ট্রিবিউটরদের কাছে প্রজেক্টের প্রথম ছাপ হিসেবে কাজ করে।
 
-There are many things to consider when starting an open source project. In this portion of the course, we will walk through the key components every project needs to succeed.
+README-তে যা যা রাখতে পারেন:
 
-## Detailed README
+- প্রজেক্টের শিরোনাম ও সারসংক্ষেপ
+- প্রজেক্ট সেটআপ করার সংক্ষিপ্ত নির্দেশনা
+- অ্যাপের ছবি ও কোডের উদাহরণ
+- প্রজেক্টে ব্যবহৃত প্রযুক্তি ও টুল
+- কন্ট্রিবিউটিং গাইডলাইনের লিংক
+- আচরণবিধির লিংক
+- ওপেন সোর্স লাইসেন্সের লিংক
+- কমিউনিটির Discord, Slack গ্রুপ বা GitHub Discussions-এর লিংক
 
-A README file contains an introduction to your open source project. A good README should be clear, concise, up-to-date, and detailed. This file is located in your root directory and serves as the first impression for your contributors.
+README ফাইল [Markdown](https://www.markdownguide.org/) নামের একটি মার্কআপ ভাষায় লেখা হয়, যা README-এর মতো ওপেন সোর্স ডকুমেন্টেশনে বহুল ব্যবহৃত।
 
-Here are some things to include in your README:
-
-- project title and summary
-- brief instructions on how to set up the project
-- images of the app and code examples
-- tech and tools used in the project
-- link to the contributing guidelines
-- link to the code of conduct
-- link to the open source license
-- link to community Discord, Slack group, or GitHub Discussions
-
-A README file is written in a markup language called [Markdown](https://www.markdownguide.org/), a popular language used in open source documentation like READMEs.
-
-Here are a few examples of good READMEs:
+ভালো README-এর কয়েকটি উদাহরণ:
 
 - [OpenSauced App](https://github.com/open-sauced/app/blob/beta/README.md)
 - [Astro documentation](https://github.com/withastro/astro/blob/main/README.md)
 - [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp/blob/main/README.md)
 
-## Installation Guide
+## ইনস্টলেশন গাইড
 
-This guide should include instructions for the following:
+এই গাইডে নিচের বিষয়গুলোর নির্দেশনা থাকা উচিত:
 
-- forking the repository
-- cloning the repository
-- installing the dependencies
-- setting up the environment variables
-- setting up the database, if applicable
-- running the project locally
-- setting up Docker containers, if applicable
+- রিপোজিটরি ফর্ক করা
+- রিপোজিটরি ক্লোন করা
+- ডিপেন্ডেন্সি ইনস্টল করা
+- এনভায়রনমেন্ট ভ্যারিয়েবল সেট করা
+- প্রযোজ্য হলে ডেটাবেস সেটআপ করা
+- প্রজেক্ট লোকালি চালানো
+- প্রযোজ্য হলে Docker কনটেইনার সেটআপ করা
 
-The best way to test your guide is by setting up the project locally using your own instructions. If you encounter issues getting your project to work, you will discover them quickly and can update the documentation to add or clarify any missing pieces.
+আপনার গাইড পরীক্ষা করার সবচেয়ে ভালো উপায় হলো নিজের লেখা নির্দেশনা অনুসরণ করে প্রজেক্টটি লোকালি সেটআপ করে দেখা। প্রজেক্ট চালু করতে গিয়ে কোনো সমস্যায় পড়লে আপনি সেটি দ্রুত টের পাবেন এবং বাদ পড়া বা অস্পষ্ট অংশ যোগ করে ডকুমেন্টেশন হালনাগাদ করতে পারবেন।
 
-The installation guide is best placed at the top of your project's README file, as it is the most accessible file for your contributors.
+ইনস্টলেশন গাইড রাখার সবচেয়ে ভালো জায়গা আপনার প্রজেক্টের README ফাইলের একেবারে ওপরে, কারণ কন্ট্রিবিউটরদের কাছে এটিই সবচেয়ে সহজলভ্য ফাইল।
 
-Another good place would be in the CONTRIBUTING file. Besides providing guidelines about contributing to your project, this file can include installation setup, testing, linting, workflows, etc. You can place the installation instructions towards the top or bottom of your CONTRIBUTING file. You can take a look at [OpenSauced Contributing Guidelines](https://opensauced.pizza/docs/contributing/introduction-to-contributing/) as an inspiration.
+আরেকটি ভালো জায়গা হতে পারে CONTRIBUTING ফাইল। প্রজেক্টে অবদান রাখার নির্দেশিকা ছাড়াও এই ফাইলে ইনস্টলেশন সেটআপ, টেস্টিং, লিন্টিং, ওয়ার্কফ্লো ইত্যাদি থাকতে পারে। ইনস্টলেশনের নির্দেশনা আপনি CONTRIBUTING ফাইলের ওপরের দিকে বা নিচের দিকে রাখতে পারেন। অনুপ্রেরণার জন্য [OpenSauced Contributing Guidelines](https://opensauced.pizza/docs/contributing/introduction-to-contributing/) দেখতে পারেন।
 
-If your project is on the larger side, consider having a separate documentation site and dedicating a section for installation there. You can use documentation site generators like [Docusaurus](https://docusaurus.io/), [Starlight](https://starlight.astro.build/), or [docsify](https://docsify.js.org/#/).
+আপনার প্রজেক্ট বড় হলে আলাদা একটি ডকুমেন্টেশন সাইট রাখার এবং সেখানে ইনস্টলেশনের জন্য একটি অংশ নির্ধারণ করার কথা ভাবুন। এ জন্য আপনি [Docusaurus](https://docusaurus.io/), [Starlight](https://starlight.astro.build/) বা [docsify](https://docsify.js.org/#/)-এর মতো ডকুমেন্টেশন সাইট জেনারেটর ব্যবহার করতে পারেন।
 
-## Open Source Software License
+## ওপেন সোর্স সফটওয়্যার লাইসেন্স
 
-You need to know that an open source project without a license is not available for anyone to use or distribute. Take a look at these explanations on [The Legal Side of Open Source](https://opensource.guide/legal/) from Open Source Guides:
+জেনে রাখা দরকার, লাইসেন্স ছাড়া কোনো ওপেন সোর্স প্রজেক্ট অন্য কারও ব্যবহার বা বিতরণের জন্য উন্মুক্ত নয়। Open Source Guides-এর [The Legal Side of Open Source](https://opensource.guide/legal/) থেকে এই ব্যাখ্যাগুলো দেখুন:
 
-> Making your GitHub project public is not the same as licensing your project. Public projects are covered by [GitHub’s Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-ownership-of-content-right-to-post-and-license-grants), which allows others to view and fork your project, but your work otherwise comes with no permissions.
+> আপনার GitHub প্রজেক্ট পাবলিক করা আর প্রজেক্টে লাইসেন্স দেওয়া এক জিনিস নয়। পাবলিক প্রজেক্ট [GitHub-এর সেবার শর্তাবলির](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#3-ownership-of-content-right-to-post-and-license-grants) আওতায় পড়ে, যা অন্যদের আপনার প্রজেক্ট দেখা ও ফর্ক করার অনুমতি দেয়, কিন্তু এর বাইরে আপনার কাজের সাথে কোনো অনুমতি আসে না।
 >
-> If you want others to use, distribute, modify, or contribute back to your project, you need to include an open source license. For example, someone cannot legally use any part of your GitHub project in their code, even if it’s public, unless you explicitly give them the right to do so.
+> অন্যরা যদি আপনার প্রজেক্ট ব্যবহার, বিতরণ, পরিবর্তন বা তাতে অবদান রাখুক, এটি আপনি চান, তাহলে আপনাকে একটি ওপেন সোর্স লাইসেন্স যুক্ত করতে হবে। যেমন, কেউ আপনার GitHub প্রজেক্টের কোনো অংশ নিজের কোডে বৈধভাবে ব্যবহার করতে পারবেন না, এমনকি প্রজেক্ট পাবলিক হলেও, যদি না আপনি স্পষ্টভাবে তাঁকে সেই অধিকার দেন।
 
-So, every open source project must have a license written in a LICENSE file to grant further rights to other users. This file is typically located in the root directory for easy access for everyone.
+তাই প্রতিটি ওপেন সোর্স প্রজেক্টে LICENSE ফাইলে লেখা একটি লাইসেন্স থাকতেই হবে, যা অন্য ব্যবহারকারীদের বাড়তি অধিকার দেয়। সবার সহজে পাওয়ার জন্য এই ফাইল সাধারণত রুট ডিরেক্টরিতে থাকে।
 
-### Choosing a License
+### লাইসেন্স বেছে নেওয়া
 
-An open source software license is a legally binding agreement between the software creator and the end users. It dictates how others can use, modify, or distribute your software.
+ওপেন সোর্স সফটওয়্যার লাইসেন্স হলো সফটওয়্যার নির্মাতা ও শেষ ব্যবহারকারীদের মধ্যে একটি আইনত বাধ্যতামূলক চুক্তি। এটি ঠিক করে দেয়, অন্যরা আপনার সফটওয়্যার কীভাবে ব্যবহার, পরিবর্তন বা বিতরণ করতে পারবেন।
 
-Some licenses are more restrictive, like the GNU GPL (General Public License), while others are less restrictive, like the MIT license. Here are a few examples of licenses for OpenSauced projects:
+কিছু লাইসেন্স বেশি বিধিনিষেধযুক্ত, যেমন GNU GPL (General Public License), আবার কিছু কম বিধিনিষেধযুক্ত, যেমন MIT লাইসেন্স। OpenSauced-এর প্রজেক্টগুলোর লাইসেন্সের কয়েকটি উদাহরণ:
 
 - [OpenSauced Docs - MIT license](https://github.com/open-sauced/docs/blob/main/LICENSE)
 - [OpenSauced App - Apache License 2.0](https://github.com/open-sauced/app/blob/beta/LICENSE)
 
-To better understand which license would work best for your project, please look at these helpful resources:
+আপনার প্রজেক্টের জন্য কোন লাইসেন্স সবচেয়ে ভালো হবে তা আরও ভালোভাবে বুঝতে এই সহায়ক রিসোর্সগুলো দেখুন:
 
-- [How open source licenses work and how to add them to your projects](https://www.freecodecamp.org/news/how-open-source-licenses-work-and-how-to-add-them-to-your-projects-34310c3cf94/).
+- [How open source licenses work and how to add them to your projects](https://www.freecodecamp.org/news/how-open-source-licenses-work-and-how-to-add-them-to-your-projects-34310c3cf94/)
 - [tl;dr Legal](https://www.tldrlegal.com/)
 
-For a complete list of Open Source Initiative (OSI) approved licenses, please check out [their list](https://opensource.org/licenses/).
+Open Source Initiative (OSI) অনুমোদিত লাইসেন্সের পূর্ণাঙ্গ তালিকা দেখতে [তাদের তালিকাটি](https://opensource.org/licenses/) দেখুন।
 
-## Code of Conduct
+## আচরণবিধি {#code-of-conduct}
 
-A code of conduct is an established set of rules and behaviors that all open source participants agree to abide by. This document helps to ensure a healthy and inclusive environment for everyone involved with the project.
+আচরণবিধি হলো একগুচ্ছ প্রতিষ্ঠিত নিয়ম ও আচরণ, যা মেনে চলতে ওপেন সোর্সের সব অংশগ্রহণকারী সম্মত হন। এই ডকুমেন্ট প্রজেক্টের সাথে জড়িত সবার জন্য একটি সুস্থ ও অন্তর্ভুক্তিমূলক পরিবেশ নিশ্চিত করতে সাহায্য করে।
 
-This set of rules and expectations should go inside a CODE_OF_CONDUCT file in the root directory of your project. Codes of conduct are generally divided into three main categories: pledge, standards, and enforcement.
+এই নিয়ম ও প্রত্যাশাগুলো আপনার প্রজেক্টের রুট ডিরেক্টরির CODE_OF_CONDUCT ফাইলে থাকা উচিত। আচরণবিধি সাধারণত তিনটি প্রধান ভাগে বিভক্ত থাকে: অঙ্গীকার, মানদণ্ড এবং প্রয়োগ।
 
 :::info
 
-Most open source maintainers will not write their code of conduct from scratch. Instead, they will add one using a [template provided by GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project#adding-a-code-of-conduct-using-a-template) or copy and adapt from other codes of conduct and provide attribution.
+বেশিরভাগ ওপেন সোর্স মেইনটেইনার নিজেদের আচরণবিধি শূন্য থেকে লেখেন না। তাঁরা সাধারণত [GitHub-এর দেওয়া একটি টেমপ্লেট](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project#adding-a-code-of-conduct-using-a-template) ব্যবহার করে আচরণবিধি যোগ করেন, কিংবা অন্য কোনো আচরণবিধি থেকে কপি করে নিজের মতো মানিয়ে নেন এবং সূত্র উল্লেখ করেন।
 
 :::
 
-### Project Pledge
+### প্রজেক্টের অঙ্গীকার
 
-The opening pledge is a statement of the type of environment that the project wants to create. Here is an excerpt from the [OpenSauced Code of Conduct](https://github.com/open-sauced/.github/blob/main/CODE_OF_CONDUCT.md):
+শুরুর অঙ্গীকার হলো প্রজেক্ট কেমন পরিবেশ গড়তে চায়, তার একটি বিবৃতি। [OpenSauced আচরণবিধি](https://github.com/open-sauced/.github/blob/main/CODE_OF_CONDUCT.md) থেকে একটি উদ্ধৃতাংশ:
 
-> In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+> একটি উন্মুক্ত ও স্বাগতপূর্ণ পরিবেশ গড়ে তোলার স্বার্থে আমরা কন্ট্রিবিউটর ও মেইনটেইনাররা অঙ্গীকার করছি যে বয়স, শারীরিক আকার, প্রতিবন্ধিতা, জাতিগত পরিচয়, যৌন বৈশিষ্ট্য, লিঙ্গ পরিচয় ও প্রকাশ, অভিজ্ঞতার স্তর, শিক্ষা, আর্থ-সামাজিক অবস্থা, জাতীয়তা, ব্যক্তিগত চেহারা, বর্ণ, ধর্ম বা যৌন পরিচয় ও অভিমুখিতা নির্বিশেষে আমাদের প্রজেক্ট ও কমিউনিটিতে অংশগ্রহণ প্রত্যেকের জন্য হয়রানিমুক্ত অভিজ্ঞতা হবে।
 
-### Project Standards
+### প্রজেক্টের মানদণ্ড
 
-The standards section explicitly outlines what is considered acceptable and unacceptable behavior by all project participants.
+মানদণ্ডের অংশে প্রজেক্টের সব অংশগ্রহণকারীর জন্য কোন আচরণ গ্রহণযোগ্য এবং কোনটি অগ্রহণযোগ্য, তা স্পষ্টভাবে বলা থাকে।
 
-Here is an example from the [OpenSauced Code of Conduct](https://github.com/open-sauced/.github/blob/main/CODE_OF_CONDUCT.md):
+[OpenSauced আচরণবিধি](https://github.com/open-sauced/.github/blob/main/CODE_OF_CONDUCT.md) থেকে একটি উদাহরণ:
 
-> Examples of behavior that contribute to creating a positive environment include:
+> ইতিবাচক পরিবেশ গড়তে সহায়ক আচরণের উদাহরণ:
 >
-> - Using welcoming and inclusive language
-> - Being respectful of differing viewpoints and experiences
-> - Gracefully accepting constructive criticism
-> - Focusing on what is best for the community
-> - Showing empathy towards other community members
+> - স্বাগতপূর্ণ ও অন্তর্ভুক্তিমূলক ভাষা ব্যবহার করা
+> - ভিন্ন মত ও অভিজ্ঞতার প্রতি শ্রদ্ধাশীল হওয়া
+> - গঠনমূলক সমালোচনা সৌজন্যের সাথে গ্রহণ করা
+> - কমিউনিটির জন্য যা সবচেয়ে ভালো, তার ওপর মনোযোগ দেওয়া
+> - কমিউনিটির অন্য সদস্যদের প্রতি সহমর্মিতা দেখানো
 >
-> Examples of unacceptable behavior by participants include:
+> অংশগ্রহণকারীদের অগ্রহণযোগ্য আচরণের উদাহরণ:
 >
-> - The use of sexualized language or imagery and unwelcome sexual attention or advances
-> - Trolling, insulting/derogatory comments, and personal or political attacks
-> - Public or private harassment
-> - Publishing others' private information, such as a physical or electronic address, without explicit permission
-> - Other conduct which could reasonably be considered inappropriate in a professional setting
+> - যৌনতাপূর্ণ ভাষা বা ছবি ব্যবহার এবং অবাঞ্ছিত যৌন মনোযোগ বা প্রস্তাব
+> - ট্রলিং, অপমানজনক বা হেয়কর মন্তব্য এবং ব্যক্তিগত বা রাজনৈতিক আক্রমণ
+> - প্রকাশ্য বা ব্যক্তিগত হয়রানি
+> - স্পষ্ট অনুমতি ছাড়া অন্যের ব্যক্তিগত তথ্য, যেমন বাসস্থানের বা ইলেকট্রনিক ঠিকানা প্রকাশ করা
+> - পেশাদার পরিবেশে যুক্তিসংগতভাবে অনুপযুক্ত বলে গণ্য হতে পারে এমন অন্যান্য আচরণ
 
-### Project Enforcement
+### প্রজেক্টের প্রয়োগ
 
-You will want to explicitly state the consequences of what will happen if any member of the project behaves in an unacceptable way that violates your code of conduct.
+প্রজেক্টের কোনো সদস্য আচরণবিধি লঙ্ঘন করে অগ্রহণযোগ্য আচরণ করলে কী পরিণতি হবে, তা আপনার স্পষ্টভাবে উল্লেখ করা উচিত।
 
-Here is an example from the [OpenSauced Code of Conduct](https://github.com/open-sauced/.github/blob/main/CODE_OF_CONDUCT.md):
+[OpenSauced আচরণবিধি](https://github.com/open-sauced/.github/blob/main/CODE_OF_CONDUCT.md) থেকে একটি উদাহরণ:
 
-> Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at hello@opensauced.pizza. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
+> গালিগালাজমূলক, হয়রানিমূলক বা অন্য কোনোভাবে অগ্রহণযোগ্য আচরণের ঘটনা hello@opensauced.pizza ঠিকানায় প্রজেক্ট টিমের সাথে যোগাযোগ করে জানানো যেতে পারে। সব অভিযোগ পর্যালোচনা ও তদন্ত করা হবে এবং পরিস্থিতি অনুযায়ী প্রয়োজনীয় ও উপযুক্ত বলে বিবেচিত সাড়া দেওয়া হবে। ঘটনার রিপোর্টকারীর বিষয়ে গোপনীয়তা বজায় রাখতে প্রজেক্ট টিম বাধ্য। নির্দিষ্ট প্রয়োগ নীতিমালার আরও বিবরণ আলাদাভাবে প্রকাশ করা হতে পারে।
 >
-> Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
+> যেসব প্রজেক্ট মেইনটেইনার সরল বিশ্বাসে আচরণবিধি মানেন না বা প্রয়োগ করেন না, প্রজেক্টের নেতৃত্বের অন্য সদস্যদের সিদ্ধান্ত অনুযায়ী তাঁদের সাময়িক বা স্থায়ী পরিণতির মুখে পড়তে হতে পারে।
 
 ### Contributor Covenant
 
-The Contributor Covenant is a code of conduct you can use and adapt for your open source projects. To learn more, please visit the [official website](https://www.contributor-covenant.org/).
+Contributor Covenant হলো এমন একটি আচরণবিধি, যা আপনি নিজের ওপেন সোর্স প্রজেক্টের জন্য ব্যবহার ও মানিয়ে নিতে পারেন। আরও জানতে [অফিসিয়াল ওয়েবসাইটে](https://www.contributor-covenant.org/) যান।
 
-## Contributing Guidelines
+## অবদান রাখার নির্দেশিকা
 
-A key aspect of learning how to start an open source project is developing contributing guidelines that outline the expectations and processes for all contributors. A CONTRIBUTING file contains guidelines on how contributors can help with your project. It is usually located in the project's root directory so everyone can easily access it.
+ওপেন সোর্স প্রজেক্ট কীভাবে শুরু করতে হয় শেখার একটি মূল দিক হলো এমন কন্ট্রিবিউটিং গাইডলাইন তৈরি করা, যা সব কন্ট্রিবিউটরের জন্য প্রত্যাশা ও প্রক্রিয়া ঠিক করে দেয়। CONTRIBUTING ফাইলে থাকে কন্ট্রিবিউটররা আপনার প্রজেক্টে কীভাবে সাহায্য করতে পারেন তার নির্দেশিকা। সবার সহজে পাওয়ার জন্য এটি সাধারণত প্রজেক্টের রুট ডিরেক্টরিতে থাকে।
 
-Your guide should include the following sections:
+আপনার গাইডে এই অংশগুলো থাকা উচিত:
 
-- project setup instructions
-- guidelines for creating new issues like bug reports and feature requests
-- information about which issues are available for contribution
-- guidelines for commit conventions for pull requests
-- guidelines for code and style conventions
-- guidelines for creating pull requests
+- প্রজেক্ট সেটআপের নির্দেশনা
+- বাগ রিপোর্ট ও ফিচারের অনুরোধের মতো নতুন ইস্যু তৈরির নির্দেশিকা
+- কোন কোন ইস্যুতে অবদান রাখা যাবে, সে সম্পর্কে তথ্য
+- পুল রিকোয়েস্টের জন্য কমিট কনভেনশনের নির্দেশিকা
+- কোড ও স্টাইল কনভেনশনের নির্দেশিকা
+- পুল রিকোয়েস্ট তৈরির নির্দেশিকা
 
-For an in-depth look at creating a robust CONTRIBUTING file, please read [this article](https://dev.to/opensauced/how-to-make-a-delicious-contributing-guide-4bp3) by OpenSauced.
+একটি মজবুত CONTRIBUTING ফাইল তৈরির গভীর আলোচনার জন্য OpenSauced-এর [এই প্রবন্ধটি](https://dev.to/opensauced/how-to-make-a-delicious-contributing-guide-4bp3) (ইংরেজি) পড়ুন।
 
-## Issue Templates
+## ইস্যু টেমপ্লেট
 
-Issue templates help guide contributors in providing the specific and structured information needed when opening project issues. Having these templates in your repository will ensure you receive the information needed to triage the issue correctly.
+ইস্যু টেমপ্লেট কন্ট্রিবিউটরদের প্রজেক্টে ইস্যু খোলার সময় প্রয়োজনীয় নির্দিষ্ট ও কাঠামোবদ্ধ তথ্য দিতে পথ দেখায়। আপনার রিপোজিটরিতে এই টেমপ্লেট থাকলে ইস্যু সঠিকভাবে ট্রায়াজ করার জন্য দরকারি তথ্য আপনি পাবেন।
 
-You can create various issue templates, such as bug reports, feature requests, documentation updates, etc. Inside these templates, you can have required fields like steps for reproducing the bug or a details section for a feature request. You can also attach specific labels like `feature`, `needs triage`, or `bug` to indicate the types of issue templates.
+আপনি বাগ রিপোর্ট, ফিচারের অনুরোধ, ডকুমেন্টেশন হালনাগাদ ইত্যাদির জন্য বিভিন্ন ইস্যু টেমপ্লেট তৈরি করতে পারেন। এই টেমপ্লেটগুলোর ভেতরে বাগ পুনরুৎপাদনের ধাপ বা ফিচারের অনুরোধের বিবরণের মতো আবশ্যিক ঘর রাখতে পারেন। ইস্যু টেমপ্লেটের ধরন বোঝাতে `feature`, `needs triage` বা `bug`-এর মতো নির্দিষ্ট লেবেলও যুক্ত করা যায়।
 
-### Creating Issue Templates
+### ইস্যু টেমপ্লেট তৈরি
 
-There are two ways to create issue templates on GitHub.
+GitHub-এ ইস্যু টেমপ্লেট তৈরির দুটি উপায় আছে।
 
-#### 1. Using GitHub's Template Builder
+#### 1. GitHub-এর টেমপ্লেট বিল্ডার ব্যবহার করে
 
-To create issue templates using GitHub's template builder, you will need to:
+GitHub-এর টেমপ্লেট বিল্ডার দিয়ে ইস্যু টেমপ্লেট তৈরি করতে আপনাকে:
 
-- go to your project's settings,
-- navigate to the "Features" section,
-- click on "Set up templates" under "Issues".
+- আপনার প্রজেক্টের সেটিংসে যেতে হবে,
+- "Features" অংশে যেতে হবে,
+- "Issues"-এর নিচে "Set up templates"-এ ক্লিক করতে হবে।
 
-You can follow the [detailed guide](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-templates) in the GitHub documentation to create one.
+এটি তৈরি করতে আপনি GitHub ডকুমেন্টেশনের [বিস্তারিত গাইড](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#creating-issue-templates) অনুসরণ করতে পারেন।
 
-![Issue template GIF](../_assets/gifs/issues-template.gif)
+![ইস্যু টেমপ্লেটের GIF](../_assets/gifs/issues-template.gif)
 
-#### 2. Using YAML Files
+#### 2. YAML ফাইল ব্যবহার করে
 
-You can also create custom issue templates using YAML frontmatter:
+YAML ফ্রন্ট ম্যাটার ব্যবহার করেও আপনি নিজের মতো ইস্যু টেমপ্লেট বানাতে পারেন:
 
-- Create a folder called `.github` in the root directory.
-- Add a folder called `ISSUE_TEMPLATE` inside the `.github` folder.
+- রুট ডিরেক্টরিতে `.github` নামে একটি ফোল্ডার তৈরি করুন।
+- `.github` ফোল্ডারের ভেতরে `ISSUE_TEMPLATE` নামে একটি ফোল্ডার যোগ করুন।
 
   :::note
-  
-  The name of this folder should be in all caps, or else it will not work on GitHub.
+
+  এই ফোল্ডারের নাম অবশ্যই সব বড় হাতের অক্ষরে হতে হবে, নইলে তা GitHub-এ কাজ করবে না।
 
   :::
 
-- Create a YAML file like a `bug.yml` or `feature.yml` file inside the `ISSUE_TEMPLATE` folder.
+- `ISSUE_TEMPLATE` ফোল্ডারের ভেতরে `bug.yml` বা `feature.yml`-এর মতো একটি YAML ফাইল তৈরি করুন।
 
-Here is the [bug report template](https://raw.githubusercontent.com/open-sauced/.github/main/.github/ISSUE_TEMPLATE/bug_report.yml) that we use at OpenSauced. To learn more about configuring issue templates, please visit the [official documentation](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) on GitHub.
+এখানে আমরা OpenSauced-এ যে [বাগ রিপোর্ট টেমপ্লেট](https://raw.githubusercontent.com/open-sauced/.github/main/.github/ISSUE_TEMPLATE/bug_report.yml) ব্যবহার করি, সেটি দেওয়া হলো। ইস্যু টেমপ্লেট কনফিগার করা সম্পর্কে আরও জানতে GitHub-এর [অফিসিয়াল ডকুমেন্টেশনে](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) যান।
 
-## Pull Request Templates
+## পুল রিকোয়েস্ট টেমপ্লেট
 
-Like issue templates, pull request templates allow you to guide your contributors in providing specific and structured information when opening pull requests in your project. This template will be in a file called `PULL_REQUEST_TEMPLATE.md`, which is usually located either in the root directory or the `.github` directory.
+ইস্যু টেমপ্লেটের মতোই পুল রিকোয়েস্ট টেমপ্লেট আপনাকে কন্ট্রিবিউটরদের প্রজেক্টে পুল রিকোয়েস্ট খোলার সময় নির্দিষ্ট ও কাঠামোবদ্ধ তথ্য দিতে পথ দেখানোর সুযোগ দেয়। এই টেমপ্লেট `PULL_REQUEST_TEMPLATE.md` নামের একটি ফাইলে থাকবে, যা সাধারণত রুট ডিরেক্টরিতে বা `.github` ডিরেক্টরিতে রাখা হয়।
 
-Here are a few things to include in your pull request template:
+আপনার পুল রিকোয়েস্ট টেমপ্লেটে যা যা রাখতে পারেন:
 
-- section for contributors to describe the details of changes that were made and why
-- section for the type of change made (e.g., bug fix, feature, style update, etc.)
-- section to link corresponding issue tickets to the pull request (e.g., closes #123 or fixes #456)
-- section to place screenshots and screen recordings, if applicable
+- কন্ট্রিবিউটর কী পরিবর্তন করেছেন এবং কেন, তার বিবরণ দেওয়ার অংশ
+- পরিবর্তনের ধরন (যেমন বাগ ফিক্স, ফিচার, স্টাইল হালনাগাদ ইত্যাদি) উল্লেখ করার অংশ
+- সংশ্লিষ্ট ইস্যু টিকেট পুল রিকোয়েস্টের সাথে লিংক করার অংশ (যেমন closes #123 বা fixes #456)
+- প্রযোজ্য হলে স্ক্রিনশট ও স্ক্রিন রেকর্ডিং দেওয়ার অংশ
 
-Here is an example of a [pull request template](https://raw.githubusercontent.com/open-sauced/.github/main/.github/PULL_REQUEST_TEMPLATE.md) used by OpenSauced. Please read the [GitHub documentation](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) to learn more about creating pull request templates.
+OpenSauced যে [পুল রিকোয়েস্ট টেমপ্লেট](https://raw.githubusercontent.com/open-sauced/.github/main/.github/PULL_REQUEST_TEMPLATE.md) ব্যবহার করে, তার একটি উদাহরণ এখানে দেওয়া হলো। পুল রিকোয়েস্ট টেমপ্লেট তৈরি সম্পর্কে আরও জানতে [GitHub ডকুমেন্টেশন](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository) পড়ুন।
 
-![PR template example](../_assets/images/pr-template.png)
+![পুল রিকোয়েস্ট টেমপ্লেটের উদাহরণ](../_assets/images/pr-template.png)
 
-## Projects on GitHub
+## GitHub-এ Projects
 
-Keeping track of your issues becomes more challenging as your project progresses. A great tool that can help you organize and track your issues is [Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) on GitHub. With projects, you can efficiently manage your project's features, roadmaps, or releases as they're built from and integrated with issues and pull requests that you add.
+প্রজেক্ট এগোনোর সাথে সাথে ইস্যুর হিসাব রাখা আরও কঠিন হয়ে ওঠে। ইস্যু গুছিয়ে রাখতে ও ট্র্যাক করতে GitHub-এর [Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects) একটি চমৎকার টুল। Projects দিয়ে আপনি আপনার প্রজেক্টের ফিচার, রোডম্যাপ বা রিলিজগুলো দক্ষতার সাথে পরিচালনা করতে পারেন, কারণ এগুলো আপনার যোগ করা ইস্যু ও পুল রিকোয়েস্ট থেকে তৈরি হয় এবং সেগুলোর সাথে একীভূত থাকে।
 
-You can choose a template for your project. One of the templates is the "Kanban" template. Here, you can create notes and place the existing issues and pull requests in the "Backlog", "Ready", "In progress", "In review", and "Done" columns. This will make it easy for you and your team to track the progress of your project.
+আপনি প্রজেক্টের জন্য একটি টেমপ্লেট বেছে নিতে পারেন। টেমপ্লেটগুলোর একটি হলো "Kanban" টেমপ্লেট। এখানে আপনি নোট তৈরি করতে এবং বিদ্যমান ইস্যু ও পুল রিকোয়েস্টগুলো "Backlog", "Ready", "In progress", "In review" ও "Done" কলামে রাখতে পারেন। এতে আপনার ও আপনার দলের জন্য প্রজেক্টের অগ্রগতি ট্র্যাক করা সহজ হবে।
 
-To create a new project:
+নতুন প্রজেক্ট তৈরি করতে:
 
-1. Navigate to your GitHub profile and click the "Projects" tab.
-2. Click the green "New project" button.
-3. Choose a template.
-4. Name your project and click the "Create project" button at the bottom.
+1. আপনার GitHub প্রোফাইলে গিয়ে "Projects" ট্যাবে ক্লিক করুন।
+2. সবুজ "New project" বোতামে ক্লিক করুন।
+3. একটি টেমপ্লেট বেছে নিন।
+4. প্রজেক্টের একটি নাম দিন এবং নিচের "Create project" বোতামে ক্লিক করুন।
 
 :::note
 
-Projects are private by default. You can make them private to core maintainers or publicly visible to everyone.
+Projects ডিফল্টভাবে প্রাইভেট থাকে। আপনি এগুলো শুধু কোর মেইনটেইনারদের জন্য প্রাইভেট রাখতে পারেন, অথবা সবার জন্য দৃশ্যমান করতে পারেন।
 
 :::
 
-Please read the [GitHub documentation](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project) to learn more about adding items to your project.
+আপনার প্রজেক্টে আইটেম যোগ করা সম্পর্কে আরও জানতে [GitHub ডকুমেন্টেশন](https://docs.github.com/en/issues/planning-and-tracking-with-projects/managing-items-in-your-project/adding-items-to-your-project) পড়ুন।
 
-![GitHub Project Boards GIF](../_assets/gifs/create-github-project.gif)
+![GitHub Project Boards-এর GIF](../_assets/gifs/create-github-project.gif)
 
-Learning how to start an open source project involves understanding the importance of clear goals, community, comprehensive documentation, and ensuring quality contributions get merged into your project. The [next chapter](issues-and-pull-requests.md) will discuss handling open issues and pull requests.
+ওপেন সোর্স প্রজেক্ট কীভাবে শুরু করতে হয় শেখার মধ্যে পড়ে স্পষ্ট লক্ষ্য, কমিউনিটি ও পূর্ণাঙ্গ ডকুমেন্টেশনের গুরুত্ব বোঝা এবং মানসম্মত অবদান যাতে আপনার প্রজেক্টে মার্জ হয়, তা নিশ্চিত করা। [পরবর্তী অধ্যায়ে](issues-and-pull-requests.md) আমরা ওপেন ইস্যু ও পুল রিকোয়েস্ট সামলানো নিয়ে আলোচনা করব।

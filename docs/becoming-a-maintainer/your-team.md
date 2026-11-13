@@ -2,168 +2,162 @@
 id: your-team
 title: "আপনার ওপেন সোর্স ড্রিম টিম গড়ে তোলা"
 sidebar_label: "টিম গড়ে তোলা"
-keywords: ["building open source team", "how to build an open source team", "assembling an open source maintainer team", "building an open source maintainer team", "finding new maintainers for open source projects", "identifying potential open source maintainers using OpenSauced", "best practices for onboarding new open source team members", "types of open source maintainers team", "triage team", "maintainer team", "documentation team", "onboarding open source maintainers", "GitHub permissions for open source teams", "offboarding open source team members", "open source maintainer recruitment strategies", "open source maintainers", "Open Source", "Open Source Community"]
+keywords: ["ওপেন সোর্স টিম গড়ে তোলা", "ওপেন সোর্স টিমের ধরন", "ট্রায়াজ টিম", "মেইনটেইনার টিম", "ডকুমেন্টেশন টিম", "টিমের অনুমতি", "নতুন মেইনটেইনার নিয়োগ", "টিম মেম্বার অনবোর্ডিং", "ওপেন সোর্স মেইনটেইনার", "Open Source", "Open Source Community"]
 ---
 
-:::note[এই অধ্যায়টি এখনো বাংলায় অনুবাদ করা হয়নি]
+একটি ওপেন সোর্স প্রজেক্ট পরিচালনার জন্য স্পষ্ট যোগাযোগ, সহমর্মিতা ও কারিগরি জ্ঞান দরকার। আপনি হয়তো দেখবেন, শুরুতে সব বা বেশিরভাগ কাজ আপনি নিজেই করতে পারছেন। দারুণ কথা! তবে আপনার প্রজেক্ট বড় হোক ও সমৃদ্ধ হোক, এটি চাইলে আপনার চারপাশে বৈচিত্র্যময়, অনুপ্রাণিত ও কার্যকর একটি টিম গড়ে তোলা আপনাকে সেটি করতে সাহায্য করতে পারে। এই অধ্যায়ে আলোচনা করা হয়েছে কীভাবে আপনার টিমের সাথে কার্যকরভাবে সহযোগিতা করবেন, এবং আপনার ওপেন সোর্স দলের সদস্য শনাক্ত করা, অনবোর্ড করা ও ক্ষমতায়নের দিকনির্দেশনা দেওয়া হয়েছে।
 
-এই অধ্যায়ের বিষয়বস্তু আপাতত মূল ইংরেজিতেই রয়েছে এবং এর বাংলা অনুবাদ চলমান। ততদিন পর্যন্ত আপনি চাইলে আমাদের [ওয়েবসাইটে](https://opensauced.pizza/learn/#/) গিয়ে পড়তে পারেন।
+## টিমের ধরন
 
-:::
+GitHub-এ টিম তৈরি করলে আপনি একদল মানুষকে তাঁদের টিমের অবস্থা অনুযায়ী আরও বেশি অনুমতি দিতে পারেন। কয়েকটি সাধারণ টিমের ধরন এবং কেন একজন মেইনটেইনার সেগুলো উপকারী মনে করতে পারেন, তা নিচে দেওয়া হলো:
 
-Managing an open source project requires clear communication, empathy, and technical understanding. You might find that initially, you can do all or most of the work by yourself. That's great! If you want your project to grow and thrive, cultivating a diverse, motivated, and effective team around you can help you do that. This chapter looks at how to collaborate with your team effectively and offers guidance on identifying, onboarding, and empowering your open source squad.
+### ট্রায়াজ টিম
 
-## Types of Teams
+ট্রায়াজ টিম আসা ইস্যু ও পুল রিকোয়েস্ট দক্ষতার সাথে সামলাতে সাহায্য করে। তাঁরা ইস্যুগুলোকে শ্রেণিবদ্ধ করেন, অগ্রাধিকার দেন এবং যথাযথ মেইনটেইনার বা কন্ট্রিবিউটরের কাছে অ্যাসাইন করেন। এতে মেইনটেইনারের কাজের চাপ কমে এবং গুরুত্বপূর্ণ বিষয়ে সময়মতো মনোযোগ নিশ্চিত হয়।
 
-Creating teams on GitHub allows you to grant more permissions to a group of people depending on their team status. Here are some common team types and why a maintainer might find them beneficial:
+**সুবিধা**: ব্যবহারকারীদের কাছে দ্রুততর সাড়া, উন্নত ইস্যু ট্র্যাকিং এবং সম্পদের আরও ভালো বণ্টন।
 
-### Triage Team
+### মেইনটেইনার টিম
 
-Triage teams help handle incoming issues and pull requests efficiently. They categorize, prioritize, and assign issues to appropriate maintainers or contributors, reducing the maintainer's workload and ensuring timely attention to important matters.
+মেইনটেইনার টিম কোড রিভিউ, বাগ ফিক্স ও ফিচার ডেভেলপমেন্টের দায়িত্ব ভাগ করে নেয়। বিশেষায়িত দক্ষতাসম্পন্ন মেইনটেইনারদের একটি দল বড় প্রজেক্ট সামলাতে, বিস্তৃত দক্ষতা দিতে এবং কোডের মান ও সামঞ্জস্য আরও ভালো রাখতে পারে।
 
-**Benefits**: Faster response to users, improved issue tracking, and better allocation of resources.
+**সুবিধা**: ব্যক্তিগত কাজের চাপ কমা, দ্রুততর ডেভেলপমেন্ট চক্র এবং কোড ও সিদ্ধান্তে আরও বৈচিত্র্যময় দৃষ্টিভঙ্গি।
 
-### Maintainer Team
+### ডকুমেন্টেশন (Docs) টিম
 
-The maintainer team shares responsibility for code reviews, bug fixes, and feature development. A team of maintainers with specialized skills can handle larger projects, provide broader expertise, and ensure better code quality and consistency.
+ডকস টিম ব্যবহারকারী ও কন্ট্রিবিউটরদের জন্য উচ্চমানের ডকুমেন্টেশন তৈরি ও রক্ষণাবেক্ষণ করে। একটি নিবেদিত ডকুমেন্টেশন টিম নিশ্চিত করে, স্পষ্ট ও হালনাগাদ তথ্য সহজে পাওয়া যাচ্ছে, যা সহায়তার অনুরোধ ও বিভ্রান্তি কমায়।
 
-**Benefits**: Reduced individual workload, faster development cycles, and more diverse perspectives on code and decisions.
+**সুবিধা**: ব্যবহারকারীর উন্নত অভিজ্ঞতা, নতুন কন্ট্রিবিউটরদের জন্য সহজ অনবোর্ডিং এবং মৌলিক প্রশ্নের উত্তর দিতে কম সময় ব্যয়।
 
-### Documentation (Docs) Team
+### টিমের অন্যান্য ধরন
 
-The docs team creates and maintains high-quality documentation for users and contributors. A dedicated documentation team ensures clear, up-to-date information is readily available, reducing support requests and confusion.
-
-**Benefits**: Improved user experience, easier onboarding for new contributors, and less time spent answering basic questions.
-
-### Other Team Variations
-
-- Security Team
-- Design Team
-- Community Team
-- Marketing Team
-- Core Team\*
+- নিরাপত্তা টিম
+- ডিজাইন টিম
+- কমিউনিটি টিম
+- মার্কেটিং টিম
+- কোর টিম\*
 
 :::info
 
-Sometimes, the Maintainer Team and the Core Team are the same. Generally speaking, a Core Team often focuses on broader responsibilities like strategy, governance, and community management, providing insight into the project's direction. The Maintainer Team is more likely to focus on the project's day-to-day management and technical aspects.
+কখনো কখনো মেইনটেইনার টিম ও কোর টিম একই হয়। সাধারণভাবে বলতে গেলে, কোর টিম প্রায়ই কৌশল, গভর্নেন্স ও কমিউনিটি ব্যবস্থাপনার মতো ব্যাপক দায়িত্বে মনোযোগ দেয় এবং প্রজেক্টের দিকনির্দেশনা সম্পর্কে অন্তর্দৃষ্টি জোগায়। মেইনটেইনার টিম প্রজেক্টের প্রতিদিনের ব্যবস্থাপনা ও কারিগরি দিকগুলোতে বেশি মনোযোগ দেয়।
 
 :::
 
-## Assembling Your A-Team: Adding New Members
+## আপনার সেরা দল গড়ে তোলা: নতুন সদস্য যোগ করা
 
-Now that you understand a little bit about teams, let's look at how to identify new members for your team.
+টিম সম্পর্কে এখন আপনার কিছুটা ধারণা হয়েছে। এবার দেখা যাক, আপনার টিমের জন্য নতুন সদস্য কীভাবে শনাক্ত করবেন।
 
-### Recognizing the Need
+### প্রয়োজন বুঝতে পারা
 
-Just like a superhero team expands to face escalating threats, your project might reach a point where additional team members are needed. This could be when the workload starts to overwhelm you (solo maintainer) or your existing team or when you are taking on complex challenges that require specialized expertise. Identifying these challenging points is important for ensuring your project's continued momentum.
+বাড়তে থাকা হুমকির মোকাবিলায় যেমন সুপারহিরোদের দল বড় হয়, তেমনি আপনার প্রজেক্টও এমন একটি পর্যায়ে পৌঁছাতে পারে, যখন বাড়তি টিম সদস্য দরকার হয়। এটি হতে পারে যখন কাজের চাপ আপনাকে (একা মেইনটেইনার) বা আপনার বিদ্যমান টিমকে হাঁপিয়ে তুলতে শুরু করে, কিংবা যখন আপনি এমন জটিল চ্যালেঞ্জ নিচ্ছেন, যার জন্য বিশেষ দক্ষতা দরকার। আপনার প্রজেক্টের ধারাবাহিক গতি নিশ্চিত করতে এই কঠিন বিন্দুগুলো চিহ্নিত করা গুরুত্বপূর্ণ।
 
-### Scouting for Superpowers
+### মহাশক্তির সন্ধানে
 
-Your search for new teammates should be deliberate and thoughtful. Look for contributors who have consistently shown commitment and skills through active involvement in your project. Their contributions to issues, pull requests, and community discussions can help you determine if they understand the project and your vision. Other things to consider are having enthusiasm, a collaborative spirit, and alignment with your project's goals. Open source projects thrive on passion and shared purpose.
+নতুন সতীর্থ খোঁজা হওয়া উচিত সুচিন্তিত ও পরিকল্পিত। এমন কন্ট্রিবিউটরদের খুঁজুন, যাঁরা আপনার প্রজেক্টে সক্রিয় অংশগ্রহণের মাধ্যমে ধারাবাহিকভাবে প্রতিশ্রুতি ও দক্ষতা দেখিয়েছেন। ইস্যু, পুল রিকোয়েস্ট ও কমিউনিটি আলোচনায় তাঁদের অবদান থেকে আপনি বুঝতে পারবেন, তাঁরা প্রজেক্ট ও আপনার দৃষ্টিভঙ্গি বোঝেন কি না। বিবেচনার আরও কিছু বিষয় হলো উৎসাহ, সহযোগিতামূলক মনোভাব এবং আপনার প্রজেক্টের লক্ষ্যের সাথে সামঞ্জস্য। ওপেন সোর্স প্রজেক্ট সমৃদ্ধ হয় আবেগ ও অভিন্ন উদ্দেশ্যে।
 
-### Inviting Your Team
+### আপনার টিমকে আমন্ত্রণ জানানো
 
-Once you've identified potential team members, extend a formal invitation. This public acknowledgment of their contributions not only shows your appreciation but also serves as an inspiration to other community members. Platforms like GitHub offer streamlined mechanisms for adding team members, making it a seamless process to welcome your new team members officially.
+সম্ভাব্য টিম সদস্যদের শনাক্ত করার পর আনুষ্ঠানিকভাবে আমন্ত্রণ জানান। তাঁদের অবদানের এই প্রকাশ্য স্বীকৃতি শুধু আপনার কৃতজ্ঞতাই দেখায় না, কমিউনিটির অন্য সদস্যদের জন্য অনুপ্রেরণাও হয়। GitHub-এর মতো প্ল্যাটফর্মে টিম সদস্য যোগ করার সহজ ব্যবস্থা আছে, ফলে নতুন টিম সদস্যদের আনুষ্ঠানিকভাবে স্বাগত জানানোর প্রক্রিয়া মসৃণ হয়।
 
-## Granting Team Permissions
+## টিমের অনুমতি দেওয়া
 
-Each team should have a specific set of permissions that allow them to do what they need to succeed. Here are some common permissions that teams might need:
+প্রতিটি টিমের একগুচ্ছ নির্দিষ্ট অনুমতি থাকা উচিত, যা তাদের সফল হতে প্রয়োজনীয় কাজ করতে দেয়। টিমের প্রয়োজন হতে পারে এমন কিছু সাধারণ অনুমতি:
 
-### Repository-Specific Permissions
+### রিপোজিটরি-নির্দিষ্ট অনুমতি
 
-- **Read**: Allow members to view code, issues, and pull requests. <br/>_Suitable for stakeholders, external collaborators, or those needing general visibility._
-- **Triage**: Grant permission to manage issues and pull requests (assign, label, comment, close) but not directly modify code. <br/>_Ideal for triage teams and community managers._
-- **Write**: Allow members to push code, create branches, and open pull requests. <br/>_Necessary for developers and maintainers who are actively contributing to the codebase._
-- **Maintain**: Grant broader management permissions, including deleting branches, editing protected files, and managing releases. <br/> _Suitable for core maintainers responsible for project health._
-- **Admin**: Provide full control over the repository, including sensitive actions like deleting or changing its visibility. <br/>_Reserved for trusted individuals or those with specific administrative needs._<br/>
+- **Read**: সদস্যদের কোড, ইস্যু ও পুল রিকোয়েস্ট দেখার অনুমতি দেয়। <br/>_স্টেকহোল্ডার, বাইরের সহযোগী বা যাঁদের সাধারণ দৃশ্যমানতা দরকার, তাঁদের জন্য উপযুক্ত।_
+- **Triage**: ইস্যু ও পুল রিকোয়েস্ট পরিচালনার (অ্যাসাইন, লেবেল, মন্তব্য, বন্ধ করা) অনুমতি দেয়, তবে সরাসরি কোড পরিবর্তনের অনুমতি নয়। <br/>_ট্রায়াজ টিম ও কমিউনিটি ম্যানেজারদের জন্য আদর্শ।_
+- **Write**: সদস্যদের কোড পুশ করা, ব্রাঞ্চ তৈরি করা ও পুল রিকোয়েস্ট খোলার অনুমতি দেয়। <br/>_যেসব ডেভেলপার ও মেইনটেইনার কোডবেসে সক্রিয়ভাবে অবদান রাখছেন, তাঁদের জন্য প্রয়োজনীয়।_
+- **Maintain**: ব্রাঞ্চ মুছে ফেলা, সুরক্ষিত ফাইল সম্পাদনা ও রিলিজ পরিচালনাসহ আরও বিস্তৃত ব্যবস্থাপনার অনুমতি দেয়। <br/> _প্রজেক্টের সুস্থতার দায়িত্বে থাকা কোর মেইনটেইনারদের জন্য উপযুক্ত।_
+- **Admin**: রিপোজিটরির ওপর পূর্ণ নিয়ন্ত্রণ দেয়, যার মধ্যে মুছে ফেলা বা দৃশ্যমানতা বদলানোর মতো স্পর্শকাতর কাজও আছে। <br/>_বিশ্বস্ত ব্যক্তি বা নির্দিষ্ট প্রশাসনিক প্রয়োজন আছে এমন মানুষের জন্য সংরক্ষিত।_<br/>
 
-To access your team's permissions, navigate to your team's page on GitHub and click the "Settings" tab. From there, you can update your team's permissions in the "Member privileges" section.
+আপনার টিমের অনুমতি দেখতে GitHub-এ আপনার টিমের পাতায় গিয়ে "Settings" ট্যাবে ক্লিক করুন। সেখান থেকে "Member privileges" অংশে আপনি টিমের অনুমতি হালনাগাদ করতে পারবেন।
 
-Here's what it will look like in GitHub:
+GitHub-এ এটি দেখতে এমন হবে:
 
-![team permissions](../_assets/images/org-permissions.png)
+![টিমের অনুমতি](../_assets/images/org-permissions.png)
 
-### Additional Permissions to Consider
+### বিবেচনার জন্য বাড়তি অনুমতি
 
-- **Project Permissions (if using GitHub Projects)**: Grant access to manage projects, tasks, and milestones within a repository.
-- **Organization-Wide Permissions**: For organization-wide teams, consider granting permissions to manage members, billing, security settings, and other organization-level features.
+- **প্রজেক্টের অনুমতি (GitHub Projects ব্যবহার করলে)**: রিপোজিটরির মধ্যে প্রজেক্ট, টাস্ক ও মাইলস্টোন পরিচালনার অ্যাক্সেস দিন।
+- **সংগঠনজুড়ে অনুমতি**: সংগঠনজুড়ে টিমের জন্য সদস্য, বিলিং, নিরাপত্তা সেটিংস এবং সংগঠন পর্যায়ের অন্যান্য ফিচার পরিচালনার অনুমতি দেওয়ার কথা ভাবুন।
 
-### Best Practices for Team Permissions
+### টিমের অনুমতির সেরা চর্চা
 
-- **Start with restrictive permissions**: Grant the minimum permissions necessary for a team to perform its tasks.
-- **Review permissions regularly**: As projects evolve and team needs change, revisit permissions to ensure they remain appropriate.
-- **Utilize code owners**: Assign specific people or teams as code owners for different parts of the codebase to ensure appropriate oversight and review using the special [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) file.
+- **সীমিত অনুমতি দিয়ে শুরু করুন**: একটি টিমের কাজ সম্পাদনে ন্যূনতম যে অনুমতি দরকার, শুধু তা-ই দিন।
+- **নিয়মিত অনুমতি পর্যালোচনা করুন**: প্রজেক্ট বিকশিত হলে এবং টিমের প্রয়োজন বদলালে অনুমতিগুলো উপযুক্ত আছে কি না, তা আবার দেখে নিন।
+- **কোড ওনার ব্যবহার করুন**: বিশেষ [CODEOWNERS](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners) ফাইল দিয়ে কোডবেসের বিভিন্ন অংশের জন্য নির্দিষ্ট ব্যক্তি বা টিমকে কোড ওনার ঠিক করে দিন, যাতে যথাযথ তত্ত্বাবধান ও রিভিউ নিশ্চিত হয়।
 
-### Specific Examples
+### নির্দিষ্ট উদাহরণ
 
-- **Triage Team**: Grant "Triage" permission to the triage team's primary repository.
-- **Maintainer Team**: Grant "Write" or "Maintain" permissions to repositories they actively contribute to.
-- **Documentation Team**: Grant "Write" permission to the documentation repository, potentially "Read" access to other relevant repositories.
+- **ট্রায়াজ টিম**: ট্রায়াজ টিমের প্রাথমিক রিপোজিটরিতে "Triage" অনুমতি দিন।
+- **মেইনটেইনার টিম**: যেসব রিপোজিটরিতে তাঁরা সক্রিয়ভাবে অবদান রাখেন, সেগুলোতে "Write" বা "Maintain" অনুমতি দিন।
+- **ডকুমেন্টেশন টিম**: ডকুমেন্টেশন রিপোজিটরিতে "Write" অনুমতি দিন, এবং সম্ভাব্য ক্ষেত্রে অন্যান্য প্রাসঙ্গিক রিপোজিটরিতে "Read" অ্যাক্সেস দিন।
 
-You can see some of the options here:
+কিছু অপশন আপনি এখানে দেখতে পারেন:
 
-![Team permissions GIF](../_assets/gifs/org-permissions.gif)
+![টিমের অনুমতির GIF](../_assets/gifs/org-permissions.gif)
 
-## Expanding the Horizons: Enlisting Additional Maintainers
+## দিগন্ত প্রসারিত করা: বাড়তি মেইনটেইনার নিয়োগ
 
-### Specialization: The Key to Scale
+### বিশেষায়ন: বড় হওয়ার চাবিকাঠি
 
-The need for specialized attention in specific areas might arise as your project grows in complexity. Documentation might require someone who can write for audiences at all levels of expertise, while community engagement might need a charismatic presence. Identifying these needs and recruiting contributors with relevant expertise allows you to delegate ownership and ensure all aspects of your project receive the dedicated care they deserve.
+আপনার প্রজেক্ট জটিলতায় বাড়তে থাকলে নির্দিষ্ট ক্ষেত্রে বিশেষ মনোযোগের প্রয়োজন দেখা দিতে পারে। ডকুমেন্টেশনের জন্য হয়তো এমন কেউ দরকার, যিনি সব স্তরের দক্ষতার পাঠকের জন্য লিখতে পারেন, আর কমিউনিটি সম্পৃক্ততার জন্য দরকার হতে পারে একজন ক্যারিশম্যাটিক উপস্থিতি। এই প্রয়োজনগুলো শনাক্ত করে এবং প্রাসঙ্গিক দক্ষতাসম্পন্ন কন্ট্রিবিউটরদের নিয়োগ দিয়ে আপনি মালিকানা ভাগ করে দিতে এবং আপনার প্রজেক্টের প্রতিটি দিক যেন প্রাপ্য নিবেদিত যত্ন পায়, তা নিশ্চিত করতে পারেন।
 
-### Recruiting Maintainers & Team Members
+### মেইনটেইনার ও টিম সদস্য নিয়োগ
 
-It is certainly possible that there's no contributor with the right skills and passion to take on a specific role. In those cases, you might need to look outside your existing community. Reach out to other projects or communities that might have individuals with the necessary expertise.
+এমন হওয়া অবশ্যই সম্ভব যে নির্দিষ্ট কোনো ভূমিকা নেওয়ার মতো সঠিক দক্ষতা ও আবেগসম্পন্ন কোনো কন্ট্রিবিউটর নেই। সে ক্ষেত্রে আপনাকে আপনার বিদ্যমান কমিউনিটির বাইরে তাকাতে হতে পারে। প্রয়োজনীয় দক্ষতাসম্পন্ন মানুষ আছেন এমন অন্য প্রজেক্ট বা কমিউনিটির সাথে যোগাযোগ করুন।
 
-One way to look for potential maintainers is to create a [Repository Insight Page](https://opensauced.pizza/docs/features/repo-insights/) with projects with a similar tech stack. This will allow you to see who contributes to those projects regularly, their most used languages, and more. From there, you can narrow your search to individuals who are already familiar with your project's stack and have a proven track record of contributions by adding them to a [Contributor Insight Page](https://opensauced.pizza/docs/features/contributor-insights/). Contributor Insights allows you to see more about where they're contributing, their timezone, activity level, and more.
+সম্ভাব্য মেইনটেইনার খোঁজার একটি উপায় হলো একই ধরনের টেক স্ট্যাকের প্রজেক্টগুলো নিয়ে একটি [Repository Insight Page](https://opensauced.pizza/docs/features/repo-insights/) তৈরি করা। এতে আপনি দেখতে পারবেন, ওই প্রজেক্টগুলোতে কারা নিয়মিত অবদান রাখেন, তাঁদের সবচেয়ে বেশি ব্যবহৃত ভাষা কী, এবং আরও অনেক কিছু। সেখান থেকে আপনি আপনার প্রজেক্টের স্ট্যাকের সাথে ইতোমধ্যে পরিচিত এবং অবদানের প্রমাণিত ইতিহাস আছে এমন ব্যক্তিদের একটি [Contributor Insight Page](https://opensauced.pizza/docs/features/contributor-insights/)-এ যোগ করে অনুসন্ধান সংকীর্ণ করতে পারেন। Contributor Insights আপনাকে দেখতে দেয়, তাঁরা কোথায় অবদান রাখছেন, তাঁদের টাইমজোন, কার্যকলাপের মাত্রা এবং আরও অনেক কিছু।
 
-#### Creating a Repository and a Contributor Insight Page
+#### একটি Repository Insight ও Contributor Insight Page তৈরি করা
 
-To connect and track your repositories, click the "+" next to "Insights" in the sidebar, then select "New Repository Insight." You will be redirected to a page where you can create your new Repository Insight Page.
+আপনার রিপোজিটরিগুলো সংযুক্ত ও ট্র্যাক করতে সাইডবারে "Insights"-এর পাশে "+"-এ ক্লিক করুন, তারপর "New Repository Insight" বেছে নিন। আপনাকে এমন একটি পাতায় নিয়ে যাওয়া হবে, যেখানে আপনি আপনার নতুন Repository Insight Page তৈরি করতে পারবেন।
 
-There are two ways to add repositories to your Repository Insight Page:
+আপনার Repository Insight Page-এ রিপোজিটরি যোগ করার দুটি উপায় আছে:
 
-1. **Sync GitHub organization**. Syncing your GitHub organization is a good idea if you want a unified view of your project activities and the list of contributors to your project.
-2. **Add individual repositories**. Adding individual repositories is a good idea if you want to look at similar repositories to recruit team members.
+1. **GitHub সংগঠন সিঙ্ক করুন।** আপনার প্রজেক্টের কার্যকলাপ ও কন্ট্রিবিউটরদের তালিকার একটি একীভূত চিত্র চাইলে আপনার GitHub সংগঠন সিঙ্ক করা ভালো ধারণা।
+2. **আলাদা আলাদা রিপোজিটরি যোগ করুন।** টিম সদস্য নিয়োগের জন্য অনুরূপ রিপোজিটরি দেখতে চাইলে আলাদা আলাদা রিপোজিটরি যোগ করা ভালো ধারণা।
 
-![Sync team GIF](../_assets/gifs/team-sync-insights.gif)
+![টিম সিঙ্কের GIF](../_assets/gifs/team-sync-insights.gif)
 
-From there, you can create a list of contributors you're interested in learning more about or connecting with by selecting them from the Contributors dashboard and creating a new Contributor Insight Page.
+সেখান থেকে Contributors ড্যাশবোর্ড থেকে তাঁদের বেছে নিয়ে এবং একটি নতুন Contributor Insight Page তৈরি করে আপনি যাঁদের সম্পর্কে আরও জানতে বা যাঁদের সাথে যুক্ত হতে আগ্রহী, তাঁদের একটি তালিকা বানাতে পারেন।
 
-![Contributor insights list](../_assets/images/contributors-insights.png)
+![কন্ট্রিবিউটর ইনসাইটের তালিকা](../_assets/images/contributors-insights.png)
 
-## Adding Team Members
+## টিম সদস্য যোগ করা
 
-Once you've identified potential team members, reach out to them. Let them know why you're asking them to become a team member and provide them with a clear understanding of what you expect if they accept the role. This will help them make an informed decision and ensure they can meet your expectations.
+সম্ভাব্য টিম সদস্যদের শনাক্ত করার পর তাঁদের সাথে যোগাযোগ করুন। তাঁদের জানান, কেন আপনি তাঁদের টিম সদস্য হতে বলছেন এবং তাঁরা ভূমিকাটি গ্রহণ করলে আপনি কী আশা করেন, তা স্পষ্টভাবে বুঝিয়ে দিন। এতে তাঁরা সচেতন সিদ্ধান্ত নিতে পারবেন এবং নিশ্চিত হবেন যে আপনার প্রত্যাশা পূরণ করতে পারবেন।
 
-Check out [this guide](https://docs.github.com/en/organizations/organizing-members-into-teams/adding-organization-members-to-a-team) to learn how to add them to your team on GitHub.
+GitHub-এ তাঁদের আপনার টিমে কীভাবে যোগ করবেন, তা জানতে [এই গাইডটি](https://docs.github.com/en/organizations/organizing-members-into-teams/adding-organization-members-to-a-team) দেখুন।
 
-## Onboarding New Team Members
+## নতুন টিম সদস্যদের অনবোর্ডিং
 
-To ensure that your new team members are set up for success, it's important to have an onboarding process. This will help them to understand their responsibilities, the project's goals, and how they can contribute.
+আপনার নতুন টিম সদস্যরা যেন সফল হওয়ার জন্য প্রস্তুত থাকেন, তা নিশ্চিত করতে একটি অনবোর্ডিং প্রক্রিয়া রাখা গুরুত্বপূর্ণ। এটি তাঁদের নিজেদের দায়িত্ব, প্রজেক্টের লক্ষ্য এবং কীভাবে তাঁরা অবদান রাখতে পারেন, তা বুঝতে সাহায্য করবে।
 
-Here are some things to consider:
+বিবেচনার জন্য কিছু বিষয়:
 
-- **Roles & Responsibilities:** Clearly define the team member's role and responsibilities. This will help them to understand what they're responsible for and what they can expect from you.
-- **Communication:** Establish clear communication channels and expectations. This will help to ensure that everyone is on the same page and that you're able to communicate effectively.
-- **Goals:** Clearly define the project's goals and how the team members can contribute. This will help them to understand how they can contribute to the project's success.
-- **Timeline:** Set clear expectations for the timeline. This will help them understand what to do and the deadlines.
+- **ভূমিকা ও দায়িত্ব:** টিম সদস্যের ভূমিকা ও দায়িত্ব স্পষ্টভাবে নির্ধারণ করুন। এতে তাঁরা বুঝতে পারবেন তাঁদের কিসের দায়িত্ব এবং আপনার কাছ থেকে কী আশা করতে পারেন।
+- **যোগাযোগ:** যোগাযোগের স্পষ্ট মাধ্যম ও প্রত্যাশা ঠিক করুন। এতে সবাই একই ধারণার ওপর থাকবেন এবং আপনি কার্যকরভাবে যোগাযোগ করতে পারবেন।
+- **লক্ষ্য:** প্রজেক্টের লক্ষ্য এবং টিম সদস্যরা কীভাবে অবদান রাখতে পারেন, তা স্পষ্টভাবে নির্ধারণ করুন। এতে তাঁরা বুঝতে পারবেন কীভাবে প্রজেক্টের সাফল্যে অবদান রাখতে পারেন।
+- **সময়সীমা:** সময়সীমা নিয়ে স্পষ্ট প্রত্যাশা ঠিক করুন। এতে তাঁরা কী করতে হবে এবং শেষ তারিখ কখন, তা বুঝতে পারবেন।
 
-One way to onboard your new team members is to have clear guidelines and include them in your documentation. If you need an idea for creating one, you can look at the [OpenSauced Community Maintainers Guidelines](https://opensauced.pizza/docs/contributing/opensauced-maintainers-guide/community-maintainers-guide/) or read [this blog post](https://dev.to/opensauced/the-missing-piece-why-your-project-needs-a-maintainer-onboarding-process-np0).
+নতুন টিম সদস্যদের অনবোর্ড করার একটি উপায় হলো স্পষ্ট নির্দেশিকা রাখা এবং তা আপনার ডকুমেন্টেশনে অন্তর্ভুক্ত করা। এ রকম একটি তৈরির ধারণা দরকার হলে আপনি [OpenSauced Community Maintainers Guidelines](https://opensauced.pizza/docs/contributing/opensauced-maintainers-guide/community-maintainers-guide/) দেখতে পারেন, কিংবা [এই ব্লগ পোস্টটি](https://dev.to/opensauced/the-missing-piece-why-your-project-needs-a-maintainer-onboarding-process-np0) (ইংরেজি) পড়তে পারেন।
 
-## Keeping Track of Your Team
+## আপনার টিমের হিসাব রাখা
 
-As your team grows, it's important to keep track of your team's participation and contributions. Depending on the number of people on your team, consider creating a [Contributor Insight Page](https://opensauced.pizza/docs/features/contributor-insights/) to keep track of your team's contributions. This will allow you to see who is contributing to your project and how often, and it will help you identify when it's time to remove someone from your team.
+আপনার টিম বড় হওয়ার সাথে সাথে টিমের অংশগ্রহণ ও অবদানের হিসাব রাখা গুরুত্বপূর্ণ। আপনার টিমে কতজন আছেন তার ওপর নির্ভর করে টিমের অবদান ট্র্যাক করতে একটি [Contributor Insight Page](https://opensauced.pizza/docs/features/contributor-insights/) তৈরি করার কথা ভাবুন। এতে আপনি দেখতে পারবেন, কারা আপনার প্রজেক্টে অবদান রাখছেন ও কত ঘন ঘন, এবং কখন কাউকে আপনার টিম থেকে সরানোর সময় এসেছে তা শনাক্ত করতেও এটি সাহায্য করবে।
 
-![Team sync GIF](../_assets/gifs/team-sync.gif)
+![টিম সিঙ্কের GIF](../_assets/gifs/team-sync.gif)
 
-## Saying Farewell: Handling Team Departures
+## বিদায় জানানো: টিম থেকে প্রস্থান সামলানো
 
-As time passes and people's lives change, you'll find that even the most dedicated teams might face departures. Inactivity, discord with project values, or mutual agreement can lead to changes in your team. It's important to approach these situations with respect and understanding. Privately communicate the reasons behind the decision, acknowledge the individual's contributions, and express gratitude for their time and effort. Remember, fostering a positive and supportive environment, even during departures, contributes to the overall well-being of your project community.
+সময় গড়ানোর সাথে সাথে এবং মানুষের জীবন বদলের সাথে আপনি দেখবেন, সবচেয়ে নিবেদিত টিমও সদস্যদের প্রস্থানের মুখোমুখি হতে পারে। নিষ্ক্রিয়তা, প্রজেক্টের মূল্যবোধের সাথে অমিল, কিংবা পারস্পরিক সম্মতি আপনার টিমে পরিবর্তন আনতে পারে। এই পরিস্থিতিগুলোতে সম্মান ও বোঝাপড়া নিয়ে এগোনো গুরুত্বপূর্ণ। সিদ্ধান্তের পেছনের কারণগুলো ব্যক্তিগতভাবে জানান, ওই ব্যক্তির অবদানের স্বীকৃতি দিন এবং তাঁর সময় ও শ্রমের জন্য কৃতজ্ঞতা প্রকাশ করুন। মনে রাখবেন, প্রস্থানের সময়েও ইতিবাচক ও সহায়ক পরিবেশ গড়ে তোলা আপনার প্রজেক্ট কমিউনিটির সামগ্রিক কল্যাণে অবদান রাখে।
 
-Check out [this guide](https://docs.github.com/en/organizations/organizing-members-into-teams/removing-organization-members-from-a-team) on GitHub for removing the person from your team.
+আপনার টিম থেকে কাউকে সরানোর জন্য GitHub-এর [এই গাইডটি](https://docs.github.com/en/organizations/organizing-members-into-teams/removing-organization-members-from-a-team) দেখুন।
 
-## Conclusion
+## উপসংহার
 
-Remember, the team is there to support you and the project and to help you achieve your goals. As you grow your team, keep in mind that you're not just adding people to your project; you're adding people to your community. Make sure you're adding people who align with your project's values and goals and who will be a positive addition to your community.
+মনে রাখবেন, টিম আছে আপনাকে ও প্রজেক্টকে সহায়তা করতে এবং আপনার লক্ষ্য অর্জনে সাহায্য করতে। আপনার টিম বড় করার সময় মনে রাখবেন, আপনি শুধু আপনার প্রজেক্টে মানুষ যোগ করছেন না, আপনার কমিউনিটিতেও মানুষ যোগ করছেন। নিশ্চিত করুন, আপনি এমন মানুষদের যোগ করছেন, যাঁরা আপনার প্রজেক্টের মূল্যবোধ ও লক্ষ্যের সাথে সামঞ্জস্যপূর্ণ এবং যাঁরা আপনার কমিউনিটিতে ইতিবাচক সংযোজন হবেন।
 
-In the [next chapter](metrics-and-analytics.md), you will learn how metrics and analytics are helpful for new maintainers.
+[পরবর্তী অধ্যায়ে](metrics-and-analytics.md) আপনি শিখবেন, নতুন মেইনটেইনারদের জন্য মেট্রিক্স ও অ্যানালিটিক্স কীভাবে সহায়ক।
